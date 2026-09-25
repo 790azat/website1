@@ -55,6 +55,27 @@ class SiteContent
     }
 
     /**
+     * All site content, with section titles and author roles translated into
+     * the current locale. Article and program text is left as written.
+     *
+     * @return array<string, mixed>
+     */
+    public function localized(): array
+    {
+        $data = $this->all();
+
+        foreach ($data['sections'] as $key => $section) {
+            $data['sections'][$key]['title'] = __($section['title']);
+        }
+
+        foreach ($data['authors'] as $key => $author) {
+            $data['authors'][$key]['role'] = __($author['role']);
+        }
+
+        return $data;
+    }
+
+    /**
      * Parse the content from source files, ignoring any cache.
      *
      * @return array<string, mixed>

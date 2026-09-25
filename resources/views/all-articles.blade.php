@@ -1,6 +1,6 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $data = app(\App\Content\SiteContent::class)->all();
+    $data = app(\App\Content\SiteContent::class)->localized();
 
     $sectionStyles = [
         'data-intelligence' => ['badge' => 'bg-sky-600'],
@@ -44,13 +44,13 @@
         ->when($page + 2 < $lastPage, fn ($c) => $c->push('…')->push($lastPage))
         ->values();
 
-    $title = 'All Articles — '.$siteName;
+    $title = __('All Articles').' — '.$siteName;
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="Browse every article published on {{ $siteName }}." />
+        <meta name="description" content="{{ __('Browse every article published on :site.', ['site' => $siteName]) }}" />
     </head>
     <body
         x-data="{ mobileOpen: false }"
@@ -63,15 +63,15 @@
             <section class="border-b border-zinc-200 dark:border-zinc-800">
                 <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
                     <div class="flex flex-wrap items-center gap-1.5 text-sm text-zinc-500 dark:text-zinc-500">
-                        <a href="{{ route('home') }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Home</a>
+                        <a href="{{ route('home') }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">{{ __('Home') }}</a>
                         <flux:icon name="chevron-right" class="size-3.5" />
-                        <span class="text-zinc-400 dark:text-zinc-600">All Articles</span>
+                        <span class="text-zinc-400 dark:text-zinc-600">{{ __('All Articles') }}</span>
                     </div>
                     <h1 class="mt-4 text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl dark:text-white">
-                        All Articles
+                        {{ __('All Articles') }}
                     </h1>
                     <p class="mt-3 text-zinc-600 dark:text-zinc-400">
-                        {{ $totalArticles }} {{ Str::plural('article', $totalArticles) }}
+                        {{ trans_choice(':count article|:count articles', $totalArticles) }}
                     </p>
 
                     {{-- Section filter chips --}}
@@ -81,7 +81,7 @@
                             wire:navigate
                             class="rounded-full px-4 py-1.5 text-sm font-medium transition {{ ! $selectedSection ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900' : 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800' }}"
                         >
-                            All
+                            {{ __('All') }}
                         </a>
                         @foreach ($categories as $category)
                             <a
@@ -134,7 +134,7 @@
                                     />
                                     <div class="text-xs text-zinc-500 dark:text-zinc-500">
                                         <span class="font-medium text-zinc-700 dark:text-zinc-300">{{ $author['name'] }}</span>
-                                        <div>{{ \Carbon\Carbon::parse($article['date'])->format('F j, Y') }}</div>
+                                        <div>{{ \Carbon\Carbon::parse($article['date'])->translatedFormat(__('F j, Y')) }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
                 </div>
 
                 @if ($lastPage > 1)
-                    <nav class="mt-12 flex flex-wrap items-center justify-center gap-2" aria-label="Pagination">
+                    <nav class="mt-12 flex flex-wrap items-center justify-center gap-2" aria-label="{{ __('Pagination') }}">
                         <a
                             href="{{ $page > 1 ? $pageLink($page - 1) : '#' }}"
                             wire:navigate
@@ -153,7 +153,7 @@
                                 'pointer-events-none bg-zinc-50 text-zinc-300 dark:bg-zinc-900/50 dark:text-zinc-700' => $page <= 1,
                             ])
                         >
-                            Previous
+                            {{ __('Previous') }}
                         </a>
 
                         @foreach ($pageWindow as $p)
@@ -179,7 +179,7 @@
                                 'pointer-events-none bg-zinc-50 text-zinc-300 dark:bg-zinc-900/50 dark:text-zinc-700' => $page >= $lastPage,
                             ])
                         >
-                            Next
+                            {{ __('Next') }}
                         </a>
                     </nav>
                 @endif

@@ -1,8 +1,8 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $title = 'Privacy Policy — '.$siteName;
+    $title = __('Privacy Policy').' — '.$siteName;
 
-    $data = app(\App\Content\SiteContent::class)->all();
+    $data = app(\App\Content\SiteContent::class)->localized();
     $categories = collect($data['sections'])
         ->map(fn ($meta, $key) => ['id' => $key, 'title' => $meta['title']])
         ->sortBy(fn ($c) => $data['sections'][$c['id']]['order'])
@@ -17,11 +17,11 @@
     $sections = [
         [
             'heading' => 'Introduction',
-            'body' => "Welcome to {$siteName}. This Privacy Policy explains how we collect, use, and protect information when you visit our website and use the account features we offer, such as our reader dashboard. By using {$siteName}, you agree to the practices described in this policy.",
+            'body' => "Welcome to :site. This Privacy Policy explains how we collect, use, and protect information when you visit our website and use the account features we offer, such as our reader dashboard. By using :site, you agree to the practices described in this policy.",
         ],
         [
             'heading' => 'Information We Collect',
-            'body' => "We collect only the information needed to operate {$siteName} and to provide the account features we offer:",
+            'body' => "We collect only the information needed to operate :site and to provide the account features we offer:",
             'list' => [
                 'Account information — if you create an account, we collect your name and email address, along with a securely hashed password.',
                 'Usage data — we may collect general information about how you interact with our site, such as pages viewed and links clicked, to help us understand what content is useful.',
@@ -42,7 +42,7 @@
         ],
         [
             'heading' => 'Cookies',
-            'body' => "{$siteName} may use a small number of essential cookies to keep you signed in and to remember basic site preferences. We do not use cookies to build advertising profiles, and we do not sell any information collected through cookies. You can configure your browser to refuse cookies, though some features of the site may not work as intended if you do.",
+            'body' => ":site may use a small number of essential cookies to keep you signed in and to remember basic site preferences. We do not use cookies to build advertising profiles, and we do not sell any information collected through cookies. You can configure your browser to refuse cookies, though some features of the site may not work as intended if you do.",
         ],
         [
             'heading' => 'Third-Party Links',
@@ -54,7 +54,7 @@
         ],
         [
             'heading' => "Children's Privacy",
-            'body' => "{$siteName} is intended for a general business and professional audience and is not directed at children. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can remove it.",
+            'body' => ":site is intended for a general business and professional audience and is not directed at children. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can remove it.",
         ],
         [
             'heading' => 'Changes to This Policy',
@@ -66,7 +66,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="Read the {{ $siteName }} privacy policy to learn how we collect, use, and protect your information." />
+        <meta name="description" content="{{ __('Read the :site privacy policy to learn how we collect, use, and protect your information.', ['site' => $siteName]) }}" />
     </head>
     <body
         x-data="{ mobileOpen: false }"
@@ -82,13 +82,13 @@
 
                 <div class="mx-auto max-w-2xl px-6 pt-16 pb-4 text-center lg:px-8 lg:pt-20">
                     <span class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-                        Legal
+                        {{ __('Legal') }}
                     </span>
                     <h1 class="mt-6 text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
-                        Privacy Policy
+                        {{ __('Privacy Policy') }}
                     </h1>
                     <p class="mt-6 text-sm text-zinc-500 dark:text-zinc-500">
-                        Last updated {{ $lastUpdated->format('F j, Y') }}
+                        {{ __('Last updated :date', ['date' => $lastUpdated->translatedFormat(__('F j, Y'))]) }}
                     </p>
                 </div>
             </section>
@@ -98,17 +98,17 @@
                     @foreach ($sections as $block)
                         <div>
                             <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">
-                                {{ $block['heading'] }}
+                                {{ __($block['heading']) }}
                             </h2>
                             <p class="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-400">
-                                {{ $block['body'] }}
+                                {{ __($block['body'], ['site' => $siteName]) }}
                             </p>
                             @isset($block['list'])
                                 <ul class="mt-4 space-y-2">
                                     @foreach ($block['list'] as $item)
                                         <li class="flex gap-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                                             <span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span>
-                                            <span>{{ $item }}</span>
+                                            <span>{{ __($item, ['site' => $siteName]) }}</span>
                                         </li>
                                     @endforeach
                                 </ul>
@@ -118,19 +118,19 @@
 
                     <div>
                         <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">
-                            Contact Us
+                            {{ __('Contact Us') }}
                         </h2>
                         <p class="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-400">
-                            If you have any questions about this Privacy Policy or how we handle your information, please reach out to us at
+                            {{ __('If you have any questions about this Privacy Policy or how we handle your information, please reach out to us at') }}
                             <a href="mailto:hello@{{ $domainName }}" class="font-medium text-zinc-900 hover:underline dark:text-white">hello@{{ $domainName }}</a>
-                            or visit our <a href="{{ route('contact') }}" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">Contact page</a>.
+                            {{ __('or visit our') }} <a href="{{ route('contact') }}" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">{{ __('Contact page') }}</a>.
                         </p>
                     </div>
                 </div>
 
                 <div class="mt-12 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-400">
                     <p>
-                        {{ $siteName }} publishes educational and informational content only and is not a substitute for personalized financial, investment, tax, or legal advice. This policy describes our data practices and is not itself legal advice.
+                        {{ __(':site publishes educational and informational content only and is not a substitute for personalized financial, investment, tax, or legal advice. This policy describes our data practices and is not itself legal advice.', ['site' => $siteName]) }}
                     </p>
                 </div>
             </section>

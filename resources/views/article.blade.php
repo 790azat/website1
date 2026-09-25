@@ -1,6 +1,6 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $data = app(\App\Content\SiteContent::class)->all();
+    $data = app(\App\Content\SiteContent::class)->localized();
 
     $article = collect($data['articles'])->firstWhere('slug', $slug);
 
@@ -44,7 +44,7 @@
             {{-- Breadcrumb --}}
             <div class="border-b border-zinc-200 dark:border-zinc-800">
                 <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
-                    <a href="{{ route('home') }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Home</a>
+                    <a href="{{ route('home') }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">{{ __('Home') }}</a>
                     <flux:icon name="chevron-right" class="size-3.5" />
                     <a href="{{ route('section', $article['section']) }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">{{ $sectionMeta['title'] }}</a>
                     <flux:icon name="chevron-right" class="size-3.5" />
@@ -75,10 +75,20 @@
                         <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
                             <span>{{ $author['role'] }}</span>
                             <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
-                            <time datetime="{{ $article['date'] }}">{{ $publishedAt->format('F j, Y') }}</time>
+                            <time datetime="{{ $article['date'] }}">{{ $publishedAt->translatedFormat(__('F j, Y')) }}</time>
                         </div>
                     </div>
                 </div>
+
+                @unless (app()->isLocale('en'))
+                    <p class="mt-6 flex items-start gap-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-900/40 dark:bg-amber-950/30 dark:text-amber-300">
+                        <flux:icon name="language" class="mt-0.5 size-4 shrink-0" />
+                        <span>
+                            {{ __('This article is currently available in English only.') }}
+                            <a href="{{ request()->fullUrlWithQuery(['lang' => 'en']) }}" class="font-medium underline">{{ __('Read in English') }}</a>
+                        </span>
+                    </p>
+                @endunless
 
                 {{-- Hero image --}}
                 @if ($article['image'] ?? null)
@@ -103,12 +113,12 @@
                             class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
                         />
                         <div>
-                            <p class="font-medium text-zinc-900 dark:text-white">Written by {{ $author['name'] }}</p>
-                            <p class="text-sm text-zinc-500 dark:text-zinc-400">{{ $author['role'] }} at {{ $siteName }}</p>
+                            <p class="font-medium text-zinc-900 dark:text-white">{{ __('Written by :name', ['name' => $author['name']]) }}</p>
+                            <p class="text-sm text-zinc-500 dark:text-zinc-400">{{ __(':role at :site', ['role' => $author['role'], 'site' => $siteName]) }}</p>
                         </div>
                     </div>
                     <flux:button href="{{ route('team') }}" wire:navigate variant="primary" class="shrink-0">
-                        Meet Our Editorial Team
+                        {{ __('Meet Our Editorial Team') }}
                     </flux:button>
                 </div>
             </article>
@@ -118,7 +128,7 @@
                 <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
                     <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
                         <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
-                            More in {{ $sectionMeta['title'] }}
+                            {{ __('More in :section', ['section' => $sectionMeta['title']]) }}
                         </h2>
                         <div class="mt-6 grid gap-6 sm:grid-cols-3">
                             @foreach ($relatedArticles as $related)
@@ -128,7 +138,7 @@
                                         {{ $related['title'] }}
                                     </p>
                                     <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
-                                        {{ $relatedAuthor['name'] }} &middot; {{ \Carbon\Carbon::parse($related['date'])->format('M j, Y') }}
+                                        {{ $relatedAuthor['name'] }} &middot; {{ \Carbon\Carbon::parse($related['date'])->translatedFormat(__('M j, Y')) }}
                                     </p>
                                 </a>
                             @endforeach
