@@ -32,12 +32,14 @@
         'description' => \App\Content\SiteContent::excerpt($article['body']),
         'image' => $article['image'] ?? null,
         'type' => 'article',
+        'alternates' => app(\App\Content\SiteContent::class)->hasTranslation($article['slug'], 'es'),
         'schema' => [
             [
                 '@type' => 'Article',
                 'headline' => $article['title'],
                 'image' => ($article['image'] ?? null) ? [asset('images/'.$article['image'])] : [],
                 'datePublished' => $publishedAt->toDateString(),
+                'inLanguage' => $article['locale'],
                 'author' => ['@type' => 'Person', 'name' => $author['name'], 'url' => route('team')],
                 'publisher' => ['@type' => 'Organization', 'name' => $siteName, 'logo' => ['@type' => 'ImageObject', 'url' => asset('images/branding/logo-full.webp')]],
                 'articleSection' => $sectionMeta['title'],
@@ -108,7 +110,7 @@
                     </div>
                 </div>
 
-                @unless (app()->isLocale('en'))
+                @unless (app()->isLocale($article['locale']))
                     <p class="mt-6 flex items-start gap-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-900/40 dark:bg-amber-950/30 dark:text-amber-300">
                         <flux:icon name="language" class="mt-0.5 size-4 shrink-0" />
                         <span>
