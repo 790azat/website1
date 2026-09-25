@@ -1,6 +1,7 @@
 {{--
     Renders a raw article body (plain text with blank-line-separated blocks,
-    "## " / "### " headings, "* " bullet lists, and a References section)
+    "## " / "### " headings, "* " bullet lists, and a References (or
+    Referencias) section)
     into styled HTML.
 
     Expects: $body (string) — the raw article text from resources/content/articles/<slug>.md.
@@ -42,6 +43,7 @@
             $blocks = preg_split('/\n{2,}/', trim($raw));
             $html = '';
             $lastHeadingWasReferences = false;
+            $isReferencesHeading = fn (string $text): bool => in_array(mb_strtolower(trim($text)), ['references', 'referencias'], true);
 
             foreach ($blocks as $block) {
                 $block = trim($block);
@@ -60,12 +62,13 @@
                 if (! str_contains($block, "\n") && str_starts_with($block, '## ')) {
                     $text = trim(substr($block, 3));
                     $html .= '<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">'.$e($text).'</h2>'."\n";
-                    $lastHeadingWasReferences = (strcasecmp($text, 'References') === 0);
+                    $lastHeadingWasReferences = $isReferencesHeading($text);
                     continue;
                 }
 
-                // Some articles use a bare "References" line without "## "
-                if (! str_contains($block, "\n") && strcasecmp(trim($block), 'References') === 0) {
+                // Some articles use a bare "References" (in Spanish
+                // translations, "Referencias") line without "## "
+                if (! str_contains($block, "\n") && $isReferencesHeading($block)) {
                     $html .= '<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">'.$e(trim($block)).'</h2>'."\n";
                     $lastHeadingWasReferences = true;
                     continue;

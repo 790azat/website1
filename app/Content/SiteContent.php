@@ -10,6 +10,11 @@ use RuntimeException;
  * resources/data/site.php, and articles from one Markdown file per article
  * in resources/content/articles/<slug>.md.
  *
+ * Translations of an article live next to it in a folder named after the
+ * locale, e.g. resources/content/articles/es/<slug>.md. They use the same
+ * format; only their title and body are used, and an article without a
+ * translation is shown in English.
+ *
  * Each article file starts with a front matter block of "key: value" lines
  * between "---" markers, followed by the article body.
  *
@@ -24,6 +29,11 @@ class SiteContent
      * appear in the article array.
      */
     public const ARTICLE_FIELDS = ['title', 'section', 'author', 'date', 'image'];
+
+    /**
+     * Locales, other than English, that articles can be translated into.
+     */
+    public const TRANSLATION_LOCALES = ['es'];
 
     /** @var array<string, mixed>|null */
     private ?array $content = null;
@@ -57,13 +67,25 @@ class SiteContent
 
     /**
      * All site content, with section titles and author roles translated into
-     * the current locale. Article and program text is left as written.
+     * the current locale, and each article's title and body replaced by its
+     * translation when there is one. Every article gets a "locale" key naming
+     * the language it will be shown in. Program text is left as written.
      *
      * @return array<string, mixed>
      */
     public function localized(): array
     {
         $data = $this->all();
+        $locale = app()->getLocale();
+
+        /** @var array<string, array{title: string, body: string}> $translations */
+        $translations = $data['translations'][$locale] ?? [];
+
+        foreach ($data['articles'] as $key => $article) {
+            $data['articles'][$key] = isset($translations[$article['slug']])
+                ? ['locale' => $locale] + $translations[$article['slug']] + $article
+                : ['locale' => 'en'] + $article;
+        }
 
         foreach ($data['sections'] as $key => $section) {
             $data['sections'][$key]['title'] = __($section['title']);
@@ -87,8 +109,22 @@ class SiteContent
         $data = require $this->dataPath;
 
         $data['articles'] = $this->loadArticles();
+        $data['translations'] = [];
+
+        foreach (self::TRANSLATION_LOCALES as $locale) {
+            $data['translations'][$locale] = $this->loadTranslations($locale);
+        }
 
         return $data;
+    }
+
+    /**
+     * Whether an article has a translation into the given locale. English,
+     * the language articles are written in, always counts as translated.
+     */
+    public function hasTranslation(string $slug, string $locale): bool
+    {
+        return $locale === 'en' || isset($this->all()['translations'][$locale][$slug]);
     }
 
     /**
@@ -137,6 +173,26 @@ class SiteContent
         usort($articles, fn (array $a, array $b) => [$b['date'], $a['slug']] <=> [$a['date'], $b['slug']]);
 
         return $articles;
+    }
+
+    /**
+     * The translated title and body of each article, keyed by slug.
+     *
+     * @return array<string, array{title: string, body: string}>
+     */
+    private function loadTranslations(string $locale): array
+    {
+        $translations = [];
+
+        foreach (glob($this->articlesPath.'/'.$locale.'/*.md') ?: [] as $file) {
+            $article = self::parseArticle((string) file_get_contents($file), basename($file, '.md'), $file);
+
+            $translations[$article['slug']] = ['title' => $article['title'], 'body' => $article['body']];
+        }
+
+        ksort($translations);
+
+        return $translations;
     }
 
     /**

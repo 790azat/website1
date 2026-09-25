@@ -5,14 +5,20 @@
       description  required
       image        path under public/images, for the share preview
       type         'website' (default) or 'article'
-      canonical    defaults to the current URL without its query string
+      canonical    the English URL; defaults to the current URL without its
+                   query string. Spanish pages add "lang=es" to it.
+      alternates   false when the page has no Spanish version (hreflang
+                   links are then left out)
       noindex      true to keep the page out of search results
       schema       list of JSON-LD objects
 --}}
 @php
     $siteName = config('app.name', 'Laravel');
     $seoTitle = filled($title ?? null) ? $title : $siteName;
-    $seoCanonical = $seo['canonical'] ?? url()->current();
+    $seoEnglishUrl = $seo['canonical'] ?? url()->current();
+    $seoAlternates = ! ($seo['noindex'] ?? false) && ($seo['alternates'] ?? true);
+    $seoSpanishUrl = $seoEnglishUrl.(str_contains($seoEnglishUrl, '?') ? '&' : '?').'lang=es';
+    $seoCanonical = $seoAlternates && app()->isLocale('es') ? $seoSpanishUrl : $seoEnglishUrl;
     $seoImage = asset('images/'.($seo['image'] ?? 'branding/logo-full.webp'));
     $seoLocale = app()->isLocale('es') ? 'es_ES' : 'en_US';
 
@@ -28,6 +34,11 @@
     <meta name="robots" content="noindex, follow" />
 @endif
 <link rel="canonical" href="{{ $seoCanonical }}" />
+@if ($seoAlternates)
+    <link rel="alternate" hreflang="en" href="{{ $seoEnglishUrl }}" />
+    <link rel="alternate" hreflang="es" href="{{ $seoSpanishUrl }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ $seoEnglishUrl }}" />
+@endif
 
 <meta property="og:site_name" content="{{ $siteName }}" />
 <meta property="og:type" content="{{ $seo['type'] ?? 'website' }}" />

@@ -33,6 +33,8 @@
     $seo = [
         'description' => Str::limit($program['intro'], 155),
         'image' => $program['hero_image'] ?? null,
+        // Program pages are written in English only.
+        'alternates' => false,
     ];
 @endphp
 <!DOCTYPE html>

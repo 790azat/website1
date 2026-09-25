@@ -1,5 +1,7 @@
 <?php
 
+use App\Content\SiteContent;
+
 beforeEach(function () {
     $this->withoutVite();
 });
@@ -38,16 +40,27 @@ test('an unsupported language is ignored', function () {
         ->assertSee('Latest Articles');
 });
 
-test('articles viewed in Spanish say they are available in English only', function () {
+test('articles without a Spanish translation say they are available in English only', function () {
     $article = siteData()['articles'][0];
+
+    // A copy of the content with this article's English file only.
+    $articles = sys_get_temp_dir().'/untranslated-'.uniqid();
+    mkdir($articles);
+    file_put_contents($articles.'/'.$article['slug'].'.md', SiteContent::renderArticle($article));
+    app()->instance(SiteContent::class, new SiteContent(resource_path('data/site.php'), $articles, ''));
 
     $this->get(route('article', ['slug' => $article['slug'], 'lang' => 'es']))
         ->assertOk()
-        ->assertSee('Por ahora, este artículo solo está disponible en inglés.');
+        ->assertSee($article['title'])
+        ->assertSee('Por ahora, este artículo solo está disponible en inglés.')
+        ->assertDontSee('hreflang="es" href', false);
 
-    $this->get(route('article', $article['slug']))
+    $this->get(route('article', ['slug' => $article['slug'], 'lang' => 'en']))
         ->assertOk()
         ->assertDontSee('available in English only');
+
+    unlink($articles.'/'.$article['slug'].'.md');
+    rmdir($articles);
 });
 
 test('every Spanish translation keeps the placeholders of its English key', function () {
