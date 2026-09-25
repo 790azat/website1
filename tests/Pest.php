@@ -44,7 +44,12 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something()
+/**
+ * Load the site's static content (sections, authors, articles, programs).
+ *
+ * @return array<string, array<mixed>>
+ */
+function siteData(): array
 {
-    // ..
+    return require dirname(__DIR__).'/resources/data/articles.php';
 }
