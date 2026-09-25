@@ -1,5 +1,5 @@
 {{--
-    English / Spanish flag buttons. Each links to the current page with a
+    English / Spanish / French flag buttons. Each links to the current page with a
     "?lang=" parameter, which App\Http\Middleware\SetLocale remembers in the
     session. Full page loads (no wire:navigate) so the whole page re-renders.
 --}}
@@ -8,6 +8,7 @@
     $languages = [
         'en' => 'English',
         'es' => 'Español',
+        'fr' => 'Français',
     ];
 @endphp
 
@@ -34,10 +35,16 @@
                     <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
                     <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
                 </svg>
-            @else
+            @elseif ($code === 'es')
                 <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
                     <rect width="30" height="20" fill="#AA151B" />
                     <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+            @else
+                <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
                 </svg>
             @endif
         </a>

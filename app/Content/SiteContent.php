@@ -11,7 +11,7 @@ use RuntimeException;
  * in resources/content/articles/<slug>.md.
  *
  * Translations of an article live next to it in a folder named after the
- * locale, e.g. resources/content/articles/es/<slug>.md. They use the same
+ * locale, e.g. resources/content/articles/es/<slug>.md or fr/<slug>.md. They use the same
  * format; only their title and body are used, and an article without a
  * translation is shown in English.
  *
@@ -33,7 +33,7 @@ class SiteContent
     /**
      * Locales, other than English, that articles can be translated into.
      */
-    public const TRANSLATION_LOCALES = ['es'];
+    public const TRANSLATION_LOCALES = ['es', 'fr'];
 
     /** @var array<string, mixed>|null */
     private ?array $content = null;
@@ -125,6 +125,17 @@ class SiteContent
     public function hasTranslation(string $slug, string $locale): bool
     {
         return $locale === 'en' || isset($this->all()['translations'][$locale][$slug]);
+    }
+
+    /**
+     * The locales, other than English, that an article has been translated
+     * into.
+     *
+     * @return list<string>
+     */
+    public function translatedLocales(string $slug): array
+    {
+        return array_values(array_filter(self::TRANSLATION_LOCALES, fn (string $locale) => $this->hasTranslation($slug, $locale)));
     }
 
     /**

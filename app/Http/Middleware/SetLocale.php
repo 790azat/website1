@@ -10,13 +10,13 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Applies the visitor's chosen site language.
  *
- * A "?lang=es" (or "?lang=en") query parameter switches the language and
+ * A "?lang=es", "?lang=fr" (or "?lang=en") query parameter switches the language and
  * remembers it in the session; otherwise the language saved in the session,
  * or the app's default locale, is used.
  */
 class SetLocale
 {
-    public const SUPPORTED = ['en', 'es'];
+    public const SUPPORTED = ['en', 'es', 'fr'];
 
     public function handle(Request $request, Closure $next): Response
     {
