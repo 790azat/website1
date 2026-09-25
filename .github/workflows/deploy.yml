@@ -10,11 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Restore file timestamps from git history
-        uses: chetan/git-restore-mtime-action@v2
 
       - name: Write production .env
         run: printf '%s' "${{ secrets.ENV_FILE }}" > .env
@@ -41,29 +36,57 @@ jobs:
       - name: Build frontend assets
         run: npm run build
 
-      - name: Deploy via SFTP
+      - name: Package deploy archive
+        run: |
+          set -e
+          tar -czf "$RUNNER_TEMP/payload.tar.gz" \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.idea' \
+            --exclude='.claude' \
+            --exclude='node_modules' \
+            --exclude='tests' \
+            --exclude='.env.example' \
+            --exclude='.env.production' \
+            --exclude='.editorconfig' \
+            --exclude='.gitattributes' \
+            --exclude='.npmrc' \
+            --exclude='boost.json' \
+            --exclude='phpstan.neon' \
+            --exclude='phpunit.xml' \
+            --exclude='pint.json' \
+            --exclude='CLAUDE.md' \
+            --exclude='Claude outputs' \
+            --exclude='./storage/logs' \
+            --exclude='./storage/framework/cache' \
+            --exclude='./storage/framework/sessions' \
+            --exclude='./storage/framework/views' \
+            --exclude='./public/storage' \
+            --exclude='./public/hot' \
+            .
+          mkdir -p deploy_payload
+          mv "$RUNNER_TEMP/payload.tar.gz" deploy_payload/payload.tar.gz
+
+      - name: Upload deploy archive via SFTP
         uses: wangyucode/sftp-upload-action@v2.0.4
         with:
           host: ${{ secrets.SSH_HOST }}
           port: ${{ secrets.SSH_PORT }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
-          localDir: .
+          localDir: deploy_payload
           remoteDir: www/s18113211.smrtp.ru/
-          exclude: >-
-            .git,.git/**,
-            .github,.github/**,
-            .idea,.idea/**,
-            .claude,.claude/**,
-            node_modules,node_modules/**,
-            tests,tests/**,
-            .env.example,.env.production,
-            .editorconfig,.gitattributes,.npmrc,
-            boost.json,phpstan.neon,phpunit.xml,pint.json,CLAUDE.md,
-            Claude outputs,Claude outputs/**,
-            storage/logs,storage/logs/**,
-            storage/framework/cache,storage/framework/cache/**,
-            storage/framework/sessions,storage/framework/sessions/**,
-            storage/framework/views,storage/framework/views/**,
-            public/storage,public/storage/**,
-            public/hot
+          forceUpload: true
+
+      - name: Extract archive on server
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            set -e
+            cd www/s18113211.smrtp.ru
+            tar -xzf payload.tar.gz
+            rm -f payload.tar.gz
