@@ -92,3 +92,14 @@ Structured preparation combines:
 ## About the Author
 
 James Mitchell is a 36-year-old financial specialist focused on navigating volatile markets and developing resilient investment strategies.
+
+## References
+
+* [AWS — AWS Certification](https://aws.amazon.com/certification/)
+* [AWS — AWS Certification Exam Preparation](https://aws.amazon.com/certification/certification-prep/)
+* [AWS — AWS Training and Certification](https://aws.amazon.com/training/)
+* [AWS — AWS Certification Exam Pricing and Policies](https://aws.amazon.com/certification/policies/)
+* [AWS — AWS Certification FAQs](https://aws.amazon.com/certification/faqs/)
+* [AWS — AWS Skill Builder Digital Training](https://skillbuilder.aws/)
+* [AWS — AWS Certification Exam Guides](https://aws.amazon.com/certification/certification-prep/)
+* [AWS — AWS Certification Recertification](https://aws.amazon.com/certification/recertification/)

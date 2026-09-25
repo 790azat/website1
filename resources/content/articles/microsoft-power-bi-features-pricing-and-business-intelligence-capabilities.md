@@ -29,3 +29,12 @@ Different departments can leverage Power BI for distinct purposes—finance team
 The platform includes row-level security, sensitivity labels, and audit capabilities. Power BI integrates within Microsoft's broader Fabric ecosystem, connecting with Excel, Teams, and Microsoft 365 tools.
 
 Organizations should evaluate data connectivity needs, reporting requirements, security protocols, and total licensing costs when considering adoption.
+
+## References
+
+* [Microsoft Power BI — What Is Power BI?](https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview)
+* [Microsoft Power BI — Power BI Pricing](https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing)
+* [Microsoft Power BI — Power BI Product Overview](https://www.microsoft.com/en-us/power-platform/products/power-bi)
+* [Microsoft Learn — Power BI Service Features by License Type](https://learn.microsoft.com/power-bi/fundamentals/service-features-license-type)
+* [Microsoft Learn — Power BI Reports Overview](https://learn.microsoft.com/en-us/power-bi/create-reports/power-bi-reports-overview)
+* [Microsoft Power BI — What Is Business Intelligence?](https://www.microsoft.com/en-us/power-platform/products/power-bi/topics/business-intelligence/what-is-business-intelligence)

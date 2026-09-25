@@ -38,3 +38,12 @@ Newer versions incorporate Tableau Agent and Tableau Pulse for "AI-assisted and 
 ## Evaluation Factors
 
 Businesses should consider data source compatibility, visualization requirements, deployment preferences, security needs, user role estimation, scalability, and total cost of ownership.
+
+## References
+
+* [Tableau — Pricing](https://www.tableau.com/pricing)
+* [Tableau — Tableau Cloud Pricing](https://www.tableau.com/pricing/cloud)
+* [Tableau — Data Visualization](https://www.tableau.com/solutions/data-visualization)
+* [Tableau — What Is Tableau?](https://www.tableau.com/why-tableau/what-is-tableau)
+* [Tableau — Tableau Product Overview](https://www.tableau.com/products/tableau)
+* [Tableau Help — Tableau Desktop Edition Comparison](https://help.tableau.com/current/pro/desktop/en-us/desktop_comparison.htm)

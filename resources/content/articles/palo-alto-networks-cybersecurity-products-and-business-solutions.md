@@ -157,3 +157,14 @@ For businesses evaluating Palo Alto Networks, the main considerations include ex
 ## About the Author
 
 Michael Anderson, 39, is a technology and analytics specialist at a business advisory publication, specializing in data analysis, business intelligence, and digital reporting. He focuses on helping organizations understand complex information and use analytical tools to support everyday business decisions.
+
+## References
+
+* [Palo Alto Networks — Products A–Z](https://www.paloaltonetworks.com/products)
+* [Palo Alto Networks — Network Security](https://www.paloaltonetworks.com/network-security)
+* [Palo Alto Networks — Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud)
+* [Palo Alto Networks — Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud)
+* [Palo Alto Networks — Strata Cloud Manager](https://www.paloaltonetworks.com/network-security/strata-cloud-manager)
+* [Palo Alto Networks — Cloud-Delivered Security Services](https://www.paloaltonetworks.com/network-security/cloud-delivered-security-services)
+* [Palo Alto Networks — Prisma Security Solutions](https://www.paloaltonetworks.com/prisma)
+* [Palo Alto Networks — Unit 42 Security Services](https://unit42.paloaltonetworks.com/)

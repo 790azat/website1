@@ -148,3 +148,14 @@ Transfer credits, financial aid, scholarships, and military benefits can affect 
 ## About the Author
 
 Daniel Brooks is a 41-year-old business technology consultant at [website name], specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
+
+## References
+
+* [Southern New Hampshire University — Online Business School](https://www.snhu.edu/online-degrees/business)
+* [Southern New Hampshire University — Online Tuition and Financial Aid](https://www.snhu.edu/tuition-and-financial-aid)
+* [Southern New Hampshire University — Online Business Administration Bachelor's Degree](https://www.snhu.edu/online-degrees/bachelors/bs-in-business-administration)
+* [Southern New Hampshire University — Online MBA Programs](https://www.snhu.edu/online-degrees/masters/mba)
+* [Southern New Hampshire University — Business Analytics MBA](https://www.snhu.edu/online-degrees/masters/mba-in-business-analytics)
+* [Southern New Hampshire University — Online Business Bachelor's Programs](https://www.snhu.edu/online-degrees/bachelors/business)
+* [Southern New Hampshire University — Online Master's Programs](https://www.snhu.edu/online-degrees/masters)
+* [Southern New Hampshire University — Online Degree Programs](https://www.snhu.edu/online-degrees)

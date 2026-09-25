@@ -28,3 +28,12 @@ Organizations in financial services, healthcare, retail, and manufacturing lever
 ## Implementation Considerations
 
 When evaluating SAS, organizations should assess analytics requirements, data infrastructure, user expertise levels, deployment preferences, governance needs, integration compatibility, scalability demands, and total cost of ownership including implementation and training.
+
+## References
+
+* [SAS — SAS Viya](https://www.sas.com/en_us/software/viya.html)
+* [SAS — SAS Analytics](https://www.sas.com/en_us/insights/analytics.html)
+* [SAS — SAS Visual Analytics](https://www.sas.com/en_us/software/visual-analytics.html)
+* [SAS — Artificial Intelligence and Machine Learning](https://www.sas.com/en_us/solutions/ai.html)
+* [SAS — Data Management](https://www.sas.com/en_us/solutions/data-management.html)
+* [SAS — Model Management and Governance](https://www.sas.com/en_us/software/model-manager.html)

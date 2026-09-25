@@ -47,3 +47,14 @@ Oracle offers Professional and Enterprise editions through user-per-month or Ora
 ## Evaluation Considerations
 
 Organizations should assess data source requirements, deployment architecture needs, governance standards, self-service analytics scope, AI capabilities alignment, and total cost of ownership including implementation and administration.
+
+## References
+
+* [### Oracle — Analytics Platform Capabilities](https://www.oracle.com/analytics/capabilities/)
+* [### Oracle — Oracle Analytics Cloud Features](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acsgs/features-oracle-analytics-cloud.html)
+* [### Oracle — Oracle Analytics Cloud](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acsgs/oracle-analytics-cloud.html)
+* [### Oracle — Oracle Analytics Server](https://docs.oracle.com/en/middleware/bi/analytics-server/whats-different-oas/index.html)
+* [### Oracle — Oracle Analytics AI and Machine Learning](https://www.oracle.com/analytics/)
+* [### Oracle Documentation — Oracle Analytics Cloud Features](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acsgs/features-oracle-analytics-cloud.html)
+* [### Oracle Documentation — Oracle Analytics Cloud Pricing and Cost Analysis](https://www.oracle.com/gr/business-analytics/pricing/)
+* [### Oracle Documentation — Oracle Analytics Server Feature Comparison](https://docs.oracle.com/en/middleware/bi/analytics-server/whats-different-oas/index.html)

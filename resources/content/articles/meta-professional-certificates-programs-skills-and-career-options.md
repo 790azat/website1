@@ -166,3 +166,14 @@ For career changers and professionals developing digital skills, a Meta Professi
 ## About the Author
 
 Michael Anderson is a 39-year-old technology and analytics specialist at [website name], specializing in data analysis, business intelligence, and digital reporting. He focuses on helping organizations understand complex information and use analytical tools to support everyday business decisions.
+
+## References
+
+* [Coursera — Meta Professional Certificates](https://www.coursera.org/meta)
+* [Coursera — Meta Online Courses](https://www.coursera.org/meta)
+* [Coursera — Meta Social Media Marketing Professional Certificate](https://www.coursera.org/professional-certificates/facebook-social-media-marketing)
+* [Coursera — Meta Front-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-front-end-developer)
+* [Coursera — Meta Back-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-back-end-developer)
+* [Coursera — Meta Database Engineer Professional Certificate](https://www.coursera.org/professional-certificates/meta-database-engineer)
+* [Coursera — Professional Certificates](https://www.coursera.org/professional-certificates)
+* [Coursera — How Coursera Works](https://www.coursera.org/about/how-coursera-works)

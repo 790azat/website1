@@ -147,3 +147,13 @@ For smaller organizations, Canva Business combines creative production with team
 Canva for Business combines design, collaboration, brand management, AI, marketing, presentations, data visualization, and content workflows within a single platform. Its Visual Suite allows teams to work across formats while shared Brand Kits, templates, folders, approvals, and permissions help organize the production process.
 
 Canva Business is aimed at individuals and growing teams, while Enterprise extends the platform with more advanced governance and administration. Businesses evaluating Canva can compare the available plans based on their creative workload, team structure, brand requirements, AI usage, and security needs.
+
+## References
+
+* [Canva — Canva Business](https://www.canva.com/business/)
+* [Canva — Canva Pricing and Plan Comparison](https://www.canva.com/pricing/)
+* [Canva — Introducing Canva Business](https://www.canva.com/newsroom/news/introducing-canva-business/)
+* [Canva — Visual Suite](https://www.canva.com/visual-suite/)
+* [Canva — Business Features and Brand Management](https://www.canva.com/business/features/)
+* [Canva — Business Collaboration Tools](https://www.canva.com/business/features/team-collaboration/)
+* [Canva — Canva Teams Help Center](https://www.canva.com/help/teams/)

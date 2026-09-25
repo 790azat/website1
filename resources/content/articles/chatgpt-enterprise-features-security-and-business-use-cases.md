@@ -141,3 +141,14 @@ ChatGPT Enterprise provides organizations with a managed environment for deployi
 Enterprise security features include encryption, SSO, SCIM, role-based access controls, data-retention options, and organizational controls for connected applications. OpenAI also states that Enterprise workspace content is not used to train its models by default.
 
 For businesses evaluating the platform, the main considerations are AI use cases, workforce size, security and governance requirements, connected data, administration, usage expectations, and the commercial terms of the Enterprise agreement.
+
+## References
+
+* [OpenAI — What Is ChatGPT Enterprise?](https://help.openai.com/en/articles/8265053-what-is-chatgpt-enterprise)
+* [OpenAI — Business Data Privacy, Security, and Compliance](https://openai.com/business-data/)
+* [OpenAI — Managing Workspace Settings in ChatGPT Enterprise](https://help.openai.com/en/articles/8411955)
+* [OpenAI — ChatGPT Enterprise Admin Quickstart](https://help.openai.com/en/articles/20001264)
+* [OpenAI — Admin Controls, Security, and Compliance for Apps](https://help.openai.com/en/articles/11509118)
+* [OpenAI — Role-Based Access Control in ChatGPT](https://help.openai.com/en/articles/11750701-managing-feature-access-with-role-based-access-control-in-chatgpt)
+* [OpenAI — Data Access for Managed ChatGPT Accounts](https://help.openai.com/en/articles/20001067-data-access-for-your-managed-chatgpt-account)
+* [OpenAI — New Compliance and Administrative Tools for ChatGPT Enterprise](https://openai.com/index/introducing-new-compliance-and-administrative-tools-for-chatgpt-enterprise/)

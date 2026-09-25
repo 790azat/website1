@@ -153,3 +153,13 @@ Because Atlas pricing depends heavily on resource consumption and deployment arc
 ## About the Author
 
 Daniel Brooks, 41, is a business technology consultant at a business advisory publication, specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
+
+## References
+
+* [MongoDB — Atlas Pricing](https://www.mongodb.com/pricing)
+* [MongoDB — Atlas Database Features](https://www.mongodb.com/products/platform/atlas-database)
+* [MongoDB — MongoDB Atlas Documentation](https://www.mongodb.com/docs/atlas/)
+* [MongoDB — Atlas FAQ](https://www.mongodb.com/docs/atlas/reference/faq/)
+* [MongoDB — MongoDB Cloud Services](https://www.mongodb.com/cloud)
+* [MongoDB — Atlas Cluster Types](https://www.mongodb.com/docs/atlas/explore/cluster-types/)
+* [MongoDB — Atlas Billing and Invoice Breakdown](https://www.mongodb.com/docs/atlas/billing/invoice/)

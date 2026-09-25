@@ -141,3 +141,13 @@ The program is entirely online and can be completed in approximately two years w
 ## About the Author
 
 James Mitchell is a 36-year-old financial specialist at [website name], focused on navigating volatile markets and developing resilient investment strategies. He helps professionals build diversified portfolios designed to withstand market fluctuations and support sustainable growth.
+
+## References
+
+* [Boston University Questrom School of Business — Online MBA](https://www.bu.edu/questrom/graduate-programs/mba-programs/online-mba/)
+* [Boston University — Online MBA Academics](https://www.bu.edu/questrom/graduate-programs/mba-programs/online-mba/academics/)
+* [Boston University — Online MBA Admissions](https://www.bu.edu/questrom/graduate-programs/mba-programs/online-mba/admissions/)
+* [Boston University — Online MBA Tuition and Financial Aid](https://www.bu.edu/questrom/graduate-programs/mba-programs/online-mba/admissions/)
+* [Boston University — Online MBA Class Profile](https://www.bu.edu/questrom/graduate-programs/mba-programs/online-mba/admissions/class-profile/)
+* [Boston University — Online MBA Degree Program](https://www.bu.edu/online/degrees-certificates/master-of-business-administration/online-mba/)
+* [Boston University Questrom — Online MBA Curriculum](https://www.bu.edu/academics/questrom/programs/omba/)

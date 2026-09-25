@@ -25,3 +25,12 @@ Recent updates include Gemini-powered conversational analytics. The platform now
 ## Pricing Structure
 
 Looker offers three editions—Standard, Enterprise, and Embed—but "Google does not publish a simple universal monthly price." Organizations must contact sales for custom quotes based on platform edition and user licensing needs.
+
+## References
+
+* [Google Cloud — Looker Business Intelligence](https://cloud.google.com/looker-bi)
+* [Google Cloud — Looker Pricing](https://cloud.google.com/looker/pricing)
+* [Google Cloud Documentation — Introduction to LookML](https://docs.cloud.google.com/looker/docs/what-is-lookml)
+* [Google Cloud — Looker Modeling and Semantic Layer](https://cloud.google.com/looker-modeling)
+* [Google Cloud Documentation — Looker Overview and Comparison](https://docs.cloud.google.com/looker/docs/studio-comparison)
+* [Google Cloud — Looker Updates for Agentic BI](https://cloud.google.com/blog/products/business-intelligence/looker-updates-for-agentic-bi-at-next26)

@@ -29,3 +29,14 @@ Business versions access organizational data through Work IQ technology, which p
 ## Business Applications
 
 Organizations across sales, marketing, finance, HR, and management can leverage Copilot for workflows specific to their departments, supported by prebuilt agents and customizable options through Copilot Studio.
+
+## References
+
+* [Microsoft — Copilot Plans and Pricing for Business](https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/enterprise)
+* [Microsoft — Microsoft 365 Copilot for Business](https://www.microsoft.com/en-us/microsoft-365-copilot/business)
+* [Microsoft — Copilot for Business Solutions](https://www.microsoft.com/en-us/microsoft-365-copilot/business)
+* [Microsoft — Microsoft 365 Copilot Plans and Pricing for Enterprise](https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/enterprise)
+* [Microsoft — Microsoft 365 Business Plans and Pricing](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products)
+* [Microsoft Learn — Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/)
+* [Microsoft Learn — Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+* [Microsoft Learn — Microsoft Copilot Data and Privacy](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy)

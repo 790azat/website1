@@ -27,3 +27,15 @@ Organizations can choose cloud hosting, dedicated environments, or on-premises d
 Sisense serves finance, sales, marketing, operations, and product teams. It's particularly valuable for software companies wanting to "provide analytics as part of their product rather than requiring customers to purchase or operate a separate BI system."
 
 Pricing is customized based on deployment, security, scale, and organizational requirements rather than published per-user rates.
+
+## References
+
+* [Sisense — Embedded Analytics Platform](https://www.sisense.com/platform/)
+* [Sisense — AI Analytics Platform](https://www.sisense.com/ai/)
+* [Sisense — Business Intelligence and Analytics](https://www.sisense.com/business-intelligence/)
+* [Sisense — AI Analytics Plans](https://www.sisense.com/pricing/)
+* [Sisense — Compose SDK](https://www.sisense.com/platform/compose-sdk/)
+* [Sisense Documentation — Analytics Platform and Embedded Analytics](https://docs.sisense.com/main/SisenseLinux/analytics-platform-overview.htm)
+* [Sisense Developers — Compose SDK](https://developer.sisense.com/guides/compose-sdk/)
+* [Sisense Developers — Embed SDK](https://developer.sisense.com/guides/embedding/embedding-sdk/)
+* [Sisense — Embedded Analytics Features](https://www.sisense.com/platform/embedded-analytics/)

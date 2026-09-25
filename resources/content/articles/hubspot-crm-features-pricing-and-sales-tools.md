@@ -24,3 +24,12 @@ Key functionality encompasses contact organization, pipeline management, task tr
 "Pricing and promotional offers can change, so businesses should verify the current terms before purchasing."
 
 Organizations typically select between the free CRM for basic needs or paid Sales Hub subscriptions when requiring advanced automation, forecasting, and sales management tools.
+
+## References
+
+* [HubSpot — Free CRM Software](https://www.hubspot.com/products/crm)
+* [HubSpot — Sales Software Pricing](https://www.hubspot.com/pricing/sales)
+* [HubSpot — Sales Software for Beginners](https://www.hubspot.com/products/sales)
+* [HubSpot — Smart CRM Pricing](https://www.hubspot.com/pricing/crm)
+* [HubSpot — Generate Sales](https://www.hubspot.com/products/sales)
+* [HubSpot — HubSpot Product and Services Catalog](https://legal.hubspot.com/hubspot-product-and-services-catalog)

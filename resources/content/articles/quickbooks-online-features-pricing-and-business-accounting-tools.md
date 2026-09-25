@@ -139,3 +139,12 @@ QuickBooks Online provides a broad set of cloud accounting tools covering income
 Its tiered subscription structure allows businesses to start with core accounting functions and add capabilities as their operations become more complex. Recent AI and automation updates have also expanded the platform beyond traditional bookkeeping workflows.
 
 For businesses considering QuickBooks Online, the main evaluation points are the required accounting features, number of users, operational complexity, integrations, reporting requirements, and total subscription and service costs.
+
+## References
+
+* [Intuit QuickBooks — QuickBooks Online Pricing](https://quickbooks.intuit.com/pricing/)
+* [Intuit QuickBooks — QuickBooks Online Features](https://quickbooks.intuit.com/features/)
+* [Intuit QuickBooks — QuickBooks Online FAQ](https://quickbooks.intuit.com/online/)
+* [Intuit QuickBooks — QuickBooks Online Essentials](https://quickbooks.intuit.com/online/essentials/)
+* [Intuit QuickBooks — QuickBooks Products and Pricing](https://quickbooks.intuit.com/products/)
+* [Intuit QuickBooks — What's New With QuickBooks Online](https://quickbooks.intuit.com/whats-new/)

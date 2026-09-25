@@ -30,3 +30,13 @@ Gusto offers four primary tiers:
 ## Best Fit
 
 The platform suits businesses at various growth stages, particularly those managing multiple states, hourly workforces, or requiring integrated benefits administration alongside payroll.
+
+## References
+
+* [Gusto — Payroll Features](https://gusto.com/product/payroll)
+* [Gusto — Pricing and Plans](https://gusto.com/product/pricing)
+* [Gusto — Full-Service Payroll](https://gusto.com/product/payroll)
+* [Gusto — How Gusto Works](https://gusto.com/product/how-gusto-works)
+* [Gusto — Integrated Payroll Services](https://gusto.com/product/payroll-integrations)
+* [Gusto Help Center — Understanding Gusto Plans](https://support.gusto.com/article/102951598100000/Understanding-Gusto-plans)
+* [Gusto — Payroll for Independent Contractors](https://gusto.com/product/contractor-payroll)

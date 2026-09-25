@@ -133,3 +133,13 @@ For businesses evaluating ADP, the most important considerations are workforce s
 ## About the Author
 
 Daniel Brooks, 41, is a business technology consultant at [website name], specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
+
+## References
+
+* [ADP — Payroll Services](https://www.adp.com/what-we-offer/payroll.aspx)
+* [ADP — RUN Powered by ADP](https://www.adp.com/what-we-offer/products/run-powered-by-adp.aspx)
+* [ADP — RUN Payroll Packages](https://www.adp.com/what-we-offer/products/run-powered-by-adp/payroll-packages.aspx)
+* [ADP — Small Business Payroll Services](https://www.adp.com/what-we-offer/small-business.aspx)
+* [ADP — Payroll Software for Business](https://www.adp.com/what-we-offer/payroll.aspx)
+* [ADP — Small Business HR Services and Payroll](https://www.adp.com/what-we-offer/small-business.aspx)
+* [ADP — Payroll for One Employee](https://www.adp.com/resources/articles-and-insights/articles/p/payroll-for-one-employee.aspx)

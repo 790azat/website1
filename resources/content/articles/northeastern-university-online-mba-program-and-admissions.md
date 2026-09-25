@@ -148,3 +148,14 @@ The program offers two admissions routes, including a performance-based pathway 
 ## About the Author
 
 Daniel Brooks is a 41-year-old business technology consultant at [website name], specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
+
+## References
+
+* [Northeastern University — Online MBA](https://catalog.northeastern.edu/graduate/business/master-business-administration/mba-online/)
+* [Northeastern University — Online MBA Curriculum and Program Overview](https://catalog.northeastern.edu/graduate/business/master-business-administration/mba-online-program/)
+* [Northeastern University — Online MBA Admissions](https://catalog.northeastern.edu/graduate/academic-policies-procedures/admissions-requirements/)
+* [Northeastern University — Online MBA FAQs](https://damore-mckim.northeastern.edu/programs/online-mba/faqs/)
+* [Northeastern University — Online Tuition and Scholarships](https://studentfinance.northeastern.edu/billing-payments/tuition-and-fees/)
+* [Northeastern University — Online MBA Tuition and Fees](https://studentfinance.northeastern.edu/billing-payments/tuition-and-fees/)
+* [Northeastern University — 2026–2027 Academic Catalog](https://catalog.northeastern.edu/)
+* [Northeastern University — Online MBA Application Pathways](https://damore-mckim.northeastern.edu/programs/online-mba/admissions/)

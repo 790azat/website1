@@ -143,3 +143,13 @@ Admission generally requires a bachelor's degree, recommended 3.0 GPA, and at le
 ## About the Author
 
 Emily Carter is a 34-year-old investment consultant at [website name], specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.
+
+## References
+
+* [University of Illinois Gies College of Business — Online MBA](https://giesbusiness.illinois.edu/graduate-hub/online-programs/imba)
+* [Gies Online — iMBA Curriculum](https://giesbusiness.illinois.edu/graduate-hub/online-programs/imba/curriculum)
+* [Gies Online — iMBA Admissions](https://giesbusiness.illinois.edu/graduate-hub/online-programs/imba/admissions)
+* [Gies Online — iMBA Tuition FAQs](https://giesbusiness.illinois.edu/graduate-hub/online-programs/imba/tuition-financial-aid)
+* [University of Illinois — iMBA Program Requirements](https://catalog.illinois.edu/graduate/bus/imba/)
+* [University of Illinois — iMBA Course Offerings](https://giesbusiness.illinois.edu/graduate-hub/online-programs/imba/curriculum)
+* [University of Illinois — 2026–2027 Graduate Course Catalog](https://catalog.illinois.edu/graduate/)
