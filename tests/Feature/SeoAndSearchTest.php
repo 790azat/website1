@@ -10,13 +10,15 @@ test('page titles name the site once', function () {
     $siteName = config('app.name');
     $article = siteData()['articles'][0];
 
-    $this->get(route('article', $article['slug']))
-        ->assertOk()
-        ->assertSee('<title>'.e($article['title']).' — '.e($siteName).'</title>', false);
+    $pageTitle = function (string $url): string {
+        preg_match('#<title>(.*?)</title>#s', $this->get($url)->assertOk()->getContent(), $match);
 
-    $this->get(route('contact'))
-        ->assertOk()
-        ->assertSee('<title>Contact — '.e($siteName).'</title>', false);
+        return html_entity_decode(trim($match[1] ?? ''));
+    };
+
+    expect($pageTitle(route('article', $article['slug'])))->toBe($article['title'].' — '.$siteName)
+        ->and($pageTitle(route('contact')))->toBe('Contact — '.$siteName)
+        ->and($pageTitle(route('home')))->toBe($siteName);
 });
 
 test('article pages have a plain-text description, canonical, Open Graph and JSON-LD', function () {
