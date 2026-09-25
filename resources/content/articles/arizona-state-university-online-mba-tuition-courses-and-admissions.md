@@ -126,3 +126,12 @@ Admission requires a bachelor's or master's degree, a 3.00 GPA standard based on
 ## About the Author
 
 Daniel Brooks is a 41-year-old business technology consultant at [website name], specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
+
+## References
+
+* [Arizona State University — Online Master of Business Administration](https://asuonline.asu.edu/online-degree-programs/graduate/master-business-administration/)
+* [W. P. Carey School of Business — Online MBA Academics](https://wpcarey.asu.edu/mba-programs/online/academics)
+* [ASU Online — Tuition and Cost Calculator](https://asuonline.asu.edu/what-it-costs)
+* [ASU Online — Graduate Student Admission](https://admission.asu.edu/apply/graduate)
+* [ASU Online — International Graduate Admission](https://admission.asu.edu/apply/graduate/international)
+* [W. P. Carey School of Business — Online MBA Concentrations](https://wpcarey.asu.edu/mba-programs/online/academics)

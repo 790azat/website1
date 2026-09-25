@@ -136,3 +136,14 @@ Organizations evaluating Domo can consider several areas:
 Domo combines data integration, business intelligence, data visualization, reporting, AI, and data science in a unified platform. Its large connector ecosystem and self-service analytics capabilities are designed to make information available across different business functions while maintaining centralized governance.
 
 The platform goes beyond conventional dashboarding through alerts, embedded analytics, machine learning, and conversational AI. For organizations evaluating Domo, the main considerations include data architecture, visualization needs, user requirements, governance, AI use cases, and the overall cost of operating the platform.
+
+## References
+
+* [Domo — Domo Platform Features](https://www.domo.com/platform)
+* [Domo — AI-Powered Business Intelligence](https://www.domo.com/platform/ai)
+* [Domo — Reporting and Analytics](https://www.domo.com/platform/analytics)
+* [Domo — Data Integration and Connectivity](https://www.domo.com/platform/integration)
+* [Domo — Data Science and Machine Learning](https://www.domo.com/platform/data-science)
+* [Domo — AI-Powered Alerts](https://www.domo.com/platform/alerts)
+* [Domo — Data Federation](https://www.domo.com/platform/data-federation)
+* [Domo — Security and Governance](https://www.domo.com/platform/security)

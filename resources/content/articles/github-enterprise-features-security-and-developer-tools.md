@@ -140,3 +140,13 @@ GitHub Enterprise combines source-code management, collaboration, CI/CD, securit
 Its major capabilities include repositories and pull requests, GitHub Actions, Projects, Packages, Codespaces, Copilot, identity management, audit controls, repository rules, and optional Advanced Security products. Organizations can deploy GitHub Enterprise through GitHub's cloud environment or use Enterprise Server for self-hosted deployments.
 
 For companies evaluating the platform, the main considerations include deployment model, development scale, security requirements, identity integration, automation workloads, AI usage, and governance needs.
+
+## References
+
+* [GitHub — GitHub Enterprise](https://github.com/enterprise)
+* [GitHub — GitHub Pricing](https://github.com/pricing)
+* [GitHub Docs — About GitHub Enterprise Cloud](https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-enterprise-cloud)
+* [GitHub Docs — GitHub Security Features](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security)
+* [GitHub Docs — GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security)
+* [GitHub Docs — Billing for GitHub Enterprise](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-your-github-billing-settings/about-billing-for-your-enterprise)
+* [GitHub — GitHub Features](https://github.com/features)

@@ -143,3 +143,14 @@ For businesses evaluating CrowdStrike, the main considerations include the numbe
 ## About the Author
 
 Daniel Brooks, 41, is a business technology consultant at a business advisory publication, specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
+
+## References
+
+* [CrowdStrike — Falcon Platform](https://www.crowdstrike.com/en-us/platform/)
+* [CrowdStrike — Falcon Pricing](https://www.crowdstrike.com/en-us/pricing/)
+* [CrowdStrike — Falcon Go](https://www.crowdstrike.com/en-us/products/endpoint-security/falcon-go/)
+* [CrowdStrike — Falcon Pro](https://www.crowdstrike.com/en-us/products/endpoint-security/falcon-pro/)
+* [CrowdStrike — Falcon Enterprise](https://www.crowdstrike.com/en-us/products/endpoint-security/falcon-enterprise/)
+* [CrowdStrike — Falcon Cloud Security](https://www.crowdstrike.com/en-us/cloud-security/)
+* [CrowdStrike — Falcon Data Security](https://www.crowdstrike.com/en-us/data-protection/)
+* [CrowdStrike — Next-Gen Identity Security](https://www.crowdstrike.com/en-us/identity-protection/)

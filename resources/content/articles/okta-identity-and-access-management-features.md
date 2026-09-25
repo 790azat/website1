@@ -146,3 +146,14 @@ As organizations adopt more cloud applications and automated systems, identity m
 ## About the Author
 
 Emily Carter, 34, is an investment consultant at a business advisory publication, specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.
+
+## References
+
+* [Okta — Workforce Identity](https://www.okta.com/products/workforce-identity/)
+* [Okta — Plans and Pricing](https://www.okta.com/pricing/)
+* [Okta — Single Sign-On](https://www.okta.com/products/single-sign-on/)
+* [Okta — Adaptive Multi-Factor Authentication](https://www.okta.com/products/adaptive-multi-factor-authentication/)
+* [Okta — Identity and Access Management](https://www.okta.com/products/identity-and-access-management/)
+* [Okta — Identity Governance and Add-Ons](https://www.okta.com/products/identity-governance/)
+* [Okta — Customer Identity Solutions](https://www.okta.com/customer-identity/)
+* [Okta — Identity and Access Management Solutions](https://www.okta.com/solutions/identity-access-management/)

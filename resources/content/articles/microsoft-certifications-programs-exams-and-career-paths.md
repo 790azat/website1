@@ -65,3 +65,16 @@ Microsoft credentials support cloud careers (administrators, developers, archite
 ## Conclusion
 
 Microsoft Certifications provide structured credentials spanning cloud, AI, cybersecurity, data, and business applications. "Microsoft Learn supports the certification process with self-paced training, study guides, practice assessments, and examination resources." Career success combines credentials with hands-on projects and workplace experience.
+
+## References
+
+* [Microsoft Learn — Microsoft Credentials and Certifications](https://learn.microsoft.com/en-us/credentials/)
+* [Microsoft Learn — Browse Microsoft Certifications](https://learn.microsoft.com/en-us/credentials/certifications/)
+* [Microsoft Learn — Microsoft Fundamentals Certifications](https://learn.microsoft.com/en-us/credentials/certifications/fundamentals/)
+* [Microsoft Learn — Certification Process Overview](https://learn.microsoft.com/en-us/credentials/certifications/certification-process-overview)
+* [Microsoft Learn — Azure Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/)
+* [Microsoft Learn — Azure Administrator Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/)
+* [Microsoft Learn — Microsoft 365 Administrator](https://learn.microsoft.com/en-us/credentials/certifications/administrator/)
+* [Microsoft Learn — Microsoft Certification Renewal](https://learn.microsoft.com/en-us/credentials/certifications/renew-your-certification)
+* [Microsoft Learn — Cybersecurity Architect Expert](https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/)
+* [Microsoft Learn — Power Platform Certifications](https://learn.microsoft.com/en-us/credentials/certifications/browse/?resource_type=certification&products=power-platform)

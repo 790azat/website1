@@ -172,3 +172,13 @@ The platform also provides Always Free resources, trial credits, consumption-bas
 ## About the Author
 
 Emily Carter, 34, is an investment consultant at a business advisory publication, specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.
+
+## References
+
+* [Oracle — Oracle Cloud Infrastructure](https://www.oracle.com/cloud/)
+* [Oracle — OCI IaaS and PaaS Services](https://www.oracle.com/cloud/infrastructure/services/)
+* [Oracle — OCI Pricing](https://www.oracle.com/cloud/pricing/)
+* [Oracle — OCI Always Free Resources](https://www.oracle.com/cloud/free/)
+* [Oracle — Oracle Cloud Solutions](https://www.oracle.com/cloud/solutions/)
+* [Oracle — OCI Cloud Infrastructure Services](https://www.oracle.com/cloud/infrastructure/)
+* [Oracle — Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/)

@@ -27,3 +27,15 @@ IDMC serves multiple business functions. Finance teams benefit from governed rep
 Informatica employs a "consumption-based pricing" model using Informatica Processing Units (IPUs), allowing customers to pay based on actual service usage and processing resources.
 
 Organizations evaluating Informatica should assess integration requirements, data quality needs, governance obligations, master data complexity, AI capabilities, deployment architecture preferences, scalability expectations, and projected consumption costs.
+
+## References
+
+* [Informatica — Intelligent Data Management Cloud](https://www.informatica.com/products/data-management-cloud.html)
+* [Informatica — Cloud Data Integration and Engineering](https://www.informatica.com/products/data-integration.html)
+* [Informatica — Data Governance and Catalog](https://www.informatica.com/products/data-governance.html)
+* [Informatica — Data Governance, Access and Privacy](https://www.informatica.com/products/data-governance.html)
+* [Informatica — Cloud Application Integration](https://www.informatica.com/products/application-integration.html)
+* [Informatica — Data Management Products and Services](https://www.informatica.com/products.html)
+* [Informatica — Analytics and Business Intelligence](https://www.informatica.com/products/data-management-cloud/analytics.html)
+* [Informatica — Intelligent Data Management Cloud Pricing](https://www.informatica.com/products/data-management-cloud/pricing.html)
+* [Informatica Documentation — IDMC Platform Services](https://docs.informatica.com/integration-cloud/cloud-platform/current-version/platform-services.html)

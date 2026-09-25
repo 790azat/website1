@@ -145,3 +145,15 @@ Snowflake has expanded from a cloud data warehouse into a broader AI Data Cloud 
 Its separation of storage and compute, managed infrastructure, governance capabilities, and support for multiple data types provide a foundation for large analytical environments. Newer capabilities involving Cortex AI, Snowflake Intelligence, interactive analytics, and Apache Iceberg further extend the platform into AI and open data architectures.
 
 For organizations evaluating Snowflake, the most important considerations include data architecture, analytics requirements, governance, AI workloads, interoperability, scalability, and consumption-based costs.
+
+## References
+
+* [### Snowflake — Snowflake for Analytics](https://www.snowflake.com/en/product/analytics/)
+* [### Snowflake — AI Data Cloud Capabilities](https://www.snowflake.com/en/product/)
+* [### Snowflake — Snowflake Platform](https://www.snowflake.com/en/data-cloud/)
+* [### Snowflake — Snowflake Cortex AI](https://www.snowflake.com/en/product/features/cortex/)
+* [### Snowflake — Snowflake Pricing](https://www.snowflake.com/en/pricing/)
+* [### Snowflake — Snowflake Pricing Calculator](https://www.snowflake.com/en/pricing/pricing-calculator/)
+* [### Snowflake Documentation — Key Snowflake Features](https://docs.snowflake.com/en/user-guide/intro-key-concepts)
+* [### Snowflake Documentation — Understanding Compute Cost](https://docs.snowflake.com/en/user-guide/cost-understanding-compute)
+* [### Snowflake — Snowflake and Apache Iceberg](https://www.snowflake.com/en/product/features/iceberg/)

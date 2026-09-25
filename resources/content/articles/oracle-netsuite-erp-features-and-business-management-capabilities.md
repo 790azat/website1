@@ -144,3 +144,14 @@ Oracle NetSuite combines ERP, financial management, inventory, order management,
 Its centralized approach can help organizations connect financial and operational processes while providing broader visibility across departments. At the same time, the breadth of the platform means businesses should carefully evaluate modules, customization, implementation requirements, and total costs.
 
 For organizations looking to consolidate multiple business processes into a connected ERP environment, NetSuite provides a broad set of tools that can be configured around different operational models.
+
+## References
+
+* [Oracle NetSuite — ERP Documentation Summary](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N000004.html)
+* [Oracle NetSuite — NetSuite Cloud ERP](https://www.netsuite.com/portal/products/erp.shtml)
+* [Oracle NetSuite — Introduction to NetSuite OneWorld](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1561265.html)
+* [Oracle NetSuite — Inventory Management Overview](https://www.netsuite.com/portal/products/erp/inventory-management.shtml)
+* [Oracle NetSuite — Inventory Management Features](https://www.netsuite.com/portal/products/erp/inventory-management.shtml)
+* [Oracle NetSuite — Enterprise Resource Planning](https://www.netsuite.com/portal/products/erp.shtml)
+* [Oracle NetSuite — Commerce Product Overview](https://www.netsuite.com/portal/products/ecommerce.shtml)
+* [Oracle — ERP Features](https://www.oracle.com/erp/)

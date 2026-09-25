@@ -21,3 +21,12 @@ Team Plan costs "$360 per user per year" with promotional pricing at "$252 per u
 ## Organizational Applications
 
 Companies implement Udemy Business for "employee onboarding," technical skill development, leadership training, and certification preparation. The platform supports both individual self-directed learning and coordinated organizational training initiatives, making it suitable for various workforce development strategies.
+
+## References
+
+* [Udemy Business — Learning Plans and Pricing](https://business.udemy.com/pricing/)
+* [Udemy Business — Online Learning Platform for Businesses](https://business.udemy.com/)
+* [Udemy Business — Enterprise Training](https://business.udemy.com/enterprise/)
+* [Udemy Business — Analytics and Insights](https://business.udemy.com/features/insights/)
+* [Udemy Business Support — Udemy Business Pro](https://business-support.udemy.com/hc/en-us/articles/360000239314-Udemy-Business-Pro)
+* [Udemy Business Support — Labs and Workspaces](https://business-support.udemy.com/hc/en-us/articles/360000239394-Labs-and-Workspaces)

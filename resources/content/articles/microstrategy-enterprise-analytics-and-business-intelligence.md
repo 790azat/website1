@@ -151,3 +151,13 @@ Organizations considering MicroStrategy or the current Strategy platform can exa
 MicroStrategy has developed from a traditional enterprise business intelligence platform into the broader Strategy Intelligent Enterprise platform. Its core capabilities remain centered on governed analytics, reporting, dashboards, data visualization, and enterprise-scale deployment, while newer functionality adds AI-assisted analysis and content creation.
 
 For organizations evaluating the platform, the main considerations include reporting complexity, data governance, scalability, user requirements, AI use cases, embedded analytics, deployment architecture, and total cost.
+
+## References
+
+* [MicroStrategy — Introduction to MicroStrategy and Business Intelligence](https://www.strategy.com/en/learn)
+* [Strategy — Intelligent Enterprise Platform](https://www.strategy.com/en/platform)
+* [Strategy — Workstation and Library](https://www.strategy.com/en/platform/workstation)
+* [MicroStrategy — MicroStrategy AI and BI Training](https://www.strategy.com/en/learn/training)
+* [Strategy — MicroStrategy Cloud Console APIs](https://www.strategy.com/en/platform/cloud-console)
+* [MicroStrategy — Current Product Documentation](https://www.strategy.com/en/resources/documentation)
+* [Strategy — Analyst and Architect Passes](https://www.strategy.com/en/learn/certification)

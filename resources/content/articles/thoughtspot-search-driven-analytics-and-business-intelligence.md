@@ -31,3 +31,14 @@ ThoughtSpot Analytics pricing begins at "$25 per user per month when billed annu
 ## Technical Capabilities
 
 Advanced users access Analyst Studio for data preparation, modeling, SQL, Python, and R workflows. Organizations can also embed analytics into applications using ThoughtSpot's SDK and APIs.
+
+## References
+
+* [ThoughtSpot — Enterprise BI for Real-Time Insights](https://www.thoughtspot.com/enterprise)
+* [ThoughtSpot — Search-Driven Analytics](https://www.thoughtspot.com/search-driven-analytics)
+* [ThoughtSpot — Spotter AI Analyst](https://www.thoughtspot.com/spotter)
+* [ThoughtSpot — ThoughtSpot Plans and Pricing](https://www.thoughtspot.com/pricing)
+* [ThoughtSpot — Spotter Semantics](https://www.thoughtspot.com/product/spotter/semantics)
+* [ThoughtSpot — ThoughtSpot Product Overview](https://www.thoughtspot.com/product)
+* [ThoughtSpot Developers — Getting Started With ThoughtSpot Everywhere](https://developers.thoughtspot.com/docs/ts-embed-sdk)
+* [ThoughtSpot — Enterprise-Grade AI](https://www.thoughtspot.com/product/ai)

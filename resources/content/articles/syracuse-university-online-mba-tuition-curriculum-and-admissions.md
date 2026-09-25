@@ -147,3 +147,12 @@ Admission generally requires a bachelor's degree, approximately 18 months of pro
 ## About the Author
 
 Michael Anderson is a 39-year-old technology and analytics specialist at [website name], specializing in data analysis, business intelligence, and digital reporting. He focuses on helping organizations understand complex information and use analytical tools to support everyday business decisions.
+
+## References
+
+* [Syracuse University Whitman School of Management — Online MBA](https://whitman.syracuse.edu/online-masters-programs-programs/mba-online)
+* [Syracuse University Whitman School of Management — Online MBA Tuition and Financial Aid](https://whitman.syracuse.edu/graduate-programs/online-masters-programs/online-masters-tuition-scholarships-and-financing)
+* [Syracuse University Whitman School of Management — Online MBA Admissions](https://whitman.syracuse.edu/graduate-programs/online-masters-programs/admissions-requirements-for-whitman-online-programs)
+* [Syracuse University Whitman School of Management — Online Master's Programs](https://whitman.syracuse.edu/graduate-programs/online-masters-programs)
+* [Syracuse University — Online MBA Program Redesign](https://whitman.syracuse.edu/about/newsroom/whitman-news/news-detail/2026/08/03/whitman-school-of-management-reimagines-its-online-mba--making-a-top-ranked-program-more-accessible--flexible-and-relevant-than-ever)
+* [Syracuse University — Graduate Course Catalog](https://coursecatalog.syracuse.edu/)

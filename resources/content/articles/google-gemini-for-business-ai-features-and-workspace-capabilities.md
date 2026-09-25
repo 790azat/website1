@@ -137,3 +137,13 @@ Google Gemini for Business brings generative AI into Gmail, Docs, Sheets, Slides
 Its capabilities range from drafting and summarization to spreadsheet analysis, meeting notes, research, AI-powered workflows, and agent-based automation. Google's continuing expansion of Gemini across Workspace also makes the platform increasingly relevant to organizations looking to integrate AI directly into everyday productivity tools.
 
 For businesses evaluating Gemini, the main considerations are Workspace edition, AI requirements, organizational data, security controls, automation needs, third-party integrations, and total subscription costs.
+
+## References
+
+* [Google Workspace — AI Tools for Business](https://workspace.google.com/solutions/ai/)
+* [Google Workspace — Pricing and Plans](https://workspace.google.com/pricing)
+* [Google Workspace Help — Google Workspace with Gemini](https://support.google.com/a/answer/15756919)
+* [Google Workspace Help — Gemini Features in Gmail, Docs, Drive, Sheets, Slides, and Meet](https://support.google.com/a/answer/15756919)
+* [Google Workspace Help — Gemini in Docs, Sheets, Slides, Vids, and Forms](https://support.google.com/docs/answer/15877199)
+* [Google Workspace Learning Center — Using Google Workspace with Gemini](https://support.google.com/a/users/answer/15877199)
+* [Google Workspace — Gemini at Work](https://workspace.google.com/solutions/ai/gemini-at-work/)

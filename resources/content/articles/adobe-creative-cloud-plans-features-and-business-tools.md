@@ -139,3 +139,12 @@ Adobe Creative Cloud combines professional creative applications with cloud coll
 For smaller teams, Single App and Creative Cloud Pro plans provide different ways to license creative applications. Larger organizations can use enterprise capabilities for centralized administration, security, identity management, deployment, and AI governance.
 
 The appropriate configuration ultimately depends on the applications employees actually use, the organization's collaboration model, and the level of administrative and security control required.
+
+## References
+
+* [Adobe — Creative Cloud for Business Pricing and Plans](https://www.adobe.com/creativecloud/business/teams/plans.html)
+* [Adobe — Creative Cloud for Business](https://www.adobe.com/creativecloud/business.html)
+* [Adobe — Creative Cloud for Teams Plan Comparison](https://www.adobe.com/creativecloud/business/teams/plans.html)
+* [Adobe — Creative Cloud Products and Pricing](https://www.adobe.com/creativecloud/plans.html)
+* [Adobe — Creative Cloud for Teams](https://www.adobe.com/creativecloud/business/teams.html)
+* [Adobe — Creative Cloud Business Solutions](https://www.adobe.com/creativecloud/business.html)

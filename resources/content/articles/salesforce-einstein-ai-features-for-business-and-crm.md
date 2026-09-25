@@ -166,3 +166,14 @@ Businesses evaluating Einstein should examine which AI features are included in 
 ## About the Author
 
 Daniel Brooks, 41, is a business technology consultant at a business advisory publication, specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
+
+## References
+
+* [Salesforce — AI for Sales](https://www.salesforce.com/sales/ai/)
+* [Salesforce Help — Einstein Features in Sales](https://help.salesforce.com/s/articleView?id=sf.ai_sales.htm)
+* [Salesforce Help — How Sales Cloud Einstein Works](https://help.salesforce.com/s/articleView?id=sales.einstein_sales_how_it_works.htm)
+* [Salesforce — Sales Add-On Features and Pricing](https://www.salesforce.com/sales/pricing/)
+* [Salesforce — Agentforce Pricing](https://www.salesforce.com/agentforce/pricing/)
+* [Salesforce Help — Agentforce and Generative AI Usage and Billing](https://help.salesforce.com/s/articleView?id=ai.copilot_usage.htm)
+* [Salesforce Help — AI Solutions for Service](https://help.salesforce.com/s/articleView?id=sf.service_ai.htm)
+* [Salesforce Help — AI Features in Marketing Cloud Next](https://help.salesforce.com/s/articleView?id=sf.mc_ai_features.htm)

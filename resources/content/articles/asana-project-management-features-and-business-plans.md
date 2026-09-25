@@ -29,3 +29,13 @@ The platform includes "AI-generated summaries, project status assistance, smart 
 ## Use Cases
 
 Organizations deploy Asana for marketing campaigns, product development, operations management, HR processes, and executive portfolio oversight to "connect everyday activities with broader organizational goals."
+
+## References
+
+* [Asana — Pricing and Plans](https://asana.com/pricing)
+* [Asana — Project Management](https://asana.com/uses/project-management)
+* [Asana — Project Management Features](https://asana.com/features/project-management)
+* [Asana Help Center — Asana Subscriptions and Pricing](https://help.asana.com/s/article/subscriptions-and-pricing)
+* [Asana Help Center — Pricing and Purchases](https://help.asana.com/s/article/pricing-and-purchases)
+* [Asana Help Center — All Asana Features](https://help.asana.com/s/article/asana-features)
+* [Asana — Work Tracking and Project Management Features](https://asana.com/features)

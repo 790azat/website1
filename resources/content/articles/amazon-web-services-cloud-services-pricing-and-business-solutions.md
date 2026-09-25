@@ -151,3 +151,15 @@ For businesses evaluating AWS, the main considerations are architecture, securit
 ## About the Author
 
 Daniel Brooks, 41, is a business technology consultant at [website name], specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
+
+## References
+
+* [AWS — Cloud Services](https://aws.amazon.com/products/)
+* [AWS — AWS Pricing](https://aws.amazon.com/pricing/)
+* [AWS — AWS Free Tier](https://aws.amazon.com/free/)
+* [AWS Documentation — AWS Services by Category](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/aws-services.html)
+* [AWS Documentation — Choosing an EC2 Purchasing Option](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html)
+* [AWS — AWS Savings Plans](https://aws.amazon.com/savingsplans/)
+* [AWS Documentation — AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+* [AWS Documentation — AWS Security and Shared Responsibility](https://aws.amazon.com/compliance/shared-responsibility-model/)
+* [AWS — Cloud Solutions for Small and Medium Businesses](https://aws.amazon.com/smart-business/)

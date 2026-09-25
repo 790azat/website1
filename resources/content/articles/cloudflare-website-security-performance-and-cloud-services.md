@@ -130,3 +130,14 @@ A small website may primarily require DNS, CDN, SSL, and basic security, while l
 Cloudflare has developed from a website-performance and security provider into a broader cloud and connectivity platform. Its services cover CDN, DNS, DDoS protection, WAF, bot management, API security, Zero Trust, serverless computing, object storage, load balancing, and media delivery.
 
 Businesses can begin with core website services and add products such as Workers, R2, Zero Trust, or advanced security controls as their technical requirements expand. Evaluating traffic patterns, application architecture, security needs, and usage-based services can help organizations determine which parts of the Cloudflare platform are relevant to their operations.
+
+## References
+
+* Cloudflare — Plans and Pricing
+* Cloudflare — Application Services for Security and Performance
+* Cloudflare — Website Optimization
+* Cloudflare — Pro Plan Overview
+* Cloudflare — Zero Trust and SASE Plans
+* Cloudflare Developers — Workers Pricing
+* Cloudflare Developers — R2 Pricing
+* Cloudflare — Cloudflare Platform

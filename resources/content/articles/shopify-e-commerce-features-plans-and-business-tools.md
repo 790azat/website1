@@ -42,3 +42,14 @@ The platform includes reporting tools and Sidekick, an AI assistant helping with
 ## Key Consideration
 
 When evaluating Shopify, assess "sales volume, required channels, inventory complexity, payment costs, integrations, international operations, and the level of customization needed."
+
+## References
+
+* [Shopify — Pricing](https://www.shopify.com/pricing)
+* [Shopify — Shopify Products and Features](https://www.shopify.com/products)
+* [Shopify Help Center — Online Store](https://help.shopify.com/en/manual/online-store)
+* [Shopify Help Center — Shopify Checkout](https://help.shopify.com/en/manual/checkout-settings)
+* [Shopify Help Center — Payments](https://help.shopify.com/en/manual/payments)
+* [Shopify Help Center — Plan Features](https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans)
+* [Shopify Help Center — Choosing the Right Plan](https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/choosing-a-plan)
+* [Shopify Help Center — Shopify Plus Plan](https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/shopify-plus)

@@ -27,3 +27,13 @@ DocuSign offers tiered pricing with annual billing options:
 The platform serves "sales, human resources, legal, finance, procurement, real estate, healthcare, and other business functions." Sales teams use it for proposals and contracts, HR departments manage onboarding materials, and finance teams handle approvals and invoices.
 
 Organizations evaluating DocuSign should assess user count, signing volume, integration requirements, workflow complexity, and whether they need basic eSignature functionality or comprehensive agreement management capabilities.
+
+## References
+
+* [DocuSign — Electronic Signature](https://www.docusign.com/products/electronic-signature)
+* [DocuSign — eSignature Features](https://www.docusign.com/products/electronic-signature/features)
+* [DocuSign — eSignature Pricing](https://www.docusign.com/products/electronic-signature/price)
+* [DocuSign — Electronic Signature Use Cases](https://www.docusign.com/products/electronic-signature/use-cases)
+* [DocuSign — Products and Capabilities](https://www.docusign.com/products)
+* [DocuSign — Small Business Solutions](https://www.docusign.com/products/small-business)
+* [DocuSign — How to Set Up DocuSign](https://support.docusign.com/s/document-item?language=en_US&bundleId=troubleshooting&topicId=setup)

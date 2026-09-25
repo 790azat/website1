@@ -27,3 +27,13 @@ Organizations can choose cloud hosting, on-premises installation, or containeriz
 ## Evaluation Considerations
 
 When assessing the platform, organizations should evaluate reporting complexity, data connectivity requirements, governance needs, AI value proposition, deployment preferences, and total cost of ownership including implementation and support.
+
+## References
+
+* [IBM — IBM Cognos Analytics](https://www.ibm.com/products/cognos-analytics?nk=STW_US_MHP_L2_BLK&pexp=def&psrc=none)
+* [IBM — IBM Cognos Analytics Features](https://www.ibm.com/products/cognos-analytics/features)
+* [IBM — IBM Cognos Analytics Pricing](https://www.ibm.com/products/cognos-analytics/pricing)
+* [IBM Documentation — IBM Cognos Analytics Data Sources and Data Modules](https://www.ibm.com/docs/en/cognos-analytics/12.1.x?topic=modules-data-their-sources)
+* [IBM — Strengthening IBM's Proven Enterprise Software for the AI Era](https://www.ibm.com/new/announcements/strengthening-ibms-proven-enterprise-software-for-the-ai-era)
+* [IBM — Introducing IBM Cognos Analytics as a Service on AWS](https://www.ibm.com/products/cognos-analytics/aws)
+* [IBM Community — Introducing Reporting Agents: AI-Powered Analytics in Cognos Analytics](https://community.ibm.com/community/user/blogs/arpit-kashyap/2026/01/28/introducing-reporting-agents)

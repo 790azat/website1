@@ -158,3 +158,14 @@ Businesses evaluating IBM Cloud can assess the platform according to their exist
 ## About the Author
 
 James Mitchell, 36, is a financial specialist at a business advisory publication, focused on navigating volatile markets and developing resilient investment strategies. He helps professionals build diversified portfolios designed to withstand market fluctuations and support sustainable growth.
+
+## References
+
+* [IBM — IBM Cloud](https://www.ibm.com/cloud)
+* [IBM — Red Hat OpenShift on IBM Cloud](https://www.ibm.com/products/redhat-openshift-on-ibm-cloud)
+* [IBM Cloud Docs — IBM Cloud Kubernetes Service](https://cloud.ibm.com/docs/containers)
+* [IBM Cloud Docs — Security for Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/docs/openshift?topic=openshift-security)
+* [IBM Cloud Docs — IBM Cloud Services and Integrations](https://cloud.ibm.com/docs)
+* [IBM — IBM Cloud Security](https://www.ibm.com/cloud/security)
+* [IBM — IBM Cloud Object Storage](https://www.ibm.com/products/cloud-object-storage)
+* [IBM — IBM Cloud Solutions](https://www.ibm.com/cloud/solutions)

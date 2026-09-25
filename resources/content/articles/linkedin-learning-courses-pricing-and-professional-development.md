@@ -143,3 +143,14 @@ For businesses, the platform can serve as part of a broader professional develop
 ## About the Author
 
 Emily Carter is a 34-year-old investment consultant at [website name], specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.
+
+## References
+
+* [LinkedIn Learning — Online Training Courses and Skill Building](https://www.linkedin.com/learning/)
+* [LinkedIn Learning — Product Overview](https://learning.linkedin.com/)
+* [LinkedIn Learning — Compare Pricing and Plans](https://www.linkedin.com/learning/subscription/products)
+* [LinkedIn Learning — Learning for Teams](https://learning.linkedin.com/business/enterprise)
+* [LinkedIn Learning — Career Development and AI Skills](https://learning.linkedin.com/resources/career-development)
+* [LinkedIn Help — Learning Subscription Overview](https://www.linkedin.com/help/learning/answer/a704811)
+* [LinkedIn Help — Learning Premium Subscription Benefits](https://www.linkedin.com/help/learning/answer/a704810)
+* [LinkedIn Help — Teams and Enterprise Accounts](https://www.linkedin.com/help/learning/answer/a704812)

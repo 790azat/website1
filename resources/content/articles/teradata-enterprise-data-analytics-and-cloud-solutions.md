@@ -137,3 +137,14 @@ Organizations considering Teradata can examine several areas:
 Teradata combines enterprise data warehousing, cloud analytics, advanced analytics, machine learning, and AI capabilities within its VantageCloud platform. Its architecture is designed for organizations managing large and complex analytical environments across cloud and hybrid infrastructure.
 
 The platform's AI strategy also places greater emphasis on preparing enterprise information for machine learning and generative AI applications. For organizations evaluating Teradata, important considerations include data scale, cloud architecture, analytical workloads, AI requirements, governance, migration complexity, and total cost.
+
+## References
+
+* [Teradata — VantageCloud](https://www.teradata.com/platform/vantagecloud)
+* [Teradata — VantageCloud Enterprise Analytics Platform](https://www.teradata.com/platform/vantagecloud)
+* [Teradata — AI and Machine Learning](https://www.teradata.com/platform/ai-and-machine-learning)
+* [Teradata — ClearScape Analytics](https://www.teradata.com/platform/clearscape-analytics)
+* [Teradata — Cloud Analytics](https://www.teradata.com/solutions/cloud-analytics)
+* [Teradata — Enterprise Data Platform](https://www.teradata.com/platform)
+* [Teradata Documentation — VantageCloud](https://docs.teradata.com/)
+* [Teradata — Data and Analytics Solutions](https://www.teradata.com/solutions)

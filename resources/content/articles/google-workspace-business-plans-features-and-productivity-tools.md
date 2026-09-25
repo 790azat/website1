@@ -143,3 +143,14 @@ Smaller teams may primarily need email, cloud storage, and collaborative documen
 Google Workspace combines communication, productivity, cloud storage, collaboration, and AI into a unified business platform. Gmail, Drive, Docs, Sheets, Slides, Meet, and Calendar form its core, while tools such as Gemini, Notebook, Workspace Studio, Vids, and AppSheet extend its capabilities.
 
 The business editions differ mainly in storage, meeting capacity, AI functionality, security, and administration. Comparing those requirements with actual employee workflows can help organizations determine which subscription level fits their operating environment.
+
+## References
+
+* [Google Workspace — Business Plans and Pricing](https://workspace.google.com/pricing)
+* [Google Workspace — What Is Google Workspace?](https://workspace.google.com/)
+* [Google Workspace Help — Business Editions](https://support.google.com/a/answer/1247360)
+* [Google Workspace Help — Compare Business Editions](https://support.google.com/a/answer/1247362)
+* [Google Workspace Help — Google Workspace with Gemini](https://support.google.com/a/answer/15756919)
+* [Google Workspace — AI Tools for Business](https://workspace.google.com/solutions/ai/)
+* [Google Workspace — Small Business Solutions](https://workspace.google.com/intl/en_us/business/small-business/)
+* [Google Workspace — Workspace Features](https://workspace.google.com/features/)

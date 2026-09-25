@@ -87,3 +87,16 @@ test('content can be cached and cleared', function () {
 
     expect($content->cachePath())->not->toBeFile();
 });
+
+test('every article has a References section whose links render', function () {
+    foreach (app(SiteContent::class)->all()['articles'] as $article) {
+        expect(preg_match('/^(?:## )?References\n\n(.+)/ms', $article['body'], $m))
+            ->toBe(1, "{$article['slug']} has no References section");
+
+        $response = $this->get(route('article', $article['slug']))->assertOk();
+
+        if (preg_match('/\]\((https?:\/\/[^\s)]+)\)/', $m[1], $link)) {
+            $response->assertSee('href="'.e($link[1]).'"', false);
+        }
+    }
+});

@@ -139,3 +139,14 @@ The choice between plans generally depends on which combination of productivity,
 Microsoft 365 brings productivity applications, business email, cloud storage, collaboration, communication, workflow tools, security, and AI capabilities into a subscription-based ecosystem. Business Basic focuses on essential cloud productivity, Standard adds desktop Office applications, and Premium extends the platform with stronger security and management capabilities.
 
 For organizations already using Microsoft technologies, the platform can provide a common environment for documents, communication, collaboration, and business information. Evaluating the available plans against actual user requirements is important because not every employee necessarily needs the same combination of applications and security capabilities.
+
+## References
+
+* [Microsoft — Microsoft 365 Pricing for Business](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products)
+* [Microsoft — Microsoft 365 Business Basic](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-basic)
+* [Microsoft — Microsoft 365 Business Standard](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-standard)
+* [Microsoft — Microsoft 365 Business Premium](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium)
+* [Microsoft — Microsoft 365 for Business](https://www.microsoft.com/en-us/microsoft-365/business)
+* [Microsoft Learn — Microsoft 365 Business Overview](https://learn.microsoft.com/en-us/microsoft-365/business/)
+* [Microsoft Learn — Microsoft 365 and Office 365 Plan Options](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+* [Microsoft — Microsoft 365 Licensing Resources](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365)

@@ -129,3 +129,13 @@ SAP Business One provides small and mid-sized businesses with an integrated ERP 
 Its modular architecture, analytics capabilities, mobile access, and extensibility allow businesses to adapt the platform to different industries and operating models. At the same time, implementation requirements and additional extensions should be considered when estimating the total investment.
 
 For organizations looking to connect financial and operational information within a single ERP system, SAP Business One provides a broad set of business management capabilities designed around the requirements of growing companies.
+
+## References
+
+* [SAP — SAP Business One](https://www.sap.com/products/business-one.html)
+* [SAP — SAP Business One Features](https://www.sap.com/products/business-one/features.html)
+* [SAP Help Portal — SAP Business One 10.0](https://help.sap.com/docs/SAP_BUSINESS_ONE)
+* [SAP Learning — Introducing SAP Business One](https://learning.sap.com/learning-journeys/discovering-sap-business-one/introducing-sap-business-one)
+* [SAP — SAP Business One Solution Overview](https://www.sap.com/products/business-one/solution-overview.html)
+* [SAP — SAP Business One Solution Brief](https://www.sap.com/documents/2018/09/8c5f6e4b-9d7c-0010-87a3-c30de2ffd8ff.html)
+* [SAP News Center — The Global Success of SAP Business One](https://news.sap.com/2017/03/sap-business-one-global-success/)

@@ -137,3 +137,12 @@ For learners changing careers or building foundational skills, the certificates 
 ## About the Author
 
 Emily Carter is a 34-year-old investment consultant at [website name], specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.
+
+## References
+
+* [Google Career Certificates — Career Skills and Professional Training](https://grow.google/certificates/)
+* [Grow with Google — Google Career Certificates](https://grow.google/certificates/)
+* [Coursera — Google Career Certificate Programs](https://www.coursera.org/google-career-certificates)
+* [Coursera — Google Digital Marketing & E-commerce Professional Certificate](https://www.coursera.org/professional-certificates/google-digital-marketing-ecommerce)
+* [Google — Career Certificate Program FAQs](https://grow.google/certificates/faq/)
+* [Google — AI Training and Career Essentials](https://grow.google/ai/)

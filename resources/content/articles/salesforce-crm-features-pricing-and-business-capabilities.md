@@ -29,3 +29,14 @@ The platform integrates with Tableau for advanced analytics and supports customi
 ## Key Evaluation Areas
 
 When assessing Salesforce, businesses should examine sales processes, automation opportunities, data integration requirements, AI capabilities, analytics needs, customization scope, security protocols, and comprehensive cost considerations including implementation and training. As the source notes, "the appropriate configuration depends on the company's processes, users, data environment, and desired capabilities."
+
+## References
+
+* [Salesforce — Sales Cloud](https://www.salesforce.com/sales/cloud/)
+* [Salesforce — Sales Cloud Pricing](https://www.salesforce.com/sales/pricing/)
+* [Salesforce — Salesforce CRM Pricing](https://www.salesforce.com/crm/pricing/)
+* [Salesforce — Sales Cloud Guide](https://www.salesforce.com/sales/sales-cloud/guide/)
+* [Salesforce — Sales Cloud Features and Editions](https://www.salesforce.com/sales/cloud/features/)
+* [Salesforce Help — Sales Basics](https://help.salesforce.com/s/articleView?id=sales.sales_basics.htm)
+* [Salesforce — Agentforce and AI for Sales](https://www.salesforce.com/agentforce/sales/)
+* [Salesforce — Salesforce Data Cloud](https://www.salesforce.com/data/)

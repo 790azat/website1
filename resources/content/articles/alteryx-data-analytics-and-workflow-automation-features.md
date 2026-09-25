@@ -141,3 +141,15 @@ Organizations evaluating Alteryx can consider several areas:
 Alteryx combines data preparation, visual analytics, workflow automation, reporting, AI-assisted insights, and advanced analytics within the Alteryx One platform. Its visual workflow approach allows users to turn complex analytical processes into repeatable sequences that can be shared and automated.
 
 The integration of Auto Insights, AI capabilities, orchestration, and cloud workflows has expanded Alteryx beyond traditional desktop data preparation. For organizations evaluating the platform, important considerations include data connectivity, workflow complexity, automation requirements, AI use cases, governance, deployment options, and total cost.
+
+## References
+
+* [Alteryx — Alteryx One Platform and Pricing](https://www.alteryx.com/products/alteryx-one)
+* [Alteryx — Designer Cloud](https://www.alteryx.com/products/designer-cloud)
+* [Alteryx Help — Workflows](https://help.alteryx.com/current/en/designer/workflows.html)
+* [Alteryx Help — Designer Tools](https://help.alteryx.com/current/en/designer/tools.html)
+* [Alteryx Help — Alteryx One Editions and Capabilities](https://help.alteryx.com/current/en/alteryx-one/overview/editions-and-capabilities.html)
+* [Alteryx — Automated Insights](https://www.alteryx.com/products/auto-insights)
+* [Alteryx Help — Auto Insights](https://help.alteryx.com/current/en/auto-insights.html)
+* [Alteryx Help — Auto Insights Release Notes](https://help.alteryx.com/current/en/release-notes/auto-insights.html)
+* [Alteryx — AI Platform for Enterprise Analytics](https://www.alteryx.com/platform)

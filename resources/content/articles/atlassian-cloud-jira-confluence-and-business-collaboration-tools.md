@@ -143,3 +143,14 @@ Organizations can start with individual applications and expand as their require
 ## About the Author
 
 Emily Carter, 34, is an investment consultant at a business advisory publication, specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.
+
+## References
+
+* [Atlassian — Jira Cloud Pricing](https://www.atlassian.com/software/jira/pricing)
+* [Atlassian — Confluence Cloud Pricing](https://www.atlassian.com/software/confluence/pricing)
+* [Atlassian — Atlassian Cloud Licensing](https://www.atlassian.com/licensing/cloud)
+* [Atlassian — Jira Cloud Plans](https://www.atlassian.com/software/jira/pricing)
+* [Atlassian — Confluence Cloud Plans](https://www.atlassian.com/software/confluence/pricing)
+* [Atlassian — Confluence Features](https://www.atlassian.com/software/confluence/features)
+* [Atlassian — Jira Licensing](https://www.atlassian.com/licensing/jira)
+* [Atlassian — Buying Atlassian Cloud Products](https://www.atlassian.com/licensing/purchase-licensing)
