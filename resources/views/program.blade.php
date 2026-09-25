@@ -3,12 +3,12 @@
     single course/certification/degree program (as opposed to the standard
     editorial article in resources/views/article.blade.php).
 
-    Content lives in resources/data/articles.php under the top-level
+    Content lives in resources/data/site.php under the top-level
     'programs' key. Expects: $slug (route wildcard).
 --}}
 @php
     $siteName = config('app.name', 'Laravel');
-    $data = require resource_path('data/articles.php');
+    $data = app(\App\Content\SiteContent::class)->all();
 
     $program = collect($data['programs'])->firstWhere('slug', $slug);
 

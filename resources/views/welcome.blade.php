@@ -2,7 +2,7 @@
     $siteName = config('app.name', 'Laravel');
     $title = null;
 
-    $data = require resource_path('data/articles.php');
+    $data = app(\App\Content\SiteContent::class)->all();
 
     $sectionStyles = [
         'data-intelligence' => ['icon' => 'circle-stack', 'badge' => 'bg-sky-600', 'chip' => 'bg-gradient-to-r from-sky-500 to-blue-600', 'gradient' => 'bg-gradient-to-br from-sky-400 via-cyan-500 to-blue-600'],
