@@ -6,9 +6,12 @@
       image        path under public/images, for the share preview
       type         'website' (default) or 'article'
       canonical    the English URL; defaults to the current URL without its
-                   query string. Spanish pages add "lang=es" to it.
-      alternates   false when the page has no Spanish version (hreflang
-                   links are then left out)
+                   query string. Translated pages add "lang=es" or
+                   "lang=fr" to it.
+      alternates   which translations the page has: true (the default)
+                   for every language in SiteContent::TRANSLATION_LOCALES,
+                   false for none (hreflang links are then left out), or a
+                   list of locales
       noindex      true to keep the page out of search results
       schema       list of JSON-LD objects
 --}}
@@ -16,11 +19,21 @@
     $siteName = config('app.name', 'Laravel');
     $seoTitle = filled($title ?? null) ? $title : $siteName;
     $seoEnglishUrl = $seo['canonical'] ?? url()->current();
-    $seoAlternates = ! ($seo['noindex'] ?? false) && ($seo['alternates'] ?? true);
-    $seoSpanishUrl = $seoEnglishUrl.(str_contains($seoEnglishUrl, '?') ? '&' : '?').'lang=es';
-    $seoCanonical = $seoAlternates && app()->isLocale('es') ? $seoSpanishUrl : $seoEnglishUrl;
+    $seoTranslations = ($seo['noindex'] ?? false) ? false : ($seo['alternates'] ?? true);
+    $seoTranslations = match ($seoTranslations) {
+        true => \App\Content\SiteContent::TRANSLATION_LOCALES,
+        false => [],
+        default => $seoTranslations,
+    };
+    $seoVersions = ['en' => $seoEnglishUrl];
+
+    foreach ($seoTranslations as $seoTranslation) {
+        $seoVersions[$seoTranslation] = $seoEnglishUrl.(str_contains($seoEnglishUrl, '?') ? '&' : '?').'lang='.$seoTranslation;
+    }
+
+    $seoCanonical = $seoVersions[app()->getLocale()] ?? $seoEnglishUrl;
     $seoImage = asset('images/'.($seo['image'] ?? 'branding/logo-full.webp'));
-    $seoLocale = app()->isLocale('es') ? 'es_ES' : 'en_US';
+    $seoLocale = ['es' => 'es_ES', 'fr' => 'fr_FR'][app()->getLocale()] ?? 'en_US';
 
     // Built here rather than in the markup below, where Blade would read
     // "@context" as one of its own directives.
@@ -34,9 +47,10 @@
     <meta name="robots" content="noindex, follow" />
 @endif
 <link rel="canonical" href="{{ $seoCanonical }}" />
-@if ($seoAlternates)
-    <link rel="alternate" hreflang="en" href="{{ $seoEnglishUrl }}" />
-    <link rel="alternate" hreflang="es" href="{{ $seoSpanishUrl }}" />
+@if (count($seoVersions) > 1)
+    @foreach ($seoVersions as $seoHreflang => $seoUrl)
+        <link rel="alternate" hreflang="{{ $seoHreflang }}" href="{{ $seoUrl }}" />
+    @endforeach
     <link rel="alternate" hreflang="x-default" href="{{ $seoEnglishUrl }}" />
 @endif
 

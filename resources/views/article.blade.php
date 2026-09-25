@@ -32,7 +32,7 @@
         'description' => \App\Content\SiteContent::excerpt($article['body']),
         'image' => $article['image'] ?? null,
         'type' => 'article',
-        'alternates' => app(\App\Content\SiteContent::class)->hasTranslation($article['slug'], 'es'),
+        'alternates' => app(\App\Content\SiteContent::class)->translatedLocales($article['slug']),
         'schema' => [
             [
                 '@type' => 'Article',

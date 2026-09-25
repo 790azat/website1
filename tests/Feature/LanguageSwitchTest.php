@@ -6,12 +6,13 @@ beforeEach(function () {
     $this->withoutVite();
 });
 
-test('pages are in English by default with both language flags', function () {
+test('pages are in English by default with all language flags', function () {
     $this->get(route('home'))
         ->assertOk()
         ->assertSee('<html lang="en">', false)
         ->assertSee('Latest Articles')
         ->assertSee('lang=es', false)
+        ->assertSee('lang=fr', false)
         ->assertSee('lang=en', false);
 });
 
@@ -31,6 +32,19 @@ test('the lang parameter switches to Spanish and is remembered in the session', 
         ->assertOk()
         ->assertSessionHas('locale', 'en')
         ->assertSee('Latest Articles');
+});
+
+test('the lang parameter switches to French and is remembered in the session', function () {
+    $this->get(route('home', ['lang' => 'fr']))
+        ->assertOk()
+        ->assertSessionHas('locale', 'fr')
+        ->assertSee('<html lang="fr">', false)
+        ->assertSee('Derniers articles')
+        ->assertSee('Intelligence des données');
+
+    $this->get(route('team'))
+        ->assertOk()
+        ->assertSee('Notre équipe éditoriale');
 });
 
 test('an unsupported language is ignored', function () {
@@ -63,13 +77,20 @@ test('articles without a Spanish translation say they are available in English o
     rmdir($articles);
 });
 
-test('every Spanish translation keeps the placeholders of its English key', function () {
-    $translations = json_decode(file_get_contents(lang_path('es.json')), true, flags: JSON_THROW_ON_ERROR);
+test('every translation keeps the placeholders of its English key', function (string $locale) {
+    $translations = json_decode(file_get_contents(lang_path($locale.'.json')), true, flags: JSON_THROW_ON_ERROR);
 
-    foreach ($translations as $english => $spanish) {
+    foreach ($translations as $english => $translated) {
         preg_match_all('/:[a-z]+/', $english, $expected);
-        preg_match_all('/:[a-z]+/', $spanish, $actual);
+        preg_match_all('/:[a-z]+/', $translated, $actual);
 
         expect(array_unique($actual[0]))->toEqualCanonicalizing(array_unique($expected[0]), $english);
     }
+})->with(['es', 'fr']);
+
+test('the French and Spanish UI strings cover the same English keys', function () {
+    $spanish = json_decode(file_get_contents(lang_path('es.json')), true, flags: JSON_THROW_ON_ERROR);
+    $french = json_decode(file_get_contents(lang_path('fr.json')), true, flags: JSON_THROW_ON_ERROR);
+
+    expect(array_keys($french))->toEqualCanonicalizing(array_keys($spanish));
 });
