@@ -36,37 +36,29 @@ jobs:
       - name: Build frontend assets
         run: npm run build
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy via SFTP
+        uses: wangyucode/sftp-upload-action@v2.0.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          protocol: ftp
-          server-dir: /www/s18113211.smrtp.ru/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.github/**
-            **/.idea/**
-            **/.claude/**
-            **/node_modules/**
-            **/tests/**
-            **/.env.example
-            **/.env.production
-            **/.editorconfig
-            **/.gitattributes
-            **/.npmrc
-            **/boost.json
-            **/phpstan.neon
-            **/phpunit.xml
-            **/pint.json
-            **/CLAUDE.md
-            **/Claude outputs/**
-            **/storage/logs/**
-            **/storage/framework/cache/**
-            **/storage/framework/sessions/**
-            **/storage/framework/views/**
-            **/public/storage/**
-            **/public/hot
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          localDir: .
+          remoteDir: /www/s18113211.smrtp.ru/
+          exclude: >-
+            .git,.git/**,
+            .github,.github/**,
+            .idea,.idea/**,
+            .claude,.claude/**,
+            node_modules,node_modules/**,
+            tests,tests/**,
+            .env.example,.env.production,
+            .editorconfig,.gitattributes,.npmrc,
+            boost.json,phpstan.neon,phpunit.xml,pint.json,CLAUDE.md,
+            Claude outputs,Claude outputs/**,
+            storage/logs,storage/logs/**,
+            storage/framework/cache,storage/framework/cache/**,
+            storage/framework/sessions,storage/framework/sessions/**,
+            storage/framework/views,storage/framework/views/**,
+            public/storage,public/storage/**,
+            public/hot
