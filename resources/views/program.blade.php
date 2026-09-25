@@ -8,7 +8,7 @@
 --}}
 @php
     $siteName = config('app.name', 'Laravel');
-    $data = app(\App\Content\SiteContent::class)->all();
+    $data = app(\App\Content\SiteContent::class)->localized();
 
     $program = collect($data['programs'])->firstWhere('slug', $slug);
 
@@ -46,7 +46,7 @@
             {{-- Breadcrumb --}}
             <div class="border-b border-zinc-200 dark:border-zinc-800">
                 <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
-                    <a href="{{ route('home') }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Home</a>
+                    <a href="{{ route('home') }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">{{ __('Home') }}</a>
                     <flux:icon name="chevron-right" class="size-3.5" />
                     <a href="{{ route('section', $program['section']) }}" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">{{ $sectionMeta['title'] }}</a>
                     <flux:icon name="chevron-right" class="size-3.5" />
@@ -56,7 +56,7 @@
 
             <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
                 <a href="{{ route('section', $program['section']) }}" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-                    {{ $sectionMeta['title'] }} &middot; Program Guide
+                    {{ $sectionMeta['title'] }} &middot; {{ __('Program Guide') }}
                 </a>
 
                 <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
@@ -154,7 +154,7 @@
                 <div class="mt-10 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900/40">
                     <h2 class="flex items-center gap-2 text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
                         <flux:icon name="sparkles" class="size-5 text-orange-500" />
-                        Pros
+                        {{ __('Pros') }}
                     </h2>
                     <ul class="mt-4 space-y-4">
                         @foreach ($program['pros'] as $pro)
@@ -208,16 +208,16 @@
                         <span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-white dark:bg-white dark:text-zinc-900">
                             <x-app-logo-icon class="size-5 fill-current" />
                         </span>
-                        <p class="font-medium text-zinc-900 dark:text-white">{{ $siteName }} Editorial Team</p>
+                        <p class="font-medium text-zinc-900 dark:text-white">{{ __(':site Editorial Team', ['site' => $siteName]) }}</p>
                     </div>
                     <p class="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                        At {{ $siteName }}, we provide clear, research-driven information to help consumers and professionals better understand today's financial and business landscape. Our content covers topics ranging from financial strategies and market developments to business analytics, technology, leadership, and organizational management.
+                        {{ __('At :site, we provide clear, research-driven information to help consumers and professionals better understand today’s financial and business landscape. Our content covers topics ranging from financial strategies and market developments to business analytics, technology, leadership, and organizational management.', ['site' => $siteName]) }}
                     </p>
                     <p class="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                        Our goal is to make complex topics easier to understand by presenting practical information, research, and established concepts in a clear and accessible format.
+                        {{ __('Our goal is to make complex topics easier to understand by presenting practical information, research, and established concepts in a clear and accessible format.') }}
                     </p>
                     <flux:button href="{{ route('team') }}" wire:navigate variant="primary" class="mt-1 w-fit">
-                        Learn More About Our Editorial Team
+                        {{ __('Learn More About Our Editorial Team') }}
                     </flux:button>
                 </div>
             </article>
@@ -227,7 +227,7 @@
                 <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
                     <div class="mx-auto max-w-3xl px-6 py-14 lg:px-8">
                         <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
-                            See Also in {{ $sectionMeta['title'] }}
+                            {{ __('See Also in :section', ['section' => $sectionMeta['title']]) }}
                         </h2>
                         <a href="{{ route('article', $relatedArticle['slug']) }}" wire:navigate class="group mt-6 block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
                             <p class="font-medium text-zinc-900 group-hover:underline dark:text-white">

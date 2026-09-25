@@ -2,7 +2,7 @@
     $siteName = config('app.name', 'Laravel');
     $title = null;
 
-    $data = app(\App\Content\SiteContent::class)->all();
+    $data = app(\App\Content\SiteContent::class)->localized();
 
     $sectionStyles = [
         'data-intelligence' => ['icon' => 'circle-stack', 'badge' => 'bg-sky-600', 'chip' => 'bg-gradient-to-r from-sky-500 to-blue-600', 'gradient' => 'bg-gradient-to-br from-sky-400 via-cyan-500 to-blue-600'],
@@ -41,7 +41,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="{{ $siteName }} publishes clear, research-driven guides on data intelligence, business strategy, digital horizons, and people & impact." />
+        <meta name="description" content="{{ __(':site publishes clear, research-driven guides on data intelligence, business strategy, digital horizons, and people & impact.', ['site' => $siteName]) }}" />
     </head>
     <body
         x-data="{ mobileOpen: false }"
@@ -58,13 +58,13 @@
 
                 <div class="mx-auto max-w-4xl px-6 pt-16 pb-12 text-center lg:px-8 lg:pt-20">
                     <span class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-                        Research &amp; business education
+                        {{ __('Research & business education') }}
                     </span>
                     <h1 class="mt-6 text-4xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-5xl dark:text-white">
-                        Welcome to {{ $siteName }}
+                        {{ __('Welcome to :site', ['site' => $siteName]) }}
                     </h1>
                     <p class="mt-6 text-lg leading-relaxed text-zinc-600 text-pretty dark:text-zinc-400">
-                        We provide clear, research-driven information to help consumers and professionals better understand today&rsquo;s financial and business landscape.
+                        {{ __('We provide clear, research-driven information to help consumers and professionals better understand today’s financial and business landscape.') }}
                     </p>
                 </div>
 
@@ -88,7 +88,7 @@
                 <div class="grid gap-12 lg:grid-cols-3">
                     {{-- Main list --}}
                     <div class="min-w-0 lg:col-span-2">
-                        <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Latest Articles</h2>
+                        <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">{{ __('Latest Articles') }}</h2>
 
                         {{-- Featured article --}}
                         <a
@@ -119,7 +119,7 @@
                                 <div class="mt-3 flex items-center gap-1.5 text-sm text-zinc-400 dark:text-zinc-500">
                                     <span>{{ $featuredArticle['author_info']['name'] }}</span>
                                     <span>&middot;</span>
-                                    <time datetime="{{ $featuredArticle['date'] }}">{{ \Carbon\Carbon::parse($featuredArticle['date'])->format('M j, Y') }}</time>
+                                    <time datetime="{{ $featuredArticle['date'] }}">{{ \Carbon\Carbon::parse($featuredArticle['date'])->translatedFormat(__('M j, Y')) }}</time>
                                 </div>
                             </div>
                         </a>
@@ -152,7 +152,7 @@
                                             <div class="mt-2 flex items-center gap-1.5 text-xs text-zinc-400 dark:text-zinc-500">
                                                 <span>{{ $article['author_info']['name'] }}</span>
                                                 <span>&middot;</span>
-                                                <time datetime="{{ $article['date'] }}">{{ \Carbon\Carbon::parse($article['date'])->format('M j, Y') }}</time>
+                                                <time datetime="{{ $article['date'] }}">{{ \Carbon\Carbon::parse($article['date'])->translatedFormat(__('M j, Y')) }}</time>
                                             </div>
                                         </div>
                                     </a>
@@ -163,7 +163,7 @@
 
                     {{-- Sidebar --}}
                     <aside class="min-w-0 lg:col-span-1">
-                        <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">More to Read</h2>
+                        <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">{{ __('More to Read') }}</h2>
 
                         <ul class="mt-6 space-y-4">
                             @foreach ($sidebarArticles as $article)
@@ -202,13 +202,13 @@
                     <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8">
                         <div class="max-w-2xl">
                             <span class="inline-flex items-center rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-medium tracking-wide text-orange-700 uppercase dark:border-orange-900/40 dark:bg-orange-950/30 dark:text-orange-400">
-                                Program Guides
+                                {{ __('Program Guides') }}
                             </span>
                             <h2 class="mt-4 text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white">
-                                In-Depth Course &amp; Program Reviews
+                                {{ __('In-Depth Course & Program Reviews') }}
                             </h2>
                             <p class="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-400">
-                                Detailed breakdowns of specific certifications and degree programs, including curriculum, cost, and what to expect.
+                                {{ __('Detailed breakdowns of specific certifications and degree programs, including curriculum, cost, and what to expect.') }}
                             </p>
                         </div>
 
@@ -243,7 +243,7 @@
                                             {{ $program['intro'] }}
                                         </p>
                                         <span class="mt-4 inline-flex w-fit items-center gap-1.5 rounded-full bg-orange-500 px-4 py-2 text-xs font-semibold text-white transition group-hover:bg-orange-600">
-                                            View Guide
+                                            {{ __('View Guide') }}
                                             <flux:icon name="arrow-right" class="size-3.5" />
                                         </span>
                                     </div>
@@ -269,8 +269,8 @@
                             <div class="mx-auto flex size-10 items-center justify-center rounded-lg text-white shadow-sm sm:mx-0 {{ $value['gradient'] }}">
                                 <flux:icon name="{{ $value['icon'] }}" class="size-5" />
                             </div>
-                            <h3 class="mt-4 font-semibold text-zinc-900 dark:text-white">{{ $value['title'] }}</h3>
-                            <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{{ $value['description'] }}</p>
+                            <h3 class="mt-4 font-semibold text-zinc-900 dark:text-white">{{ __($value['title']) }}</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{{ __($value['description']) }}</p>
                         </div>
                     @endforeach
                 </div>
@@ -284,18 +284,18 @@
 
                 <div class="relative mx-auto max-w-6xl px-6 py-16 text-center lg:px-8 lg:py-20">
                     <span class="inline-flex items-center rounded-full bg-white/15 px-3 py-1 text-xs font-semibold tracking-wide text-white uppercase backdrop-blur">
-                        Meet the Team
+                        {{ __('Meet the Team') }}
                     </span>
                     <h2 class="mt-5 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                        The People Behind {{ $siteName }}
+                        {{ __('The People Behind :site', ['site' => $siteName]) }}
                     </h2>
                     <p class="mx-auto mt-4 max-w-2xl leading-relaxed text-white/85">
-                        Our team combines practical knowledge with research-driven insights to help you navigate financial and business decisions with greater confidence.
+                        {{ __('Our team combines practical knowledge with research-driven insights to help you navigate financial and business decisions with greater confidence.') }}
                     </p>
 
                     <div class="mt-10 flex justify-center">
                         <flux:button href="{{ route('team') }}" wire:navigate variant="primary" class="!bg-white !text-zinc-900 hover:!bg-white/90">
-                            Meet the Full Team
+                            {{ __('Meet the Full Team') }}
                         </flux:button>
                     </div>
                 </div>

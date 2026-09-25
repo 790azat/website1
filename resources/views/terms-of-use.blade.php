@@ -1,8 +1,8 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $title = 'Terms of Use — '.$siteName;
+    $title = __('Terms of Use').' — '.$siteName;
 
-    $data = app(\App\Content\SiteContent::class)->all();
+    $data = app(\App\Content\SiteContent::class)->localized();
     $categories = collect($data['sections'])
         ->map(fn ($meta, $key) => ['id' => $key, 'title' => $meta['title']])
         ->sortBy(fn ($c) => $data['sections'][$c['id']]['order'])
@@ -17,11 +17,11 @@
     $sections = [
         [
             'heading' => 'Acceptance of Terms',
-            'body' => "These Terms of Use (\"Terms\") govern your access to and use of {$siteName}, including our website, articles, and any account features we offer. By accessing or using {$siteName}, you agree to be bound by these Terms. If you do not agree, please do not use the site.",
+            'body' => "These Terms of Use (\"Terms\") govern your access to and use of :site, including our website, articles, and any account features we offer. By accessing or using :site, you agree to be bound by these Terms. If you do not agree, please do not use the site.",
         ],
         [
             'heading' => 'Educational Use Only',
-            'body' => "{$siteName} publishes content for general informational and educational purposes only. Nothing on this site constitutes personalized financial, investment, tax, or legal advice, and it should not be relied upon as such. You should consult a qualified professional before making decisions based on information found here.",
+            'body' => ":site publishes content for general informational and educational purposes only. Nothing on this site constitutes personalized financial, investment, tax, or legal advice, and it should not be relied upon as such. You should consult a qualified professional before making decisions based on information found here.",
         ],
         [
             'heading' => 'Use of the Site',
@@ -36,11 +36,11 @@
         ],
         [
             'heading' => 'Accounts',
-            'body' => "If {$siteName} offers account or dashboard features, you are responsible for maintaining the confidentiality of your login credentials and for all activity that occurs under your account. Please notify us promptly if you suspect any unauthorized use of your account.",
+            'body' => "If :site offers account or dashboard features, you are responsible for maintaining the confidentiality of your login credentials and for all activity that occurs under your account. Please notify us promptly if you suspect any unauthorized use of your account.",
         ],
         [
             'heading' => 'Intellectual Property',
-            'body' => "Unless otherwise noted, all articles, graphics, logos, and other content on {$siteName} are the property of {$siteName} or its licensors and are protected by copyright and other intellectual property laws. You may view and share our content for personal, non-commercial use, but you may not reproduce, distribute, or create derivative works from it without our prior written consent.",
+            'body' => "Unless otherwise noted, all articles, graphics, logos, and other content on :site are the property of :site or its licensors and are protected by copyright and other intellectual property laws. You may view and share our content for personal, non-commercial use, but you may not reproduce, distribute, or create derivative works from it without our prior written consent.",
         ],
         [
             'heading' => 'Third-Party Links',
@@ -48,11 +48,11 @@
         ],
         [
             'heading' => 'Disclaimer of Warranties',
-            'body' => "{$siteName} is provided on an \"as is\" and \"as available\" basis. While we aim to keep our content accurate and up to date, we make no warranties, express or implied, regarding the completeness, reliability, or accuracy of any information on the site.",
+            'body' => ":site is provided on an \"as is\" and \"as available\" basis. While we aim to keep our content accurate and up to date, we make no warranties, express or implied, regarding the completeness, reliability, or accuracy of any information on the site.",
         ],
         [
             'heading' => 'Limitation of Liability',
-            'body' => "To the fullest extent permitted by law, {$siteName} and its team members are not liable for any indirect, incidental, or consequential damages arising from your use of, or inability to use, the site or any content published on it.",
+            'body' => "To the fullest extent permitted by law, :site and its team members are not liable for any indirect, incidental, or consequential damages arising from your use of, or inability to use, the site or any content published on it.",
         ],
         [
             'heading' => 'Changes to These Terms',
@@ -64,7 +64,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="Read the {{ $siteName }} terms of use for the rules and guidelines that govern use of our site." />
+        <meta name="description" content="{{ __('Read the :site terms of use for the rules and guidelines that govern use of our site.', ['site' => $siteName]) }}" />
     </head>
     <body
         x-data="{ mobileOpen: false }"
@@ -80,13 +80,13 @@
 
                 <div class="mx-auto max-w-2xl px-6 pt-16 pb-4 text-center lg:px-8 lg:pt-20">
                     <span class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-                        Legal
+                        {{ __('Legal') }}
                     </span>
                     <h1 class="mt-6 text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
-                        Terms of Use
+                        {{ __('Terms of Use') }}
                     </h1>
                     <p class="mt-6 text-sm text-zinc-500 dark:text-zinc-500">
-                        Last updated {{ $lastUpdated->format('F j, Y') }}
+                        {{ __('Last updated :date', ['date' => $lastUpdated->translatedFormat(__('F j, Y'))]) }}
                     </p>
                 </div>
             </section>
@@ -96,17 +96,17 @@
                     @foreach ($sections as $block)
                         <div>
                             <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">
-                                {{ $block['heading'] }}
+                                {{ __($block['heading']) }}
                             </h2>
                             <p class="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-400">
-                                {{ $block['body'] }}
+                                {{ __($block['body'], ['site' => $siteName]) }}
                             </p>
                             @isset($block['list'])
                                 <ul class="mt-4 space-y-2">
                                     @foreach ($block['list'] as $item)
                                         <li class="flex gap-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                                             <span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span>
-                                            <span>{{ $item }}</span>
+                                            <span>{{ __($item, ['site' => $siteName]) }}</span>
                                         </li>
                                     @endforeach
                                 </ul>
@@ -116,19 +116,19 @@
 
                     <div>
                         <h2 class="text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">
-                            Contact Us
+                            {{ __('Contact Us') }}
                         </h2>
                         <p class="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-400">
-                            If you have any questions about these Terms of Use, please reach out to us at
+                            {{ __('If you have any questions about these Terms of Use, please reach out to us at') }}
                             <a href="mailto:hello@{{ $domainName }}" class="font-medium text-zinc-900 hover:underline dark:text-white">hello@{{ $domainName }}</a>
-                            or visit our <a href="{{ route('contact') }}" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">Contact page</a>.
+                            {{ __('or visit our') }} <a href="{{ route('contact') }}" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">{{ __('Contact page') }}</a>.
                         </p>
                     </div>
                 </div>
 
                 <div class="mt-12 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-400">
                     <p>
-                        {{ $siteName }} publishes educational and informational content only and is not a substitute for personalized financial, investment, tax, or legal advice. These Terms describe the rules for using our site and are not themselves legal advice.
+                        {{ __(':site publishes educational and informational content only and is not a substitute for personalized financial, investment, tax, or legal advice. These Terms describe the rules for using our site and are not themselves legal advice.', ['site' => $siteName]) }}
                     </p>
                 </div>
             </section>

@@ -13,24 +13,24 @@
             </a>
 
             <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">
-                <a href="{{ route('home') }}" wire:navigate class="hover:text-white">Home</a>
+                <a href="{{ route('home') }}" wire:navigate class="hover:text-white">{{ __('Home') }}</a>
                 <span class="text-zinc-700">/</span>
-                <a href="{{ route('team') }}" wire:navigate class="hover:text-white">Our Editorial Team</a>
+                <a href="{{ route('team') }}" wire:navigate class="hover:text-white">{{ __('Our Editorial Team') }}</a>
                 <span class="text-zinc-700">/</span>
-                <a href="{{ route('contact') }}" wire:navigate class="hover:text-white">Contact</a>
+                <a href="{{ route('contact') }}" wire:navigate class="hover:text-white">{{ __('Contact') }}</a>
                 <span class="text-zinc-700">/</span>
-                <a href="{{ route('privacy-policy') }}" wire:navigate class="hover:text-white">Privacy Policy</a>
+                <a href="{{ route('privacy-policy') }}" wire:navigate class="hover:text-white">{{ __('Privacy Policy') }}</a>
                 <span class="text-zinc-700">/</span>
-                <a href="{{ route('terms-of-use') }}" wire:navigate class="hover:text-white">Terms of Use</a>
+                <a href="{{ route('terms-of-use') }}" wire:navigate class="hover:text-white">{{ __('Terms of Use') }}</a>
             </nav>
         </div>
 
         <p class="mt-6 text-xs leading-relaxed text-zinc-500">
-            Information shared by {{ $siteName }} is intended for informational and educational purposes only and should not be interpreted as investment, tax, or legal advice. Financial decisions carry risk, and past performance does not guarantee future results. Always seek advice from a certified professional before making financial decisions.
+            {{ __('Information shared by :site is intended for informational and educational purposes only and should not be interpreted as investment, tax, or legal advice. Financial decisions carry risk, and past performance does not guarantee future results. Always seek advice from a certified professional before making financial decisions.', ['site' => $siteName]) }}
         </p>
 
         <p class="mt-4 text-xs text-zinc-600">
-            &copy; {{ date('Y') }} {{ $siteName }}. All rights reserved.
+            &copy; {{ date('Y') }} {{ $siteName }}. {{ __('All rights reserved.') }}
         </p>
     </div>
 </footer>
