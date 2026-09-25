@@ -1,0 +1,70 @@
+name: Deploy to SmartApe (FTP)
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          tools: composer:v2
+          coverage: none
+
+      - name: Install PHP dependencies
+        run: composer install --no-dev --optimize-autoloader --prefer-dist
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build frontend assets
+        run: npm run build
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftp
+          server-dir: /www/s18113211.smrtp.ru/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.idea/**
+            **/.claude/**
+            **/node_modules/**
+            **/tests/**
+            **/.env
+            **/.env.example
+            **/.env.production
+            **/.editorconfig
+            **/.gitattributes
+            **/.npmrc
+            **/boost.json
+            **/phpstan.neon
+            **/phpunit.xml
+            **/pint.json
+            **/CLAUDE.md
+            **/Claude outputs/**
+            **/storage/logs/**
+            **/storage/framework/cache/**
+            **/storage/framework/sessions/**
+            **/storage/framework/views/**
+            **/public/storage/**
+            **/public/hot
