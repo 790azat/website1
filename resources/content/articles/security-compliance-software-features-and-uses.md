@@ -2,7 +2,7 @@
 title: Security Compliance Software: Features and Uses
 section: digital-horizons
 author: daniel-brooks
-date: 2026-07-19
+date: 2024-10-27
 image: articles/security-compliance-software-features-and-uses.webp
 ---
 

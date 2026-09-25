@@ -2,7 +2,7 @@
 title: Tableau: Features, Pricing, and Data Visualization Capabilities
 section: data-intelligence
 author: james-mitchell
-date: 2026-09-23
+date: 2025-01-11
 image: articles/tableau-features-pricing-and-data-visualization-capabilities.webp
 ---
 

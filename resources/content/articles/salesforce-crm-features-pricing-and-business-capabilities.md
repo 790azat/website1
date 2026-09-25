@@ -2,7 +2,7 @@
 title: Salesforce CRM: Features, Pricing, and Business Capabilities
 section: business-strategy
 author: emily-carter
-date: 2026-09-04
+date: 2025-03-09
 image: articles/salesforce-crm-features-pricing-and-business-capabilities.webp
 ---
 

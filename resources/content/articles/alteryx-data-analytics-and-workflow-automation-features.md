@@ -2,7 +2,7 @@
 title: Alteryx: Data Analytics and Workflow Automation Features
 section: data-intelligence
 author: james-mitchell
-date: 2026-09-08
+date: 2025-12-11
 image: articles/alteryx-data-analytics-and-workflow-automation-features.webp
 ---
 

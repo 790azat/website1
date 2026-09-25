@@ -2,7 +2,7 @@
 title: Microsoft Certifications: Programs, Exams, and Career Paths
 section: people-impact
 author: michael-anderson
-date: 2026-07-21
+date: 2025-05-26
 image: articles/microsoft-certifications-programs-exams-and-career-paths.webp
 ---
 

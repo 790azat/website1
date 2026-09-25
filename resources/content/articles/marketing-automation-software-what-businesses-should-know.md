@@ -2,7 +2,7 @@
 title: Marketing Automation Software: What Businesses Should Know
 section: business-strategy
 author: emily-carter
-date: 2026-04-30
+date: 2026-08-03
 image: articles/marketing-automation-software-what-businesses-should-know.webp
 ---
 

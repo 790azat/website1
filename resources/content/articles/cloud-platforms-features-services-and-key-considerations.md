@@ -2,7 +2,7 @@
 title: Cloud Platforms: Features, Services, and Key Considerations
 section: digital-horizons
 author: james-mitchell
-date: 2026-06-11
+date: 2025-05-20
 image: articles/cloud-platforms-features-services-and-key-considerations.webp
 ---
 

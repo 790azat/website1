@@ -2,7 +2,7 @@
 title: Customer Retention: The Business Case for Long-Term Loyalty
 section: business-strategy
 author: michael-anderson
-date: 2025-11-06
+date: 2024-12-24
 image: articles/customer-retention-the-business-case-for-long-term-loyalty.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Salesforce Einstein: AI Features for Business and CRM
 section: digital-horizons
 author: james-mitchell
-date: 2026-07-28
+date: 2024-12-14
 image: articles/salesforce-einstein-ai-features-for-business-and-crm.webp
 ---
 

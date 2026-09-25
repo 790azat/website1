@@ -2,7 +2,7 @@
 title: University of Illinois iMBA: Tuition, Curriculum, and Admissions
 section: people-impact
 author: james-mitchell
-date: 2026-07-12
+date: 2026-01-20
 image: articles/university-of-illinois-imba-tuition-curriculum-and-admissions.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Organizational Transparency: Building Trust Through Openness
 section: people-impact
 author: daniel-brooks
-date: 2025-12-04
+date: 2026-09-25
 image: articles/organizational-transparency-building-trust-through-openness.webp
 ---
 

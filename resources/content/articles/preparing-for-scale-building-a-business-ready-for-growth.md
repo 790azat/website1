@@ -2,7 +2,7 @@
 title: Preparing for Scale: Building a Business Ready for Growth
 section: business-strategy
 author: daniel-brooks
-date: 2025-11-10
+date: 2025-05-12
 image: articles/preparing-for-scale-building-a-business-ready-for-growth.webp
 ---
 

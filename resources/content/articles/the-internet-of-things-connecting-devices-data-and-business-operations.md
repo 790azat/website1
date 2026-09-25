@@ -2,7 +2,7 @@
 title: The Internet of Things: Connecting Devices, Data and Business Operations
 section: digital-horizons
 author: michael-anderson
-date: 2026-01-04
+date: 2025-10-20
 image: articles/the-internet-of-things-connecting-devices-data-and-business-operations.webp
 ---
 

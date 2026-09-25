@@ -2,7 +2,7 @@
 title: Oracle NetSuite: ERP Features and Business Management Capabilities
 section: business-strategy
 author: michael-anderson
-date: 2026-09-01
+date: 2025-02-16
 image: articles/oracle-netsuite-erp-features-and-business-management-capabilities.webp
 ---
 

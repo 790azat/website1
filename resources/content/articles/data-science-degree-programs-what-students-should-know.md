@@ -2,7 +2,7 @@
 title: Data Science Degree Programs: What Students Should Know
 section: data-intelligence
 author: james-mitchell
-date: 2026-02-18
+date: 2025-02-10
 image: articles/data-science-degree-programs-what-students-should-know.webp
 ---
 

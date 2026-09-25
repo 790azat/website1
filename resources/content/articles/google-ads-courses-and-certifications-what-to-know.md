@@ -2,7 +2,7 @@
 title: Google Ads Courses and Certifications: What to Know
 section: people-impact
 author: daniel-brooks
-date: 2026-08-30
+date: 2026-02-25
 image: articles/google-ads-courses-and-certifications-what-to-know.webp
 ---
 

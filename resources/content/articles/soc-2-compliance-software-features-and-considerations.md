@@ -2,7 +2,7 @@
 title: SOC 2 Compliance Software: Features and Considerations
 section: digital-horizons
 author: james-mitchell
-date: 2026-07-23
+date: 2026-09-01
 image: articles/soc-2-compliance-software-features-and-considerations.webp
 ---
 

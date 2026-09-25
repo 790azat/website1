@@ -2,7 +2,7 @@
 title: Software Development Degree Programs: Courses and Career Paths
 section: people-impact
 author: michael-anderson
-date: 2026-08-26
+date: 2025-01-14
 image: articles/software-development-degree-programs-courses-and-career-paths.webp
 ---
 

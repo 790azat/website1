@@ -2,7 +2,7 @@
 title: E-Commerce Platforms: Features and Key Considerations
 section: business-strategy
 author: emily-carter
-date: 2026-04-09
+date: 2026-06-01
 image: articles/e-commerce-platforms-features-and-key-considerations.webp
 ---
 

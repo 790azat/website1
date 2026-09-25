@@ -2,7 +2,7 @@
 title: Navigating Attribution Chaos: How Privacy-First Tracking is Reshaping Data Intelligence
 section: data-intelligence
 author: emily-carter
-date: 2026-09-25
+date: 2025-01-17
 image: articles/navigating-attribution-chaos-how-privacy-first-tracking-is-reshaping-data-intelligence.webp
 ---
 

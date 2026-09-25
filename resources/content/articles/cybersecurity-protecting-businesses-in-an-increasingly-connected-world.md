@@ -2,7 +2,7 @@
 title: Cybersecurity: Protecting Businesses in an Increasingly Connected World
 section: digital-horizons
 author: daniel-brooks
-date: 2025-12-28
+date: 2026-01-09
 image: articles/cybersecurity-protecting-businesses-in-an-increasingly-connected-world.webp
 ---
 

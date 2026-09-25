@@ -2,7 +2,7 @@
 title: Collaborative Leadership: Using Diverse Perspectives to Improve Decisions
 section: people-impact
 author: michael-anderson
-date: 2025-11-09
+date: 2025-12-05
 image: articles/collaborative-leadership-using-diverse-perspectives-to-improve-decisions.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Data Analytics Certifications: What Professionals Should Know
 section: data-intelligence
 author: daniel-brooks
-date: 2026-02-09
+date: 2025-07-10
 image: articles/data-analytics-certifications-what-professionals-should-know.webp
 ---
 

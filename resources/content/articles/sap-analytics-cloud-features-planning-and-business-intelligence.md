@@ -2,7 +2,7 @@
 title: SAP Analytics Cloud: Features, Planning, and Business Intelligence
 section: data-intelligence
 author: daniel-brooks
-date: 2026-09-15
+date: 2024-12-21
 image: articles/sap-analytics-cloud-features-planning-and-business-intelligence.webp
 ---
 

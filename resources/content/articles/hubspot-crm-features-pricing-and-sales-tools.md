@@ -2,7 +2,7 @@
 title: HubSpot CRM: Features, Pricing, and Sales Tools
 section: business-strategy
 author: james-mitchell
-date: 2026-09-02
+date: 2025-10-16
 image: articles/hubspot-crm-features-pricing-and-sales-tools.webp
 ---
 

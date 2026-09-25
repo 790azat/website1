@@ -2,7 +2,7 @@
 title: Real-Time Analytics: Making Faster Decisions With Live Data
 section: digital-horizons
 author: michael-anderson
-date: 2025-12-22
+date: 2026-09-02
 image: articles/real-time-analytics-making-faster-decisions-with-live-data.webp
 ---
 

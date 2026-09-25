@@ -2,7 +2,7 @@
 title: Machine Learning Software: A Guide for Businesses
 section: digital-horizons
 author: emily-carter
-date: 2026-06-28
+date: 2025-10-04
 image: articles/machine-learning-software-a-guide-for-businesses.webp
 ---
 

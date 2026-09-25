@@ -2,7 +2,7 @@
 title: Domo: Business Intelligence and Data Visualization Features
 section: data-intelligence
 author: emily-carter
-date: 2026-09-14
+date: 2026-03-04
 image: articles/domo-business-intelligence-and-data-visualization-features.webp
 ---
 

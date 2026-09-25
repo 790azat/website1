@@ -2,7 +2,7 @@
 title: Turning Business Data Into Actionable Insights
 section: data-intelligence
 author: michael-anderson
-date: 2025-10-20
+date: 2026-04-04
 image: articles/turning-business-data-into-actionable-insights.webp
 ---
 

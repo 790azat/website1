@@ -2,7 +2,7 @@
 title: Data Visualization Tools: Features and Common Uses
 section: data-intelligence
 author: michael-anderson
-date: 2026-01-15
+date: 2026-04-10
 image: articles/data-visualization-tools-features-and-common-uses.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Master's in Data Analytics: Programs and Career Paths
 section: data-intelligence
 author: james-mitchell
-date: 2026-02-01
+date: 2024-11-17
 image: articles/master-s-in-data-analytics-programs-and-career-paths.webp
 ---
 

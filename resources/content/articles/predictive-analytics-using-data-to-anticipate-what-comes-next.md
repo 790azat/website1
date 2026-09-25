@@ -2,7 +2,7 @@
 title: Predictive Analytics: Using Data to Anticipate What Comes Next
 section: data-intelligence
 author: james-mitchell
-date: 2025-10-13
+date: 2025-04-14
 image: articles/predictive-analytics-using-data-to-anticipate-what-comes-next.webp
 ---
 

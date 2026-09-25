@@ -2,7 +2,7 @@
 title: Business Intelligence Software: Features and Key Considerations
 section: data-intelligence
 author: james-mitchell
-date: 2026-01-11
+date: 2024-09-29
 image: articles/business-intelligence-software-features-and-key-considerations.webp
 ---
 

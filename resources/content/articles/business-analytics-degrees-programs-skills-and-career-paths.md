@@ -2,7 +2,7 @@
 title: Business Analytics Degrees: Programs, Skills, and Career Paths
 section: data-intelligence
 author: emily-carter
-date: 2026-02-14
+date: 2025-09-11
 image: articles/business-analytics-degrees-programs-skills-and-career-paths.webp
 ---
 

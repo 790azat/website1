@@ -2,7 +2,7 @@
 title: Informatica: Data Management and Integration Solutions
 section: data-intelligence
 author: michael-anderson
-date: 2026-09-06
+date: 2026-03-14
 image: articles/informatica-data-management-and-integration-solutions.webp
 ---
 

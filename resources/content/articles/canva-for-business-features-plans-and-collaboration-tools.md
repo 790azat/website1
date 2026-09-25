@@ -2,7 +2,7 @@
 title: Canva for Business: Features, Plans, and Collaboration Tools
 section: digital-horizons
 author: daniel-brooks
-date: 2026-08-10
+date: 2025-11-26
 image: articles/canva-for-business-features-plans-and-collaboration-tools.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Entering New Markets: Key Strategies for Business Expansion
 section: business-strategy
 author: daniel-brooks
-date: 2025-12-05
+date: 2025-03-15
 image: articles/entering-new-markets-key-strategies-for-business-expansion.webp
 ---
 

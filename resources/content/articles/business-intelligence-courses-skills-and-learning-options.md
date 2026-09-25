@@ -2,7 +2,7 @@
 title: Business Intelligence Courses: Skills and Learning Options
 section: data-intelligence
 author: michael-anderson
-date: 2026-02-22
+date: 2026-05-15
 image: articles/business-intelligence-courses-skills-and-learning-options.webp
 ---
 

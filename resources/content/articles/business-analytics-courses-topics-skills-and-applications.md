@@ -2,7 +2,7 @@
 title: Business Analytics Courses: Topics, Skills, and Applications
 section: data-intelligence
 author: daniel-brooks
-date: 2026-01-19
+date: 2024-10-04
 image: articles/business-analytics-courses-topics-skills-and-applications.webp
 ---
 

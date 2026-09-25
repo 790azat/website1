@@ -2,7 +2,7 @@
 title: Strategic Positioning: Defining Your Place in a Competitive Market
 section: business-strategy
 author: michael-anderson
-date: 2025-11-16
+date: 2025-08-18
 image: articles/strategic-positioning-defining-your-place-in-a-competitive-market.webp
 ---
 

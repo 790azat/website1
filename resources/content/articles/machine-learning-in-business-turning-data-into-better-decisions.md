@@ -2,7 +2,7 @@
 title: Machine Learning in Business: Turning Data Into Better Decisions
 section: digital-horizons
 author: michael-anderson
-date: 2025-12-27
+date: 2026-08-11
 image: articles/machine-learning-in-business-turning-data-into-better-decisions.webp
 ---
 

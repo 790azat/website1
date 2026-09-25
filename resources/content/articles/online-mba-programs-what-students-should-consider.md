@@ -2,7 +2,7 @@
 title: Online MBA Programs: What Students Should Consider
 section: people-impact
 author: michael-anderson
-date: 2026-07-31
+date: 2026-06-23
 image: articles/online-mba-programs-what-students-should-consider.webp
 ---
 

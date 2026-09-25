@@ -2,7 +2,7 @@
 title: Database Management Software: Features and Uses
 section: digital-horizons
 author: michael-anderson
-date: 2026-07-15
+date: 2025-10-02
 image: articles/database-management-software-features-and-uses.webp
 ---
 

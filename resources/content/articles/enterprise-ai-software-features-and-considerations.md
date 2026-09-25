@@ -2,7 +2,7 @@
 title: Enterprise AI Software: Features and Considerations
 section: digital-horizons
 author: daniel-brooks
-date: 2026-07-06
+date: 2024-11-05
 image: articles/enterprise-ai-software-features-and-considerations.webp
 ---
 

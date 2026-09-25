@@ -2,7 +2,7 @@
 title: Syracuse University Online MBA: Tuition, Curriculum, and Admissions
 section: people-impact
 author: daniel-brooks
-date: 2026-07-09
+date: 2024-12-18
 image: articles/syracuse-university-online-mba-tuition-curriculum-and-admissions.webp
 ---
 

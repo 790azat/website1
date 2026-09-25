@@ -2,7 +2,7 @@
 title: Understanding the Growth Funnel: From Awareness to Revenue
 section: business-strategy
 author: emily-carter
-date: 2025-11-12
+date: 2026-08-19
 image: articles/understanding-the-growth-funnel-from-awareness-to-revenue.webp
 ---
 

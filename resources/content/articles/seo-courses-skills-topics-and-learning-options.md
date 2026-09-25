@@ -2,7 +2,7 @@
 title: SEO Courses: Skills, Topics, and Learning Options
 section: people-impact
 author: daniel-brooks
-date: 2026-08-13
+date: 2025-09-29
 image: articles/seo-courses-skills-topics-and-learning-options.webp
 ---
 

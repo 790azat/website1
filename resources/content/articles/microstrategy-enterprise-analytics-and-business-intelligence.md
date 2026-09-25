@@ -2,7 +2,7 @@
 title: MicroStrategy: Enterprise Analytics and Business Intelligence
 section: data-intelligence
 author: daniel-brooks
-date: 2026-09-10
+date: 2025-02-03
 image: articles/microstrategy-enterprise-analytics-and-business-intelligence.webp
 ---
 

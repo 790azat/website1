@@ -2,7 +2,7 @@
 title: Data Visualization: Making Complex Information Easier to Understand
 section: data-intelligence
 author: james-mitchell
-date: 2025-10-07
+date: 2025-11-09
 image: articles/data-visualization-making-complex-information-easier-to-understand.webp
 ---
 

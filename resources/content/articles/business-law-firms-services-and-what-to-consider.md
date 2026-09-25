@@ -2,7 +2,7 @@
 title: Business Law Firms: Services and What to Consider
 section: business-strategy
 author: michael-anderson
-date: 2026-05-25
+date: 2025-04-07
 image: articles/business-law-firms-services-and-what-to-consider.webp
 ---
 

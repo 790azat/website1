@@ -2,7 +2,7 @@
 title: Online Marketing Certifications for Career Development
 section: people-impact
 author: emily-carter
-date: 2026-09-03
+date: 2025-09-23
 image: articles/online-marketing-certifications-for-career-development.webp
 ---
 

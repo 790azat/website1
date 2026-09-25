@@ -16,6 +16,13 @@ test('every article has valid front matter, a known section and author, and an e
     }
 });
 
+test('every article has a unique publication date that is not in the future', function () {
+    $dates = array_column(app(SiteContent::class)->build()['articles'], 'date');
+
+    expect(array_diff_assoc($dates, array_unique($dates)))->toBeEmpty()
+        ->and(max($dates) <= now()->toDateString())->toBeTrue();
+});
+
 test('every program links to an existing article', function () {
     $content = app(SiteContent::class)->build();
     $slugs = array_column($content['articles'], 'slug');

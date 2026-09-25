@@ -2,7 +2,7 @@
 title: How Business Analytics Supports Better Decision-Making
 section: data-intelligence
 author: emily-carter
-date: 2025-10-14
+date: 2025-05-07
 image: articles/how-business-analytics-supports-better-decision-making.webp
 ---
 

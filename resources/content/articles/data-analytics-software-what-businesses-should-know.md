@@ -2,7 +2,7 @@
 title: Data Analytics Software: What Businesses Should Know
 section: data-intelligence
 author: daniel-brooks
-date: 2026-01-28
+date: 2026-08-08
 image: articles/data-analytics-software-what-businesses-should-know.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Building More Inclusive Organizations: Beyond Traditional Diversity Initiatives
 section: people-impact
 author: emily-carter
-date: 2025-11-29
+date: 2025-07-24
 image: articles/building-more-inclusive-organizations-beyond-traditional-diversity-initiatives.webp
 ---
 

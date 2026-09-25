@@ -2,7 +2,7 @@
 title: Business Certifications: Programs, Skills, and Career Benefits
 section: people-impact
 author: james-mitchell
-date: 2026-08-05
+date: 2026-06-14
 image: articles/business-certifications-programs-skills-and-career-benefits.webp
 ---
 

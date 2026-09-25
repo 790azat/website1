@@ -2,7 +2,7 @@
 title: Online Business Degree Programs: What to Know
 section: people-impact
 author: emily-carter
-date: 2026-08-17
+date: 2025-01-28
 image: articles/online-business-degree-programs-what-to-know.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Empathy in Leadership: Understanding Its Role in Modern Organizations
 section: people-impact
 author: michael-anderson
-date: 2025-11-17
+date: 2025-01-27
 image: articles/empathy-in-leadership-understanding-its-role-in-modern-organizations.webp
 ---
 

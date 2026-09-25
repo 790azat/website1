@@ -2,7 +2,7 @@
 title: Cyber Insurance: Coverage and Key Considerations
 section: business-strategy
 author: emily-carter
-date: 2026-05-17
+date: 2025-07-16
 image: articles/cyber-insurance-coverage-and-key-considerations.webp
 ---
 

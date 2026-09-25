@@ -2,7 +2,7 @@
 title: Invoicing Software for Small Businesses: A Guide
 section: business-strategy
 author: james-mitchell
-date: 2026-04-13
+date: 2025-04-10
 image: articles/invoicing-software-for-small-businesses-a-guide.webp
 ---
 

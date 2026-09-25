@@ -2,7 +2,7 @@
 title: IBM Cognos Analytics: Key Takeaways
 section: data-intelligence
 author: james-mitchell
-date: 2026-09-18
+date: 2025-12-20
 image: articles/ibm-cognos-analytics-key-takeaways.webp
 ---
 

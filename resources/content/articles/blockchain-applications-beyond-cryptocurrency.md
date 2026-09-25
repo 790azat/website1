@@ -2,7 +2,7 @@
 title: Blockchain Applications Beyond Cryptocurrency
 section: digital-horizons
 author: james-mitchell
-date: 2026-01-03
+date: 2024-12-19
 image: articles/blockchain-applications-beyond-cryptocurrency.webp
 ---
 

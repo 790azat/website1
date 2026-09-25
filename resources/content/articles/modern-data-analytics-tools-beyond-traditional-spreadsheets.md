@@ -2,7 +2,7 @@
 title: Modern Data Analytics: Tools Beyond Traditional Spreadsheets
 section: data-intelligence
 author: james-mitchell
-date: 2025-10-17
+date: 2025-11-30
 image: articles/modern-data-analytics-tools-beyond-traditional-spreadsheets.webp
 ---
 

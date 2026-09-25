@@ -2,7 +2,7 @@
 title: ChatGPT Enterprise: Features, Security, and Business Use Cases
 section: digital-horizons
 author: daniel-brooks
-date: 2026-08-15
+date: 2025-08-23
 image: articles/chatgpt-enterprise-features-security-and-business-use-cases.webp
 ---
 

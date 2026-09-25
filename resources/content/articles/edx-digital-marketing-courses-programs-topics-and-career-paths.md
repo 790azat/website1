@@ -2,7 +2,7 @@
 title: edX Digital Marketing Courses: Programs, Topics, and Career Paths
 section: people-impact
 author: daniel-brooks
-date: 2026-09-20
+date: 2026-03-07
 image: articles/edx-digital-marketing-courses-programs-topics-and-career-paths.webp
 ---
 

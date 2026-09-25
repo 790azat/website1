@@ -2,7 +2,7 @@
 title: Teradata: Enterprise Data Analytics and Cloud Solutions
 section: data-intelligence
 author: daniel-brooks
-date: 2026-09-05
+date: 2025-11-29
 image: articles/teradata-enterprise-data-analytics-and-cloud-solutions.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Meta Professional Certificates: Programs, Skills, and Career Options
 section: people-impact
 author: james-mitchell
-date: 2026-07-17
+date: 2026-07-18
 image: articles/meta-professional-certificates-programs-skills-and-career-options.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Virtual Data Room Providers: What to Look For
 section: business-strategy
 author: james-mitchell
-date: 2026-03-07
+date: 2026-09-08
 image: articles/virtual-data-room-providers-what-to-look-for.webp
 ---
 

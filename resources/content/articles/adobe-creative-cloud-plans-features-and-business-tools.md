@@ -2,7 +2,7 @@
 title: Adobe Creative Cloud: Plans, Features, and Business Tools
 section: digital-horizons
 author: michael-anderson
-date: 2026-08-11
+date: 2025-08-28
 image: articles/adobe-creative-cloud-plans-features-and-business-tools.webp
 ---
 

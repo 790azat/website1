@@ -2,7 +2,7 @@
 title: Four Types of Analytics Every Business Should Understand
 section: data-intelligence
 author: michael-anderson
-date: 2025-10-10
+date: 2025-08-09
 image: articles/four-types-of-analytics-every-business-should-understand.webp
 ---
 

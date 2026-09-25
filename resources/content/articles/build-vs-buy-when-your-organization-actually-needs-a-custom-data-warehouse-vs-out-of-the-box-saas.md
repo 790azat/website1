@@ -2,7 +2,7 @@
 title: Build vs. Buy: When Your Organization Actually Needs a Custom Data Warehouse vs. Out-of-the-Box SaaS
 section: data-intelligence
 author: michael-anderson
-date: 2026-09-22
+date: 2024-10-03
 image: articles/build-vs-buy-when-your-organization-actually-needs-a-custom-data-warehouse-vs-out-of-the-box-saas.webp
 ---
 
