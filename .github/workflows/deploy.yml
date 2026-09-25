@@ -29,6 +29,9 @@ jobs:
       - name: Install PHP dependencies
         run: composer install --no-dev --optimize-autoloader --prefer-dist
 
+      - name: Cache site content
+        run: php artisan content:cache
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:

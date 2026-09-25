@@ -1,6 +1,6 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $data = require resource_path('data/articles.php');
+    $data = app(\App\Content\SiteContent::class)->all();
 
     $article = collect($data['articles'])->firstWhere('slug', $slug);
 

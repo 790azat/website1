@@ -2,7 +2,7 @@
     $siteName = config('app.name', 'Laravel');
     $title = 'Privacy Policy — '.$siteName;
 
-    $data = require resource_path('data/articles.php');
+    $data = app(\App\Content\SiteContent::class)->all();
     $categories = collect($data['sections'])
         ->map(fn ($meta, $key) => ['id' => $key, 'title' => $meta['title']])
         ->sortBy(fn ($c) => $data['sections'][$c['id']]['order'])

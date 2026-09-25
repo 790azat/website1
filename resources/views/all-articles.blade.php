@@ -1,6 +1,6 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $data = require resource_path('data/articles.php');
+    $data = app(\App\Content\SiteContent::class)->all();
 
     $sectionStyles = [
         'data-intelligence' => ['badge' => 'bg-sky-600'],

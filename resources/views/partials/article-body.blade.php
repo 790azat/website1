@@ -3,7 +3,7 @@
     "## " / "### " headings, "* " bullet lists, and a References section)
     into styled HTML.
 
-    Expects: $body (string) — the raw article text from resources/data/articles.php.
+    Expects: $body (string) — the raw article text from resources/content/articles/<slug>.md.
 --}}
 @php
     if (! function_exists('render_article_body')) {

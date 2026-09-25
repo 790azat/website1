@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Content\SiteContent;
 use Carbon\CarbonImmutable;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;
@@ -15,7 +16,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(SiteContent::class, fn (): SiteContent => new SiteContent(
+            resource_path('data/site.php'),
+            resource_path('content/articles'),
+            $this->app->bootstrapPath('cache/content.php'),
+        ));
     }
 
     /**
