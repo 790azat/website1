@@ -52,6 +52,12 @@ jobs:
           SSHPASS: ${{ secrets.SSH_PASSWORD }}
         run: |
           set -e
+          # A re-run of an older deploy must not overwrite newer code on the server.
+          git fetch --quiet origin main
+          if [ "$(git rev-parse origin/main)" != "$GITHUB_SHA" ]; then
+            echo "::notice::Skipping deploy: $GITHUB_SHA is no longer the head of main."
+            exit 0
+          fi
           sshpass -e rsync -az --stats \
             -e "ssh -p ${{ secrets.SSH_PORT }} -o StrictHostKeyChecking=no" \
             --exclude='.git' \
@@ -78,3 +84,10 @@ jobs:
             --exclude='/public/storage' \
             --exclude='/public/hot' \
             ./ "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:www/s18113211.smrtp.ru/"
+
+          # Compiled Blade views are not synced; drop them so every view is
+          # recompiled from the files just deployed.
+          sshpass -e ssh -p ${{ secrets.SSH_PORT }} -o StrictHostKeyChecking=no \
+            "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}" \
+            'rm -f www/s18113211.smrtp.ru/storage/framework/views/*.php' \
+            || echo "::warning::Could not clear compiled views on the server."
