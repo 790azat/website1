@@ -2,7 +2,7 @@
 title: Google Workspace: Business Plans, Features, and Productivity Tools
 section: digital-horizons
 author: james-mitchell
-date: 2026-08-12
+date: 2025-05-22
 image: articles/google-workspace-business-plans-features-and-productivity-tools.webp
 ---
 

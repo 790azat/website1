@@ -2,7 +2,7 @@
 title: Sales Automation Tools: Features and Business Uses
 section: business-strategy
 author: daniel-brooks
-date: 2026-03-11
+date: 2025-06-03
 image: articles/sales-automation-tools-features-and-business-uses.webp
 ---
 

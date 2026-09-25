@@ -2,7 +2,7 @@
 title: HR Software: Features and Key Considerations
 section: business-strategy
 author: daniel-brooks
-date: 2026-03-23
+date: 2026-07-01
 image: articles/hr-software-features-and-key-considerations.webp
 ---
 

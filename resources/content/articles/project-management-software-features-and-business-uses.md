@@ -2,7 +2,7 @@
 title: Project Management Software: Features and Business Uses
 section: business-strategy
 author: michael-anderson
-date: 2026-04-22
+date: 2025-05-16
 image: articles/project-management-software-features-and-business-uses.webp
 ---
 

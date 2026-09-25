@@ -2,7 +2,7 @@
 title: Business Intelligence: Turning Information Into Strategic Insight
 section: data-intelligence
 author: daniel-brooks
-date: 2025-10-08
+date: 2025-01-16
 image: articles/business-intelligence-turning-information-into-strategic-insight.webp
 ---
 

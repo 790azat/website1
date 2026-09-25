@@ -2,7 +2,7 @@
 title: Okta: Identity and Access Management Features
 section: digital-horizons
 author: emily-carter
-date: 2026-08-03
+date: 2026-08-22
 image: articles/okta-identity-and-access-management-features.webp
 ---
 

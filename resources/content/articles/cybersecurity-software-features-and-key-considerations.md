@@ -2,7 +2,7 @@
 title: Cybersecurity Software: Features and Key Considerations
 section: digital-horizons
 author: michael-anderson
-date: 2026-06-19
+date: 2025-03-01
 image: articles/cybersecurity-software-features-and-key-considerations.webp
 ---
 

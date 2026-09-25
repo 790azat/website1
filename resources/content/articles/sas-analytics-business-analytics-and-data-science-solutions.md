@@ -2,7 +2,7 @@
 title: SAS Analytics: Business Analytics and Data Science Solutions
 section: data-intelligence
 author: emily-carter
-date: 2026-09-19
+date: 2025-09-04
 image: articles/sas-analytics-business-analytics-and-data-science-solutions.webp
 ---
 

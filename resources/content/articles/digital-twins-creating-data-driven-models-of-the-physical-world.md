@@ -2,7 +2,7 @@
 title: Digital Twins: Creating Data-Driven Models of the Physical World
 section: digital-horizons
 author: daniel-brooks
-date: 2025-12-23
+date: 2024-11-14
 image: articles/digital-twins-creating-data-driven-models-of-the-physical-world.webp
 ---
 

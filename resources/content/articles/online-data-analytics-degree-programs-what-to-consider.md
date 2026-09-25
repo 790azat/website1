@@ -2,7 +2,7 @@
 title: Online Data Analytics Degree Programs: What to Consider
 section: data-intelligence
 author: daniel-brooks
-date: 2026-02-26
+date: 2025-09-07
 image: articles/online-data-analytics-degree-programs-what-to-consider.webp
 ---
 

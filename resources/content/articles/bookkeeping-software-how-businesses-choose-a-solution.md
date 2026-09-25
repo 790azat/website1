@@ -2,7 +2,7 @@
 title: Bookkeeping Software: How Businesses Choose a Solution
 section: business-strategy
 author: james-mitchell
-date: 2026-05-21
+date: 2026-03-08
 image: articles/bookkeeping-software-how-businesses-choose-a-solution.webp
 ---
 

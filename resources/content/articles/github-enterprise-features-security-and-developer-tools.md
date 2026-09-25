@@ -2,7 +2,7 @@
 title: GitHub Enterprise: Features, Security, and Developer Tools
 section: digital-horizons
 author: emily-carter
-date: 2026-08-08
+date: 2026-08-13
 image: articles/github-enterprise-features-security-and-developer-tools.webp
 ---
 

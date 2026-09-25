@@ -2,7 +2,7 @@
 title: Generative AI: Moving From Experimentation to Business Applications
 section: digital-horizons
 author: emily-carter
-date: 2026-01-09
+date: 2025-12-19
 image: articles/generative-ai-moving-from-experimentation-to-business-applications.webp
 ---
 

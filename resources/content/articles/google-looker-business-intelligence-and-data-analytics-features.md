@@ -2,7 +2,7 @@
 title: Google Looker: Business Intelligence and Data Analytics Features
 section: data-intelligence
 author: michael-anderson
-date: 2026-09-22
+date: 2026-07-14
 image: articles/google-looker-business-intelligence-and-data-analytics-features.webp
 ---
 

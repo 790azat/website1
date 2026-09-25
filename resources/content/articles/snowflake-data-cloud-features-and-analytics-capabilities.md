@@ -2,7 +2,7 @@
 title: Snowflake: Data Cloud Features and Analytics Capabilities
 section: data-intelligence
 author: emily-carter
-date: 2026-09-09
+date: 2025-02-18
 image: articles/snowflake-data-cloud-features-and-analytics-capabilities.webp
 ---
 

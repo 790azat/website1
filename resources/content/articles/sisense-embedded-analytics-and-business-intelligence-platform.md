@@ -2,7 +2,7 @@
 title: Sisense: Embedded Analytics and Business Intelligence Platform
 section: data-intelligence
 author: michael-anderson
-date: 2026-09-12
+date: 2025-07-05
 image: articles/sisense-embedded-analytics-and-business-intelligence-platform.webp
 ---
 

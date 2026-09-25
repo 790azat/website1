@@ -2,7 +2,7 @@
 title: AI-Driven Personalization at Scale: Beyond the Hype and Into the Architecture
 section: data-intelligence
 author: michael-anderson
-date: 2026-09-22
+date: 2026-03-01
 image: articles/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture.webp
 ---
 

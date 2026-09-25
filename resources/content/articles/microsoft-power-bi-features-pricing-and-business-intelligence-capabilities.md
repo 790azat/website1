@@ -2,7 +2,7 @@
 title: Microsoft Power BI: Features, Pricing, and Business Intelligence Capabilities
 section: data-intelligence
 author: emily-carter
-date: 2026-09-25
+date: 2026-03-13
 image: articles/microsoft-power-bi-features-pricing-and-business-intelligence-capabilities.webp
 ---
 

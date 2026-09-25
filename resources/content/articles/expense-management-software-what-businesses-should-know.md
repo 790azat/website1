@@ -2,7 +2,7 @@
 title: Expense Management Software: What Businesses Should Know
 section: business-strategy
 author: james-mitchell
-date: 2026-04-01
+date: 2025-09-21
 image: articles/expense-management-software-what-businesses-should-know.webp
 ---
 

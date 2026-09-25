@@ -2,7 +2,7 @@
 title: Arizona State University Online MBA: Tuition, Courses, and Admissions
 section: people-impact
 author: emily-carter
-date: 2026-07-13
+date: 2026-06-15
 image: articles/arizona-state-university-online-mba-tuition-courses-and-admissions.webp
 ---
 

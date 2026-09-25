@@ -2,7 +2,7 @@
 title: Data Integration: Bringing Business Information Together
 section: data-intelligence
 author: daniel-brooks
-date: 2025-10-11
+date: 2026-08-12
 image: articles/data-integration-bringing-business-information-together.webp
 ---
 

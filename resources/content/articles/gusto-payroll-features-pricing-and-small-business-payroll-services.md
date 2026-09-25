@@ -2,7 +2,7 @@
 title: Gusto Payroll: Features, Pricing, and Small Business Payroll Services
 section: business-strategy
 author: james-mitchell
-date: 2026-08-28
+date: 2026-01-22
 image: articles/gusto-payroll-features-pricing-and-small-business-payroll-services.webp
 ---
 

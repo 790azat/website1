@@ -2,7 +2,7 @@
 title: Data Science vs. Data Analytics Degrees: Key Differences
 section: data-intelligence
 author: emily-carter
-date: 2026-01-24
+date: 2025-12-13
 image: articles/data-science-vs-data-analytics-degrees-key-differences.webp
 ---
 

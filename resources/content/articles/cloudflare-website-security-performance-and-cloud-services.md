@@ -2,7 +2,7 @@
 title: Cloudflare: Website Security, Performance, and Cloud Services
 section: digital-horizons
 author: james-mitchell
-date: 2026-08-07
+date: 2026-08-21
 image: articles/cloudflare-website-security-performance-and-cloud-services.webp
 ---
 

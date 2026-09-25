@@ -2,7 +2,7 @@
 title: Developing Future Leaders: Preparing Talent for New Challenges
 section: people-impact
 author: daniel-brooks
-date: 2025-12-01
+date: 2026-02-07
 image: articles/developing-future-leaders-preparing-talent-for-new-challenges.webp
 ---
 

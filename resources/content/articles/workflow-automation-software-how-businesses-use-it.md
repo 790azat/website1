@@ -2,7 +2,7 @@
 title: Workflow Automation Software: How Businesses Use It
 section: business-strategy
 author: daniel-brooks
-date: 2026-05-29
+date: 2025-07-21
 image: articles/workflow-automation-software-how-businesses-use-it.webp
 ---
 

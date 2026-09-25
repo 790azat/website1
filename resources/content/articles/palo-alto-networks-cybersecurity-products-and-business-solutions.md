@@ -2,7 +2,7 @@
 title: Palo Alto Networks: Cybersecurity Products and Business Solutions
 section: digital-horizons
 author: james-mitchell
-date: 2026-08-02
+date: 2025-01-29
 image: articles/palo-alto-networks-cybersecurity-products-and-business-solutions.webp
 ---
 

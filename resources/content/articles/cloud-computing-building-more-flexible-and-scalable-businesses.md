@@ -2,7 +2,7 @@
 title: Cloud Computing: Building More Flexible and Scalable Businesses
 section: digital-horizons
 author: james-mitchell
-date: 2026-01-06
+date: 2025-04-20
 image: articles/cloud-computing-building-more-flexible-and-scalable-businesses.webp
 ---
 

@@ -2,7 +2,7 @@
 title: WGU Online Business Degrees: Programs, Tuition, and Admissions
 section: people-impact
 author: michael-anderson
-date: 2026-07-16
+date: 2025-06-21
 image: articles/wgu-online-business-degrees-programs-tuition-and-admissions.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Moving Beyond Dashboards: Building Actionable Data Loops Instead of Report Graveyards
 section: data-intelligence
 author: michael-anderson
-date: 2026-09-22
+date: 2026-03-20
 image: articles/moving-beyond-dashboards-building-actionable-data-loops-instead-of-report-graveyards.webp
 ---
 

@@ -2,7 +2,7 @@
 title: LinkedIn Learning: Courses, Pricing, and Professional Development
 section: people-impact
 author: daniel-brooks
-date: 2026-07-25
+date: 2026-07-27
 image: articles/linkedin-learning-courses-pricing-and-professional-development.webp
 ---
 

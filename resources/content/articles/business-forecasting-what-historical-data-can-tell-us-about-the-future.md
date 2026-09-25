@@ -2,7 +2,7 @@
 title: Business Forecasting: What Historical Data Can Tell Us About the Future
 section: data-intelligence
 author: michael-anderson
-date: 2025-09-29
+date: 2025-05-11
 image: articles/business-forecasting-what-historical-data-can-tell-us-about-the-future.webp
 ---
 

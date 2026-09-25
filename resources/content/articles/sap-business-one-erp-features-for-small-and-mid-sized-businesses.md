@@ -2,7 +2,7 @@
 title: SAP Business One: ERP Features for Small and Mid-Sized Businesses
 section: business-strategy
 author: daniel-brooks
-date: 2026-08-31
+date: 2025-01-30
 image: articles/sap-business-one-erp-features-for-small-and-mid-sized-businesses.webp
 ---
 

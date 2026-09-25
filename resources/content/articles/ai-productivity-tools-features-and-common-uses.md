@@ -2,7 +2,7 @@
 title: AI Productivity Tools: Features and Common Uses
 section: digital-horizons
 author: daniel-brooks
-date: 2026-06-24
+date: 2025-01-23
 image: articles/ai-productivity-tools-features-and-common-uses.webp
 ---
 

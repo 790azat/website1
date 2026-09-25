@@ -2,7 +2,7 @@
 title: Microsoft Copilot: AI Features, Plans, and Business Uses
 section: digital-horizons
 author: james-mitchell
-date: 2026-08-18
+date: 2025-04-27
 image: articles/microsoft-copilot-ai-features-plans-and-business-uses.webp
 ---
 

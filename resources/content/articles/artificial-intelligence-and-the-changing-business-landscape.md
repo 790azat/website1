@@ -2,7 +2,7 @@
 title: Artificial Intelligence and the Changing Business Landscape
 section: digital-horizons
 author: james-mitchell
-date: 2026-01-10
+date: 2025-05-23
 image: articles/artificial-intelligence-and-the-changing-business-landscape.webp
 ---
 

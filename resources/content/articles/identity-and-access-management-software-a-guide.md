@@ -2,7 +2,7 @@
 title: Identity and Access Management Software: A Guide
 section: digital-horizons
 author: james-mitchell
-date: 2026-07-02
+date: 2025-03-21
 image: articles/identity-and-access-management-software-a-guide.webp
 ---
 

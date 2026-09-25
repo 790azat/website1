@@ -2,7 +2,7 @@
 title: Oracle Analytics: Features, Cloud Services, and Business Intelligence
 section: data-intelligence
 author: michael-anderson
-date: 2026-09-17
+date: 2025-01-15
 image: articles/oracle-analytics-features-cloud-services-and-business-intelligence.webp
 ---
 

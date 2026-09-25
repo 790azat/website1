@@ -2,7 +2,7 @@
 title: Payroll Software: Features and Business Uses
 section: business-strategy
 author: james-mitchell
-date: 2026-04-18
+date: 2025-03-19
 image: articles/payroll-software-features-and-business-uses.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Google Gemini for Business: AI Features and Workspace Capabilities
 section: digital-horizons
 author: michael-anderson
-date: 2026-08-16
+date: 2026-08-15
 image: articles/google-gemini-for-business-ai-features-and-workspace-capabilities.webp
 ---
 

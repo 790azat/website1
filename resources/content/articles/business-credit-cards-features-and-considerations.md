@@ -2,7 +2,7 @@
 title: Business Credit Cards: Features and Considerations
 section: business-strategy
 author: james-mitchell
-date: 2026-05-04
+date: 2026-05-28
 image: articles/business-credit-cards-features-and-considerations.webp
 ---
 

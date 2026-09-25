@@ -2,7 +2,7 @@
 title: Business Insurance: Types of Coverage and Key Considerations
 section: business-strategy
 author: daniel-brooks
-date: 2026-04-26
+date: 2026-01-07
 image: articles/business-insurance-types-of-coverage-and-key-considerations.webp
 ---
 

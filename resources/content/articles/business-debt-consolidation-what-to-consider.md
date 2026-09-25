@@ -2,7 +2,7 @@
 title: Business Debt Consolidation: What to Consider
 section: business-strategy
 author: emily-carter
-date: 2026-03-15
+date: 2026-08-18
 image: articles/business-debt-consolidation-what-to-consider.webp
 ---
 

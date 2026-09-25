@@ -2,7 +2,7 @@
 title: AWS Certification: Exams, Training, and Career Paths
 section: people-impact
 author: james-mitchell
-date: 2026-07-22
+date: 2025-11-01
 image: articles/aws-certification-exams-training-and-career-paths.webp
 ---
 

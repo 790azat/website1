@@ -2,7 +2,7 @@
 title: Coursera Digital Marketing Courses: Programs, Topics, and Career Skills
 section: people-impact
 author: michael-anderson
-date: 2026-09-11
+date: 2025-12-27
 image: articles/coursera-digital-marketing-courses-programs-topics-and-career-skills.webp
 ---
 

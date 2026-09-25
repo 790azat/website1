@@ -2,7 +2,7 @@
 title: DocuSign: Electronic Signature Features, Pricing, and Business Uses
 section: business-strategy
 author: james-mitchell
-date: 2026-08-23
+date: 2024-11-03
 image: articles/docusign-electronic-signature-features-pricing-and-business-uses.webp
 ---
 

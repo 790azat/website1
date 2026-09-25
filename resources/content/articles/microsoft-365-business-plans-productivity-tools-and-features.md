@@ -2,7 +2,7 @@
 title: Microsoft 365: Business Plans, Productivity Tools, and Features
 section: digital-horizons
 author: emily-carter
-date: 2026-08-14
+date: 2026-08-20
 image: articles/microsoft-365-business-plans-productivity-tools-and-features.webp
 ---
 

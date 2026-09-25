@@ -2,7 +2,7 @@
 title: Business Management Courses: Skills and Learning Options
 section: people-impact
 author: james-mitchell
-date: 2026-09-07
+date: 2025-06-12
 image: articles/business-management-courses-skills-and-learning-options.webp
 ---
 

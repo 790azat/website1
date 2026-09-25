@@ -2,7 +2,7 @@
 title: From Startup to Scale-Up: Navigating the Next Stage of Growth
 section: business-strategy
 author: daniel-brooks
-date: 2025-08-12
+date: 2025-05-01
 image: articles/from-startup-to-scale-up-navigating-the-next-stage-of-growth.webp
 ---
 

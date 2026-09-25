@@ -2,7 +2,7 @@
 title: Digital Marketing Courses: What to Look For
 section: people-impact
 author: michael-anderson
-date: 2026-07-27
+date: 2026-04-05
 image: articles/digital-marketing-courses-what-to-look-for.webp
 ---
 

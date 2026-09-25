@@ -2,7 +2,7 @@
 title: Google Career Certificates: Programs, Costs, and Career Paths
 section: people-impact
 author: emily-carter
-date: 2026-07-24
+date: 2026-09-13
 image: articles/google-career-certificates-programs-costs-and-career-paths.webp
 ---
 

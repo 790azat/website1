@@ -2,7 +2,7 @@
 title: MongoDB Atlas: Cloud Database Features and Pricing
 section: digital-horizons
 author: michael-anderson
-date: 2026-08-01
+date: 2026-02-23
 image: articles/mongodb-atlas-cloud-database-features-and-pricing.webp
 ---
 

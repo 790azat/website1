@@ -2,7 +2,7 @@
 title: Leadership and Social Impact: How Organizations Can Strengthen Communities
 section: people-impact
 author: daniel-brooks
-date: 2025-11-14
+date: 2026-07-10
 image: articles/leadership-and-social-impact-how-organizations-can-strengthen-communities.webp
 ---
 

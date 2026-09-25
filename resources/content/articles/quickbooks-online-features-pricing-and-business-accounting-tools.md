@@ -2,7 +2,7 @@
 title: QuickBooks Online: Features, Pricing, and Business Accounting Tools
 section: business-strategy
 author: emily-carter
-date: 2026-08-29
+date: 2024-10-26
 image: articles/quickbooks-online-features-pricing-and-business-accounting-tools.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Southern New Hampshire University Online Business Programs: Degrees and Tuition
 section: people-impact
 author: daniel-brooks
-date: 2026-07-14
+date: 2024-12-31
 image: articles/southern-new-hampshire-university-online-business-programs-degrees-and-tuition.webp
 ---
 

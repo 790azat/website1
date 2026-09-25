@@ -2,7 +2,7 @@
 title: ADP Payroll Services: Features, Pricing, and Business Solutions
 section: business-strategy
 author: michael-anderson
-date: 2026-08-27
+date: 2025-02-05
 image: articles/adp-payroll-services-features-pricing-and-business-solutions.webp
 ---
 

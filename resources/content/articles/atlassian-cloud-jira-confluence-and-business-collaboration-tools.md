@@ -2,7 +2,7 @@
 title: Atlassian Cloud: Jira, Confluence, and Business Collaboration Tools
 section: digital-horizons
 author: michael-anderson
-date: 2026-08-06
+date: 2026-02-05
 image: articles/atlassian-cloud-jira-confluence-and-business-collaboration-tools.webp
 ---
 

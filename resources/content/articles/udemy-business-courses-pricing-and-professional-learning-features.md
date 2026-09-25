@@ -2,7 +2,7 @@
 title: Udemy Business: Courses, Pricing, and Professional Learning Features
 section: people-impact
 author: michael-anderson
-date: 2026-07-26
+date: 2024-12-25
 image: articles/udemy-business-courses-pricing-and-professional-learning-features.webp
 ---
 

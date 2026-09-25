@@ -2,7 +2,7 @@
 title: DevOps Tools: A Guide for Software Teams
 section: digital-horizons
 author: emily-carter
-date: 2026-07-10
+date: 2026-03-23
 image: articles/devops-tools-a-guide-for-software-teams.webp
 ---
 

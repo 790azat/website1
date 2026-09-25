@@ -2,7 +2,7 @@
 title: CrowdStrike: Cybersecurity Platform Features and Business Solutions
 section: digital-horizons
 author: daniel-brooks
-date: 2026-08-04
+date: 2024-12-12
 image: articles/crowdstrike-cybersecurity-platform-features-and-business-solutions.webp
 ---
 

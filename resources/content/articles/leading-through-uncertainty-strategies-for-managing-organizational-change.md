@@ -2,7 +2,7 @@
 title: Leading Through Uncertainty: Strategies for Managing Organizational Change
 section: people-impact
 author: emily-carter
-date: 2026-01-07
+date: 2025-09-20
 image: articles/leading-through-uncertainty-strategies-for-managing-organizational-change.webp
 ---
 

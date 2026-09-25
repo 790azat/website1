@@ -2,7 +2,7 @@
 title: Oracle Cloud Infrastructure: Features, Services, and Business Uses
 section: digital-horizons
 author: daniel-brooks
-date: 2026-07-30
+date: 2025-12-08
 image: articles/oracle-cloud-infrastructure-features-services-and-business-uses.webp
 ---
 

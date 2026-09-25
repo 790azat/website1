@@ -2,7 +2,7 @@
 title: Boston University Online MBA: Program, Tuition, and Admissions
 section: people-impact
 author: michael-anderson
-date: 2026-07-11
+date: 2025-06-22
 image: articles/boston-university-online-mba-program-tuition-and-admissions.webp
 ---
 

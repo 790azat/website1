@@ -2,7 +2,7 @@
 title: ERP Software: Features, Uses, and Key Considerations
 section: business-strategy
 author: emily-carter
-date: 2026-03-19
+date: 2025-01-24
 image: articles/erp-software-features-uses-and-key-considerations.webp
 ---
 

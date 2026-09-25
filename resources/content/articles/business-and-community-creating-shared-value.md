@@ -2,7 +2,7 @@
 title: Business and Community: Creating Shared Value
 section: people-impact
 author: emily-carter
-date: 2025-12-12
+date: 2025-05-25
 image: articles/business-and-community-creating-shared-value.webp
 ---
 

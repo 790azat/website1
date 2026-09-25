@@ -2,7 +2,7 @@
 title: Data Mining: Finding Meaningful Patterns in Large Datasets
 section: data-intelligence
 author: emily-carter
-date: 2025-10-02
+date: 2025-09-30
 image: articles/data-mining-finding-meaningful-patterns-in-large-datasets.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Qlik Sense: Business Intelligence Features and Analytics Capabilities
 section: data-intelligence
 author: daniel-brooks
-date: 2026-09-21
+date: 2025-11-25
 image: articles/qlik-sense-business-intelligence-features-and-analytics-capabilities.webp
 ---
 

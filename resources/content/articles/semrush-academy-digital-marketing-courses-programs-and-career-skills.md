@@ -2,7 +2,7 @@
 title: Semrush Academy Digital Marketing Courses: Programs and Career Skills
 section: people-impact
 author: daniel-brooks
-date: 2026-09-16
+date: 2025-12-02
 image: articles/semrush-academy-digital-marketing-courses-programs-and-career-skills.webp
 ---
 

@@ -2,7 +2,7 @@
 title: Northeastern University Online MBA: Program and Admissions
 section: people-impact
 author: emily-carter
-date: 2026-07-08
+date: 2025-11-19
 image: articles/northeastern-university-online-mba-program-and-admissions.webp
 ---
 

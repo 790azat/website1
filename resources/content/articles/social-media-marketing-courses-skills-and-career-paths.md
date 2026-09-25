@@ -2,7 +2,7 @@
 title: Social Media Marketing Courses: Skills and Career Paths
 section: people-impact
 author: james-mitchell
-date: 2026-08-21
+date: 2026-01-26
 image: articles/social-media-marketing-courses-skills-and-career-paths.webp
 ---
 

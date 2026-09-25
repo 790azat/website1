@@ -2,7 +2,7 @@
 title: Software Development Companies: Services and What to Consider
 section: digital-horizons
 author: michael-anderson
-date: 2026-06-15
+date: 2025-03-26
 image: articles/software-development-companies-services-and-what-to-consider.webp
 ---
 

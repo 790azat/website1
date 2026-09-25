@@ -2,7 +2,7 @@
 title: Applicant Tracking Systems: Features and Considerations
 section: business-strategy
 author: daniel-brooks
-date: 2026-05-13
+date: 2026-08-05
 image: articles/applicant-tracking-systems-features-and-considerations.webp
 ---
 

@@ -2,7 +2,7 @@
 title: IBM Cloud: Enterprise Cloud Services and Business Solutions
 section: digital-horizons
 author: emily-carter
-date: 2026-07-29
+date: 2025-08-14
 image: articles/ibm-cloud-enterprise-cloud-services-and-business-solutions.webp
 ---
 

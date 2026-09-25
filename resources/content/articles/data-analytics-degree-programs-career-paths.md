@@ -2,7 +2,7 @@
 title: Data Analytics Degree Programs: Career Paths
 section: people-impact
 author: michael-anderson
-date: 2026-08-09
+date: 2025-04-03
 image: articles/data-analytics-degree-programs-career-paths.webp
 ---
 
