@@ -37,13 +37,18 @@
         ->when($page + 2 < $lastPage, fn ($c) => $c->push('…')->push($lastPage))
         ->values();
 
-    $title = $sectionMeta['title'].' — '.$siteName;
+    $title = $sectionMeta['title'];
+
+    $seo = [
+        'description' => __(':section articles from :site.', ['section' => $sectionMeta['title'], 'site' => $siteName]),
+        'canonical' => $pageLink($page),
+    ];
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="{{ __(':section articles from :site.', ['section' => $sectionMeta['title'], 'site' => $siteName]) }}" />
+        @include('partials.seo')
     </head>
     <body
         x-data="{ mobileOpen: false }"

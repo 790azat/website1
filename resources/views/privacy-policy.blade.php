@@ -1,6 +1,6 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $title = __('Privacy Policy').' — '.$siteName;
+    $title = __('Privacy Policy');
 
     $data = app(\App\Content\SiteContent::class)->localized();
     $categories = collect($data['sections'])
@@ -61,12 +61,16 @@
             'body' => "We may update this Privacy Policy from time to time to reflect changes in our practices or for legal or operational reasons. When we do, we will revise the date at the top of this page. We encourage you to review this policy periodically.",
         ],
     ];
+
+    $seo = [
+        'description' => __('Read the :site privacy policy to learn how we collect, use, and protect your information.', ['site' => $siteName]),
+    ];
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="{{ __('Read the :site privacy policy to learn how we collect, use, and protect your information.', ['site' => $siteName]) }}" />
+        @include('partials.seo')
     </head>
     <body
         x-data="{ mobileOpen: false }"

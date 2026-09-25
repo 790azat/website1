@@ -36,12 +36,34 @@
     $sidebarArticles = $allArticles->slice(6, 5)->values()->map($attachMeta);
 
     $programs = collect($data['programs'] ?? []);
+
+    $seo = [
+        'description' => __(':site publishes clear, research-driven guides on data intelligence, business strategy, digital horizons, and people & impact.', ['site' => $siteName]),
+        'schema' => [
+            [
+                '@type' => 'WebSite',
+                'name' => $siteName,
+                'url' => route('home'),
+                'potentialAction' => [
+                    '@type' => 'SearchAction',
+                    'target' => route('articles').'?q={search_term_string}',
+                    'query-input' => 'required name=search_term_string',
+                ],
+            ],
+            [
+                '@type' => 'Organization',
+                'name' => $siteName,
+                'url' => route('home'),
+                'logo' => asset('images/branding/logo-full.webp'),
+            ],
+        ],
+    ];
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="{{ __(':site publishes clear, research-driven guides on data intelligence, business strategy, digital horizons, and people & impact.', ['site' => $siteName]) }}" />
+        @include('partials.seo')
     </head>
     <body
         x-data="{ mobileOpen: false }"

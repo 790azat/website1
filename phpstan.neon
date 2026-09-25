@@ -11,9 +11,3 @@ parameters:
         - routes/
 
     level: 7
-
-    ignoreErrors:
-        -
-            message: '#^Trait App\\Concerns\\ProfileValidationRules is used zero times and is not analysed\.$#'
-            identifier: trait.unused
-            path: app/Concerns/ProfileValidationRules.php

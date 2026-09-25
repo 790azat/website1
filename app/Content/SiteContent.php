@@ -2,6 +2,7 @@
 
 namespace App\Content;
 
+use Illuminate\Support\Str;
 use RuntimeException;
 
 /**
@@ -197,5 +198,24 @@ class SiteContent
         $lines[] = '---';
 
         return implode("\n", $lines)."\n\n".$article['body']."\n";
+    }
+
+    /**
+     * A plain-text summary of an article body for meta descriptions: Markdown
+     * headings, list markers, emphasis and link URLs are removed, whitespace
+     * is collapsed, and the result is cut at a word boundary.
+     */
+    public static function excerpt(string $body, int $limit = 160): string
+    {
+        $text = preg_replace('/\[([^\]]*)\]\([^)]*\)/', '$1', $body) ?? $body;
+        $text = preg_replace('/^\s{0,3}(#{1,6}\s+|[*+-]\s+|\d+[.)]\s+|>\s?)/m', '', $text) ?? $text;
+        $text = str_replace(['**', '__', '`'], '', $text);
+        $text = trim(preg_replace('/\s+/u', ' ', strip_tags($text)) ?? '');
+
+        if (mb_strlen($text) <= $limit) {
+            return $text;
+        }
+
+        return rtrim(Str::limit($text, $limit - 1, '', preserveWords: true), ' ,.;:-').'…';
     }
 }
