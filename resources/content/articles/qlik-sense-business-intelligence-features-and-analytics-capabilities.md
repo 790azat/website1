@@ -3,7 +3,7 @@ title: Qlik Sense: Business Intelligence Features and Analytics Capabilities
 section: data-intelligence
 author: daniel-brooks
 date: 2026-09-21
-image: articles/qlik-sense-business-intelligence-features-and-analytics-capabilities.jpg
+image: articles/qlik-sense-business-intelligence-features-and-analytics-capabilities.webp
 ---
 
 Qlik Sense is a business intelligence platform centered on associative analytics that enables organizations to explore data relationships beyond predefined reporting paths. The platform serves both technical users building data models and business users exploring information through dashboards.

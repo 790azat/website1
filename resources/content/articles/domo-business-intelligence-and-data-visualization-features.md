@@ -3,7 +3,7 @@ title: Domo: Business Intelligence and Data Visualization Features
 section: data-intelligence
 author: emily-carter
 date: 2026-09-14
-image: articles/domo-business-intelligence-and-data-visualization-features.jpg
+image: articles/domo-business-intelligence-and-data-visualization-features.webp
 ---
 
 Organizations increasingly need business intelligence platforms that can connect information from many systems, transform it into usable datasets, and make insights accessible to business teams. Domo combines data integration, business intelligence, visualization, reporting, data science, AI, and workflow capabilities within a cloud-based platform.

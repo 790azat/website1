@@ -3,7 +3,7 @@ title: Business Analytics Degrees: Programs, Skills, and Career Paths
 section: data-intelligence
 author: emily-carter
 date: 2026-02-14
-image: articles/business-analytics-degrees-programs-skills-and-career-paths.jpg
+image: articles/business-analytics-degrees-programs-skills-and-career-paths.webp
 ---
 
 Businesses collect information from sales, finance, marketing, customer service, operations, and other activities. As organizations generate more data, they need professionals who can analyze information and translate it into useful business insights.

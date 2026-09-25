@@ -3,7 +3,7 @@ title: Cloud Computing: Building More Flexible and Scalable Businesses
 section: digital-horizons
 author: james-mitchell
 date: 2026-01-06
-image: articles/cloud-computing-building-more-flexible-and-scalable-businesses.jpg
+image: articles/cloud-computing-building-more-flexible-and-scalable-businesses.webp
 ---
 
 Cloud computing has transformed organizational technology by enabling "computing resources delivered through the internet" rather than relying solely on physical servers maintained on-site.

@@ -3,7 +3,7 @@ title: Online Business Degree Programs: What to Know
 section: people-impact
 author: emily-carter
 date: 2026-08-17
-image: articles/online-business-degree-programs-what-to-know.jpg
+image: articles/online-business-degree-programs-what-to-know.webp
 ---
 
 Online business degree programs provide a flexible way for students to study business administration, management, finance, marketing, and related subjects without attending traditional on-campus classes. Programs are available at different educational levels and can be designed for recent high school graduates, working professionals, or students looking to change careers.

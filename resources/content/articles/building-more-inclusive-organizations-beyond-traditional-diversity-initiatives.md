@@ -3,7 +3,7 @@ title: Building More Inclusive Organizations: Beyond Traditional Diversity Initi
 section: people-impact
 author: emily-carter
 date: 2025-11-29
-image: articles/building-more-inclusive-organizations-beyond-traditional-diversity-initiatives.jpg
+image: articles/building-more-inclusive-organizations-beyond-traditional-diversity-initiatives.webp
 ---
 
 Organizations increasingly recognize that having a diverse workforce is only one part of creating an effective workplace. Employees also need an environment where they can participate, contribute ideas, access opportunities, and feel that their perspectives are considered.

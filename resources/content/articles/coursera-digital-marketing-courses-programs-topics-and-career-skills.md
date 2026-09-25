@@ -3,7 +3,7 @@ title: Coursera Digital Marketing Courses: Programs, Topics, and Career Skills
 section: people-impact
 author: michael-anderson
 date: 2026-09-11
-image: articles/coursera-digital-marketing-courses-programs-topics-and-career-skills.jpg
+image: articles/coursera-digital-marketing-courses-programs-topics-and-career-skills.webp
 ---
 
 Digital marketing covers a broad range of activities, from search engine optimization and paid advertising to social media, email, content, and analytics. As businesses increasingly use digital channels to reach customers, professionals often look for structured ways to develop practical marketing skills.

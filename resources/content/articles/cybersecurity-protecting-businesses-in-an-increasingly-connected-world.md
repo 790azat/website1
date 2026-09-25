@@ -3,7 +3,7 @@ title: Cybersecurity: Protecting Businesses in an Increasingly Connected World
 section: digital-horizons
 author: daniel-brooks
 date: 2025-12-28
-image: articles/cybersecurity-protecting-businesses-in-an-increasingly-connected-world.jpg
+image: articles/cybersecurity-protecting-businesses-in-an-increasingly-connected-world.webp
 ---
 
 As businesses become more dependent on digital systems, cybersecurity has become an important part of everyday operations. Companies rely on connected applications, cloud platforms, databases, employee devices, and online services to communicate with customers and manage critical processes.

@@ -3,7 +3,7 @@ title: GitHub Enterprise: Features, Security, and Developer Tools
 section: digital-horizons
 author: emily-carter
 date: 2026-08-08
-image: articles/github-enterprise-features-security-and-developer-tools.jpg
+image: articles/github-enterprise-features-security-and-developer-tools.webp
 ---
 
 GitHub Enterprise is an enterprise-grade software development platform designed for organizations that need centralized management, security, collaboration, and development automation across large engineering teams. It combines source-code management with pull requests, issue tracking, CI/CD, security tools, developer environments, package management, and AI-assisted development.

@@ -3,7 +3,7 @@ title: Virtual Data Room Providers: What to Look For
 section: business-strategy
 author: james-mitchell
 date: 2026-03-07
-image: articles/virtual-data-room-providers-what-to-look-for.jpg
+image: articles/virtual-data-room-providers-what-to-look-for.webp
 ---
 
 Businesses involved in mergers and acquisitions, fundraising, audits, legal proceedings, and other sensitive transactions often need to share large volumes of confidential documents with external parties. Traditional file-sharing tools may not provide the level of access control, tracking, and transaction-specific organization required for these activities.

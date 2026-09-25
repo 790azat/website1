@@ -3,7 +3,7 @@ title: Adobe Creative Cloud: Plans, Features, and Business Tools
 section: digital-horizons
 author: michael-anderson
 date: 2026-08-11
-image: articles/adobe-creative-cloud-plans-features-and-business-tools.jpg
+image: articles/adobe-creative-cloud-plans-features-and-business-tools.webp
 ---
 
 Adobe Creative Cloud is a subscription-based collection of creative applications and services for photography, graphic design, illustration, video production, document workflows, and digital content creation. Its applications include widely used tools such as Photoshop, Illustrator, InDesign, Premiere, Acrobat Pro, Lightroom, and Adobe Express.

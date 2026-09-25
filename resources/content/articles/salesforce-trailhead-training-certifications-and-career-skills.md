@@ -3,7 +3,7 @@ title: Salesforce Trailhead: Training, Certifications, and Career Skills
 section: people-impact
 author: daniel-brooks
 date: 2026-07-20
-image: articles/salesforce-trailhead-training-certifications-and-career-skills.jpg
+image: articles/salesforce-trailhead-training-certifications-and-career-skills.webp
 ---
 
 ## September 25, 2026 • Emily Carter

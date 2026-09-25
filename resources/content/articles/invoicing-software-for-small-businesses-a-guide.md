@@ -3,7 +3,7 @@ title: Invoicing Software for Small Businesses: A Guide
 section: business-strategy
 author: james-mitchell
 date: 2026-04-13
-image: articles/invoicing-software-for-small-businesses-a-guide.jpg
+image: articles/invoicing-software-for-small-businesses-a-guide.webp
 ---
 
 For many small businesses, creating invoices, following up on unpaid bills, and keeping payment records can take significant time. As the number of customers and transactions grows, managing invoices manually can become increasingly difficult.

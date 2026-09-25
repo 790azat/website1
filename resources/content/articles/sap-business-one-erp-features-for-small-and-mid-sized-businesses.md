@@ -3,7 +3,7 @@ title: SAP Business One: ERP Features for Small and Mid-Sized Businesses
 section: business-strategy
 author: daniel-brooks
 date: 2026-08-31
-image: articles/sap-business-one-erp-features-for-small-and-mid-sized-businesses.jpg
+image: articles/sap-business-one-erp-features-for-small-and-mid-sized-businesses.webp
 ---
 
 SAP Business One is an enterprise resource planning platform designed specifically for small and mid-sized businesses. The system brings financial management, sales, purchasing, inventory, customer relationship management, reporting, and other operational processes into a connected ERP environment.

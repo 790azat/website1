@@ -3,7 +3,7 @@ title: Customer Retention: The Business Case for Long-Term Loyalty
 section: business-strategy
 author: michael-anderson
 date: 2025-11-06
-image: articles/customer-retention-the-business-case-for-long-term-loyalty.jpg
+image: articles/customer-retention-the-business-case-for-long-term-loyalty.webp
 ---
 
 Acquiring new customers is an important part of business growth, but long-term performance also depends on what happens after the first purchase. Businesses that can maintain strong relationships with existing customers may create opportunities for repeat purchases, continued engagement, and more predictable revenue.

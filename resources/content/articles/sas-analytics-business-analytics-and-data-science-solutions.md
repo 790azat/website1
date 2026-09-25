@@ -3,7 +3,7 @@ title: SAS Analytics: Business Analytics and Data Science Solutions
 section: data-intelligence
 author: emily-carter
 date: 2026-09-19
-image: articles/sas-analytics-business-analytics-and-data-science-solutions.jpg
+image: articles/sas-analytics-business-analytics-and-data-science-solutions.webp
 ---
 
 SAS Analytics represents a comprehensive platform combining data management, statistical analysis, artificial intelligence, and business intelligence. The current platform, SAS Viya, enables organizations to "prepare data, develop analytical models, deploy them into business processes, and monitor their performance."

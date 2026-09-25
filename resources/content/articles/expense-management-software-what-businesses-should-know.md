@@ -3,7 +3,7 @@ title: Expense Management Software: What Businesses Should Know
 section: business-strategy
 author: james-mitchell
 date: 2026-04-01
-image: articles/expense-management-software-what-businesses-should-know.jpg
+image: articles/expense-management-software-what-businesses-should-know.webp
 ---
 
 Businesses manage expenses across travel, meals, office supplies, software subscriptions, mileage, client activities, and other operating costs. As the number of employees and transactions grows, collecting receipts and reviewing expense reports through email and spreadsheets can become increasingly difficult.

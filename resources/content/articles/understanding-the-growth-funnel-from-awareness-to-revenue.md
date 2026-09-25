@@ -3,7 +3,7 @@ title: Understanding the Growth Funnel: From Awareness to Revenue
 section: business-strategy
 author: emily-carter
 date: 2025-11-12
-image: articles/understanding-the-growth-funnel-from-awareness-to-revenue.jpg
+image: articles/understanding-the-growth-funnel-from-awareness-to-revenue.webp
 ---
 
 Business growth rarely happens through a single customer interaction. People typically move through several stages before becoming customers, from first discovering a company to evaluating its offering, making a purchase, and potentially returning in the future.

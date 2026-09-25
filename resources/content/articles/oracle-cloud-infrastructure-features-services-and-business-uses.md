@@ -3,7 +3,7 @@ title: Oracle Cloud Infrastructure: Features, Services, and Business Uses
 section: digital-horizons
 author: daniel-brooks
 date: 2026-07-30
-image: articles/oracle-cloud-infrastructure-features-services-and-business-uses.jpg
+image: articles/oracle-cloud-infrastructure-features-services-and-business-uses.webp
 ---
 
 Oracle Cloud Infrastructure (OCI) is Oracle's cloud computing platform for running applications, databases, analytics workloads, artificial intelligence, networking, storage, and enterprise infrastructure. It provides infrastructure-as-a-service and platform-as-a-service capabilities that organizations can use to migrate existing systems, build new applications, and operate business workloads in the cloud.

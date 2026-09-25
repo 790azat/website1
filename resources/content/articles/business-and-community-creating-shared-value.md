@@ -3,7 +3,7 @@ title: Business and Community: Creating Shared Value
 section: people-impact
 author: emily-carter
 date: 2025-12-12
-image: articles/business-and-community-creating-shared-value.jpg
+image: articles/business-and-community-creating-shared-value.webp
 ---
 
 Businesses do not operate separately from the communities around them. They depend on employees, customers, suppliers, infrastructure, and local economies, while their activities can also influence employment, resources, and social conditions.

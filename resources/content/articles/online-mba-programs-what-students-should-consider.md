@@ -3,7 +3,7 @@ title: Online MBA Programs: What Students Should Consider
 section: people-impact
 author: michael-anderson
 date: 2026-07-31
-image: articles/online-mba-programs-what-students-should-consider.jpg
+image: articles/online-mba-programs-what-students-should-consider.webp
 ---
 
 Online MBA programs provide a flexible way for students and working professionals to pursue graduate business education without attending traditional classes on campus. Programs may be offered fully online, in hybrid formats, or with occasional in-person experiences.

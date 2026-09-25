@@ -35,3 +35,11 @@ jobs:
 
       - name: Run CI Checks
         run: composer ci:check
+
+      # deploy.yml builds these caches before uploading; fail here instead.
+      - name: Check route and event caching
+        run: |
+          php artisan route:cache
+          php artisan event:cache
+          php artisan route:clear
+          php artisan event:clear

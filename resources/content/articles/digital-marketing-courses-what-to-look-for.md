@@ -3,7 +3,7 @@ title: Digital Marketing Courses: What to Look For
 section: people-impact
 author: michael-anderson
 date: 2026-07-27
-image: articles/digital-marketing-courses-what-to-look-for.jpg
+image: articles/digital-marketing-courses-what-to-look-for.webp
 ---
 
 Digital marketing courses can help students, professionals, business owners, and career changers develop skills for reaching customers through online channels. Depending on the program, training may cover search engine optimization (SEO), paid advertising, social media, content marketing, email, analytics, e-commerce, and broader marketing strategy.

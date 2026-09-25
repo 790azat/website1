@@ -3,7 +3,7 @@ title: Corporate Legal Services: A Guide for Businesses
 section: business-strategy
 author: michael-anderson
 date: 2026-05-09
-image: articles/corporate-legal-services-a-guide-for-businesses.jpg
+image: articles/corporate-legal-services-a-guide-for-businesses.webp
 ---
 
 ## Introduction

@@ -3,7 +3,7 @@ title: Sales Automation Tools: Features and Business Uses
 section: business-strategy
 author: daniel-brooks
 date: 2026-03-11
-image: articles/sales-automation-tools-features-and-business-uses.jpg
+image: articles/sales-automation-tools-features-and-business-uses.webp
 ---
 
 Sales teams manage many repetitive activities throughout the customer journey. Lead entry, follow-up reminders, email communication, appointment scheduling, pipeline updates, reporting, and other administrative tasks can consume significant amounts of time when handled manually.

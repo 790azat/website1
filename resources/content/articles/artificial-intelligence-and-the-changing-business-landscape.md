@@ -3,7 +3,7 @@ title: Artificial Intelligence and the Changing Business Landscape
 section: digital-horizons
 author: james-mitchell
 date: 2026-01-10
-image: articles/artificial-intelligence-and-the-changing-business-landscape.jpg
+image: articles/artificial-intelligence-and-the-changing-business-landscape.webp
 ---
 
 Artificial intelligence has moved from a specialized technology used by research teams to a practical business tool influencing how organizations operate, compete, and serve customers. Companies across industries are using AI to automate repetitive work, analyze information, improve decision-making, and develop new products and services.

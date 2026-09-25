@@ -46,6 +46,14 @@ jobs:
       - name: Cache site content
         run: php artisan content:cache
 
+      # Route and event caches hold no server paths, so they can be built
+      # here and uploaded. The config cache does (storage, database paths)
+      # and is left out.
+      - name: Cache routes and events
+        run: |
+          php artisan route:cache
+          php artisan event:cache
+
       - name: Setup Node
         uses: actions/setup-node@v7
         with:

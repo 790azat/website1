@@ -3,7 +3,7 @@ title: AWS Certification: Exams, Training, and Career Paths
 section: people-impact
 author: james-mitchell
 date: 2026-07-22
-image: articles/aws-certification-exams-training-and-career-paths.jpg
+image: articles/aws-certification-exams-training-and-career-paths.webp
 ---
 
 AWS Certification provides professional credentials for people who want to validate knowledge and practical skills related to Amazon Web Services. The certification program covers cloud fundamentals, architecture, development, operations, data, machine learning, security, and other specialized areas.

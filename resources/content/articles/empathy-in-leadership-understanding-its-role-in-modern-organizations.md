@@ -3,7 +3,7 @@ title: Empathy in Leadership: Understanding Its Role in Modern Organizations
 section: people-impact
 author: michael-anderson
 date: 2025-11-17
-image: articles/empathy-in-leadership-understanding-its-role-in-modern-organizations.jpg
+image: articles/empathy-in-leadership-understanding-its-role-in-modern-organizations.webp
 ---
 
 Leadership increasingly involves more than setting goals and monitoring performance. Organizations operate through people, and leaders need to understand how employees experience decisions, changes, challenges, and workplace expectations.

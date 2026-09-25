@@ -3,7 +3,7 @@ title: Salesforce CRM: Features, Pricing, and Business Capabilities
 section: business-strategy
 author: emily-carter
 date: 2026-09-04
-image: articles/salesforce-crm-features-pricing-and-business-capabilities.jpg
+image: articles/salesforce-crm-features-pricing-and-business-capabilities.webp
 ---
 
 Salesforce functions as a comprehensive cloud-based platform for managing customer relationships. The system encompasses sales management, service capabilities, marketing automation, and increasingly incorporates artificial intelligence through Agentforce.

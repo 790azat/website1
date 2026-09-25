@@ -3,7 +3,7 @@ title: IBM Cognos Analytics: Key Takeaways
 section: data-intelligence
 author: james-mitchell
 date: 2026-09-18
-image: articles/ibm-cognos-analytics-key-takeaways.jpg
+image: articles/ibm-cognos-analytics-key-takeaways.webp
 ---
 
 IBM Cognos Analytics is a comprehensive business intelligence platform that integrates reporting, dashboards, data exploration, and AI capabilities. The platform serves organizations needing "reporting, dashboards, data exploration, predictive analytics, and artificial intelligence in a governed business intelligence environment."

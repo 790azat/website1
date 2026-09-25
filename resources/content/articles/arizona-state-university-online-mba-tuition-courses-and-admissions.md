@@ -3,7 +3,7 @@ title: Arizona State University Online MBA: Tuition, Courses, and Admissions
 section: people-impact
 author: emily-carter
 date: 2026-07-13
-image: articles/arizona-state-university-online-mba-tuition-courses-and-admissions.jpg
+image: articles/arizona-state-university-online-mba-tuition-courses-and-admissions.webp
 ---
 
 Arizona State University offers an online Master of Business Administration through the W. P. Carey School of Business, allowing working professionals to complete a graduate business degree entirely online. The program is AACSB-accredited and combines core business education with electives and optional concentrations in areas such as artificial intelligence, business data analytics, finance, leadership, marketing, and supply chain management.

@@ -3,7 +3,7 @@ title: Predictive Analytics: Using Data to Anticipate What Comes Next
 section: data-intelligence
 author: james-mitchell
 date: 2025-10-13
-image: articles/predictive-analytics-using-data-to-anticipate-what-comes-next.jpg
+image: articles/predictive-analytics-using-data-to-anticipate-what-comes-next.webp
 ---
 
 Businesses increasingly need to make decisions while facing uncertain markets, changing customer behavior, and rapidly evolving operating conditions. Historical data can explain what has already happened, but organizations also need ways to evaluate what could happen next.

@@ -3,7 +3,7 @@ title: Online Marketing Certifications for Career Development
 section: people-impact
 author: emily-carter
 date: 2026-09-03
-image: articles/online-marketing-certifications-for-career-development.jpg
+image: articles/online-marketing-certifications-for-career-development.webp
 ---
 
 Digital marketing encompasses search engine optimization, paid advertising, social media, email marketing, content, analytics, and e-commerce. As specialization increases, professionals pursue online marketing certifications to develop targeted skills and demonstrate competency to employers or clients.

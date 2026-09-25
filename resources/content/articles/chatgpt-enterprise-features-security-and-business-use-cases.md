@@ -3,7 +3,7 @@ title: ChatGPT Enterprise: Features, Security, and Business Use Cases
 section: digital-horizons
 author: daniel-brooks
 date: 2026-08-15
-image: articles/chatgpt-enterprise-features-security-and-business-use-cases.jpg
+image: articles/chatgpt-enterprise-features-security-and-business-use-cases.webp
 ---
 
 ChatGPT Enterprise is OpenAI's managed ChatGPT offering for organizations that want to deploy AI across employees with centralized administration, enterprise security, and organizational controls. It combines ChatGPT capabilities with workspace management, identity controls, data governance, analytics, and access to advanced tools.

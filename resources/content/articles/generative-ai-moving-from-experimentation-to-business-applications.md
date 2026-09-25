@@ -3,7 +3,7 @@ title: Generative AI: Moving From Experimentation to Business Applications
 section: digital-horizons
 author: emily-carter
 date: 2026-01-09
-image: articles/generative-ai-moving-from-experimentation-to-business-applications.jpg
+image: articles/generative-ai-moving-from-experimentation-to-business-applications.webp
 ---
 
 Generative artificial intelligence has quickly moved from an emerging technology discussed primarily by researchers and technology companies to a practical tool being tested across many business functions. Organizations are experimenting with systems that can generate text, images, code, summaries, presentations, and other forms of content.

@@ -3,7 +3,7 @@ title: HubSpot CRM: Features, Pricing, and Sales Tools
 section: business-strategy
 author: james-mitchell
 date: 2026-09-02
-image: articles/hubspot-crm-features-pricing-and-sales-tools.jpg
+image: articles/hubspot-crm-features-pricing-and-sales-tools.webp
 ---
 
 HubSpot CRM functions as a centralized platform for organizing customer data and sales activities. The system distinguishes between its free foundational CRM tools and the paid Sales Hub product tier.

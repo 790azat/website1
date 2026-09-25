@@ -3,7 +3,7 @@ title: Business Intelligence: Turning Information Into Strategic Insight
 section: data-intelligence
 author: daniel-brooks
 date: 2025-10-08
-image: articles/business-intelligence-turning-information-into-strategic-insight.jpg
+image: articles/business-intelligence-turning-information-into-strategic-insight.webp
 ---
 
 Businesses collect information from nearly every part of their operations. Sales transactions, customer activity, financial records, marketing campaigns, and operational systems can all provide valuable information, but raw data alone does not explain what a business should do next.

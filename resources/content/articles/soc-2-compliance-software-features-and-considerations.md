@@ -3,7 +3,7 @@ title: SOC 2 Compliance Software: Features and Considerations
 section: digital-horizons
 author: james-mitchell
 date: 2026-07-23
-image: articles/soc-2-compliance-software-features-and-considerations.jpg
+image: articles/soc-2-compliance-software-features-and-considerations.webp
 ---
 
 Organizations that provide software, cloud, data, and other technology services often need to demonstrate that they have appropriate controls for protecting customer information. SOC 2 is one framework used to evaluate controls at service organizations, making preparation and ongoing control management an important part of many companies' security programs.

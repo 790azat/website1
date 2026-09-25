@@ -3,7 +3,7 @@ title: Semrush Academy Digital Marketing Courses: Programs and Career Skills
 section: people-impact
 author: daniel-brooks
 date: 2026-09-16
-image: articles/semrush-academy-digital-marketing-courses-programs-and-career-skills.jpg
+image: articles/semrush-academy-digital-marketing-courses-programs-and-career-skills.webp
 ---
 
 Digital marketing encompasses multiple disciplines including search engine optimization, content marketing, social media, paid advertising, analytics, and competitive research. Since these areas demand different tools and expertise, professionals frequently pursue online courses to develop specialized knowledge or establish comprehensive marketing competencies.

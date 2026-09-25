@@ -3,7 +3,7 @@ title: Data Science Degree Programs: What Students Should Know
 section: data-intelligence
 author: james-mitchell
 date: 2026-02-18
-image: articles/data-science-degree-programs-what-students-should-know.jpg
+image: articles/data-science-degree-programs-what-students-should-know.webp
 ---
 
 Organizations increasingly use large amounts of data to understand customers, improve operations, develop products, and support strategic decisions. As the volume and complexity of data grows, employers need professionals who can combine statistics, programming, analytical methods, and business understanding.

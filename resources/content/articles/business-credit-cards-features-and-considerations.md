@@ -3,7 +3,7 @@ title: Business Credit Cards: Features and Considerations
 section: business-strategy
 author: james-mitchell
 date: 2026-05-04
-image: articles/business-credit-cards-features-and-considerations.jpg
+image: articles/business-credit-cards-features-and-considerations.webp
 ---
 
 Businesses often need convenient ways to pay for advertising, travel, inventory, software subscriptions, office expenses, and other operating costs. A business credit card can provide a revolving source of purchasing power while helping companies keep business expenses separate from personal spending.

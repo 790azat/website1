@@ -3,7 +3,7 @@ title: Software Development Degree Programs: Courses and Career Paths
 section: people-impact
 author: michael-anderson
 date: 2026-08-26
-image: articles/software-development-degree-programs-courses-and-career-paths.jpg
+image: articles/software-development-degree-programs-courses-and-career-paths.webp
 ---
 
 Software development degree programs prepare students to design, build, test, maintain, and improve software applications. Programs can provide foundations in programming and computer science while also introducing software engineering practices, databases, operating systems, security, and application development.

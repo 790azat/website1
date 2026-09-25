@@ -64,6 +64,8 @@
 
                 <div class="mt-6 flex items-center gap-3">
                     <img
+                        loading="lazy"
+                        decoding="async"
                         src="{{ asset('images/team/'.$author['photo']) }}"
                         alt="{{ $author['name'] }}"
                         class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
@@ -94,6 +96,7 @@
                 @if ($article['image'] ?? null)
                     <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
                         <img
+                            fetchpriority="high"
                             src="{{ asset('images/'.$article['image']) }}"
                             alt="{{ $article['title'] }}"
                             class="aspect-video w-full object-cover"
@@ -108,6 +111,8 @@
                 <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
                     <div class="flex items-center gap-4">
                         <img
+                            loading="lazy"
+                            decoding="async"
                             src="{{ asset('images/team/'.$author['photo']) }}"
                             alt="{{ $author['name'] }}"
                             class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"

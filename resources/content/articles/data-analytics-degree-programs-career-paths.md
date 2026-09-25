@@ -3,7 +3,7 @@ title: Data Analytics Degree Programs: Career Paths
 section: people-impact
 author: michael-anderson
 date: 2026-08-09
-image: articles/data-analytics-degree-programs-career-paths.jpg
+image: articles/data-analytics-degree-programs-career-paths.webp
 ---
 
 Data analytics degree programs prepare students to collect, organize, analyze, and interpret information for business and organizational decision-making. As companies increasingly rely on data for planning, forecasting, customer research, and operational management, analytical skills are relevant across industries such as finance, healthcare, technology, retail, manufacturing, and consulting.

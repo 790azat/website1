@@ -3,7 +3,7 @@ title: MongoDB Atlas: Cloud Database Features and Pricing
 section: digital-horizons
 author: michael-anderson
 date: 2026-08-01
-image: articles/mongodb-atlas-cloud-database-features-and-pricing.jpg
+image: articles/mongodb-atlas-cloud-database-features-and-pricing.webp
 ---
 
 MongoDB Atlas is a fully managed, multi-cloud database service built around MongoDB's document-oriented database technology. It allows developers and organizations to deploy databases on Amazon Web Services, Microsoft Azure, or Google Cloud without managing the underlying database infrastructure themselves.

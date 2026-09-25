@@ -3,7 +3,7 @@ title: Google Ads Courses and Certifications: What to Know
 section: people-impact
 author: daniel-brooks
 date: 2026-08-30
-image: articles/google-ads-courses-and-certifications-what-to-know.jpg
+image: articles/google-ads-courses-and-certifications-what-to-know.webp
 ---
 
 Google Ads is one of the major platforms businesses use to promote products and services through paid search, display, video, shopping, and other advertising formats. Learning how the platform works can help marketers understand campaign setup, audience targeting, bidding, measurement, and optimization.

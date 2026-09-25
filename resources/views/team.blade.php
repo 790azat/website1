@@ -19,10 +19,10 @@
     ];
 
     $team = [
-        ['key' => 'emily-carter', 'photo' => 'emily-carter.jpg', 'name' => 'Emily Carter', 'age' => 34, 'role' => 'Investment Consultant', 'bio' => 'Emily Carter, 34, is an investment consultant at :site, specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.'],
-        ['key' => 'james-mitchell', 'photo' => 'james-mitchell.jpg', 'name' => 'James Mitchell', 'age' => 36, 'role' => 'Financial Specialist', 'bio' => 'James Mitchell, 36, is a financial specialist at :site, focused on navigating volatile markets and developing resilient investment strategies. He helps professionals build diversified portfolios designed to withstand market fluctuations and support sustainable growth.'],
-        ['key' => 'michael-anderson', 'photo' => 'michael-anderson.jpg', 'name' => 'Michael Anderson', 'age' => 39, 'role' => 'Business and Data Analyst', 'bio' => 'Michael Anderson, 39, is a business and data analyst at :site, focused on helping organizations turn complex information into practical business insights. His work covers data analysis, performance measurement, and data-driven decision-making.'],
-        ['key' => 'daniel-brooks', 'photo' => 'daniel-brooks.jpg', 'name' => 'Daniel Brooks', 'age' => 37, 'role' => 'Financial Specialist', 'bio' => 'Daniel Brooks, 37, is a financial specialist at :site, focused on market volatility and portfolio diversification. He helps professionals develop adaptable investment strategies designed to balance growth opportunities with prudent risk management.'],
+        ['key' => 'emily-carter', 'photo' => 'emily-carter.webp', 'name' => 'Emily Carter', 'age' => 34, 'role' => 'Investment Consultant', 'bio' => 'Emily Carter, 34, is an investment consultant at :site, specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.'],
+        ['key' => 'james-mitchell', 'photo' => 'james-mitchell.webp', 'name' => 'James Mitchell', 'age' => 36, 'role' => 'Financial Specialist', 'bio' => 'James Mitchell, 36, is a financial specialist at :site, focused on navigating volatile markets and developing resilient investment strategies. He helps professionals build diversified portfolios designed to withstand market fluctuations and support sustainable growth.'],
+        ['key' => 'michael-anderson', 'photo' => 'michael-anderson.webp', 'name' => 'Michael Anderson', 'age' => 39, 'role' => 'Business and Data Analyst', 'bio' => 'Michael Anderson, 39, is a business and data analyst at :site, focused on helping organizations turn complex information into practical business insights. His work covers data analysis, performance measurement, and data-driven decision-making.'],
+        ['key' => 'daniel-brooks', 'photo' => 'daniel-brooks.webp', 'name' => 'Daniel Brooks', 'age' => 37, 'role' => 'Financial Specialist', 'bio' => 'Daniel Brooks, 37, is a financial specialist at :site, focused on market volatility and portfolio diversification. He helps professionals develop adaptable investment strategies designed to balance growth opportunities with prudent risk management.'],
     ];
 @endphp
 <!DOCTYPE html>
@@ -121,6 +121,8 @@
                     @foreach ($team as $member)
                         <div class="text-center">
                             <img
+                                loading="lazy"
+                                decoding="async"
                                 src="{{ asset('images/team/'.$member['photo']) }}"
                                 alt="{{ $member['name'] }}"
                                 class="mx-auto size-28 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"

@@ -3,7 +3,7 @@ title: Enterprise AI Software: Features and Considerations
 section: digital-horizons
 author: daniel-brooks
 date: 2026-07-06
-image: articles/enterprise-ai-software-features-and-considerations.jpg
+image: articles/enterprise-ai-software-features-and-considerations.webp
 ---
 
 Artificial intelligence is increasingly being incorporated into business applications, workflows, analytics systems, and customer-facing products. For larger organizations, adopting AI often involves more than selecting an individual AI assistant. Enterprises need software that can operate across users, departments, data sources, applications, and security environments.

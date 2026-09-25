@@ -3,7 +3,7 @@ title: Business Debt Consolidation: What to Consider
 section: business-strategy
 author: emily-carter
 date: 2026-03-15
-image: articles/business-debt-consolidation-what-to-consider.jpg
+image: articles/business-debt-consolidation-what-to-consider.webp
 ---
 
 Businesses often use multiple forms of financing to manage operating expenses, purchase equipment, fund expansion, or cover temporary cash-flow gaps. Over time, these obligations can become difficult to manage when they have different interest rates, payment schedules, fees, and lenders.

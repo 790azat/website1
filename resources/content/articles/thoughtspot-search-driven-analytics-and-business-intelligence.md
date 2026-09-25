@@ -3,7 +3,7 @@ title: ThoughtSpot: Search-Driven Analytics and Business Intelligence
 section: data-intelligence
 author: james-mitchell
 date: 2026-09-13
-image: articles/thoughtspot-search-driven-analytics-and-business-intelligence.jpg
+image: articles/thoughtspot-search-driven-analytics-and-business-intelligence.webp
 ---
 
 ## Core Platform Features

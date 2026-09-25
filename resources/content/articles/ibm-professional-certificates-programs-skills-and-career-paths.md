@@ -3,7 +3,7 @@ title: IBM Professional Certificates: Programs, Skills, and Career Paths
 section: people-impact
 author: emily-carter
 date: 2026-07-18
-image: articles/ibm-professional-certificates-programs-skills-and-career-paths.jpg
+image: articles/ibm-professional-certificates-programs-skills-and-career-paths.webp
 ---
 
 ## September 25, 2026 • James Mitchell

@@ -3,7 +3,7 @@ title: Google Workspace: Business Plans, Features, and Productivity Tools
 section: digital-horizons
 author: james-mitchell
 date: 2026-08-12
-image: articles/google-workspace-business-plans-features-and-productivity-tools.jpg
+image: articles/google-workspace-business-plans-features-and-productivity-tools.webp
 ---
 
 Google Workspace is a cloud-based productivity platform that combines business email, document creation, cloud storage, communication, collaboration, scheduling, and artificial intelligence into one connected environment. Its applications include Gmail, Google Drive, Docs, Sheets, Slides, Meet, Calendar, Chat, Forms, Sites, and other business tools.

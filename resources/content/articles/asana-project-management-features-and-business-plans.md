@@ -3,7 +3,7 @@ title: Asana: Project Management Features and Business Plans
 section: business-strategy
 author: daniel-brooks
 date: 2026-08-25
-image: articles/asana-project-management-features-and-business-plans.jpg
+image: articles/asana-project-management-features-and-business-plans.webp
 ---
 
 ## Overview

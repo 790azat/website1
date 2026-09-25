@@ -3,7 +3,7 @@ title: Machine Learning in Business: Turning Data Into Better Decisions
 section: digital-horizons
 author: michael-anderson
 date: 2025-12-27
-image: articles/machine-learning-in-business-turning-data-into-better-decisions.jpg
+image: articles/machine-learning-in-business-turning-data-into-better-decisions.webp
 ---
 
 Businesses generate enormous amounts of information through transactions, customer interactions, digital platforms, operations, and connected systems. The challenge is no longer simply collecting this information but finding useful patterns within it and turning those patterns into better decisions.

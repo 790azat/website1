@@ -3,7 +3,7 @@ title: Udemy Business: Courses, Pricing, and Professional Learning Features
 section: people-impact
 author: michael-anderson
 date: 2026-07-26
-image: articles/udemy-business-courses-pricing-and-professional-learning-features.jpg
+image: articles/udemy-business-courses-pricing-and-professional-learning-features.webp
 ---
 
 Udemy Business is an organizational learning platform offering "more than 28,000 courses" for Team Plan subscribers and "more than 30,000 courses" for Enterprise customers. The platform provides professional development across technology, business, leadership, data, cybersecurity, and AI domains.

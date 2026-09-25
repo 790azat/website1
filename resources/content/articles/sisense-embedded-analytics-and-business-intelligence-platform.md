@@ -3,7 +3,7 @@ title: Sisense: Embedded Analytics and Business Intelligence Platform
 section: data-intelligence
 author: michael-anderson
 date: 2026-09-12
-image: articles/sisense-embedded-analytics-and-business-intelligence-platform.jpg
+image: articles/sisense-embedded-analytics-and-business-intelligence-platform.webp
 ---
 
 Sisense is a cloud-based analytics platform that enables organizations to integrate analytical capabilities directly into their applications and workflows. The platform emphasizes embedding analytics where users already work rather than requiring separate BI tools.

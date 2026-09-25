@@ -3,7 +3,7 @@ title: Boston University Online MBA: Program, Tuition, and Admissions
 section: people-impact
 author: michael-anderson
 date: 2026-07-11
-image: articles/boston-university-online-mba-program-tuition-and-admissions.jpg
+image: articles/boston-university-online-mba-program-tuition-and-admissions.webp
 ---
 
 Boston University's Questrom School of Business offers an Online Master of Business Administration designed for working professionals seeking a flexible graduate business education. The program is delivered entirely online and awards the same Master of Business Administration degree from Boston University Questrom School of Business. (bu.edu)

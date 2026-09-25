@@ -3,7 +3,7 @@ title: Syracuse University Online MBA: Tuition, Curriculum, and Admissions
 section: people-impact
 author: daniel-brooks
 date: 2026-07-09
-image: articles/syracuse-university-online-mba-tuition-curriculum-and-admissions.jpg
+image: articles/syracuse-university-online-mba-tuition-curriculum-and-admissions.webp
 ---
 
 Syracuse University's Martin J. Whitman School of Management offers an Online MBA designed for working professionals seeking a flexible graduate business education. Beginning in fall 2026, Whitman redesigned the program from 54 credits to 45 credits, reducing the amount of coursework required while allowing students to complete the degree in as little as 15 months.

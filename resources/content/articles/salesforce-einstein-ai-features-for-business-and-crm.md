@@ -3,7 +3,7 @@ title: Salesforce Einstein: AI Features for Business and CRM
 section: digital-horizons
 author: james-mitchell
 date: 2026-07-28
-image: articles/salesforce-einstein-ai-features-for-business-and-crm.jpg
+image: articles/salesforce-einstein-ai-features-for-business-and-crm.webp
 ---
 
 Salesforce Einstein is Salesforce's collection of artificial intelligence capabilities integrated into its CRM and business applications. It combines predictive AI, generative AI, automation, and agentic capabilities to help organizations analyze CRM information, generate content, identify patterns, and automate selected business tasks.

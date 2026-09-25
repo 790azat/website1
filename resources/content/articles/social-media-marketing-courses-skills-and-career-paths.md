@@ -3,7 +3,7 @@ title: Social Media Marketing Courses: Skills and Career Paths
 section: people-impact
 author: james-mitchell
 date: 2026-08-21
-image: articles/social-media-marketing-courses-skills-and-career-paths.jpg
+image: articles/social-media-marketing-courses-skills-and-career-paths.webp
 ---
 
 Social media marketing courses can help students, marketers, business owners, and career changers develop skills for using social platforms to reach audiences, build communities, promote products, and measure marketing performance. Training can range from introductory courses covering social media fundamentals to advanced programs focused on strategy, advertising, analytics, and platform management.

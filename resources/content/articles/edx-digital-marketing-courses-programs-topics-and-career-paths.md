@@ -3,7 +3,7 @@ title: edX Digital Marketing Courses: Programs, Topics, and Career Paths
 section: people-impact
 author: daniel-brooks
 date: 2026-09-20
-image: articles/edx-digital-marketing-courses-programs-topics-and-career-paths.jpg
+image: articles/edx-digital-marketing-courses-programs-topics-and-career-paths.webp
 ---
 
 Digital marketing combines marketing strategy with online channels, data, and technology. Businesses use search engines, social media, email, websites, online advertising, and other digital channels to reach audiences and support customer relationships. As these activities become more specialized, professionals often use online education to develop relevant skills.

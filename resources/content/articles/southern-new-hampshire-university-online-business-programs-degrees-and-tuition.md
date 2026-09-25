@@ -3,7 +3,7 @@ title: Southern New Hampshire University Online Business Programs: Degrees and T
 section: people-impact
 author: daniel-brooks
 date: 2026-07-14
-image: articles/southern-new-hampshire-university-online-business-programs-degrees-and-tuition.jpg
+image: articles/southern-new-hampshire-university-online-business-programs-degrees-and-tuition.webp
 ---
 
 Southern New Hampshire University (SNHU) offers a broad selection of online business programs covering business administration, accounting, finance, marketing, human resources, management, project management, entrepreneurship, and other business disciplines. The university's online business school includes bachelor's, master's, associate, and certificate options designed for students with different professional and educational goals.

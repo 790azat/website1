@@ -3,7 +3,7 @@ title: Collaborative Leadership: Using Diverse Perspectives to Improve Decisions
 section: people-impact
 author: michael-anderson
 date: 2025-11-09
-image: articles/collaborative-leadership-using-diverse-perspectives-to-improve-decisions.jpg
+image: articles/collaborative-leadership-using-diverse-perspectives-to-improve-decisions.webp
 ---
 
 Effective leadership increasingly depends on an organization's ability to bring together different forms of knowledge and experience. Complex business decisions often involve operational, financial, customer, technical, and human considerations that may be difficult for one person or department to evaluate independently.

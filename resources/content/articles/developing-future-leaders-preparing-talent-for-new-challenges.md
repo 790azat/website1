@@ -3,7 +3,7 @@ title: Developing Future Leaders: Preparing Talent for New Challenges
 section: people-impact
 author: daniel-brooks
 date: 2025-12-01
-image: articles/developing-future-leaders-preparing-talent-for-new-challenges.jpg
+image: articles/developing-future-leaders-preparing-talent-for-new-challenges.webp
 ---
 
 Organizations need leaders who can respond to changing markets, evolving technologies, and increasingly complex business environments. Developing those leaders cannot be left entirely to chance or postponed until an employee reaches a senior position.

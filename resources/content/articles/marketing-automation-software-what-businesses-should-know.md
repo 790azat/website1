@@ -3,7 +3,7 @@ title: Marketing Automation Software: What Businesses Should Know
 section: business-strategy
 author: emily-carter
 date: 2026-04-30
-image: articles/marketing-automation-software-what-businesses-should-know.jpg
+image: articles/marketing-automation-software-what-businesses-should-know.webp
 ---
 
 Businesses increasingly manage marketing across multiple channels, including email, websites, social media, paid campaigns, and other digital touchpoints. As customer journeys become more complex, manually coordinating every interaction can require substantial time and resources.

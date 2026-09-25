@@ -3,7 +3,7 @@ title: Shopify: E-Commerce Features, Plans, and Business Tools
 section: business-strategy
 author: emily-carter
 date: 2026-08-24
-image: articles/shopify-e-commerce-features-plans-and-business-tools.jpg
+image: articles/shopify-e-commerce-features-plans-and-business-tools.webp
 ---
 
 ## Overview

@@ -3,7 +3,7 @@ title: Cloudflare: Website Security, Performance, and Cloud Services
 section: digital-horizons
 author: james-mitchell
 date: 2026-08-07
-image: articles/cloudflare-website-security-performance-and-cloud-services.jpg
+image: articles/cloudflare-website-security-performance-and-cloud-services.webp
 ---
 
 Cloudflare is a global connectivity and cloud services platform that provides website security, content delivery, networking, developer infrastructure, and application services. Businesses can use Cloudflare to protect websites from attacks, accelerate content delivery, manage DNS, connect users to applications, and deploy code and data services closer to end users.

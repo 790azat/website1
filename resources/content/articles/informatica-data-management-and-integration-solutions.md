@@ -3,7 +3,7 @@ title: Informatica: Data Management and Integration Solutions
 section: data-intelligence
 author: michael-anderson
 date: 2026-09-06
-image: articles/informatica-data-management-and-integration-solutions.jpg
+image: articles/informatica-data-management-and-integration-solutions.webp
 ---
 
 Informatica is an enterprise platform addressing the challenge of managing dispersed organizational data across cloud applications, databases, warehouses, and on-premises systems. The company's Intelligent Data Management Cloud (IDMC) combines multiple capabilities—"data integration, data engineering, data quality, governance, cataloging, master data management, application integration, and data access"—within a unified cloud environment.

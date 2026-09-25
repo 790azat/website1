@@ -82,6 +82,7 @@
                 <div class="relative mt-8 flex h-56 items-center justify-center overflow-hidden rounded-2xl {{ $program['hero_image'] ?? null ? '' : $program['hero_gradient'] }} sm:h-72">
                     @if ($program['hero_image'] ?? null)
                         <img
+                            fetchpriority="high"
                             src="{{ asset('images/'.$program['hero_image']) }}"
                             alt="{{ $program['hero_tagline'] }}"
                             class="absolute inset-0 size-full object-cover"

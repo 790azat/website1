@@ -3,7 +3,7 @@ title: Business Loans: Types, Terms, and Key Considerations
 section: business-strategy
 author: emily-carter
 date: 2026-03-28
-image: articles/business-loans-types-terms-and-key-considerations.jpg
+image: articles/business-loans-types-terms-and-key-considerations.webp
 ---
 
 ## Introduction
