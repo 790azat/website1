@@ -28,5 +28,9 @@
         <p class="mt-6 text-xs leading-relaxed text-zinc-500">
             Information shared by {{ $siteName }} is intended for informational and educational purposes only and should not be interpreted as investment, tax, or legal advice. Financial decisions carry risk, and past performance does not guarantee future results. Always seek advice from a certified professional before making financial decisions.
         </p>
+
+        <p class="mt-4 text-xs text-zinc-600">
+            &copy; {{ date('Y') }} {{ $siteName }}. All rights reserved.
+        </p>
     </div>
 </footer>
