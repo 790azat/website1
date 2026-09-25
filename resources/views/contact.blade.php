@@ -1,6 +1,6 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $title = __('Contact').' — '.$siteName;
+    $title = __('Contact');
 
     $data = app(\App\Content\SiteContent::class)->localized();
     $categories = collect($data['sections'])
@@ -11,12 +11,16 @@
 
     $slug = fn (string $s) => strtolower(preg_replace('/[^a-z0-9]+/i', '', $s));
     $domainName = $slug($siteName).'.com';
+
+    $seo = [
+        'description' => __('Get in touch with the :site team.', ['site' => $siteName]),
+    ];
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="{{ __('Get in touch with the :site team.', ['site' => $siteName]) }}" />
+        @include('partials.seo')
     </head>
     <body
         x-data="{ mobileOpen: false }"

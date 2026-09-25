@@ -1,6 +1,6 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $title = __('Terms of Use').' — '.$siteName;
+    $title = __('Terms of Use');
 
     $data = app(\App\Content\SiteContent::class)->localized();
     $categories = collect($data['sections'])
@@ -59,12 +59,16 @@
             'body' => "We may update these Terms from time to time to reflect changes in our practices or for legal or operational reasons. When we do, we will revise the date at the top of this page. Continued use of the site after changes are posted constitutes your acceptance of the updated Terms.",
         ],
     ];
+
+    $seo = [
+        'description' => __('Read the :site terms of use for the rules and guidelines that govern use of our site.', ['site' => $siteName]),
+    ];
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="{{ __('Read the :site terms of use for the rules and guidelines that govern use of our site.', ['site' => $siteName]) }}" />
+        @include('partials.seo')
     </head>
     <body
         x-data="{ mobileOpen: false }"

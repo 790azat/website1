@@ -1,6 +1,6 @@
 @php
     $siteName = config('app.name', 'Laravel');
-    $title = __('Our Editorial Team').' — '.$siteName;
+    $title = __('Our Editorial Team');
 
     $data = app(\App\Content\SiteContent::class)->localized();
     $categories = collect($data['sections'])
@@ -24,12 +24,16 @@
         ['key' => 'michael-anderson', 'photo' => 'michael-anderson.webp', 'name' => 'Michael Anderson', 'age' => 39, 'role' => 'Business and Data Analyst', 'bio' => 'Michael Anderson, 39, is a business and data analyst at :site, focused on helping organizations turn complex information into practical business insights. His work covers data analysis, performance measurement, and data-driven decision-making.'],
         ['key' => 'daniel-brooks', 'photo' => 'daniel-brooks.webp', 'name' => 'Daniel Brooks', 'age' => 37, 'role' => 'Financial Specialist', 'bio' => 'Daniel Brooks, 37, is a financial specialist at :site, focused on market volatility and portfolio diversification. He helps professionals develop adaptable investment strategies designed to balance growth opportunities with prudent risk management.'],
     ];
+
+    $seo = [
+        'description' => __('Meet the :site team — professionals with experience across financial research, investment strategy, data analysis, business technology, and organizational strategy.', ['site' => $siteName]),
+    ];
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="{{ __('Meet the :site team — professionals with experience across financial research, investment strategy, data analysis, business technology, and organizational strategy.', ['site' => $siteName]) }}" />
+        @include('partials.seo')
     </head>
     <body
         x-data="{ mobileOpen: false }"

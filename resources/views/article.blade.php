@@ -26,13 +26,39 @@
         ->take(3)
         ->values();
 
-    $title = $article['title'].' — '.$siteName;
+    $title = $article['title'];
+
+    $seo = [
+        'description' => \App\Content\SiteContent::excerpt($article['body']),
+        'image' => $article['image'] ?? null,
+        'type' => 'article',
+        'schema' => [
+            [
+                '@type' => 'Article',
+                'headline' => $article['title'],
+                'image' => ($article['image'] ?? null) ? [asset('images/'.$article['image'])] : [],
+                'datePublished' => $publishedAt->toDateString(),
+                'author' => ['@type' => 'Person', 'name' => $author['name'], 'url' => route('team')],
+                'publisher' => ['@type' => 'Organization', 'name' => $siteName, 'logo' => ['@type' => 'ImageObject', 'url' => asset('images/branding/logo-full.webp')]],
+                'articleSection' => $sectionMeta['title'],
+                'mainEntityOfPage' => route('article', $article['slug']),
+            ],
+            [
+                '@type' => 'BreadcrumbList',
+                'itemListElement' => [
+                    ['@type' => 'ListItem', 'position' => 1, 'name' => __('Home'), 'item' => route('home')],
+                    ['@type' => 'ListItem', 'position' => 2, 'name' => $sectionMeta['title'], 'item' => route('section', $article['section'])],
+                    ['@type' => 'ListItem', 'position' => 3, 'name' => $article['title']],
+                ],
+            ],
+        ],
+    ];
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="{{ Str::limit(strip_tags($article['body']), 155) }}" />
+        @include('partials.seo')
     </head>
     <body
         x-data="{ mobileOpen: false }"

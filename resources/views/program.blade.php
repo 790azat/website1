@@ -28,13 +28,18 @@
         ? collect($data['articles'])->firstWhere('slug', $program['related_slug'])
         : null;
 
-    $title = $program['title'].' — '.$siteName;
+    $title = $program['title'];
+
+    $seo = [
+        'description' => Str::limit($program['intro'], 155),
+        'image' => $program['hero_image'] ?? null,
+    ];
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
-        <meta name="description" content="{{ Str::limit($program['intro'], 155) }}" />
+        @include('partials.seo')
     </head>
     <body
         x-data="{ mobileOpen: false }"

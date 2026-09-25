@@ -158,5 +158,9 @@
     ":site Editorial Team": "Equipo editorial de :site",
     "Learn More About Our Editorial Team": "Conozca más sobre nuestro equipo editorial",
     "See Also in :section": "Ver también en :section",
-    ":count article|:count articles": ":count artículo|:count artículos"
+    ":count article|:count articles": ":count artículo|:count artículos",
+    "Search articles": "Buscar artículos",
+    "Search results for “:query”": "Resultados de búsqueda para «:query»",
+    "Clear search": "Borrar búsqueda",
+    "No articles match your search. Try different words.": "Ningún artículo coincide con tu búsqueda. Prueba con otras palabras."
 }
