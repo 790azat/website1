@@ -3,7 +3,7 @@ title: Business Intelligence Courses: Skills and Learning Options
 section: data-intelligence
 author: michael-anderson
 date: 2026-02-22
-image: articles/business-intelligence-courses-skills-and-learning-options.jpg
+image: articles/business-intelligence-courses-skills-and-learning-options.webp
 ---
 
 Organizations rely on data to monitor performance, understand customers, evaluate operations, and support business decisions. As companies collect information from more systems, professionals need the ability to turn that information into understandable reports, dashboards, and insights.

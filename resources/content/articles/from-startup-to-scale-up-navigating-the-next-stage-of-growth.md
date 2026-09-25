@@ -3,7 +3,7 @@ title: From Startup to Scale-Up: Navigating the Next Stage of Growth
 section: business-strategy
 author: daniel-brooks
 date: 2025-08-12
-image: articles/from-startup-to-scale-up-navigating-the-next-stage-of-growth.jpg
+image: articles/from-startup-to-scale-up-navigating-the-next-stage-of-growth.webp
 ---
 
 Reaching the next stage of growth can be an important transition for a young business. A startup may initially depend on a small team, informal processes, and the direct involvement of its founders. As demand increases, those same approaches may become difficult to maintain.

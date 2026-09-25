@@ -3,7 +3,7 @@ title: Canva for Business: Features, Plans, and Collaboration Tools
 section: digital-horizons
 author: daniel-brooks
 date: 2026-08-10
-image: articles/canva-for-business-features-plans-and-collaboration-tools.jpg
+image: articles/canva-for-business-features-plans-and-collaboration-tools.webp
 ---
 
 Canva is a visual communication and design platform that enables businesses to create presentations, social media graphics, marketing materials, videos, documents, websites, and other digital content. Its browser-based interface combines templates, design tools, stock media, collaboration features, artificial intelligence, and brand-management capabilities in one environment.

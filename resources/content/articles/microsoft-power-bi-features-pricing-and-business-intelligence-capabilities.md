@@ -3,7 +3,7 @@ title: Microsoft Power BI: Features, Pricing, and Business Intelligence Capabili
 section: data-intelligence
 author: emily-carter
 date: 2026-09-25
-image: articles/microsoft-power-bi-features-pricing-and-business-intelligence-capabilities.jpg
+image: articles/microsoft-power-bi-features-pricing-and-business-intelligence-capabilities.webp
 ---
 
 Microsoft Power BI is described as "a business analytics platform designed for connecting data sources, creating interactive reports, sharing dashboards, and analyzing information."

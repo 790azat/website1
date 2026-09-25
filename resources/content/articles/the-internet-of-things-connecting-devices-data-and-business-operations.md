@@ -3,7 +3,7 @@ title: The Internet of Things: Connecting Devices, Data and Business Operations
 section: digital-horizons
 author: michael-anderson
 date: 2026-01-04
-image: articles/the-internet-of-things-connecting-devices-data-and-business-operations.jpg
+image: articles/the-internet-of-things-connecting-devices-data-and-business-operations.webp
 ---
 
 The Internet of Things (IoT) is changing how businesses collect information from the physical world and use it to improve everyday operations. Connected devices can capture information about equipment, products, locations, environmental conditions, and customer activity, creating new sources of data for organizations.

@@ -3,7 +3,7 @@ title: Cyber Insurance: Coverage and Key Considerations
 section: business-strategy
 author: emily-carter
 date: 2026-05-17
-image: articles/cyber-insurance-coverage-and-key-considerations.jpg
+image: articles/cyber-insurance-coverage-and-key-considerations.webp
 ---
 
 Businesses increasingly rely on digital systems to store information, communicate with customers, process payments, and operate everyday activities. A cyber incident can therefore create costs that extend beyond repairing technology, including business interruption, legal expenses, customer notification, and regulatory obligations.

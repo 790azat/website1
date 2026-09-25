@@ -3,7 +3,7 @@ title: Microsoft Copilot: AI Features, Plans, and Business Uses
 section: digital-horizons
 author: james-mitchell
 date: 2026-08-18
-image: articles/microsoft-copilot-ai-features-plans-and-business-uses.jpg
+image: articles/microsoft-copilot-ai-features-plans-and-business-uses.webp
 ---
 
 Microsoft Copilot is a collection of generative AI tools integrated across Microsoft's productivity ecosystem. The platform enables users to "draft documents, analyze information, summarize meetings, work with email, create presentations" and more.

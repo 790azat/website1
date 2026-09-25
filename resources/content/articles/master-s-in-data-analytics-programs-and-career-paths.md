@@ -3,7 +3,7 @@ title: Master's in Data Analytics: Programs and Career Paths
 section: data-intelligence
 author: james-mitchell
 date: 2026-02-01
-image: articles/master-s-in-data-analytics-programs-and-career-paths.jpg
+image: articles/master-s-in-data-analytics-programs-and-career-paths.webp
 ---
 
 Organizations across industry increasingly rely on data to understand customers, measure performance, manage operations, and support strategic decisions. This has created demand for professionals who can work with large datasets and communicate analytical findings clearly.

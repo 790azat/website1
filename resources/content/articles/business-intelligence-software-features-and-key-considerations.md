@@ -3,7 +3,7 @@ title: Business Intelligence Software: Features and Key Considerations
 section: data-intelligence
 author: james-mitchell
 date: 2026-01-11
-image: articles/business-intelligence-software-features-and-key-considerations.jpg
+image: articles/business-intelligence-software-features-and-key-considerations.webp
 ---
 
 Organizations gather data from numerous platforms—sales systems, customer databases, financial applications, websites, and marketing tools. As data volumes increase, companies require effective methods to organize and convert this information into actionable business insights.

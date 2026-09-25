@@ -3,7 +3,7 @@ title: Business Analytics Courses: Topics, Skills, and Applications
 section: data-intelligence
 author: daniel-brooks
 date: 2026-01-19
-image: articles/business-analytics-courses-topics-skills-and-applications.jpg
+image: articles/business-analytics-courses-topics-skills-and-applications.webp
 ---
 
 Businesses use data to evaluate performance, understand customers, manage operations, and make decisions. As organizations collect information from more systems and sources, employees increasingly need to understand how to analyze that information and turn it into useful business insights.

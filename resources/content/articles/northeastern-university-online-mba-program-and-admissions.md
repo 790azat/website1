@@ -3,7 +3,7 @@ title: Northeastern University Online MBA: Program and Admissions
 section: people-impact
 author: emily-carter
 date: 2026-07-08
-image: articles/northeastern-university-online-mba-program-and-admissions.jpg
+image: articles/northeastern-university-online-mba-program-and-admissions.webp
 ---
 
 Northeastern University's D'Amore-McKim School of Business offers an Online Master of Business Administration designed for working professionals who want to develop advanced business skills without leaving their careers. The program is fully online, part-time, and can be completed in as little as 18 months, while students can also choose a slower pace. (northeastern.edu)

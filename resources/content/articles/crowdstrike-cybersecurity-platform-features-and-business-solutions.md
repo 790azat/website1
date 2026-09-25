@@ -3,7 +3,7 @@ title: CrowdStrike: Cybersecurity Platform Features and Business Solutions
 section: digital-horizons
 author: daniel-brooks
 date: 2026-08-04
-image: articles/crowdstrike-cybersecurity-platform-features-and-business-solutions.jpg
+image: articles/crowdstrike-cybersecurity-platform-features-and-business-solutions.webp
 ---
 
 CrowdStrike is a cybersecurity company that provides cloud-native security products through its Falcon platform. The platform is designed to protect endpoints, identities, cloud environments, data, applications, and other parts of an organization's technology infrastructure.

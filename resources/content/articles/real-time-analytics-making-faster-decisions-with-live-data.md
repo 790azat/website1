@@ -3,7 +3,7 @@ title: Real-Time Analytics: Making Faster Decisions With Live Data
 section: digital-horizons
 author: michael-anderson
 date: 2025-12-22
-image: articles/real-time-analytics-making-faster-decisions-with-live-data.jpg
+image: articles/real-time-analytics-making-faster-decisions-with-live-data.webp
 ---
 
 Businesses increasingly operate in environments where conditions can change within minutes rather than days. Customer behavior, inventory levels, financial transactions, website activity, and operational performance can all shift rapidly, making delayed information less useful for certain decisions.

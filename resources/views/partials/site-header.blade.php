@@ -10,7 +10,7 @@
 <header class="sticky top-0 z-40 bg-zinc-900">
     <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
         <a href="{{ route('home') }}" wire:navigate class="flex shrink-0 items-center">
-            <img src="{{ asset('images/branding/logo-full.png') }}" alt="{{ $siteName }}" class="h-8 w-auto" />
+            <img src="{{ asset('images/branding/logo-full.webp') }}" alt="{{ $siteName }}" width="420" height="100" class="h-8 w-auto" />
         </a>
 
         <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
@@ -65,7 +65,7 @@
     >
         <div class="flex items-center justify-between">
             <a href="{{ route('home') }}" wire:navigate class="flex items-center gap-2.5 font-semibold text-zinc-900 dark:text-white">
-                <img src="{{ asset('images/branding/logo-icon.png') }}" alt="" class="size-8 shrink-0" />
+                <img src="{{ asset('images/branding/logo-icon.webp') }}" alt="" width="96" height="96" class="size-8 shrink-0" />
                 <span>{{ $siteName }}</span>
             </a>
             <button type="button" @click="mobileOpen = false" class="flex size-9 items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400" aria-label="{{ __('Close menu') }}">

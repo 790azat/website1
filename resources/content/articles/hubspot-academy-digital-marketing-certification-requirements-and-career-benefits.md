@@ -3,7 +3,7 @@ title: HubSpot Academy Digital Marketing Certification: Requirements and Career 
 section: people-impact
 author: emily-carter
 date: 2026-09-24
-image: articles/hubspot-academy-digital-marketing-certification-requirements-and-career-benefits.jpg
+image: articles/hubspot-academy-digital-marketing-certification-requirements-and-career-benefits.webp
 ---
 
 ## Introduction

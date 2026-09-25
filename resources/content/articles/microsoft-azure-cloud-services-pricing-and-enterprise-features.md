@@ -3,7 +3,7 @@ title: Microsoft Azure: Cloud Services, Pricing, and Enterprise Features
 section: digital-horizons
 author: daniel-brooks
 date: 2026-08-20
-image: articles/microsoft-azure-cloud-services-pricing-and-enterprise-features.jpg
+image: articles/microsoft-azure-cloud-services-pricing-and-enterprise-features.webp
 ---
 
 ## September 24, 2026 • Emily Carter

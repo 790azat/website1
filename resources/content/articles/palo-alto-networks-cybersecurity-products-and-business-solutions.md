@@ -3,7 +3,7 @@ title: Palo Alto Networks: Cybersecurity Products and Business Solutions
 section: digital-horizons
 author: james-mitchell
 date: 2026-08-02
-image: articles/palo-alto-networks-cybersecurity-products-and-business-solutions.jpg
+image: articles/palo-alto-networks-cybersecurity-products-and-business-solutions.webp
 ---
 
 Palo Alto Networks is a cybersecurity company that provides network security, cloud security, security operations, identity protection, and incident-response services. Its portfolio is organized around platforms including Strata, Prisma, and Cortex, with products designed to protect networks, applications, cloud environments, endpoints, identities, and users.

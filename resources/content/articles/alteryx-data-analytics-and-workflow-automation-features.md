@@ -3,7 +3,7 @@ title: Alteryx: Data Analytics and Workflow Automation Features
 section: data-intelligence
 author: james-mitchell
 date: 2026-09-08
-image: articles/alteryx-data-analytics-and-workflow-automation-features.jpg
+image: articles/alteryx-data-analytics-and-workflow-automation-features.webp
 ---
 
 Organizations often spend significant time collecting, preparing, transforming, and analyzing information before they can make business decisions. Alteryx is designed to simplify these processes by combining data preparation, analytics, workflow automation, reporting, and AI-assisted insights in a unified environment.

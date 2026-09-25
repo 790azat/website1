@@ -109,6 +109,8 @@
                             @if ($article['image'] ?? null)
                                 <div class="aspect-video w-full overflow-hidden">
                                     <img
+                                        loading="lazy"
+                                        decoding="async"
                                         src="{{ asset('images/'.$article['image']) }}"
                                         alt="{{ $article['title'] }}"
                                         loading="lazy"
@@ -126,6 +128,8 @@
                                 </h2>
                                 <div class="mt-4 flex items-center gap-2.5">
                                     <img
+                                        loading="lazy"
+                                        decoding="async"
                                         src="{{ asset('images/team/'.$author['photo']) }}"
                                         alt="{{ $author['name'] }}"
                                         loading="lazy"

@@ -3,7 +3,7 @@ title: E-Commerce Platforms: Features and Key Considerations
 section: business-strategy
 author: emily-carter
 date: 2026-04-09
-image: articles/e-commerce-platforms-features-and-key-considerations.jpg
+image: articles/e-commerce-platforms-features-and-key-considerations.webp
 ---
 
 Selling products online requires more than simply creating a website. E-commerce businesses need systems for managing products, processing payments, handling orders, tracking inventory, supporting customers, and protecting transactions.

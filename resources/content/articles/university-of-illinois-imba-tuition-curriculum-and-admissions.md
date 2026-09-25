@@ -3,7 +3,7 @@ title: University of Illinois iMBA: Tuition, Curriculum, and Admissions
 section: people-impact
 author: james-mitchell
 date: 2026-07-12
-image: articles/university-of-illinois-imba-tuition-curriculum-and-admissions.jpg
+image: articles/university-of-illinois-imba-tuition-curriculum-and-admissions.webp
 ---
 
 The University of Illinois Urbana-Champaign offers the iMBA, an online Master of Business Administration through the Gies College of Business. The program is designed for working professionals who want to earn a graduate business degree through a flexible online format while continuing their careers. The iMBA requires 72 credit hours and combines core business education with specialized focus areas and electives.

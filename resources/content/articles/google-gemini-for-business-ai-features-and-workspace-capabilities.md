@@ -3,7 +3,7 @@ title: Google Gemini for Business: AI Features and Workspace Capabilities
 section: digital-horizons
 author: michael-anderson
 date: 2026-08-16
-image: articles/google-gemini-for-business-ai-features-and-workspace-capabilities.jpg
+image: articles/google-gemini-for-business-ai-features-and-workspace-capabilities.webp
 ---
 
 Google Gemini for Business is a collection of AI capabilities integrated into Google Workspace and the broader Google Cloud ecosystem. It provides AI assistance for tasks such as writing, research, data analysis, document creation, meeting summaries, communication, and workflow automation.

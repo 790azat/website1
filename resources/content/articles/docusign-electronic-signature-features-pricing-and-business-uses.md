@@ -3,7 +3,7 @@ title: DocuSign: Electronic Signature Features, Pricing, and Business Uses
 section: business-strategy
 author: james-mitchell
 date: 2026-08-23
-image: articles/docusign-electronic-signature-features-pricing-and-business-uses.jpg
+image: articles/docusign-electronic-signature-features-pricing-and-business-uses.webp
 ---
 
 DocuSign is a cloud-based platform enabling organizations to prepare, send, sign, and manage documents digitally across multiple departments and business functions.

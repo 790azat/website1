@@ -3,7 +3,7 @@ title: MicroStrategy: Enterprise Analytics and Business Intelligence
 section: data-intelligence
 author: daniel-brooks
 date: 2026-09-10
-image: articles/microstrategy-enterprise-analytics-and-business-intelligence.jpg
+image: articles/microstrategy-enterprise-analytics-and-business-intelligence.webp
 ---
 
 Enterprise organizations often need analytics platforms that can support thousands of users, standardized reporting, interactive dashboards, and governed access to business data. MicroStrategy has historically been positioned around these requirements, providing enterprise business intelligence, reporting, analytics, and data visualization capabilities.

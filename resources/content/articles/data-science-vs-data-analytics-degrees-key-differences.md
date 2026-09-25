@@ -3,7 +3,7 @@ title: Data Science vs. Data Analytics Degrees: Key Differences
 section: data-intelligence
 author: emily-carter
 date: 2026-01-24
-image: articles/data-science-vs-data-analytics-degrees-key-differences.jpg
+image: articles/data-science-vs-data-analytics-degrees-key-differences.webp
 ---
 
 Data science and data analytics are closely related fields that both involve working with information to identify patterns, answer questions, and support decisions. Because degree programs in these areas can have similar names and overlapping coursework, students may find it difficult to understand how they differ.

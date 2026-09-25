@@ -9,7 +9,7 @@
     <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
         <div class="flex flex-col items-center gap-6 border-b border-zinc-800 pb-8 sm:flex-row sm:justify-between">
             <a href="{{ route('home') }}" wire:navigate class="flex items-center">
-                <img src="{{ asset('images/branding/logo-full.png') }}" alt="{{ $siteName }}" class="h-7 w-auto" />
+                <img src="{{ asset('images/branding/logo-full.webp') }}" alt="{{ $siteName }}" width="420" height="100" loading="lazy" decoding="async" class="h-7 w-auto" />
             </a>
 
             <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">

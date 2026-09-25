@@ -3,7 +3,7 @@ title: DevOps Tools: A Guide for Software Teams
 section: digital-horizons
 author: emily-carter
 date: 2026-07-10
-image: articles/devops-tools-a-guide-for-software-teams.jpg
+image: articles/devops-tools-a-guide-for-software-teams.webp
 ---
 
 Software teams increasingly rely on automation and collaboration to develop, test, release, and operate applications. DevOps brings development and operations activities closer together, using shared processes and tools to support the software lifecycle from planning through production.

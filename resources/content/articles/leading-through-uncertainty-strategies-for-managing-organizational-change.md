@@ -3,7 +3,7 @@ title: Leading Through Uncertainty: Strategies for Managing Organizational Chang
 section: people-impact
 author: emily-carter
 date: 2026-01-07
-image: articles/leading-through-uncertainty-strategies-for-managing-organizational-change.jpg
+image: articles/leading-through-uncertainty-strategies-for-managing-organizational-change.webp
 ---
 
 Organizations rarely operate under completely predictable conditions. Changes in markets, technology, customer expectations, regulations, and internal priorities can require businesses to adjust their strategies and ways of working.

@@ -3,7 +3,7 @@ title: How Business Analytics Supports Better Decision-Making
 section: data-intelligence
 author: emily-carter
 date: 2025-10-14
-image: articles/how-business-analytics-supports-better-decision-making.jpg
+image: articles/how-business-analytics-supports-better-decision-making.webp
 ---
 
 Businesses make decisions every day about customers, products, investments, operations, marketing, and growth. As organizations collect more information across these activities, business analytics provides a structured way to turn that data into useful evidence for decision-making.

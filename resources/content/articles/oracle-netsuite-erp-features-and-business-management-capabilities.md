@@ -3,7 +3,7 @@ title: Oracle NetSuite: ERP Features and Business Management Capabilities
 section: business-strategy
 author: michael-anderson
 date: 2026-09-01
-image: articles/oracle-netsuite-erp-features-and-business-management-capabilities.jpg
+image: articles/oracle-netsuite-erp-features-and-business-management-capabilities.webp
 ---
 
 Oracle NetSuite is a cloud-based enterprise resource planning platform designed to "connect financial management, inventory, order management, customer relationship management, ecommerce, and other business processes within one system." Its ERP capabilities are intended to give organizations a centralized view of financial and operational activity.

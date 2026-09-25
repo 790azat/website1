@@ -3,7 +3,7 @@ title: Leadership and Social Impact: How Organizations Can Strengthen Communitie
 section: people-impact
 author: daniel-brooks
 date: 2025-11-14
-image: articles/leadership-and-social-impact-how-organizations-can-strengthen-communities.jpg
+image: articles/leadership-and-social-impact-how-organizations-can-strengthen-communities.webp
 ---
 
 Organizations operate within communities, and their activities can influence local employment, economic development, education, access to services, and environmental conditions. As a result, leadership increasingly involves considering not only business performance but also how organizational decisions affect the communities connected to the business.

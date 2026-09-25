@@ -3,7 +3,7 @@ title: Applicant Tracking Systems: Features and Considerations
 section: business-strategy
 author: daniel-brooks
 date: 2026-05-13
-image: articles/applicant-tracking-systems-features-and-considerations.jpg
+image: articles/applicant-tracking-systems-features-and-considerations.webp
 ---
 
 Recruiting can involve job postings, applications, resume reviews, interviews, candidate communication, approvals, and hiring decisions. As the number of open positions and applicants increases, managing these activities through spreadsheets, email, and separate tools can become difficult.

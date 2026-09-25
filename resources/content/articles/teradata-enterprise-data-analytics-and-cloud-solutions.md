@@ -3,7 +3,7 @@ title: Teradata: Enterprise Data Analytics and Cloud Solutions
 section: data-intelligence
 author: daniel-brooks
 date: 2026-09-05
-image: articles/teradata-enterprise-data-analytics-and-cloud-solutions.jpg
+image: articles/teradata-enterprise-data-analytics-and-cloud-solutions.webp
 ---
 
 Large organizations often need to analyze information across finance, customer operations, supply chains, marketing, and other business functions. Teradata provides an enterprise data and analytics platform designed to help organizations consolidate information, run large-scale analytical workloads, and use data for artificial intelligence and machine learning.

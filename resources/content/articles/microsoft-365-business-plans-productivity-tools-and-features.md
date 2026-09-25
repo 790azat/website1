@@ -3,7 +3,7 @@ title: Microsoft 365: Business Plans, Productivity Tools, and Features
 section: digital-horizons
 author: emily-carter
 date: 2026-08-14
-image: articles/microsoft-365-business-plans-productivity-tools-and-features.jpg
+image: articles/microsoft-365-business-plans-productivity-tools-and-features.webp
 ---
 
 Microsoft 365 is a cloud-based productivity platform that combines familiar Office applications with business email, cloud storage, collaboration, communication, security, and administrative tools. Instead of purchasing individual desktop applications separately, organizations can use subscription plans that combine multiple services under centralized account management.

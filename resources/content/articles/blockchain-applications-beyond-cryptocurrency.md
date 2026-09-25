@@ -3,7 +3,7 @@ title: Blockchain Applications Beyond Cryptocurrency
 section: digital-horizons
 author: james-mitchell
 date: 2026-01-03
-image: articles/blockchain-applications-beyond-cryptocurrency.jpg
+image: articles/blockchain-applications-beyond-cryptocurrency.webp
 ---
 
 Blockchain technology is often associated with cryptocurrencies, but its underlying architecture has applications that extend beyond digital currencies. Businesses and organizations have explored blockchain for areas such as supply chain management, digital identity, recordkeeping, payments, and transaction verification.

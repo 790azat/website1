@@ -3,7 +3,7 @@ title: Digital Twins: Creating Data-Driven Models of the Physical World
 section: digital-horizons
 author: daniel-brooks
 date: 2025-12-23
-image: articles/digital-twins-creating-data-driven-models-of-the-physical-world.jpg
+image: articles/digital-twins-creating-data-driven-models-of-the-physical-world.webp
 ---
 
 Businesses increasingly use digital technologies to understand and manage physical assets, facilities, and processes. One technology supporting this shift is the digital twin: "a digital representation of a physical object, system, or process that can be updated using information from the real world."

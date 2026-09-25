@@ -3,7 +3,7 @@ title: WGU Online Business Degrees: Programs, Tuition, and Admissions
 section: people-impact
 author: michael-anderson
 date: 2026-07-16
-image: articles/wgu-online-business-degrees-programs-tuition-and-admissions.jpg
+image: articles/wgu-online-business-degrees-programs-tuition-and-admissions.webp
 ---
 
 Western Governors University (WGU) offers online business degrees designed around flexible scheduling and competency-based education. The university's School of Business provides bachelor's and master's programs in areas including accounting, business management, finance, marketing, human resources, project management, supply chain, and business-related technology. (wgu.edu)

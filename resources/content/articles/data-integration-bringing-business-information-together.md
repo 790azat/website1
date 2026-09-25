@@ -3,7 +3,7 @@ title: Data Integration: Bringing Business Information Together
 section: data-intelligence
 author: daniel-brooks
 date: 2025-10-11
-image: articles/data-integration-bringing-business-information-together.jpg
+image: articles/data-integration-bringing-business-information-together.webp
 ---
 
 Modern businesses generate information across many systems. Sales platforms, customer databases, financial software, marketing tools, websites, and operational systems can all contain valuable information, but keeping these sources separate can make it difficult to develop a complete view of business performance.

@@ -3,7 +3,7 @@ title: Organizational Transparency: Building Trust Through Openness
 section: people-impact
 author: daniel-brooks
 date: 2025-12-04
-image: articles/organizational-transparency-building-trust-through-openness.jpg
+image: articles/organizational-transparency-building-trust-through-openness.webp
 ---
 
 Trust is an important part of how organizations work. Employees need reliable information to understand priorities and expectations, while customers, partners, and other stakeholders often want greater visibility into how organizations operate.

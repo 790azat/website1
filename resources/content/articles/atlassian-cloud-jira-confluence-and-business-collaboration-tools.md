@@ -3,7 +3,7 @@ title: Atlassian Cloud: Jira, Confluence, and Business Collaboration Tools
 section: digital-horizons
 author: michael-anderson
 date: 2026-08-06
-image: articles/atlassian-cloud-jira-confluence-and-business-collaboration-tools.jpg
+image: articles/atlassian-cloud-jira-confluence-and-business-collaboration-tools.webp
 ---
 
 Atlassian Cloud is a collection of cloud-based applications designed to help organizations manage projects, software development, business processes, documentation, service operations, and team collaboration. Its ecosystem includes products such as Jira, Confluence, Jira Service Management, Bitbucket, and Loom, alongside AI-powered capabilities from Atlassian Rovo.

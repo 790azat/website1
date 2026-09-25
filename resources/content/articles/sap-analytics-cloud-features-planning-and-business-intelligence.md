@@ -3,7 +3,7 @@ title: SAP Analytics Cloud: Features, Planning, and Business Intelligence
 section: data-intelligence
 author: daniel-brooks
 date: 2026-09-15
-image: articles/sap-analytics-cloud-features-planning-and-business-intelligence.jpg
+image: articles/sap-analytics-cloud-features-planning-and-business-intelligence.webp
 ---
 
 SAP Analytics Cloud is a unified cloud platform that integrates business intelligence, enterprise planning, predictive analytics, and AI capabilities. According to the article, it "combines business intelligence, planning, augmented analytics, predictive capabilities, and reporting in a single cloud environment."

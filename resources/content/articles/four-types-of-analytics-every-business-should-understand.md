@@ -3,7 +3,7 @@ title: Four Types of Analytics Every Business Should Understand
 section: data-intelligence
 author: michael-anderson
 date: 2025-10-10
-image: articles/four-types-of-analytics-every-business-should-understand.jpg
+image: articles/four-types-of-analytics-every-business-should-understand.webp
 ---
 
 Businesses generate large amounts of information through sales, marketing, finance, customer interactions, and daily operations. However, collecting data is only the first step. Organizations also need effective ways to understand that information and use it to support better decisions.

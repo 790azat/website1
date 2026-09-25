@@ -3,7 +3,7 @@ title: Online Data Analytics Degree Programs: What to Consider
 section: data-intelligence
 author: daniel-brooks
 date: 2026-02-26
-image: articles/online-data-analytics-degree-programs-what-to-consider.jpg
+image: articles/online-data-analytics-degree-programs-what-to-consider.webp
 ---
 
 Data analytics has become an important part of how organizations evaluate performance, understand customers, manage operations, and make decisions. As businesses collect information from more sources, professionals need skills that combine data analysis, technology, statistics, and communication.

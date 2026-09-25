@@ -3,7 +3,7 @@ title: AI Productivity Tools: Features and Common Uses
 section: digital-horizons
 author: daniel-brooks
 date: 2026-06-24
-image: articles/ai-productivity-tools-features-and-common-uses.jpg
+image: articles/ai-productivity-tools-features-and-common-uses.webp
 ---
 
 Businesses and professionals increasingly use artificial intelligence to complete routine tasks, process information, create content, and support everyday decision-making. AI productivity tools bring these capabilities directly into applications and workflows that employees already use.

@@ -3,7 +3,7 @@ title: QuickBooks Online: Features, Pricing, and Business Accounting Tools
 section: business-strategy
 author: emily-carter
 date: 2026-08-29
-image: articles/quickbooks-online-features-pricing-and-business-accounting-tools.jpg
+image: articles/quickbooks-online-features-pricing-and-business-accounting-tools.webp
 ---
 
 QuickBooks Online is cloud-based accounting software from Intuit designed to help businesses manage finances, invoicing, expenses, bills, payroll-related workflows, reporting, and other accounting activities. Because the platform runs online, businesses can access financial information through supported devices without installing traditional desktop accounting software.

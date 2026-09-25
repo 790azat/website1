@@ -3,7 +3,7 @@ title: Amazon Web Services: Cloud Services, Pricing, and Business Solutions
 section: digital-horizons
 author: michael-anderson
 date: 2026-08-22
-image: articles/amazon-web-services-cloud-services-pricing-and-business-solutions.jpg
+image: articles/amazon-web-services-cloud-services-pricing-and-business-solutions.webp
 ---
 
 ## September 24, 2026 • Daniel Brooks

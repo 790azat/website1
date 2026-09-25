@@ -3,7 +3,7 @@ title: Identity and Access Management Software: A Guide
 section: digital-horizons
 author: james-mitchell
 date: 2026-07-02
-image: articles/identity-and-access-management-software-a-guide.jpg
+image: articles/identity-and-access-management-software-a-guide.webp
 ---
 
 Organizations rely on employees, customers, contractors, applications, devices, and other digital identities to access business systems and information. As companies adopt cloud services and distributed work environments, managing these identities and controlling access becomes an important part of information security and IT operations.

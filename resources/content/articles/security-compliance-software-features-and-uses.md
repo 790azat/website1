@@ -3,7 +3,7 @@ title: Security Compliance Software: Features and Uses
 section: digital-horizons
 author: daniel-brooks
 date: 2026-07-19
-image: articles/security-compliance-software-features-and-uses.jpg
+image: articles/security-compliance-software-features-and-uses.webp
 ---
 
 Organizations need to protect systems and information while also meeting security, privacy, and regulatory requirements. As businesses use more cloud services, applications, and connected systems, tracking security controls and preparing evidence for audits can become increasingly complex.

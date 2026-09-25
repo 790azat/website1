@@ -3,7 +3,7 @@ title: Okta: Identity and Access Management Features
 section: digital-horizons
 author: emily-carter
 date: 2026-08-03
-image: articles/okta-identity-and-access-management-features.jpg
+image: articles/okta-identity-and-access-management-features.webp
 ---
 
 Okta is an identity and access management platform designed to help organizations control how employees, contractors, partners, customers, and other identities access applications and resources. Its products cover authentication, single sign-on, multi-factor authentication, identity lifecycle management, directories, governance, privileged access, and identity security.

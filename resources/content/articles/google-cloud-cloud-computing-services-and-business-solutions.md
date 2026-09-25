@@ -3,7 +3,7 @@ title: Google Cloud: Cloud Computing Services and Business Solutions
 section: digital-horizons
 author: emily-carter
 date: 2026-08-19
-image: articles/google-cloud-cloud-computing-services-and-business-solutions.jpg
+image: articles/google-cloud-cloud-computing-services-and-business-solutions.webp
 ---
 
 ## September 24, 2026 • James Mitchell

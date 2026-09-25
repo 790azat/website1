@@ -3,7 +3,7 @@ title: Preparing for Scale: Building a Business Ready for Growth
 section: business-strategy
 author: daniel-brooks
 date: 2025-11-10
-image: articles/preparing-for-scale-building-a-business-ready-for-growth.jpg
+image: articles/preparing-for-scale-building-a-business-ready-for-growth.webp
 ---
 
 Business growth can create new opportunities, but rapid expansion can also expose weaknesses in a company's processes, technology, finances, and organizational structure. A business that performs well at a smaller size may not automatically be prepared to handle a much larger customer base or higher volume of operations.

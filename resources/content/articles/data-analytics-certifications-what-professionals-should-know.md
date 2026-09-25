@@ -3,7 +3,7 @@ title: Data Analytics Certifications: What Professionals Should Know
 section: data-intelligence
 author: daniel-brooks
 date: 2026-02-09
-image: articles/data-analytics-certifications-what-professionals-should-know.jpg
+image: articles/data-analytics-certifications-what-professionals-should-know.webp
 ---
 
 Data analytics has become an important part of business operations, with organizations using data to understand customers, monitor performance, improve processes, and support decisions. As a result, professionals are increasingly expected to demonstrate both analytical knowledge and practical technical skills.

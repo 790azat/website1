@@ -99,6 +99,7 @@
                             <div class="relative flex h-48 items-center justify-center overflow-hidden sm:h-64 {{ ($featuredArticle['image'] ?? null) ? '' : $featuredArticle['style']['gradient'] }}">
                                 @if ($featuredArticle['image'] ?? null)
                                     <img
+                                        fetchpriority="high"
                                         src="{{ asset('images/'.$featuredArticle['image']) }}"
                                         alt="{{ $featuredArticle['title'] }}"
                                         class="absolute inset-0 size-full object-cover"
@@ -131,6 +132,8 @@
                                         <div class="relative flex h-20 w-32 shrink-0 items-center justify-center overflow-hidden rounded-lg shadow-sm {{ ($article['image'] ?? null) ? '' : $article['style']['gradient'] }} sm:h-24 sm:w-40">
                                             @if ($article['image'] ?? null)
                                                 <img
+                                                    loading="lazy"
+                                                    decoding="async"
                                                     src="{{ asset('images/'.$article['image']) }}"
                                                     alt="{{ $article['title'] }}"
                                                     loading="lazy"
@@ -172,6 +175,8 @@
                                         <div class="relative flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-lg shadow-sm {{ ($article['image'] ?? null) ? '' : $article['style']['gradient'] }}">
                                             @if ($article['image'] ?? null)
                                                 <img
+                                                    loading="lazy"
+                                                    decoding="async"
                                                     src="{{ asset('images/'.$article['image']) }}"
                                                     alt="{{ $article['title'] }}"
                                                     loading="lazy"
@@ -222,6 +227,8 @@
                                     <div class="relative flex h-32 items-center justify-center overflow-hidden {{ $program['hero_image'] ?? null ? '' : $program['hero_gradient'] }}">
                                         @if ($program['hero_image'] ?? null)
                                             <img
+                                                loading="lazy"
+                                                decoding="async"
                                                 src="{{ asset('images/'.$program['hero_image']) }}"
                                                 alt="{{ $program['title'] }}"
                                                 loading="lazy"
