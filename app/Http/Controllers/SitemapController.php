@@ -14,25 +14,34 @@ class SitemapController extends Controller
     {
         $data = $content->all();
 
-        $latest = collect($data['articles'])->max('date');
+        /** @var list<array{slug: string, section: string, date: string}> $articles */
+        $articles = $data['articles'];
+
+        /** @var array<string, mixed> $sections */
+        $sections = $data['sections'];
+
+        /** @var list<array{slug: string}> $programs */
+        $programs = $data['programs'];
+
+        $latest = collect($articles)->max('date');
 
         $urls = [
             ['loc' => route('home'), 'lastmod' => $latest],
             ['loc' => route('articles'), 'lastmod' => $latest],
         ];
 
-        foreach (array_keys($data['sections']) as $section) {
+        foreach (array_keys($sections) as $section) {
             $urls[] = [
                 'loc' => route('section', $section),
-                'lastmod' => collect($data['articles'])->where('section', $section)->max('date'),
+                'lastmod' => collect($articles)->where('section', $section)->max('date'),
             ];
         }
 
-        foreach ($data['articles'] as $article) {
+        foreach ($articles as $article) {
             $urls[] = ['loc' => route('article', $article['slug']), 'lastmod' => $article['date']];
         }
 
-        foreach ($data['programs'] as $program) {
+        foreach ($programs as $program) {
             $urls[] = ['loc' => route('program', $program['slug']), 'lastmod' => null];
         }
 
