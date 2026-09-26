@@ -124,7 +124,7 @@
                         </h2>
                         <p class="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-400">
                             {{ __('If you have any questions about these Terms of Use, please reach out to us at') }}
-                            <a href="mailto:hello@{{ $domainName }}" class="font-medium text-zinc-900 hover:underline dark:text-white">hello@{{ $domainName }}</a>
+                            <a href="mailto:{{ 'hello@'.$domainName }}" class="font-medium text-zinc-900 hover:underline dark:text-white">{{ 'hello@'.$domainName }}</a>
                             {{ __('or visit our') }} <a href="{{ route('contact') }}" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">{{ __('Contact page') }}</a>.
                         </p>
                     </div>

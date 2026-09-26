@@ -69,7 +69,8 @@ class SiteContent
      * All site content, with section titles and author roles translated into
      * the current locale, and each article's title and body replaced by its
      * translation when there is one. Every article gets a "locale" key naming
-     * the language it will be shown in. Program text is left as written.
+     * the language it will be shown in. Program copy is translated through
+     * lang/{locale}.json.
      *
      * @return array<string, mixed>
      */
@@ -95,7 +96,45 @@ class SiteContent
             $data['authors'][$key]['role'] = __($author['role']);
         }
 
+        if ($locale !== 'en') {
+            foreach ($data['programs'] ?? [] as $key => $program) {
+                $data['programs'][$key] = $this->localizeProgram($program);
+            }
+        }
+
         return $data;
+    }
+
+    /**
+     * A program with its copy looked up in lang/{locale}.json. Text without a
+     * translation stays in English; slugs, URLs, icons and images are kept.
+     *
+     * @param  array<string, mixed>  $program
+     * @return array<string, mixed>
+     */
+    private function localizeProgram(array $program): array
+    {
+        $translate = fn (mixed $text) => is_string($text) && $text !== '' ? __($text) : $text;
+
+        foreach (['title', 'intro', 'cta_label', 'hero_tagline', 'overview_heading', 'overview_intro'] as $key) {
+            if (isset($program[$key])) {
+                $program[$key] = $translate($program[$key]);
+            }
+        }
+
+        foreach (['features', 'pros', 'extra_sections'] as $group) {
+            foreach ($program[$group] ?? [] as $i => $item) {
+                foreach ($item as $key => $value) {
+                    if ($key === 'icon') {
+                        continue;
+                    }
+
+                    $program[$group][$i][$key] = is_array($value) ? array_map($translate, $value) : $translate($value);
+                }
+            }
+        }
+
+        return $program;
     }
 
     /**
