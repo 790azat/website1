@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    Personalización a escala impulsada por IA: más allá del bombo publicitario, hacia la arquitectura — ThumbsUpTechCo
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-D1W7dsQl.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B9e8oLYv.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-DrM84IVF.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-DrM84IVF.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+        <meta name="description" content="Pocos conceptos del marketing tecnológico actual generan tantas promesas entusiastas y vagas como la &quot;personalización a escala impulsada por IA&quot;. Basta con…" />
+<link rel="canonical" href="/es/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture" />
+            <link rel="alternate" hreflang="en" href="/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture" />
+            <link rel="alternate" hreflang="es" href="/es/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture" />
+            <link rel="alternate" hreflang="fr" href="/fr/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture" />
+        <link rel="alternate" hreflang="x-default" href="/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture" />
+
+<meta property="og:site_name" content="ThumbsUpTechCo" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Personalización a escala impulsada por IA: más allá del bombo publicitario, hacia la arquitectura" />
+<meta property="og:description" content="Pocos conceptos del marketing tecnológico actual generan tantas promesas entusiastas y vagas como la &quot;personalización a escala impulsada por IA&quot;. Basta con…" />
+<meta property="og:url" content="/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture?lang=es" />
+<meta property="og:image" content="/images/articles/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture.webp" />
+<meta property="og:locale" content="es_ES" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Personalización a escala impulsada por IA: más allá del bombo publicitario, hacia la arquitectura" />
+<meta name="twitter:description" content="Pocos conceptos del marketing tecnológico actual generan tantas promesas entusiastas y vagas como la &quot;personalización a escala impulsada por IA&quot;. Basta con…" />
+<meta name="twitter:image" content="/images/articles/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture.webp" />
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Personalización a escala impulsada por IA: más allá del bombo publicitario, hacia la arquitectura","image":["/images/articles/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture.webp"],"datePublished":"2026-03-01","inLanguage":"es","author":{"@type":"Person","name":"Michael Anderson","url":"/our-team"},"publisher":{"@type":"Organization","name":"ThumbsUpTechCo","logo":{"@type":"ImageObject","url":"/images/branding/logo-full.webp"}},"articleSection":"Inteligencia de Datos","mainEntityOfPage":"/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"/"},{"@type":"ListItem","position":2,"name":"Inteligencia de Datos","item":"/c/data-intelligence"},{"@type":"ListItem","position":3,"name":"Personalización a escala impulsada por IA: más allá del bombo publicitario, hacia la arquitectura"}]}</script>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
+    >
+        <header class="sticky top-0 z-40 bg-zinc-900">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
+        <a href="/es" wire:navigate class="flex shrink-0 items-center">
+            <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" class="h-8 w-auto" />
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
+            <a href="/es" wire:navigate class="transition hover:text-white">Inicio</a>
+            <a href="/es/articles" wire:navigate class="transition hover:text-white">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate class="transition hover:text-white">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate class="transition hover:text-white">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate class="transition hover:text-white">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate class="transition hover:text-white">Personas e Impacto</a>
+                    </nav>
+
+        <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1" role="group" aria-label="Idioma">
+            <a
+            href="/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-zinc-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+
+            <form action="/es/articles" method="get" class="relative hidden sm:block" role="search" aria-label="Búsqueda en el sitio">
+                <input
+                    type="search"
+                    name="q"
+                    value=""
+                    placeholder="Buscar"
+                    aria-label="Buscar artículos"
+                    class="w-40 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:w-56 focus:border-zinc-500 focus:ring-0 focus:outline-none transition-[width]"
+                />
+                <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <circle cx="9" cy="9" r="6" />
+                    <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+                </svg>
+            </form>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-9 items-center justify-center rounded-md text-white lg:hidden"
+                aria-label="Abrir menú"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 lg:hidden" style="display: none;">
+    <div class="fixed inset-0 bg-zinc-950/50" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-xs flex-col gap-6 bg-white px-6 py-6 dark:bg-zinc-950"
+    >
+        <div class="flex items-center justify-between">
+            <a href="/es" wire:navigate class="flex items-center gap-2.5 font-semibold text-zinc-900 dark:text-white">
+                <img src="/images/branding/logo-icon.webp" alt="" width="96" height="96" class="size-8 shrink-0" />
+                <span>ThumbsUpTechCo</span>
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-9 items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400" aria-label="Cerrar menú">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <form action="/es/articles" method="get" class="relative" role="search" aria-label="Búsqueda en el sitio">
+            <input
+                type="search"
+                name="q"
+                value=""
+                placeholder="Buscar"
+                aria-label="Buscar artículos"
+                class="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pr-3 pl-9 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-400 focus:ring-0 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-white"
+            />
+            <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="9" cy="9" r="6" />
+                <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+            </svg>
+        </form>
+
+        <nav class="flex flex-col gap-1 text-base font-medium text-zinc-700 dark:text-zinc-300">
+            <a href="/es" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inicio</a>
+            <a href="/es/articles" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Personas e Impacto</a>
+                    </nav>
+    </div>
+</div>
+
+        <main>
+            
+            <div class="border-b border-zinc-200 dark:border-zinc-800">
+                <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
+                    <a href="/es" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Inicio</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <a href="/es/c/data-intelligence" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Inteligencia de Datos</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <span class="min-w-0 truncate text-zinc-400 dark:text-zinc-600">Personalización a escala impulsada por IA: más allá del bombo publicitario, hacia la arquitectura</span>
+                </div>
+            </div>
+
+            
+            <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
+                <a href="/es/c/data-intelligence" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+                    Inteligencia de Datos
+                </a>
+
+                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
+                    Personalización a escala impulsada por IA: más allá del bombo publicitario, hacia la arquitectura
+                </h1>
+
+                <div class="mt-6 flex items-center gap-3">
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/images/team/michael-anderson.webp"
+                        alt="Michael Anderson"
+                        class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                    />
+                    <div class="text-sm">
+                        <a href="/es/our-team" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">
+                            Michael Anderson
+                        </a>
+                        <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
+                            <span>Analista de Negocios y Datos</span>
+                            <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
+                            <time datetime="2026-03-01">1 de marzo de 2026</time>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                                    <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                        <img
+                            fetchpriority="high"
+                            src="/images/articles/ai-driven-personalization-at-scale-beyond-the-hype-and-into-the-architecture.webp"
+                            alt="Personalización a escala impulsada por IA: más allá del bombo publicitario, hacia la arquitectura"
+                            class="aspect-video w-full object-cover"
+                        />
+                    </div>
+                
+                
+                <div class="article-body">
+    <p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Pocos conceptos del marketing tecnológico actual generan tantas promesas entusiastas y vagas como la &quot;personalización a escala impulsada por IA&quot;.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Basta con abrir la página de destino de cualquier proveedor de software para encontrar promesas deslumbrantes de experiencias web hiperindividualizadas, recomendaciones de productos en tiempo real adaptadas al estado psicológico exacto del usuario y mensajes dinámicos que se ajustan segundo a segundo. Suena a magia. Pero si se habla con los equipos de ingeniería y de datos encargados de construir estos sistemas, la historia es muy distinta: una realidad agotadora de modelos frágiles, facturas de la nube disparadas y picos de latencia que frustran a los usuarios en lugar de convertirlos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La distancia entre el bombo del marketing y la realidad en producción no se debe a un fallo de los algoritmos de aprendizaje automático. Es un fallo de arquitectura. La verdadera personalización a escala no se resuelve añadiendo un widget de chat genérico o un complemento de recomendaciones estándar a la interfaz de un sitio web. Requiere una arquitectura de datos robusta y de baja latencia, capaz de convertir la telemetría de comportamiento en bruto en decisiones inmediatas basadas en modelos.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">1. La falacia de la personalización estática</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Para entender por qué los motores de personalización tradicionales se vienen abajo a escala empresarial, primero hay que identificar qué falló en los enfoques heredados.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Durante años, &quot;personalización&quot; significó segmentación estática: una lógica de ramificación basada en reglas y construida sobre grandes categorías demográficas o etiquetas históricas rígidas (por ejemplo, si el usuario accede desde un dispositivo móvil y ha hecho clic en un anuncio de fitness, mostrarle el banner de entrenamiento). Aunque son mejores que una página de inicio genérica, estos sistemas adolecen de graves limitaciones estructurales:</p>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">La latencia del procesamiento por lotes:</span> los sistemas tradicionales dependen de procesos ETL por lotes que se ejecutan cada noche para actualizar los perfiles de usuario. Si un cliente pasa treinta minutos explorando ropa de lujo en el sitio web, un motor basado en lotes no reflejará esa intención hasta la mañana siguiente, mucho después de que el usuario se haya marchado.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Explosión combinatoria:</span> a medida que se añaden más variables (historial de navegación, valor del carrito, región geográfica, hora del día, niveles de inventario), los motores de reglas codificadas crecen de forma exponencial. Mantener miles de reglas &quot;si/entonces&quot; que se solapan se convierte rápidamente en una pesadilla de ingeniería inabarcable.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Falta de fluidez contextual:</span> los segmentos estáticos tratan a los usuarios como perfiles monolíticos. No logran captar los micromomentos, como el paso repentino de una búsqueda informal a una intención de compra urgente, porque carecen de un circuito de retroalimentación del comportamiento en tiempo real.</span></li></ul>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">2. La arquitectura moderna del pipeline de personalización</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Pasar de las reglas estáticas a una verdadera personalización impulsada por IA exige tratar la interacción de los usuarios como un flujo de datos continuo en streaming. En lugar de consultar una base de datos relacional sobredimensionada en cada carga de página, las arquitecturas de gran escala se apoyan en un pipeline desacoplado de cuatro niveles:</p>
+<ol class="mt-5 space-y-3 text-zinc-700 dark:text-zinc-300"><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">1</span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Telemetría del navegador y de la aplicación del usuario:</span> cada clic, pausa en el desplazamiento, paso del cursor y producto añadido al carrito se captura al instante como datos de eventos en bruto.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">2</span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">El flujo de eventos:</span> las empresas utilizan intermediarios de eventos distribuidos, como Apache Kafka o Apache Flink, para ingerir millones de eventos de telemetría por segundo sin perder fotogramas ni crear cuellos de botella en los servidores.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">3</span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Procesamiento de flujos en tiempo real y feature stores:</span> los registros en bruto se normalizan y se transforman sobre la marcha en variables listas para el modelo. Los feature stores (como Feast) y las bases de datos vectoriales almacenan embeddings de alta dimensión para la similitud semántica y calculan las variables de comportamiento en menos de 50 milisegundos.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">4</span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Motor de inferencia del modelo:</span> cuando un usuario solicita una página, el motor de inferencia evalúa el vector de variables en tiempo real, puntúa las recomendaciones mediante un modelo de aprendizaje automático y sirve el recurso personalizado dentro de un margen estricto de menos de 100 milisegundos.</span></li></ol>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">3. Diseñar para el edge: equilibrio entre coste y latencia</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Uno de los errores más habituales en la personalización empresarial es ejecutar inferencias costosas y centralizadas de LLM o de aprendizaje profundo para cada ajuste menor de la interfaz. Escalar este enfoque puede arruinar rápidamente la infraestructura en la nube.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Una arquitectura sostenible requiere una estrategia de computación por niveles:</p>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Caché en el edge y heurísticas:</span> para los usuarios anónimos o las páginas con baja intención, conviene recurrir a edge workers (como Cloudflare Workers o las funciones de AWS CloudFront) que sirvan variaciones almacenadas en caché al instante, sin ninguna carga para el servidor de origen.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Personalización profunda asíncrona:</span> la inferencia de modelos pesados y la personalización con IA generativa deben reservarse para los momentos de alta intención, como los flujos de pago, las páginas de precios o las experiencias de panel con sesión iniciada, en los que el ROI de una individualización precisa justifica el coste de computación.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Degradación controlada:</span> si el modelo de personalización o el feature store sufren un pico de latencia o un tiempo de espera agotado, el sistema debe recurrir al instante a una experiencia predeterminada robusta, en lugar de mostrar al usuario una pantalla en blanco o un error 500.</span></li></ul>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">4. Poner en producción la personalización con IA: una guía para los equipos técnicos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Para las organizaciones que planean ir más allá del bombo del marketing y construir un motor de personalización apto para producción, esta es la hoja de ruta:</p>
+<ol class="mt-5 space-y-3 text-zinc-700 dark:text-zinc-300"><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">1</span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Empezar con un caso de uso claro:</span> no hay que construir una &quot;plataforma de personalización con IA&quot; generalista. Primero conviene resolver un cuello de botella concreto y de alto impacto, como las recomendaciones dinámicas de productos en los correos de recuperación de carritos o los ajustes de diseño en tiempo real para páginas de destino con mucho tráfico.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">2</span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Unificar los silos de datos:</span> los modelos de IA son tan buenos como los datos que los alimentan. Si los datos del CRM, la telemetría web y las bases de datos transaccionales viven en silos aislados, el motor de personalización producirá experiencias fragmentadas y contradictorias.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">3</span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Supervisar la deriva de los modelos y la latencia:</span> a diferencia del código de software tradicional, los modelos de aprendizaje automático se degradan con el tiempo a medida que cambia el comportamiento de los usuarios. Es necesario implantar una observabilidad de MLOps rigurosa para vigilar de forma continua la deriva de las predicciones, la actualidad de las variables y los cuellos de botella de latencia.</span></li></ol>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Conclusión</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La personalización a escala impulsada por IA no es una funcionalidad de software lista para usar que pueda comprarse sin más; es una disciplina de ingeniería.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las organizaciones que tratan la personalización como un ejercicio de marketing en la interfaz seguirán lidiando con costes de nube desorbitados y mejoras de conversión decepcionantes. Por el contrario, las que invierten en pipelines de streaming de eventos bien diseñados, feature stores de baja latencia y arquitecturas de inferencia disciplinadas convertirán los datos en tiempo real en una experiencia de cliente individualizada y con una gran capacidad de respuesta. En el panorama digital actual, la verdadera inteligencia no depende de cuántos datos se recopilan, sino de la rapidez con la que un evento se convierte en una acción.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Referencias</h2>
+<ul class="mt-2 space-y-1.5 text-sm text-zinc-500 dark:text-zinc-400"><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://kafka.apache.org/documentation/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Apache Kafka — Documentation</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://flink.apache.org/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Apache Flink — Stateful Computations over Data Streams</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://docs.feast.dev/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Feast — Open Source Feature Store Documentation</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://developers.cloudflare.com/workers/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Cloudflare Workers — Documentation</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">AWS — CloudFront Functions</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — MLOps: Continuous delivery and automation pipelines in machine learning</a></li></ul>
+
+</div>
+
+                
+                <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="flex items-center gap-4">
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="/images/team/michael-anderson.webp"
+                            alt="Michael Anderson"
+                            class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                        />
+                        <div>
+                            <p class="font-medium text-zinc-900 dark:text-white">Escrito por Michael Anderson</p>
+                            <p class="text-sm text-zinc-500 dark:text-zinc-400">Analista de Negocios y Datos en ThumbsUpTechCo</p>
+                        </div>
+                    </div>
+                    <a href="/es/our-team" data-flux-button="data-flux-button" class="relative items-center font-medium justify-center whitespace-nowrap disabled:opacity-50 dark:disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none disabled:shadow-none justify-center h-10 text-sm rounded-lg gap-2 ps-4 pe-4 inline-flex  bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)] text-[var(--color-accent-foreground)] border border-black/10 dark:border-0 shadow-[inset_0px_1px_--theme(--color-white/.2)] [[data-flux-button-group]_&amp;]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-[1px] dark:[:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[1px]! [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[color-mix(in_srgb,var(--color-accent-foreground),transparent_85%)]    shrink-0" data-flux-group-target="data-flux-group-target" wire:navigate="">
+        Conozca a nuestro equipo editorial
+    </a>
+                </div>
+            </article>
+
+            
+                            <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+                        <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+                            Más en Inteligencia de Datos
+                        </h2>
+                        <div class="mt-6 grid gap-6 sm:grid-cols-3">
+                                                                                            <a href="/es/p/data-integration-bringing-business-information-together" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Integración de datos: cómo reunir la información empresarial
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Daniel Brooks &middot; 12 ago. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/data-analytics-software-what-businesses-should-know" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Software de analítica de datos: lo que las empresas deben saber
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Daniel Brooks &middot; 8 ago. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/google-looker-business-intelligence-and-data-analytics-features" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Google Looker: funciones de inteligencia de negocio y analítica de datos
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Michael Anderson &middot; 14 jul. 2026
+                                    </p>
+                                </a>
+                                                    </div>
+                    </div>
+                </section>
+                    </main>
+
+        <footer class="bg-zinc-900">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+        <div class="flex flex-col items-center gap-6 border-b border-zinc-800 pb-8 sm:flex-row sm:justify-between">
+            <a href="/es" wire:navigate class="flex items-center">
+                <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" loading="lazy" decoding="async" class="h-7 w-auto" />
+            </a>
+
+            <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">
+                <a href="/es" wire:navigate class="hover:text-white">Inicio</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/our-team" wire:navigate class="hover:text-white">Nuestro equipo editorial</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/contact" wire:navigate class="hover:text-white">Contacto</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/privacy-policy" wire:navigate class="hover:text-white">Política de privacidad</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/terms-of-use" wire:navigate class="hover:text-white">Términos de uso</a>
+            </nav>
+        </div>
+
+        <p class="mt-6 text-xs leading-relaxed text-zinc-500">
+            La información compartida por ThumbsUpTechCo tiene fines exclusivamente informativos y educativos y no debe interpretarse como asesoramiento de inversión, fiscal ni legal. Las decisiones financieras conllevan riesgos y los resultados pasados no garantizan resultados futuros. Consulte siempre a un profesional certificado antes de tomar decisiones financieras.
+        </p>
+
+        <p class="mt-4 text-xs text-zinc-600">
+            &copy; 2026 ThumbsUpTechCo. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-919b0faa/livewire.js?id=0ae8dee3"   data-csrf="ZGEzWeMGk9cckfG8oopDQ9LYuhcTJk2pcV3ZSIFj" data-module-url="/livewire-919b0faa" data-update-uri="/livewire-919b0faa/update" data-navigate-once="true"></script>
+</body>
+</html>

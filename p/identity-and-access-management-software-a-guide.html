@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    Identity and Access Management Software: A Guide — ThumbsUpTechCo
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-D1W7dsQl.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B9e8oLYv.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-DrM84IVF.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-DrM84IVF.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+        <meta name="description" content="Organizations rely on employees, customers, contractors, applications, devices, and other digital identities to access business systems and information. As…" />
+<link rel="canonical" href="/p/identity-and-access-management-software-a-guide" />
+            <link rel="alternate" hreflang="en" href="/p/identity-and-access-management-software-a-guide" />
+            <link rel="alternate" hreflang="es" href="/es/p/identity-and-access-management-software-a-guide" />
+            <link rel="alternate" hreflang="fr" href="/fr/p/identity-and-access-management-software-a-guide" />
+        <link rel="alternate" hreflang="x-default" href="/p/identity-and-access-management-software-a-guide" />
+
+<meta property="og:site_name" content="ThumbsUpTechCo" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Identity and Access Management Software: A Guide" />
+<meta property="og:description" content="Organizations rely on employees, customers, contractors, applications, devices, and other digital identities to access business systems and information. As…" />
+<meta property="og:url" content="/p/identity-and-access-management-software-a-guide" />
+<meta property="og:image" content="/images/articles/identity-and-access-management-software-a-guide.webp" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Identity and Access Management Software: A Guide" />
+<meta name="twitter:description" content="Organizations rely on employees, customers, contractors, applications, devices, and other digital identities to access business systems and information. As…" />
+<meta name="twitter:image" content="/images/articles/identity-and-access-management-software-a-guide.webp" />
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Identity and Access Management Software: A Guide","image":["/images/articles/identity-and-access-management-software-a-guide.webp"],"datePublished":"2025-03-21","inLanguage":"en","author":{"@type":"Person","name":"James Mitchell","url":"/our-team"},"publisher":{"@type":"Organization","name":"ThumbsUpTechCo","logo":{"@type":"ImageObject","url":"/images/branding/logo-full.webp"}},"articleSection":"Digital Horizons","mainEntityOfPage":"/p/identity-and-access-management-software-a-guide"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"/"},{"@type":"ListItem","position":2,"name":"Digital Horizons","item":"/c/digital-horizons"},{"@type":"ListItem","position":3,"name":"Identity and Access Management Software: A Guide"}]}</script>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
+    >
+        <header class="sticky top-0 z-40 bg-zinc-900">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
+        <a href="/" wire:navigate class="flex shrink-0 items-center">
+            <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" class="h-8 w-auto" />
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
+            <a href="/" wire:navigate class="transition hover:text-white">Home</a>
+            <a href="/articles" wire:navigate class="transition hover:text-white">All Articles</a>
+                            <a href="/c/data-intelligence" wire:navigate class="transition hover:text-white">Data Intelligence</a>
+                            <a href="/c/business-strategy" wire:navigate class="transition hover:text-white">Business Strategy</a>
+                            <a href="/c/digital-horizons" wire:navigate class="transition hover:text-white">Digital Horizons</a>
+                            <a href="/c/people-impact" wire:navigate class="transition hover:text-white">People &amp; Impact</a>
+                    </nav>
+
+        <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1" role="group" aria-label="Language">
+            <a
+            href="/p/identity-and-access-management-software-a-guide"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-zinc-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/identity-and-access-management-software-a-guide"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/identity-and-access-management-software-a-guide"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+
+            <form action="/articles" method="get" class="relative hidden sm:block" role="search" aria-label="Site search">
+                <input
+                    type="search"
+                    name="q"
+                    value=""
+                    placeholder="Search"
+                    aria-label="Search articles"
+                    class="w-40 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:w-56 focus:border-zinc-500 focus:ring-0 focus:outline-none transition-[width]"
+                />
+                <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <circle cx="9" cy="9" r="6" />
+                    <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+                </svg>
+            </form>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-9 items-center justify-center rounded-md text-white lg:hidden"
+                aria-label="Open menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 lg:hidden" style="display: none;">
+    <div class="fixed inset-0 bg-zinc-950/50" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-xs flex-col gap-6 bg-white px-6 py-6 dark:bg-zinc-950"
+    >
+        <div class="flex items-center justify-between">
+            <a href="/" wire:navigate class="flex items-center gap-2.5 font-semibold text-zinc-900 dark:text-white">
+                <img src="/images/branding/logo-icon.webp" alt="" width="96" height="96" class="size-8 shrink-0" />
+                <span>ThumbsUpTechCo</span>
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-9 items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400" aria-label="Close menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <form action="/articles" method="get" class="relative" role="search" aria-label="Site search">
+            <input
+                type="search"
+                name="q"
+                value=""
+                placeholder="Search"
+                aria-label="Search articles"
+                class="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pr-3 pl-9 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-400 focus:ring-0 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-white"
+            />
+            <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="9" cy="9" r="6" />
+                <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+            </svg>
+        </form>
+
+        <nav class="flex flex-col gap-1 text-base font-medium text-zinc-700 dark:text-zinc-300">
+            <a href="/" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Home</a>
+            <a href="/articles" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">All Articles</a>
+                            <a href="/c/data-intelligence" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Data Intelligence</a>
+                            <a href="/c/business-strategy" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Business Strategy</a>
+                            <a href="/c/digital-horizons" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Digital Horizons</a>
+                            <a href="/c/people-impact" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">People &amp; Impact</a>
+                    </nav>
+    </div>
+</div>
+
+        <main>
+            
+            <div class="border-b border-zinc-200 dark:border-zinc-800">
+                <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
+                    <a href="/" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Home</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <a href="/c/digital-horizons" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Digital Horizons</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <span class="min-w-0 truncate text-zinc-400 dark:text-zinc-600">Identity and Access Management Software: A Guide</span>
+                </div>
+            </div>
+
+            
+            <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
+                <a href="/c/digital-horizons" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+                    Digital Horizons
+                </a>
+
+                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
+                    Identity and Access Management Software: A Guide
+                </h1>
+
+                <div class="mt-6 flex items-center gap-3">
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/images/team/james-mitchell.webp"
+                        alt="James Mitchell"
+                        class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                    />
+                    <div class="text-sm">
+                        <a href="/our-team" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">
+                            James Mitchell
+                        </a>
+                        <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
+                            <span>Financial Specialist</span>
+                            <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
+                            <time datetime="2025-03-21">March 21, 2025</time>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                                    <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                        <img
+                            fetchpriority="high"
+                            src="/images/articles/identity-and-access-management-software-a-guide.webp"
+                            alt="Identity and Access Management Software: A Guide"
+                            class="aspect-video w-full object-cover"
+                        />
+                    </div>
+                
+                
+                <div class="article-body">
+    <p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Organizations rely on employees, customers, contractors, applications, devices, and other digital identities to access business systems and information. As companies adopt cloud services and distributed work environments, managing these identities and controlling access becomes an important part of information security and IT operations.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Identity and access management (IAM) software helps organizations manage digital identities and determine who or what can access specific applications, systems, and resources. IAM platforms can support authentication, authorization, access controls, user provisioning, single sign-on, and identity governance.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">The right IAM solution depends on an organization&#039;s users, applications, infrastructure, security requirements, and operational processes. Businesses should evaluate authentication capabilities, access management, integrations, automation, governance, scalability, security, and cost when selecting a platform.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">What Is Identity and Access Management Software?</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Identity and access management software is designed to ensure that the right users and other identities have appropriate access to the right resources at the right time. IAM generally covers identity management, authentication, authorization, and access control.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">An IAM platform may maintain information about users and groups, authenticate people when they sign in, determine which resources they can access, and enforce policies governing that access.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Modern IAM systems can support cloud and on-premises environments, applications, devices, and different types of identities. Some platforms also provide tools for managing customer identities and non-human identities such as applications and service accounts.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Key Features of IAM Software</h2>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Identity Management</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Identity management involves creating, maintaining, updating, and removing digital identities. Organizations can use IAM software to manage users, groups, roles, and other identity information from a centralized system.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Identity lifecycle management can also help organizations adjust access when employees join, change roles, or leave the company.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Authentication</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Authentication verifies that a person, application, or other identity is who or what it claims to be.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">IAM platforms can support passwords, multifactor authentication (MFA), passwordless authentication, security keys, and other authentication methods. Microsoft Entra ID, for example, supports MFA, passwordless authentication, and other sign-in methods.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Authorization and Access Control</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">After authentication, IAM software determines what the identity is permitted to access. Authorization policies can define which applications, files, systems, or functions are available to specific users or groups.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Role-based access control (RBAC) is one common approach, allowing permissions to be assigned according to a user&#039;s organizational role.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Single Sign-On</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Single sign-on (SSO) allows users to access multiple applications through a centralized authentication experience rather than maintaining separate sign-in processes for every application.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">SSO can simplify the user experience while giving administrators a centralized way to manage application access.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Multifactor Authentication</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">MFA requires users to provide more than one form of authentication. Depending on the implementation, this may combine a password with a verification code, security key, biometric method, or another authentication factor.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">MFA can provide an additional layer of protection if a password is compromised.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Conditional Access</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Conditional access allows organizations to make access decisions based on contextual information. Policies can consider factors such as the user&#039;s identity, device, location, application, or risk level.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Microsoft Entra ID, for example, provides Conditional Access policies that can use information about users, locations, devices, and other conditions.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">User Provisioning and Deprovisioning</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Provisioning creates accounts and assigns access when users need applications or resources. Deprovisioning removes or adjusts access when it is no longer required.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Automating these processes can reduce manual administrative work and help organizations maintain more consistent access controls.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Identity Governance</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Identity governance focuses on managing and reviewing access throughout the identity lifecycle. Capabilities can include access requests, access reviews, entitlement management, lifecycle workflows, and privileged access management.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Microsoft Entra ID Governance, for example, provides entitlement management, lifecycle workflows, access reviews, and privileged identity management capabilities.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Common Uses of IAM Software</h2>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Employee Access</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Organizations can use IAM software to manage employee access to business applications, cloud services, internal systems, and data.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Customer Identity</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Customer identity and access management (CIAM) solutions can manage registration, authentication, authorization, and account access for customers using digital products and services.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Contractor and Partner Access</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">IAM platforms can also help businesses manage access for contractors, suppliers, partners, and other external users while limiting permissions to the resources they require.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Application and API Access</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">IAM can manage access between applications and APIs as well as access by human users. Modern identity platforms may support standards such as OAuth 2.0, OpenID Connect, and SAML for authentication and authorization workflows.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Privileged Access</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Privileged access management helps organizations control accounts with elevated permissions. Businesses can use policies and approval processes to limit access to sensitive systems and resources.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Benefits of IAM Software</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">IAM software can provide several operational and security benefits:</p>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Centralized access management:</span> Administrators can manage identities and permissions from centralized systems.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Improved security:</span> Authentication and access policies can help reduce unauthorized access.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Simplified user experience:</span> SSO and self-service capabilities can make access easier for employees and customers.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Automation:</span> Provisioning, deprovisioning, approvals, and access reviews can be automated.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Better visibility:</span> Logs, reports, and access reviews can help organizations understand who has access to resources.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Support for least privilege:</span> Organizations can limit permissions according to roles, policies, and business requirements.</span></li></ul>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">The effectiveness of these capabilities depends on how IAM policies are designed, configured, monitored, and maintained.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">IAM Software and Zero Trust</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">IAM is an important component of Zero Trust security models, which generally emphasize verifying access requests rather than automatically trusting users or devices based solely on their network location.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Modern identity platforms can combine authentication, conditional access, device information, and risk signals when making access decisions. Microsoft describes Entra ID as supporting a Zero Trust approach through strong authentication and risk-based conditional access.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">IAM should therefore be considered alongside endpoint security, network controls, application security, and data protection rather than as an isolated security system.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Key Considerations When Choosing IAM Software</h2>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">User and Identity Types</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Determine whether the platform needs to support employees, customers, contractors, partners, administrators, applications, service accounts, or other identities.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Authentication Requirements</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Review available authentication methods, MFA capabilities, passwordless options, adaptive authentication, and support for the organization&#039;s security policies.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Application Integration</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Check whether the IAM platform integrates with the organization&#039;s existing applications, cloud services, directories, SaaS platforms, and infrastructure.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Automation</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Consider capabilities for user provisioning, deprovisioning, access requests, approvals, and lifecycle management. Automation can reduce repetitive administrative work and improve consistency.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Security and Compliance</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Evaluate encryption, access controls, audit logs, monitoring, risk detection, and compliance capabilities. Organizations should also understand how identity data is stored and processed.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Scalability</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">An IAM platform should accommodate changes in the number of users, applications, devices, and resources without creating unnecessary administrative complexity.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Total Cost</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Consider licensing, implementation, integration, administration, support, and additional features when calculating the total cost of an IAM solution.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Examples of IAM Software</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Several technology providers offer IAM platforms for different organizational requirements. Microsoft Entra ID provides cloud-based identity and access management capabilities including authentication, SSO, Conditional Access, role-based access control, application management, and identity governance integrations.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Okta provides identity and access management capabilities covering workforce identity, customer identity, access management, lifecycle management, and identity governance.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Final Thoughts</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Identity and access management software helps organizations control digital identities and manage access to applications, data, infrastructure, and other resources. Core capabilities can include authentication, authorization, SSO, MFA, provisioning, access controls, and identity governance.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">When evaluating IAM software, organizations should consider the types of identities they need to manage, authentication requirements, application integrations, automation, security controls, governance, scalability, and total cost. A well-designed IAM environment can provide centralized visibility and help organizations manage access more consistently as their technology environments grow.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">References</h2>
+<ul class="mt-2 space-y-1.5 text-sm text-zinc-500 dark:text-zinc-400"><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://learn.microsoft.com/en-us/entra/fundamentals/identity-fundamental-concepts" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Microsoft Learn — Identity and Access Management Fundamental Concepts</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Microsoft — Microsoft Entra ID</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://learn.microsoft.com/en-us/entra/identity/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Microsoft Learn — Microsoft Entra ID Documentation</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://learn.microsoft.com/en-us/entra/id-governance/identity-governance-overview" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Microsoft Learn — Microsoft Entra ID Governance</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.okta.com/solutions/iam-identity-and-access-management/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Okta — Identity and Access Management</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.okta.com/oie/en-us/content/topics/identity-governance/iga-overview.htm" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Okta — Identity Governance</a></li></ul>
+
+</div>
+
+                
+                <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="flex items-center gap-4">
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="/images/team/james-mitchell.webp"
+                            alt="James Mitchell"
+                            class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                        />
+                        <div>
+                            <p class="font-medium text-zinc-900 dark:text-white">Written by James Mitchell</p>
+                            <p class="text-sm text-zinc-500 dark:text-zinc-400">Financial Specialist at ThumbsUpTechCo</p>
+                        </div>
+                    </div>
+                    <a href="/our-team" data-flux-button="data-flux-button" class="relative items-center font-medium justify-center whitespace-nowrap disabled:opacity-50 dark:disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none disabled:shadow-none justify-center h-10 text-sm rounded-lg gap-2 ps-4 pe-4 inline-flex  bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)] text-[var(--color-accent-foreground)] border border-black/10 dark:border-0 shadow-[inset_0px_1px_--theme(--color-white/.2)] [[data-flux-button-group]_&amp;]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-[1px] dark:[:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[1px]! [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[color-mix(in_srgb,var(--color-accent-foreground),transparent_85%)]    shrink-0" data-flux-group-target="data-flux-group-target" wire:navigate="">
+        Meet Our Editorial Team
+    </a>
+                </div>
+            </article>
+
+            
+                            <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+                        <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+                            More in Digital Horizons
+                        </h2>
+                        <div class="mt-6 grid gap-6 sm:grid-cols-3">
+                                                                                            <a href="/p/real-time-analytics-making-faster-decisions-with-live-data" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Real-Time Analytics: Making Faster Decisions With Live Data
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Michael Anderson &middot; Sep 2, 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/p/soc-2-compliance-software-features-and-considerations" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        SOC 2 Compliance Software: Features and Considerations
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        James Mitchell &middot; Sep 1, 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/p/okta-identity-and-access-management-features" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Okta: Identity and Access Management Features
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Emily Carter &middot; Aug 22, 2026
+                                    </p>
+                                </a>
+                                                    </div>
+                    </div>
+                </section>
+                    </main>
+
+        <footer class="bg-zinc-900">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+        <div class="flex flex-col items-center gap-6 border-b border-zinc-800 pb-8 sm:flex-row sm:justify-between">
+            <a href="/" wire:navigate class="flex items-center">
+                <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" loading="lazy" decoding="async" class="h-7 w-auto" />
+            </a>
+
+            <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">
+                <a href="/" wire:navigate class="hover:text-white">Home</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/our-team" wire:navigate class="hover:text-white">Our Editorial Team</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/contact" wire:navigate class="hover:text-white">Contact</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/privacy-policy" wire:navigate class="hover:text-white">Privacy Policy</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/terms-of-use" wire:navigate class="hover:text-white">Terms of Use</a>
+            </nav>
+        </div>
+
+        <p class="mt-6 text-xs leading-relaxed text-zinc-500">
+            Information shared by ThumbsUpTechCo is intended for informational and educational purposes only and should not be interpreted as investment, tax, or legal advice. Financial decisions carry risk, and past performance does not guarantee future results. Always seek advice from a certified professional before making financial decisions.
+        </p>
+
+        <p class="mt-4 text-xs text-zinc-600">
+            &copy; 2026 ThumbsUpTechCo. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-919b0faa/livewire.js?id=0ae8dee3"   data-csrf="s6reoAx0nl5YI8NuzHGKCRZP802EL9ewRuGFcWpd" data-module-url="/livewire-919b0faa" data-update-uri="/livewire-919b0faa/update" data-navigate-once="true"></script>
+</body>
+</html>

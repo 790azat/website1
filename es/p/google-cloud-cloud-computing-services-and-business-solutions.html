@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    Google Cloud: servicios de computación en la nube y soluciones empresariales — ThumbsUpTechCo
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-D1W7dsQl.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B9e8oLYv.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-DrM84IVF.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-DrM84IVF.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+        <meta name="description" content="24 de septiembre de 2026 • James Mitchell Google Cloud es una plataforma de computación en la nube que ofrece infraestructura, almacenamiento, bases de…" />
+<link rel="canonical" href="/es/p/google-cloud-cloud-computing-services-and-business-solutions" />
+            <link rel="alternate" hreflang="en" href="/p/google-cloud-cloud-computing-services-and-business-solutions" />
+            <link rel="alternate" hreflang="es" href="/es/p/google-cloud-cloud-computing-services-and-business-solutions" />
+            <link rel="alternate" hreflang="fr" href="/fr/p/google-cloud-cloud-computing-services-and-business-solutions" />
+        <link rel="alternate" hreflang="x-default" href="/p/google-cloud-cloud-computing-services-and-business-solutions" />
+
+<meta property="og:site_name" content="ThumbsUpTechCo" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Google Cloud: servicios de computación en la nube y soluciones empresariales" />
+<meta property="og:description" content="24 de septiembre de 2026 • James Mitchell Google Cloud es una plataforma de computación en la nube que ofrece infraestructura, almacenamiento, bases de…" />
+<meta property="og:url" content="/p/google-cloud-cloud-computing-services-and-business-solutions?lang=es" />
+<meta property="og:image" content="/images/articles/google-cloud-cloud-computing-services-and-business-solutions.webp" />
+<meta property="og:locale" content="es_ES" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Google Cloud: servicios de computación en la nube y soluciones empresariales" />
+<meta name="twitter:description" content="24 de septiembre de 2026 • James Mitchell Google Cloud es una plataforma de computación en la nube que ofrece infraestructura, almacenamiento, bases de…" />
+<meta name="twitter:image" content="/images/articles/google-cloud-cloud-computing-services-and-business-solutions.webp" />
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Google Cloud: servicios de computación en la nube y soluciones empresariales","image":["/images/articles/google-cloud-cloud-computing-services-and-business-solutions.webp"],"datePublished":"2025-07-19","inLanguage":"es","author":{"@type":"Person","name":"Emily Carter","url":"/our-team"},"publisher":{"@type":"Organization","name":"ThumbsUpTechCo","logo":{"@type":"ImageObject","url":"/images/branding/logo-full.webp"}},"articleSection":"Horizontes Digitales","mainEntityOfPage":"/p/google-cloud-cloud-computing-services-and-business-solutions"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"/"},{"@type":"ListItem","position":2,"name":"Horizontes Digitales","item":"/c/digital-horizons"},{"@type":"ListItem","position":3,"name":"Google Cloud: servicios de computación en la nube y soluciones empresariales"}]}</script>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
+    >
+        <header class="sticky top-0 z-40 bg-zinc-900">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
+        <a href="/es" wire:navigate class="flex shrink-0 items-center">
+            <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" class="h-8 w-auto" />
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
+            <a href="/es" wire:navigate class="transition hover:text-white">Inicio</a>
+            <a href="/es/articles" wire:navigate class="transition hover:text-white">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate class="transition hover:text-white">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate class="transition hover:text-white">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate class="transition hover:text-white">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate class="transition hover:text-white">Personas e Impacto</a>
+                    </nav>
+
+        <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1" role="group" aria-label="Idioma">
+            <a
+            href="/p/google-cloud-cloud-computing-services-and-business-solutions"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/google-cloud-cloud-computing-services-and-business-solutions"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-zinc-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/google-cloud-cloud-computing-services-and-business-solutions"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+
+            <form action="/es/articles" method="get" class="relative hidden sm:block" role="search" aria-label="Búsqueda en el sitio">
+                <input
+                    type="search"
+                    name="q"
+                    value=""
+                    placeholder="Buscar"
+                    aria-label="Buscar artículos"
+                    class="w-40 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:w-56 focus:border-zinc-500 focus:ring-0 focus:outline-none transition-[width]"
+                />
+                <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <circle cx="9" cy="9" r="6" />
+                    <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+                </svg>
+            </form>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-9 items-center justify-center rounded-md text-white lg:hidden"
+                aria-label="Abrir menú"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 lg:hidden" style="display: none;">
+    <div class="fixed inset-0 bg-zinc-950/50" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-xs flex-col gap-6 bg-white px-6 py-6 dark:bg-zinc-950"
+    >
+        <div class="flex items-center justify-between">
+            <a href="/es" wire:navigate class="flex items-center gap-2.5 font-semibold text-zinc-900 dark:text-white">
+                <img src="/images/branding/logo-icon.webp" alt="" width="96" height="96" class="size-8 shrink-0" />
+                <span>ThumbsUpTechCo</span>
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-9 items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400" aria-label="Cerrar menú">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <form action="/es/articles" method="get" class="relative" role="search" aria-label="Búsqueda en el sitio">
+            <input
+                type="search"
+                name="q"
+                value=""
+                placeholder="Buscar"
+                aria-label="Buscar artículos"
+                class="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pr-3 pl-9 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-400 focus:ring-0 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-white"
+            />
+            <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="9" cy="9" r="6" />
+                <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+            </svg>
+        </form>
+
+        <nav class="flex flex-col gap-1 text-base font-medium text-zinc-700 dark:text-zinc-300">
+            <a href="/es" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inicio</a>
+            <a href="/es/articles" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Personas e Impacto</a>
+                    </nav>
+    </div>
+</div>
+
+        <main>
+            
+            <div class="border-b border-zinc-200 dark:border-zinc-800">
+                <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
+                    <a href="/es" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Inicio</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <a href="/es/c/digital-horizons" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Horizontes Digitales</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <span class="min-w-0 truncate text-zinc-400 dark:text-zinc-600">Google Cloud: servicios de computación en la nube y soluciones empresariales</span>
+                </div>
+            </div>
+
+            
+            <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
+                <a href="/es/c/digital-horizons" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+                    Horizontes Digitales
+                </a>
+
+                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
+                    Google Cloud: servicios de computación en la nube y soluciones empresariales
+                </h1>
+
+                <div class="mt-6 flex items-center gap-3">
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/images/team/emily-carter.webp"
+                        alt="Emily Carter"
+                        class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                    />
+                    <div class="text-sm">
+                        <a href="/es/our-team" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">
+                            Emily Carter
+                        </a>
+                        <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
+                            <span>Consultora de Inversiones</span>
+                            <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
+                            <time datetime="2025-07-19">19 de julio de 2025</time>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                                    <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                        <img
+                            fetchpriority="high"
+                            src="/images/articles/google-cloud-cloud-computing-services-and-business-solutions.webp"
+                            alt="Google Cloud: servicios de computación en la nube y soluciones empresariales"
+                            class="aspect-video w-full object-cover"
+                        />
+                    </div>
+                
+                
+                <div class="article-body">
+    <h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">24 de septiembre de 2026 • James Mitchell</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud es una plataforma de computación en la nube que ofrece infraestructura, almacenamiento, bases de datos, análisis de datos, inteligencia artificial, redes, seguridad, desarrollo de aplicaciones y otros servicios tecnológicos. Las organizaciones pueden aprovechar ofertas individuales o combinar varias soluciones para construir entornos que respalden aplicaciones, plataformas de datos, sitios web y operaciones empresariales.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Actualmente, la plataforma ofrece más de 150 productos en categorías como IA y aprendizaje automático, infraestructura, bases de datos y análisis, herramientas para desarrolladores, desarrollo de aplicaciones, seguridad, identidad y alojamiento web. Los precios siguen principalmente un modelo basado en el consumo, que permite a los clientes pagar solo por los servicios y recursos que utilizan. Entre las opciones de precios complementarias se incluyen niveles de uso gratuito, planes de compromiso con descuento y herramientas de cálculo para proyectar el gasto.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">¿Qué es Google Cloud?</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud es la plataforma de nube pública de Google para desarrollar, implementar y gestionar aplicaciones e infraestructura de TI. Proporciona recursos de computación, almacenamiento, bases de datos, redes, análisis, servicios de IA y plataformas de aplicaciones gestionadas.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las organizaciones pueden aprovisionar recursos sin comprar servidores físicos y ajustar la capacidad según las necesidades de cada carga de trabajo. La plataforma admite tanto infraestructuras convencionales como arquitecturas nativas de la nube.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La oferta se integra estrechamente con las competencias de Google en análisis de datos e inteligencia artificial, con servicios como BigQuery, Vertex AI, Gemini y Google Kubernetes Engine que responden a distintos requisitos técnicos.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Google Compute Engine</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Compute Engine proporciona máquinas virtuales que las empresas pueden utilizar para alojar aplicaciones, sitios web, bases de datos, entornos de desarrollo y otras cargas de trabajo.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las organizaciones pueden seleccionar configuraciones de máquinas virtuales en función de sus necesidades de CPU, memoria, almacenamiento y redes. Compute Engine admite tanto cargas de trabajo estándar como infraestructura especializada, incluidas opciones de computación confidencial.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las empresas también pueden elegir entre distintos modelos de precios. Google Cloud ofrece precios de pago por uso, así como opciones de uso comprometido y Spot VM para cargas de trabajo con diferentes requisitos de capacidad y coste.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Cloud Storage</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud Storage ofrece almacenamiento de objetos para datos de aplicaciones, copias de seguridad, archivos multimedia, conjuntos de datos y otra información no estructurada.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las empresas pueden recurrir a diferentes clases de almacenamiento según la frecuencia con la que necesiten acceder a los datos. El servicio se integra sin fricciones con las ofertas de análisis, inteligencia artificial, copias de seguridad y aplicaciones de todo el ecosistema de Google Cloud, lo que permite a las organizaciones mantener grandes volúmenes de datos sin necesidad de contar con su propia infraestructura física de almacenamiento.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Bases de datos de Google Cloud</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud ofrece servicios de bases de datos gestionadas para distintos requisitos de aplicación.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Cloud SQL proporciona bases de datos relacionales gestionadas para motores como MySQL, PostgreSQL y SQL Server. Las empresas pueden utilizarlo sin tener que gestionar por sí mismas la infraestructura de base de datos subyacente.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Cloud Spanner ofrece una base de datos relacional distribuida diseñada para aplicaciones que requieren escalabilidad y alta disponibilidad. Firestore proporciona una base de datos NoSQL para el desarrollo de aplicaciones, mientras que otros servicios de Google Cloud admiten arquitecturas de bases de datos adicionales.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La variedad de opciones permite a los desarrolladores elegir bases de datos en función de la estructura de la aplicación, la escalabilidad, la coherencia y los requisitos operativos.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">BigQuery y análisis de datos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">BigQuery es el almacén de datos y plataforma de análisis sin servidor de Google. Permite a las organizaciones analizar grandes conjuntos de datos con SQL sin aprovisionar servidores de bases de datos individuales.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los precios de BigQuery separan la computación y el almacenamiento. El procesamiento de consultas bajo demanda parte actualmente de 6,25 dólares por TiB analizado, y el primer TiB de procesamiento de consultas de cada mes es gratuito. Google Cloud también ofrece precios basados en capacidad, medidos en slots.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las empresas pueden utilizar BigQuery para almacenamiento de datos, inteligencia de negocio, generación de informes, ciencia de datos y flujos de trabajo de aprendizaje automático.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Como BigQuery puede procesar grandes conjuntos de datos sin la gestión de infraestructura tradicional, también se utiliza con frecuencia como parte de las plataformas de datos modernas.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Google Kubernetes Engine</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Kubernetes Engine (GKE) proporciona un entorno gestionado para ejecutar aplicaciones en contenedores mediante Kubernetes.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">GKE puede ayudar a los equipos de desarrollo e infraestructura a implementar aplicaciones en contenedores mientras Google gestiona parte del entorno de Kubernetes subyacente. Las organizaciones pueden utilizarlo para microservicios, API, aplicaciones web y otras cargas de trabajo distribuidas.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las empresas pueden elegir distintos niveles de control en función de si necesitan una gestión de la infraestructura más automatizada o una administración más directa de Kubernetes.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Cloud Run y computación sin servidor</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Cloud Run proporciona un entorno gestionado para ejecutar aplicaciones y servicios sin que las organizaciones tengan que gestionar directamente servidores tradicionales.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los desarrolladores pueden implementar aplicaciones en contenedores y dejar que Google Cloud se encargue del escalado de la infraestructura. Este modelo puede resultar útil para API, aplicaciones web, servicios en segundo plano y cargas de trabajo con demanda variable.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud también ofrece Cloud Functions y otros servicios sin servidor para el desarrollo de aplicaciones basadas en eventos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las plataformas sin servidor pueden reducir las necesidades de gestión de infraestructura, aunque las empresas siguen teniendo que supervisar el rendimiento de las aplicaciones, el uso de los servicios y los costes asociados.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">IA de Google Cloud y Gemini</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La inteligencia artificial es un componente fundamental de la cartera de productos de Google Cloud. La plataforma proporciona herramientas para el desarrollo de aprendizaje automático, aplicaciones de IA generativa, implementación de modelos, procesamiento de datos y aplicaciones impulsadas por IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud da acceso a los modelos Gemini y a capacidades de desarrollo de IA a través de su plataforma de IA más amplia. Las empresas pueden utilizar estos servicios para crear aplicaciones conversacionales, sistemas de generación de contenidos, flujos de trabajo de procesamiento de documentos, aplicaciones de búsqueda y agentes de IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Otros servicios ofrecen capacidades para entrenar e implementar modelos de aprendizaje automático, preparar conjuntos de datos e integrar la IA en aplicaciones existentes.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Redes e infraestructura global</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud proporciona servicios de red para conectar aplicaciones, usuarios, centros de datos y recursos en la nube.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las empresas pueden utilizar redes privadas virtuales, balanceo de carga, DNS, servicios de cortafuegos, conectividad VPN y otras herramientas de red para construir entornos de aplicaciones distribuidas.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La infraestructura global de Google también permite implementaciones en múltiples regiones y zonas. Las organizaciones pueden elegir ubicaciones en función de los requisitos de la aplicación, la latencia, la disponibilidad, la residencia de los datos y las consideraciones normativas.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Seguridad e identidad</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud incluye servicios de gestión de identidades, control de acceso, cifrado, detección de amenazas, supervisión y operaciones de seguridad.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Identity and Access Management (IAM) permite a los administradores controlar qué usuarios y servicios pueden acceder a determinados recursos. Las empresas pueden utilizar roles y permisos para establecer distintos niveles de acceso.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Otros servicios adicionales respaldan la supervisión de la seguridad, la gestión de claves de cifrado, la protección de cargas de trabajo, la seguridad de red y los requisitos de cumplimiento normativo.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">En el caso de las grandes empresas, estas capacidades pueden integrarse en procesos de gobernanza más amplios que abarquen la infraestructura en la nube, las aplicaciones y los datos.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Soluciones empresariales de Google Cloud</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud da soporte a las empresas en diversos requisitos tecnológicos y operativos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las empresas de software pueden utilizar Compute Engine, GKE, Cloud Run, bases de datos y herramientas para desarrolladores para el desarrollo y alojamiento de aplicaciones.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los equipos de datos pueden utilizar BigQuery, Cloud Storage, herramientas de integración de datos y servicios de aprendizaje automático para crear plataformas de análisis.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los equipos de IA pueden utilizar Gemini, las capacidades de Vertex AI y la infraestructura de soporte para desarrollar e implementar aplicaciones de IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las grandes empresas pueden combinar infraestructura en la nube, seguridad, identidad, análisis y tecnologías de nube híbrida en sus proyectos de modernización.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los negocios digitales pueden utilizar la infraestructura global, las bases de datos, la entrega de contenidos y los servicios de aplicaciones escalables para sus aplicaciones orientadas al cliente.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Precios de Google Cloud</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud utiliza principalmente un modelo de precios de pago por uso. A los clientes se les cobra según los recursos y servicios que consumen, y los precios varían en función del producto, la configuración, la región y el uso.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Actualmente, Google Cloud ofrece a los nuevos clientes 300 dólares en créditos gratuitos para ejecutar, probar e implementar cargas de trabajo. Más de 20 productos cuentan además con límites de uso gratuito, sujetos a las condiciones aplicables.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La plataforma también ofrece ahorros automáticos basados en determinados patrones de uso y tarifas con descuento para recursos comprometidos. La calculadora de precios de Google Cloud puede utilizarse para estimar los costes de las arquitecturas previstas.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las empresas deben evaluar el coste total de la arquitectura en lugar de centrarse en un único servicio. La computación, el almacenamiento, el uso de bases de datos, las redes, el análisis y la transferencia de datos pueden contribuir a la factura final.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Cómo evalúan las empresas Google Cloud</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las empresas que evalúan Google Cloud deben tener en cuenta la arquitectura de sus aplicaciones, los requisitos de datos, las necesidades de IA, la seguridad, la disponibilidad geográfica, los conocimientos técnicos, los requisitos de integración y el crecimiento previsto.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las compañías también deben determinar si sus cargas de trabajo requieren máquinas virtuales, contenedores, servicios sin servidor, bases de datos gestionadas o combinaciones de estas tecnologías.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La gestión de costes es otro aspecto importante. Los entornos en la nube deben supervisarse de forma continua, ya que la facturación basada en el uso implica que los costes pueden variar a medida que aumentan las aplicaciones, los volúmenes de datos y la actividad de los usuarios.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Reflexiones finales</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Google Cloud ofrece un amplio conjunto de servicios de computación en la nube que abarcan infraestructura, almacenamiento, bases de datos, análisis, Kubernetes, aplicaciones sin servidor, inteligencia artificial, redes y seguridad.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Su combinación de servicios de análisis de datos e IA con infraestructura en la nube de uso general permite a las organizaciones construir distintos tipos de entornos tecnológicos en una sola plataforma.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Para las empresas que evalúan Google Cloud, las principales consideraciones son los requisitos de las cargas de trabajo, la arquitectura de datos, las capacidades de IA, la seguridad, las necesidades geográficas, los recursos técnicos, las integraciones y los costes continuos de la nube.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Sobre el autor</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">James Mitchell, de 36 años, es especialista financiero en [website name], centrado en afrontar mercados volátiles y en desarrollar estrategias de inversión resilientes. Ayuda a profesionales a construir carteras diversificadas diseñadas para resistir las fluctuaciones del mercado y favorecer un crecimiento sostenible.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Referencias</h2>
+<ul class="mt-2 space-y-1.5 text-sm text-zinc-500 dark:text-zinc-400"><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/products" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — Products and Services</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/pricing" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — Pricing Overview</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/pricing/list" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — Product Pricing</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/products/compute" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — Compute Engine</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/bigquery" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — BigQuery</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/bigquery/pricing" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — BigQuery Pricing</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/products/calculator" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — Cloud Computing Services</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/storage" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — Cloud Storage</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/kubernetes-engine" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — Google Kubernetes Engine</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://cloud.google.com/products/ai" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Google Cloud — AI and Machine Learning Services</a></li></ul>
+
+</div>
+
+                
+                <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="flex items-center gap-4">
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="/images/team/emily-carter.webp"
+                            alt="Emily Carter"
+                            class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                        />
+                        <div>
+                            <p class="font-medium text-zinc-900 dark:text-white">Escrito por Emily Carter</p>
+                            <p class="text-sm text-zinc-500 dark:text-zinc-400">Consultora de Inversiones en ThumbsUpTechCo</p>
+                        </div>
+                    </div>
+                    <a href="/es/our-team" data-flux-button="data-flux-button" class="relative items-center font-medium justify-center whitespace-nowrap disabled:opacity-50 dark:disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none disabled:shadow-none justify-center h-10 text-sm rounded-lg gap-2 ps-4 pe-4 inline-flex  bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)] text-[var(--color-accent-foreground)] border border-black/10 dark:border-0 shadow-[inset_0px_1px_--theme(--color-white/.2)] [[data-flux-button-group]_&amp;]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-[1px] dark:[:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[1px]! [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[color-mix(in_srgb,var(--color-accent-foreground),transparent_85%)]    shrink-0" data-flux-group-target="data-flux-group-target" wire:navigate="">
+        Conozca a nuestro equipo editorial
+    </a>
+                </div>
+            </article>
+
+            
+                            <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+                        <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+                            Más en Horizontes Digitales
+                        </h2>
+                        <div class="mt-6 grid gap-6 sm:grid-cols-3">
+                                                                                            <a href="/es/p/real-time-analytics-making-faster-decisions-with-live-data" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Analítica en tiempo real: decisiones más rápidas con datos en directo
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Michael Anderson &middot; 2 sep. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/soc-2-compliance-software-features-and-considerations" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Software de cumplimiento SOC 2: funciones y aspectos a considerar
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        James Mitchell &middot; 1 sep. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/okta-identity-and-access-management-features" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Okta: funciones de gestión de identidades y accesos
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Emily Carter &middot; 22 ago. 2026
+                                    </p>
+                                </a>
+                                                    </div>
+                    </div>
+                </section>
+                    </main>
+
+        <footer class="bg-zinc-900">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+        <div class="flex flex-col items-center gap-6 border-b border-zinc-800 pb-8 sm:flex-row sm:justify-between">
+            <a href="/es" wire:navigate class="flex items-center">
+                <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" loading="lazy" decoding="async" class="h-7 w-auto" />
+            </a>
+
+            <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">
+                <a href="/es" wire:navigate class="hover:text-white">Inicio</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/our-team" wire:navigate class="hover:text-white">Nuestro equipo editorial</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/contact" wire:navigate class="hover:text-white">Contacto</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/privacy-policy" wire:navigate class="hover:text-white">Política de privacidad</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/terms-of-use" wire:navigate class="hover:text-white">Términos de uso</a>
+            </nav>
+        </div>
+
+        <p class="mt-6 text-xs leading-relaxed text-zinc-500">
+            La información compartida por ThumbsUpTechCo tiene fines exclusivamente informativos y educativos y no debe interpretarse como asesoramiento de inversión, fiscal ni legal. Las decisiones financieras conllevan riesgos y los resultados pasados no garantizan resultados futuros. Consulte siempre a un profesional certificado antes de tomar decisiones financieras.
+        </p>
+
+        <p class="mt-4 text-xs text-zinc-600">
+            &copy; 2026 ThumbsUpTechCo. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-919b0faa/livewire.js?id=0ae8dee3"   data-csrf="cMGhnYfvmQtklnVfO1olvKMpc91tNfw8PyUWFAoj" data-module-url="/livewire-919b0faa" data-update-uri="/livewire-919b0faa/update" data-navigate-once="true"></script>
+</body>
+</html>

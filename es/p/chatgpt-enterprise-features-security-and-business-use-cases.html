@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    ChatGPT Enterprise: funciones, seguridad y casos de uso empresariales — ThumbsUpTechCo
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-D1W7dsQl.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B9e8oLYv.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-DrM84IVF.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-DrM84IVF.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+        <meta name="description" content="ChatGPT Enterprise es la oferta gestionada de ChatGPT de OpenAI para organizaciones que desean implantar la IA entre sus empleados con administración…" />
+<link rel="canonical" href="/es/p/chatgpt-enterprise-features-security-and-business-use-cases" />
+            <link rel="alternate" hreflang="en" href="/p/chatgpt-enterprise-features-security-and-business-use-cases" />
+            <link rel="alternate" hreflang="es" href="/es/p/chatgpt-enterprise-features-security-and-business-use-cases" />
+            <link rel="alternate" hreflang="fr" href="/fr/p/chatgpt-enterprise-features-security-and-business-use-cases" />
+        <link rel="alternate" hreflang="x-default" href="/p/chatgpt-enterprise-features-security-and-business-use-cases" />
+
+<meta property="og:site_name" content="ThumbsUpTechCo" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="ChatGPT Enterprise: funciones, seguridad y casos de uso empresariales" />
+<meta property="og:description" content="ChatGPT Enterprise es la oferta gestionada de ChatGPT de OpenAI para organizaciones que desean implantar la IA entre sus empleados con administración…" />
+<meta property="og:url" content="/p/chatgpt-enterprise-features-security-and-business-use-cases?lang=es" />
+<meta property="og:image" content="/images/articles/chatgpt-enterprise-features-security-and-business-use-cases.webp" />
+<meta property="og:locale" content="es_ES" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ChatGPT Enterprise: funciones, seguridad y casos de uso empresariales" />
+<meta name="twitter:description" content="ChatGPT Enterprise es la oferta gestionada de ChatGPT de OpenAI para organizaciones que desean implantar la IA entre sus empleados con administración…" />
+<meta name="twitter:image" content="/images/articles/chatgpt-enterprise-features-security-and-business-use-cases.webp" />
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ChatGPT Enterprise: funciones, seguridad y casos de uso empresariales","image":["/images/articles/chatgpt-enterprise-features-security-and-business-use-cases.webp"],"datePublished":"2025-08-23","inLanguage":"es","author":{"@type":"Person","name":"Daniel Brooks","url":"/our-team"},"publisher":{"@type":"Organization","name":"ThumbsUpTechCo","logo":{"@type":"ImageObject","url":"/images/branding/logo-full.webp"}},"articleSection":"Horizontes Digitales","mainEntityOfPage":"/p/chatgpt-enterprise-features-security-and-business-use-cases"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"/"},{"@type":"ListItem","position":2,"name":"Horizontes Digitales","item":"/c/digital-horizons"},{"@type":"ListItem","position":3,"name":"ChatGPT Enterprise: funciones, seguridad y casos de uso empresariales"}]}</script>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
+    >
+        <header class="sticky top-0 z-40 bg-zinc-900">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
+        <a href="/es" wire:navigate class="flex shrink-0 items-center">
+            <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" class="h-8 w-auto" />
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
+            <a href="/es" wire:navigate class="transition hover:text-white">Inicio</a>
+            <a href="/es/articles" wire:navigate class="transition hover:text-white">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate class="transition hover:text-white">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate class="transition hover:text-white">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate class="transition hover:text-white">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate class="transition hover:text-white">Personas e Impacto</a>
+                    </nav>
+
+        <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1" role="group" aria-label="Idioma">
+            <a
+            href="/p/chatgpt-enterprise-features-security-and-business-use-cases"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/chatgpt-enterprise-features-security-and-business-use-cases"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-zinc-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/chatgpt-enterprise-features-security-and-business-use-cases"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+
+            <form action="/es/articles" method="get" class="relative hidden sm:block" role="search" aria-label="Búsqueda en el sitio">
+                <input
+                    type="search"
+                    name="q"
+                    value=""
+                    placeholder="Buscar"
+                    aria-label="Buscar artículos"
+                    class="w-40 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:w-56 focus:border-zinc-500 focus:ring-0 focus:outline-none transition-[width]"
+                />
+                <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <circle cx="9" cy="9" r="6" />
+                    <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+                </svg>
+            </form>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-9 items-center justify-center rounded-md text-white lg:hidden"
+                aria-label="Abrir menú"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 lg:hidden" style="display: none;">
+    <div class="fixed inset-0 bg-zinc-950/50" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-xs flex-col gap-6 bg-white px-6 py-6 dark:bg-zinc-950"
+    >
+        <div class="flex items-center justify-between">
+            <a href="/es" wire:navigate class="flex items-center gap-2.5 font-semibold text-zinc-900 dark:text-white">
+                <img src="/images/branding/logo-icon.webp" alt="" width="96" height="96" class="size-8 shrink-0" />
+                <span>ThumbsUpTechCo</span>
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-9 items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400" aria-label="Cerrar menú">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <form action="/es/articles" method="get" class="relative" role="search" aria-label="Búsqueda en el sitio">
+            <input
+                type="search"
+                name="q"
+                value=""
+                placeholder="Buscar"
+                aria-label="Buscar artículos"
+                class="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pr-3 pl-9 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-400 focus:ring-0 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-white"
+            />
+            <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="9" cy="9" r="6" />
+                <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+            </svg>
+        </form>
+
+        <nav class="flex flex-col gap-1 text-base font-medium text-zinc-700 dark:text-zinc-300">
+            <a href="/es" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inicio</a>
+            <a href="/es/articles" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Personas e Impacto</a>
+                    </nav>
+    </div>
+</div>
+
+        <main>
+            
+            <div class="border-b border-zinc-200 dark:border-zinc-800">
+                <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
+                    <a href="/es" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Inicio</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <a href="/es/c/digital-horizons" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Horizontes Digitales</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <span class="min-w-0 truncate text-zinc-400 dark:text-zinc-600">ChatGPT Enterprise: funciones, seguridad y casos de uso empresariales</span>
+                </div>
+            </div>
+
+            
+            <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
+                <a href="/es/c/digital-horizons" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+                    Horizontes Digitales
+                </a>
+
+                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
+                    ChatGPT Enterprise: funciones, seguridad y casos de uso empresariales
+                </h1>
+
+                <div class="mt-6 flex items-center gap-3">
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/images/team/daniel-brooks.webp"
+                        alt="Daniel Brooks"
+                        class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                    />
+                    <div class="text-sm">
+                        <a href="/es/our-team" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">
+                            Daniel Brooks
+                        </a>
+                        <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
+                            <span>Especialista Financiero</span>
+                            <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
+                            <time datetime="2025-08-23">23 de agosto de 2025</time>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                                    <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                        <img
+                            fetchpriority="high"
+                            src="/images/articles/chatgpt-enterprise-features-security-and-business-use-cases.webp"
+                            alt="ChatGPT Enterprise: funciones, seguridad y casos de uso empresariales"
+                            class="aspect-video w-full object-cover"
+                        />
+                    </div>
+                
+                
+                <div class="article-body">
+    <p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">ChatGPT Enterprise es la oferta gestionada de ChatGPT de OpenAI para organizaciones que desean implantar la IA entre sus empleados con administración centralizada, seguridad de nivel empresarial y controles organizativos. Combina las capacidades de ChatGPT con la gestión del espacio de trabajo, los controles de identidad, la gobernanza de datos, la analítica y el acceso a herramientas avanzadas.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los usuarios de Enterprise pueden trabajar con ChatGPT en tareas de investigación, redacción, análisis, programación, procesamiento de datos y otras actividades empresariales. Los espacios de trabajo Enterprise actuales también dan acceso a funciones como Projects, GPTs, Apps, Company Knowledge, ChatGPT Agent, Deep Research y Codex, según el tipo de licencia de la organización y la configuración del espacio de trabajo. (OpenAI Help Center)</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La plataforma se contrata a nivel de organización y no por usuarios individuales. Por ello, su modelo de administración y seguridad difiere del de las suscripciones de ChatGPT para consumidores.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">¿Qué es ChatGPT Enterprise?</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">ChatGPT Enterprise proporciona a las organizaciones un espacio de trabajo de ChatGPT dedicado en el que los administradores pueden gestionar usuarios, permisos, herramientas, modelos, aplicaciones y otros ajustes.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los empleados pueden utilizar el espacio de trabajo tanto para tareas cotidianas de productividad como para flujos de trabajo más avanzados. Las organizaciones también pueden conectar aplicaciones y fuentes empresariales aprobadas para que los empleados trabajen con información de sus sistemas existentes.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los espacios de trabajo Enterprise están separados de los espacios personales de ChatGPT, y las políticas de la organización rigen el contenido, el acceso, la conservación de datos y la disponibilidad de funciones dentro del entorno gestionado. (OpenAI Help Center)</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Principales funciones de ChatGPT Enterprise</h2>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">IA avanzada y razonamiento</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">ChatGPT Enterprise da acceso a modelos avanzados de ChatGPT y a flujos de trabajo de mayor uso pensados para las organizaciones.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los empleados pueden recurrir a la IA para redactar, resumir, investigar, analizar, programar, generar ideas y realizar otras tareas propias del trabajo del conocimiento. Los administradores pueden controlar qué modelos y capacidades están disponibles para distintos usuarios o grupos. (OpenAI Help Center)</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esto permite a las organizaciones ofrecer un entorno de IA común sin perder el control administrativo sobre su uso.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Deep Research</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Deep Research puede llevar a cabo investigaciones de varios pasos y sintetizar la información en resultados detallados. Esto puede respaldar actividades como estudios de mercado, análisis de la competencia, investigación técnica y elaboración de informes empresariales.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los administradores de Enterprise pueden controlar el acceso a las capacidades de investigación mediante permisos y roles del espacio de trabajo.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Análisis de datos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">ChatGPT puede trabajar con archivos empresariales cargados y conjuntos de datos estructurados para analizar información, identificar patrones, realizar cálculos y generar visualizaciones.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esto puede ser útil para los equipos de finanzas, operaciones, marketing, ventas y otros que trabajan habitualmente con hojas de cálculo, informes y conjuntos de datos.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Projects y GPTs</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los usuarios de Enterprise pueden organizar el trabajo relacionado en Projects y crear GPTs personalizados para flujos de trabajo especializados.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los GPTs personalizados pueden utilizar instrucciones y fuentes de conocimiento aprobadas para ofrecer una asistencia más coherente en tareas concretas de la organización. Los administradores de Enterprise pueden gestionar la creación, el uso compartido, el acceso y otros controles de los GPTs en todo el espacio de trabajo. (OpenAI)</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Company Knowledge y aplicaciones conectadas</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">ChatGPT Enterprise puede poner a los empleados en contacto con información empresarial aprobada a través de Apps y Company Knowledge.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las organizaciones pueden configurar el acceso a las aplicaciones compatibles manteniendo los permisos establecidos en los sistemas subyacentes. Los administradores de Enterprise pueden controlar qué aplicaciones están disponibles y utilizar controles de acceso basados en roles para los usuarios o grupos correspondientes. (OpenAI Help Center)</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esto puede permitir a los empleados plantear preguntas sobre información distribuida entre sistemas empresariales aprobados, en lugar de buscar manualmente en varias aplicaciones.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">ChatGPT Agent y Codex</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los espacios de trabajo Enterprise pueden dar acceso a ChatGPT Agent, capaz de realizar tareas complejas de varios pasos mediante las herramientas disponibles y los servicios conectados.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Codex ofrece asistencia de IA para el desarrollo de software y los flujos de trabajo de programación. Los planes Enterprise actuales pueden incluir licencias estándar de ChatGPT con acceso a Codex, y OpenAI ofrece además licencias dedicadas de Codex dentro de sus modalidades Enterprise basadas en créditos. (OpenAI Help Center)</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Estas capacidades amplían la plataforma más allá de la asistencia conversacional, hacia flujos de trabajo más técnicos y orientados a la acción.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Seguridad empresarial</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La seguridad es un componente central de ChatGPT Enterprise.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">OpenAI afirma que los datos empresariales se cifran en reposo y en tránsito. La compañía también afirma que, de forma predeterminada, no utiliza el contenido de los espacios de trabajo de ChatGPT Enterprise para entrenar sus modelos. Los clientes Enterprise pueden emplear, además, controles como la gestión de claves empresarial y opciones configurables de conservación de datos. (OpenAI)</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">OpenAI también proporciona controles empresariales de identidad y acceso, que permiten a las organizaciones gestionar quién puede acceder al espacio de trabajo y qué capacidades están disponibles.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Gestión de identidades y accesos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">ChatGPT Enterprise admite funciones de gestión de identidades empresariales, como el inicio de sesión único (SSO), la verificación de dominios y el aprovisionamiento SCIM.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">SCIM puede automatizar la creación y eliminación de cuentas de usuario, mientras que SSO permite a los empleados autenticarse a través del proveedor de identidades existente de la organización.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">El control de acceso basado en roles añade otra capa de administración. Las organizaciones Enterprise pueden crear roles personalizados y asignar permisos para funciones como GPTs, Projects, herramientas conectadas, Workspace Agents y otras capacidades. (OpenAI)</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Privacidad y gobernanza de datos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">OpenAI afirma que el contenido de los clientes de ChatGPT Enterprise no se utiliza de forma predeterminada para entrenar los modelos de OpenAI.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las organizaciones también pueden recurrir a controles de conservación de datos y, en el caso de los clientes que cumplan los requisitos, a opciones de residencia de datos. OpenAI enumera actualmente como ubicaciones compatibles de residencia de datos en reposo Estados Unidos, la Unión Europea, el Reino Unido, Japón, Canadá, Corea del Sur, Singapur, Australia, la India y los Emiratos Árabes Unidos. La disponibilidad depende de los requisitos aplicables y de la configuración del producto. (OpenAI)</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Estos controles pueden ser importantes para organizaciones con políticas internas de gobernanza de datos o requisitos regionales.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Controles de cumplimiento y auditoría</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Enterprise ofrece herramientas para las organizaciones que necesitan supervisar y gobernar el uso de la IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">OpenAI proporciona analíticas e información de uso para que los administradores puedan examinar la adopción y el nivel de participación. Las organizaciones Enterprise también pueden utilizar capacidades y API relacionadas con el cumplimiento normativo para auditar la actividad del espacio de trabajo y gestionar los datos de la organización. (OpenAI)</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los administradores deben configurar los ajustes de conservación, acceso, registro y roles de acuerdo con los requisitos normativos y de seguridad de la organización.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Casos de uso empresariales de ChatGPT Enterprise</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los equipos de marketing pueden utilizar ChatGPT para la investigación, el desarrollo de contenidos, el análisis de campañas y el conocimiento de los clientes.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los equipos de ventas pueden resumir información de cuentas, preparar comunicaciones, analizar datos de ventas y realizar investigaciones.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los equipos de finanzas pueden analizar hojas de cálculo, elaborar informes, resumir información financiera y apoyar flujos de trabajo analíticos recurrentes.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los equipos de recursos humanos pueden redactar comunicaciones internas, resumir documentos, desarrollar materiales de formación y organizar la información de RR. HH.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los equipos de software pueden utilizar ChatGPT y Codex para programación, depuración, documentación y flujos de trabajo de desarrollo.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los equipos directivos pueden utilizar herramientas de investigación, análisis, generación de informes y conocimiento organizativo para apoyar la toma de decisiones y la planificación.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Administración de ChatGPT Enterprise</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los propietarios y administradores del espacio de trabajo pueden gestionar miembros, grupos, licencias, permisos, modelos, GPTs, aplicaciones, analíticas y otros ajustes del espacio de trabajo.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">El entorno de administración de Enterprise también permite a las organizaciones configurar el acceso a herramientas y funciones según roles específicos. Por ejemplo, una organización puede ofrecer distintas capacidades a los grupos de ingeniería, finanzas o marketing en lugar de dar a todos los empleados un acceso idéntico. (OpenAI Help Center)</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esta estructura puede ayudar a las organizaciones a introducir la IA de forma gradual sin renunciar a una gobernanza centralizada.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Precios de ChatGPT Enterprise</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">ChatGPT Enterprise no tiene un precio estándar por usuario publicado. Las organizaciones contratan Enterprise a través del proceso comercial de OpenAI, y los precios y condiciones de facturación se determinan en el acuerdo.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los acuerdos Enterprise actuales pueden emplear distintos modelos de licencias y de uso. OpenAI introdujo un tipo de licencia de Codex en 2026 y también admite precios basados en créditos para determinadas modalidades Enterprise. Por ello, las organizaciones deben solicitar un presupuesto actualizado y confirmar qué modelo de facturación se aplica a su implantación. (OpenAI Help Center)</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">El coste total puede depender del número de usuarios, los tipos de licencia, los requisitos de uso, los créditos adicionales y las condiciones comerciales negociadas.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Cómo evalúan las empresas ChatGPT Enterprise</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las organizaciones que evalúan ChatGPT Enterprise deben tener en cuenta el número de empleados, los casos de uso previstos para la IA, el ecosistema de software existente, los requisitos de seguridad, las necesidades de residencia de datos, la infraestructura de identidades y los requisitos de gobernanza.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las empresas también deben determinar qué grupos necesitan herramientas avanzadas como Deep Research, Apps, Company Knowledge, ChatGPT Agent o Codex.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">En las implantaciones de mayor tamaño, la planificación debe incluir la gestión de identidades, la definición de roles, las aplicaciones aprobadas, las políticas de datos, los requisitos de conservación, la formación de los empleados y la supervisión del uso.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Reflexiones finales</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">ChatGPT Enterprise ofrece a las organizaciones un entorno gestionado para implantar ChatGPT en sus equipos. Sus capacidades abarcan desde la redacción y el análisis cotidianos hasta la investigación, la programación, los datos empresariales conectados, los agentes de IA y los flujos de trabajo especializados.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las funciones de seguridad empresarial incluyen cifrado, SSO, SCIM, controles de acceso basados en roles, opciones de conservación de datos y controles organizativos para las aplicaciones conectadas. OpenAI también afirma que el contenido de los espacios de trabajo Enterprise no se utiliza de forma predeterminada para entrenar sus modelos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Para las empresas que evalúan la plataforma, las consideraciones principales son los casos de uso de la IA, el tamaño de la plantilla, los requisitos de seguridad y gobernanza, los datos conectados, la administración, las expectativas de uso y las condiciones comerciales del acuerdo Enterprise.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Referencias</h2>
+<ul class="mt-2 space-y-1.5 text-sm text-zinc-500 dark:text-zinc-400"><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.openai.com/en/articles/8265053-what-is-chatgpt-enterprise" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">OpenAI — What Is ChatGPT Enterprise?</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://openai.com/business-data/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">OpenAI — Business Data Privacy, Security, and Compliance</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.openai.com/en/articles/8411955" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">OpenAI — Managing Workspace Settings in ChatGPT Enterprise</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.openai.com/en/articles/20001264" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">OpenAI — ChatGPT Enterprise Admin Quickstart</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.openai.com/en/articles/11509118" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">OpenAI — Admin Controls, Security, and Compliance for Apps</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.openai.com/en/articles/11750701-managing-feature-access-with-role-based-access-control-in-chatgpt" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">OpenAI — Role-Based Access Control in ChatGPT</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.openai.com/en/articles/20001067-data-access-for-your-managed-chatgpt-account" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">OpenAI — Data Access for Managed ChatGPT Accounts</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://openai.com/index/introducing-new-compliance-and-administrative-tools-for-chatgpt-enterprise/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">OpenAI — New Compliance and Administrative Tools for ChatGPT Enterprise</a></li></ul>
+
+</div>
+
+                
+                <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="flex items-center gap-4">
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="/images/team/daniel-brooks.webp"
+                            alt="Daniel Brooks"
+                            class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                        />
+                        <div>
+                            <p class="font-medium text-zinc-900 dark:text-white">Escrito por Daniel Brooks</p>
+                            <p class="text-sm text-zinc-500 dark:text-zinc-400">Especialista Financiero en ThumbsUpTechCo</p>
+                        </div>
+                    </div>
+                    <a href="/es/our-team" data-flux-button="data-flux-button" class="relative items-center font-medium justify-center whitespace-nowrap disabled:opacity-50 dark:disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none disabled:shadow-none justify-center h-10 text-sm rounded-lg gap-2 ps-4 pe-4 inline-flex  bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)] text-[var(--color-accent-foreground)] border border-black/10 dark:border-0 shadow-[inset_0px_1px_--theme(--color-white/.2)] [[data-flux-button-group]_&amp;]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-[1px] dark:[:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[1px]! [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[color-mix(in_srgb,var(--color-accent-foreground),transparent_85%)]    shrink-0" data-flux-group-target="data-flux-group-target" wire:navigate="">
+        Conozca a nuestro equipo editorial
+    </a>
+                </div>
+            </article>
+
+            
+                            <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+                        <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+                            Más en Horizontes Digitales
+                        </h2>
+                        <div class="mt-6 grid gap-6 sm:grid-cols-3">
+                                                                                            <a href="/es/p/real-time-analytics-making-faster-decisions-with-live-data" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Analítica en tiempo real: decisiones más rápidas con datos en directo
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Michael Anderson &middot; 2 sep. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/soc-2-compliance-software-features-and-considerations" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Software de cumplimiento SOC 2: funciones y aspectos a considerar
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        James Mitchell &middot; 1 sep. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/okta-identity-and-access-management-features" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Okta: funciones de gestión de identidades y accesos
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Emily Carter &middot; 22 ago. 2026
+                                    </p>
+                                </a>
+                                                    </div>
+                    </div>
+                </section>
+                    </main>
+
+        <footer class="bg-zinc-900">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+        <div class="flex flex-col items-center gap-6 border-b border-zinc-800 pb-8 sm:flex-row sm:justify-between">
+            <a href="/es" wire:navigate class="flex items-center">
+                <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" loading="lazy" decoding="async" class="h-7 w-auto" />
+            </a>
+
+            <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">
+                <a href="/es" wire:navigate class="hover:text-white">Inicio</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/our-team" wire:navigate class="hover:text-white">Nuestro equipo editorial</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/contact" wire:navigate class="hover:text-white">Contacto</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/privacy-policy" wire:navigate class="hover:text-white">Política de privacidad</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/terms-of-use" wire:navigate class="hover:text-white">Términos de uso</a>
+            </nav>
+        </div>
+
+        <p class="mt-6 text-xs leading-relaxed text-zinc-500">
+            La información compartida por ThumbsUpTechCo tiene fines exclusivamente informativos y educativos y no debe interpretarse como asesoramiento de inversión, fiscal ni legal. Las decisiones financieras conllevan riesgos y los resultados pasados no garantizan resultados futuros. Consulte siempre a un profesional certificado antes de tomar decisiones financieras.
+        </p>
+
+        <p class="mt-4 text-xs text-zinc-600">
+            &copy; 2026 ThumbsUpTechCo. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-919b0faa/livewire.js?id=0ae8dee3"   data-csrf="Fw45ryngZjl5khI7hkQVF8lHscA9AxkgP8zdOkxU" data-module-url="/livewire-919b0faa" data-update-uri="/livewire-919b0faa/update" data-navigate-once="true"></script>
+</body>
+</html>

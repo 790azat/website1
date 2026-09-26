@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    Certificaciones en analítica de datos: lo que deben saber los profesionales — ThumbsUpTechCo
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-D1W7dsQl.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B9e8oLYv.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-DrM84IVF.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-DrM84IVF.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+        <meta name="description" content="La analítica de datos se ha convertido en una parte importante de la actividad empresarial: las organizaciones utilizan los datos para conocer a sus…" />
+<link rel="canonical" href="/es/p/data-analytics-certifications-what-professionals-should-know" />
+            <link rel="alternate" hreflang="en" href="/p/data-analytics-certifications-what-professionals-should-know" />
+            <link rel="alternate" hreflang="es" href="/es/p/data-analytics-certifications-what-professionals-should-know" />
+            <link rel="alternate" hreflang="fr" href="/fr/p/data-analytics-certifications-what-professionals-should-know" />
+        <link rel="alternate" hreflang="x-default" href="/p/data-analytics-certifications-what-professionals-should-know" />
+
+<meta property="og:site_name" content="ThumbsUpTechCo" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Certificaciones en analítica de datos: lo que deben saber los profesionales" />
+<meta property="og:description" content="La analítica de datos se ha convertido en una parte importante de la actividad empresarial: las organizaciones utilizan los datos para conocer a sus…" />
+<meta property="og:url" content="/p/data-analytics-certifications-what-professionals-should-know?lang=es" />
+<meta property="og:image" content="/images/articles/data-analytics-certifications-what-professionals-should-know.webp" />
+<meta property="og:locale" content="es_ES" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Certificaciones en analítica de datos: lo que deben saber los profesionales" />
+<meta name="twitter:description" content="La analítica de datos se ha convertido en una parte importante de la actividad empresarial: las organizaciones utilizan los datos para conocer a sus…" />
+<meta name="twitter:image" content="/images/articles/data-analytics-certifications-what-professionals-should-know.webp" />
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Certificaciones en analítica de datos: lo que deben saber los profesionales","image":["/images/articles/data-analytics-certifications-what-professionals-should-know.webp"],"datePublished":"2025-07-10","inLanguage":"es","author":{"@type":"Person","name":"Daniel Brooks","url":"/our-team"},"publisher":{"@type":"Organization","name":"ThumbsUpTechCo","logo":{"@type":"ImageObject","url":"/images/branding/logo-full.webp"}},"articleSection":"Inteligencia de Datos","mainEntityOfPage":"/p/data-analytics-certifications-what-professionals-should-know"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"/"},{"@type":"ListItem","position":2,"name":"Inteligencia de Datos","item":"/c/data-intelligence"},{"@type":"ListItem","position":3,"name":"Certificaciones en analítica de datos: lo que deben saber los profesionales"}]}</script>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
+    >
+        <header class="sticky top-0 z-40 bg-zinc-900">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
+        <a href="/es" wire:navigate class="flex shrink-0 items-center">
+            <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" class="h-8 w-auto" />
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
+            <a href="/es" wire:navigate class="transition hover:text-white">Inicio</a>
+            <a href="/es/articles" wire:navigate class="transition hover:text-white">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate class="transition hover:text-white">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate class="transition hover:text-white">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate class="transition hover:text-white">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate class="transition hover:text-white">Personas e Impacto</a>
+                    </nav>
+
+        <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1" role="group" aria-label="Idioma">
+            <a
+            href="/p/data-analytics-certifications-what-professionals-should-know"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/data-analytics-certifications-what-professionals-should-know"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-zinc-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/data-analytics-certifications-what-professionals-should-know"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+
+            <form action="/es/articles" method="get" class="relative hidden sm:block" role="search" aria-label="Búsqueda en el sitio">
+                <input
+                    type="search"
+                    name="q"
+                    value=""
+                    placeholder="Buscar"
+                    aria-label="Buscar artículos"
+                    class="w-40 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:w-56 focus:border-zinc-500 focus:ring-0 focus:outline-none transition-[width]"
+                />
+                <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <circle cx="9" cy="9" r="6" />
+                    <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+                </svg>
+            </form>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-9 items-center justify-center rounded-md text-white lg:hidden"
+                aria-label="Abrir menú"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 lg:hidden" style="display: none;">
+    <div class="fixed inset-0 bg-zinc-950/50" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-xs flex-col gap-6 bg-white px-6 py-6 dark:bg-zinc-950"
+    >
+        <div class="flex items-center justify-between">
+            <a href="/es" wire:navigate class="flex items-center gap-2.5 font-semibold text-zinc-900 dark:text-white">
+                <img src="/images/branding/logo-icon.webp" alt="" width="96" height="96" class="size-8 shrink-0" />
+                <span>ThumbsUpTechCo</span>
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-9 items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400" aria-label="Cerrar menú">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <form action="/es/articles" method="get" class="relative" role="search" aria-label="Búsqueda en el sitio">
+            <input
+                type="search"
+                name="q"
+                value=""
+                placeholder="Buscar"
+                aria-label="Buscar artículos"
+                class="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pr-3 pl-9 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-400 focus:ring-0 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-white"
+            />
+            <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="9" cy="9" r="6" />
+                <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+            </svg>
+        </form>
+
+        <nav class="flex flex-col gap-1 text-base font-medium text-zinc-700 dark:text-zinc-300">
+            <a href="/es" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inicio</a>
+            <a href="/es/articles" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Personas e Impacto</a>
+                    </nav>
+    </div>
+</div>
+
+        <main>
+            
+            <div class="border-b border-zinc-200 dark:border-zinc-800">
+                <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
+                    <a href="/es" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Inicio</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <a href="/es/c/data-intelligence" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Inteligencia de Datos</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <span class="min-w-0 truncate text-zinc-400 dark:text-zinc-600">Certificaciones en analítica de datos: lo que deben saber los profesionales</span>
+                </div>
+            </div>
+
+            
+            <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
+                <a href="/es/c/data-intelligence" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+                    Inteligencia de Datos
+                </a>
+
+                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
+                    Certificaciones en analítica de datos: lo que deben saber los profesionales
+                </h1>
+
+                <div class="mt-6 flex items-center gap-3">
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/images/team/daniel-brooks.webp"
+                        alt="Daniel Brooks"
+                        class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                    />
+                    <div class="text-sm">
+                        <a href="/es/our-team" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">
+                            Daniel Brooks
+                        </a>
+                        <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
+                            <span>Especialista Financiero</span>
+                            <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
+                            <time datetime="2025-07-10">10 de julio de 2025</time>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                                    <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                        <img
+                            fetchpriority="high"
+                            src="/images/articles/data-analytics-certifications-what-professionals-should-know.webp"
+                            alt="Certificaciones en analítica de datos: lo que deben saber los profesionales"
+                            class="aspect-video w-full object-cover"
+                        />
+                    </div>
+                
+                
+                <div class="article-body">
+    <p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La analítica de datos se ha convertido en una parte importante de la actividad empresarial: las organizaciones utilizan los datos para conocer a sus clientes, supervisar su rendimiento, mejorar sus procesos y respaldar la toma de decisiones. Como consecuencia, cada vez se espera más de los profesionales que demuestren tanto conocimientos analíticos como competencias técnicas prácticas.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las certificaciones en analítica de datos pueden ofrecer una formación estructurada y una forma de acreditar conocimientos en ámbitos como el análisis de datos, la visualización, las bases de datos, la estadística y la inteligencia de negocio. Van desde programas de nivel inicial pensados para quienes se incorporan al sector hasta credenciales especializadas centradas en tecnologías concretas.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Sin embargo, la certificación es solo una parte del desarrollo profesional. El valor de una credencial depende de las competencias que abarca, las herramientas que enseña, la experiencia previa del candidato y su grado de adecuación al tipo de trabajo que desea desempeñar.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">¿Qué es una certificación en analítica de datos?</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Una certificación en analítica de datos es una credencial profesional que se obtiene tras completar un curso, una evaluación, un examen o una combinación de requisitos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las certificaciones pueden ofrecerlas empresas tecnológicas, organizaciones profesionales, proveedores de formación e instituciones educativas. Algunas se centran en competencias analíticas generales, mientras que otras validan el conocimiento de una plataforma específica.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Por ejemplo, la certificación Power BI Data Analyst de Microsoft evalúa las competencias relacionadas con la preparación, el modelado, la visualización, el análisis, la gestión y la protección de datos en Power BI.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esto significa que los profesionales deberían examinar qué mide realmente una certificación, en lugar de valorar las credenciales solo por su nombre.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Competencias habituales que abarcan las certificaciones en analítica de datos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">El contenido varía de un programa a otro, pero hay varias competencias técnicas y analíticas que aparecen con frecuencia.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Preparación de datos</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los analistas de datos a menudo necesitan limpiar, transformar y organizar la información antes de analizarla. Los programas de certificación pueden abarcar métodos para detectar valores ausentes, corregir datos incoherentes, combinar conjuntos de datos y preparar la información para la elaboración de informes.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">SQL y bases de datos</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">SQL se utiliza ampliamente para consultar y manipular la información almacenada en bases de datos relacionales. Los programas de analítica de nivel inicial pueden introducir SQL, mientras que las certificaciones más avanzadas pueden exigir a los candidatos demostrar competencias prácticas en la elaboración de consultas.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Visualización de datos</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los profesionales de la analítica necesitan comunicar sus conclusiones con claridad. Por ello, los programas de certificación pueden incluir gráficos, paneles, narrativa visual y técnicas para presentar resultados analíticos a públicos técnicos y no técnicos.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Estadística</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los conceptos estadísticos pueden ayudar a los profesionales a interpretar datos, identificar patrones, evaluar relaciones y comprender la incertidumbre. Según la certificación, los temas pueden ir desde la estadística descriptiva hasta la regresión y las técnicas predictivas.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Herramientas de inteligencia de negocio</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Algunas certificaciones se construyen en torno a plataformas específicas de inteligencia de negocio. Microsoft Power BI y Tableau, por ejemplo, ofrecen credenciales relacionadas con la visualización de datos y la analítica.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La cartera de certificaciones de Tableau incluye la credencial Salesforce Certified Tableau Data Analyst, así como certificaciones sobre fundamentos, administración, consultoría y arquitectura de Tableau.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Tipos de certificaciones en analítica de datos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">En general, las certificaciones en analítica pueden dividirse en varias categorías.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las certificaciones de base están pensadas para quienes desarrollan conocimientos básicos de analítica. Pueden abarcar hojas de cálculo, SQL, limpieza de datos, visualización y conceptos analíticos introductorios.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las certificaciones específicas de una plataforma validan competencias en el uso de una tecnología concreta. Algunos ejemplos son las certificaciones de Power BI y Tableau.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las certificaciones de analítica avanzada pueden abarcar estadística, Python, aprendizaje automático, modelado predictivo u otras materias técnicas.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las certificaciones orientadas al negocio ponen el acento en la aplicación de la analítica a ámbitos como las finanzas, el marketing, las operaciones o la gestión.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La categoría adecuada depende del nivel de competencias actual del profesional y de su orientación profesional.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Opciones de certificación populares</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Varios programas conocidos ofrecen enfoques distintos de la formación en analítica.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Google Data Analytics Certificate</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">El Google Data Analytics Certificate está pensado para quienes desarrollan competencias básicas de analítica de datos. Según Google, el programa abarca áreas como el análisis y la visualización de datos e introduce herramientas como las hojas de cálculo, SQL, R y Tableau. El programa se imparte en línea y está diseñado para completarse al ritmo de cada estudiante.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Microsoft Power BI Data Analyst Associate</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La certificación Power BI Data Analyst Associate de Microsoft es una credencial de nivel intermedio centrada en Power BI. El examen actual evalúa cuatro áreas principales: preparación de datos, modelado de datos, visualización y análisis de datos, y gestión y protección de Power BI.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La guía de estudio de Microsoft también señala Power Query y Data Analysis Expressions (DAX) como competencias importantes para este puesto.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Tableau Data Analyst</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La certificación Salesforce Certified Tableau Data Analyst se centra en el trabajo analítico con Tableau. Es una de las varias credenciales de Tableau disponibles a través del programa de certificación de Salesforce.</p>
+<h3 class="mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-white">Credenciales de analítica de datos de IBM</h3>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">IBM también ofrece itinerarios de aprendizaje y credenciales profesionales en analítica de datos que abarcan temas como el análisis de datos, la visualización, Python, SQL y tecnologías afines. Estos programas pueden proporcionar un aprendizaje estructurado a profesionales que desarrollan competencias técnicas de analítica.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Cómo elegir una certificación en analítica de datos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los profesionales deberían partir de la orientación profesional a la que aspiran, en lugar de elegir una certificación simplemente porque es popular.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Quien busca un puesto en inteligencia de negocio puede beneficiarse de una certificación específica de una plataforma, como Power BI o Tableau. Quien se incorpora a la analítica sin experiencia técnica previa puede preferir un programa de base más amplio.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Otros factores que conviene tener en cuenta son:</p>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Nivel de competencias actual:</span> ¿se ajusta el programa a los conocimientos existentes?</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Plan de estudios:</span> ¿enseña métodos y herramientas analíticas relevantes?</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Evaluación:</span> ¿hay un examen, un proyecto práctico o ambos?</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Tecnología:</span> ¿son relevantes las herramientas de la certificación para el entorno laboral previsto?</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Costo:</span> ¿cuáles son los costos del curso, el examen, la renovación y la preparación?</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Requisitos de renovación:</span> ¿caduca la credencial o requiere renovación periódica?</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Experiencia práctica:</span> ¿incluye el programa proyectos que puedan servir de ejemplos para un portafolio?</span></li></ul>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Revisar los requisitos oficiales de la certificación es especialmente importante, ya que los objetivos de los exámenes y las tecnologías pueden cambiar con el tiempo.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Certificación frente a titulación universitaria</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Una certificación y una titulación universitaria cumplen funciones distintas.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Una titulación suele ofrecer una formación académica más amplia a lo largo de un periodo más largo. Un grado en analítica de datos puede incluir estadística, programación, bases de datos, métodos de investigación, asignaturas de empresa y una teoría analítica más amplia.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Una certificación suele ser más específica y puede centrarse en un conjunto concreto de competencias, una tecnología o un puesto profesional.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Para algunos profesionales, la certificación puede complementar una titulación existente al acreditar experiencia con una plataforma de analítica concreta. Para otros, un programa formativo más amplio puede ser más adecuado cuando cambian de carrera o están construyendo sus conocimientos básicos.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">¿Ayudan las certificaciones a hacer carrera en analítica de datos?</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Una certificación puede acreditar un aprendizaje estructurado y la familiaridad con determinadas herramientas, pero no sustituye a la experiencia práctica.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los empleadores también pueden valorar la formación, la experiencia laboral previa, las competencias técnicas, la capacidad de comunicación y la experiencia en proyectos. La U.S. Bureau of Labor Statistics señala que los científicos de datos suelen necesitar al menos una licenciatura, y que algunos empleadores exigen o prefieren estudios de posgrado. La BLS también identifica las competencias analíticas, informáticas, comunicativas, matemáticas y de resolución de problemas como cualidades importantes para esta ocupación.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Por este motivo, los profesionales pueden reforzar una certificación creando un portafolio de proyectos. Algunos ejemplos serían analizar un conjunto de datos público, crear un panel de negocio, escribir consultas SQL o elaborar un informe que explique conclusiones analíticas.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Cómo elaborar un plan de certificación</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los profesionales no necesitan obligatoriamente varias certificaciones. Un enfoque específico puede resultar más práctico.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Una progresión básica podría incluir:</p>
+<ol class="mt-5 space-y-3 text-zinc-700 dark:text-zinc-300"><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">1</span><span class="leading-relaxed">Aprender los conceptos fundamentales de la analítica.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">2</span><span class="leading-relaxed">Desarrollar competencias en SQL, hojas de cálculo y visualización.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">3</span><span class="leading-relaxed">Elegir una plataforma o especialización relevante para el puesto al que se aspira.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">4</span><span class="leading-relaxed">Completar una certificación o una evaluación formal.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">5</span><span class="leading-relaxed">Crear proyectos prácticos con conjuntos de datos reales o públicos.</span></li><li class="flex gap-3"><span class="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-[11px] font-medium text-white dark:bg-white dark:text-zinc-900">6</span><span class="leading-relaxed">Seguir desarrollando competencias a medida que cambian las herramientas y los métodos analíticos.</span></li></ol>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Quienes ya trabajan en analítica pueden, en cambio, identificar una carencia concreta de competencias y elegir una certificación que la cubra.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Reflexiones finales</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las certificaciones en analítica de datos pueden ofrecer un aprendizaje estructurado y acreditar conocimientos de herramientas y métodos analíticos. Su utilidad depende del contenido de la credencial, los requisitos de evaluación, su relevancia para el puesto objetivo y la experiencia previa del profesional.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">En lugar de acumular certificaciones sin un propósito claro, los profesionales pueden centrarse en credenciales que complementen sus objetivos profesionales y sus competencias prácticas. Combinar la certificación con SQL, estadística, visualización, conocimiento del negocio y proyectos prácticos puede aportar una base más amplia para trabajar con datos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">A medida que las tecnologías de analítica siguen evolucionando, los profesionales también deberían entender la certificación como parte de un aprendizaje continuo y no como un sustituto puntual de la experiencia práctica.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Referencias</h2>
+<ul class="mt-2 space-y-1.5 text-sm text-zinc-500 dark:text-zinc-400"><li class="pl-4 relative before:absolute before:left-0 before:content-['—']">Google. &quot;Google Career Certificate in Data Analytics.&quot;</li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']">Microsoft. &quot;Microsoft Certified: Power BI Data Analyst Associate.&quot;</li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']">Microsoft Learn. &quot;Study Guide for Exam PL-300: Microsoft Power BI Data Analyst.&quot;</li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']">Tableau. &quot;Tableau Certification.&quot;</li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']">IBM. &quot;Data Analyst Professional Certificate.&quot;</li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']">U.S. Bureau of Labor Statistics. &quot;Data Scientists.&quot;</li></ul>
+
+</div>
+
+                
+                <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="flex items-center gap-4">
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="/images/team/daniel-brooks.webp"
+                            alt="Daniel Brooks"
+                            class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                        />
+                        <div>
+                            <p class="font-medium text-zinc-900 dark:text-white">Escrito por Daniel Brooks</p>
+                            <p class="text-sm text-zinc-500 dark:text-zinc-400">Especialista Financiero en ThumbsUpTechCo</p>
+                        </div>
+                    </div>
+                    <a href="/es/our-team" data-flux-button="data-flux-button" class="relative items-center font-medium justify-center whitespace-nowrap disabled:opacity-50 dark:disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none disabled:shadow-none justify-center h-10 text-sm rounded-lg gap-2 ps-4 pe-4 inline-flex  bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)] text-[var(--color-accent-foreground)] border border-black/10 dark:border-0 shadow-[inset_0px_1px_--theme(--color-white/.2)] [[data-flux-button-group]_&amp;]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-[1px] dark:[:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[1px]! [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[color-mix(in_srgb,var(--color-accent-foreground),transparent_85%)]    shrink-0" data-flux-group-target="data-flux-group-target" wire:navigate="">
+        Conozca a nuestro equipo editorial
+    </a>
+                </div>
+            </article>
+
+            
+                            <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+                        <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+                            Más en Inteligencia de Datos
+                        </h2>
+                        <div class="mt-6 grid gap-6 sm:grid-cols-3">
+                                                                                            <a href="/es/p/data-integration-bringing-business-information-together" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Integración de datos: cómo reunir la información empresarial
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Daniel Brooks &middot; 12 ago. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/data-analytics-software-what-businesses-should-know" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Software de analítica de datos: lo que las empresas deben saber
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Daniel Brooks &middot; 8 ago. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/google-looker-business-intelligence-and-data-analytics-features" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Google Looker: funciones de inteligencia de negocio y analítica de datos
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Michael Anderson &middot; 14 jul. 2026
+                                    </p>
+                                </a>
+                                                    </div>
+                    </div>
+                </section>
+                    </main>
+
+        <footer class="bg-zinc-900">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+        <div class="flex flex-col items-center gap-6 border-b border-zinc-800 pb-8 sm:flex-row sm:justify-between">
+            <a href="/es" wire:navigate class="flex items-center">
+                <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" loading="lazy" decoding="async" class="h-7 w-auto" />
+            </a>
+
+            <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">
+                <a href="/es" wire:navigate class="hover:text-white">Inicio</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/our-team" wire:navigate class="hover:text-white">Nuestro equipo editorial</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/contact" wire:navigate class="hover:text-white">Contacto</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/privacy-policy" wire:navigate class="hover:text-white">Política de privacidad</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/terms-of-use" wire:navigate class="hover:text-white">Términos de uso</a>
+            </nav>
+        </div>
+
+        <p class="mt-6 text-xs leading-relaxed text-zinc-500">
+            La información compartida por ThumbsUpTechCo tiene fines exclusivamente informativos y educativos y no debe interpretarse como asesoramiento de inversión, fiscal ni legal. Las decisiones financieras conllevan riesgos y los resultados pasados no garantizan resultados futuros. Consulte siempre a un profesional certificado antes de tomar decisiones financieras.
+        </p>
+
+        <p class="mt-4 text-xs text-zinc-600">
+            &copy; 2026 ThumbsUpTechCo. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-919b0faa/livewire.js?id=0ae8dee3"   data-csrf="HaR2OSJuwiUFuMo9vTfyY8ib8c9DTpqCtmn7Uwnx" data-module-url="/livewire-919b0faa" data-update-uri="/livewire-919b0faa/update" data-navigate-once="true"></script>
+</body>
+</html>

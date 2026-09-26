@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    Snowflake : fonctionnalités du Data Cloud et capacités d&#039;analytique — ThumbsUpTechCo
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-D1W7dsQl.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B9e8oLYv.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-DrM84IVF.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-DrM84IVF.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+        <meta name="description" content="Les organisations ont de plus en plus besoin de plateformes de données capables de prendre en charge l&#039;analytique, l&#039;ingénierie des données, l&#039;intelligence…" />
+<link rel="canonical" href="/fr/p/snowflake-data-cloud-features-and-analytics-capabilities" />
+            <link rel="alternate" hreflang="en" href="/p/snowflake-data-cloud-features-and-analytics-capabilities" />
+            <link rel="alternate" hreflang="es" href="/es/p/snowflake-data-cloud-features-and-analytics-capabilities" />
+            <link rel="alternate" hreflang="fr" href="/fr/p/snowflake-data-cloud-features-and-analytics-capabilities" />
+        <link rel="alternate" hreflang="x-default" href="/p/snowflake-data-cloud-features-and-analytics-capabilities" />
+
+<meta property="og:site_name" content="ThumbsUpTechCo" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Snowflake : fonctionnalités du Data Cloud et capacités d&#039;analytique" />
+<meta property="og:description" content="Les organisations ont de plus en plus besoin de plateformes de données capables de prendre en charge l&#039;analytique, l&#039;ingénierie des données, l&#039;intelligence…" />
+<meta property="og:url" content="/p/snowflake-data-cloud-features-and-analytics-capabilities?lang=fr" />
+<meta property="og:image" content="/images/articles/snowflake-data-cloud-features-and-analytics-capabilities.webp" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Snowflake : fonctionnalités du Data Cloud et capacités d&#039;analytique" />
+<meta name="twitter:description" content="Les organisations ont de plus en plus besoin de plateformes de données capables de prendre en charge l&#039;analytique, l&#039;ingénierie des données, l&#039;intelligence…" />
+<meta name="twitter:image" content="/images/articles/snowflake-data-cloud-features-and-analytics-capabilities.webp" />
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Snowflake : fonctionnalités du Data Cloud et capacités d'analytique","image":["/images/articles/snowflake-data-cloud-features-and-analytics-capabilities.webp"],"datePublished":"2025-02-18","inLanguage":"fr","author":{"@type":"Person","name":"Emily Carter","url":"/our-team"},"publisher":{"@type":"Organization","name":"ThumbsUpTechCo","logo":{"@type":"ImageObject","url":"/images/branding/logo-full.webp"}},"articleSection":"Intelligence des données","mainEntityOfPage":"/p/snowflake-data-cloud-features-and-analytics-capabilities"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"/"},{"@type":"ListItem","position":2,"name":"Intelligence des données","item":"/c/data-intelligence"},{"@type":"ListItem","position":3,"name":"Snowflake : fonctionnalités du Data Cloud et capacités d'analytique"}]}</script>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
+    >
+        <header class="sticky top-0 z-40 bg-zinc-900">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
+        <a href="/fr" wire:navigate class="flex shrink-0 items-center">
+            <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" class="h-8 w-auto" />
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
+            <a href="/fr" wire:navigate class="transition hover:text-white">Accueil</a>
+            <a href="/fr/articles" wire:navigate class="transition hover:text-white">Tous les articles</a>
+                            <a href="/fr/c/data-intelligence" wire:navigate class="transition hover:text-white">Intelligence des données</a>
+                            <a href="/fr/c/business-strategy" wire:navigate class="transition hover:text-white">Stratégie d’entreprise</a>
+                            <a href="/fr/c/digital-horizons" wire:navigate class="transition hover:text-white">Horizons numériques</a>
+                            <a href="/fr/c/people-impact" wire:navigate class="transition hover:text-white">Humain et impact</a>
+                    </nav>
+
+        <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1" role="group" aria-label="Langue">
+            <a
+            href="/p/snowflake-data-cloud-features-and-analytics-capabilities"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/snowflake-data-cloud-features-and-analytics-capabilities"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/snowflake-data-cloud-features-and-analytics-capabilities"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-zinc-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+
+            <form action="/fr/articles" method="get" class="relative hidden sm:block" role="search" aria-label="Recherche sur le site">
+                <input
+                    type="search"
+                    name="q"
+                    value=""
+                    placeholder="Rechercher"
+                    aria-label="Rechercher des articles"
+                    class="w-40 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:w-56 focus:border-zinc-500 focus:ring-0 focus:outline-none transition-[width]"
+                />
+                <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <circle cx="9" cy="9" r="6" />
+                    <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+                </svg>
+            </form>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-9 items-center justify-center rounded-md text-white lg:hidden"
+                aria-label="Ouvrir le menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 lg:hidden" style="display: none;">
+    <div class="fixed inset-0 bg-zinc-950/50" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-xs flex-col gap-6 bg-white px-6 py-6 dark:bg-zinc-950"
+    >
+        <div class="flex items-center justify-between">
+            <a href="/fr" wire:navigate class="flex items-center gap-2.5 font-semibold text-zinc-900 dark:text-white">
+                <img src="/images/branding/logo-icon.webp" alt="" width="96" height="96" class="size-8 shrink-0" />
+                <span>ThumbsUpTechCo</span>
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-9 items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400" aria-label="Fermer le menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <form action="/fr/articles" method="get" class="relative" role="search" aria-label="Recherche sur le site">
+            <input
+                type="search"
+                name="q"
+                value=""
+                placeholder="Rechercher"
+                aria-label="Rechercher des articles"
+                class="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pr-3 pl-9 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-400 focus:ring-0 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-white"
+            />
+            <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="9" cy="9" r="6" />
+                <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+            </svg>
+        </form>
+
+        <nav class="flex flex-col gap-1 text-base font-medium text-zinc-700 dark:text-zinc-300">
+            <a href="/fr" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Accueil</a>
+            <a href="/fr/articles" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Tous les articles</a>
+                            <a href="/fr/c/data-intelligence" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Intelligence des données</a>
+                            <a href="/fr/c/business-strategy" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Stratégie d’entreprise</a>
+                            <a href="/fr/c/digital-horizons" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Horizons numériques</a>
+                            <a href="/fr/c/people-impact" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Humain et impact</a>
+                    </nav>
+    </div>
+</div>
+
+        <main>
+            
+            <div class="border-b border-zinc-200 dark:border-zinc-800">
+                <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
+                    <a href="/fr" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Accueil</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <a href="/fr/c/data-intelligence" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Intelligence des données</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <span class="min-w-0 truncate text-zinc-400 dark:text-zinc-600">Snowflake : fonctionnalités du Data Cloud et capacités d&#039;analytique</span>
+                </div>
+            </div>
+
+            
+            <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
+                <a href="/fr/c/data-intelligence" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+                    Intelligence des données
+                </a>
+
+                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
+                    Snowflake : fonctionnalités du Data Cloud et capacités d&#039;analytique
+                </h1>
+
+                <div class="mt-6 flex items-center gap-3">
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/images/team/emily-carter.webp"
+                        alt="Emily Carter"
+                        class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                    />
+                    <div class="text-sm">
+                        <a href="/fr/our-team" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">
+                            Emily Carter
+                        </a>
+                        <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
+                            <span>Consultante en investissement</span>
+                            <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
+                            <time datetime="2025-02-18">18 février 2025</time>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                                    <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                        <img
+                            fetchpriority="high"
+                            src="/images/articles/snowflake-data-cloud-features-and-analytics-capabilities.webp"
+                            alt="Snowflake : fonctionnalités du Data Cloud et capacités d&#039;analytique"
+                            class="aspect-video w-full object-cover"
+                        />
+                    </div>
+                
+                
+                <div class="article-body">
+    <p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les organisations ont de plus en plus besoin de plateformes de données capables de prendre en charge l&#039;analytique, l&#039;ingénierie des données, l&#039;intelligence artificielle, l&#039;apprentissage automatique et le partage de données sans maintenir une infrastructure distincte pour chaque charge de travail. Snowflake a construit sa plateforme autour de ce modèle élargi, en la positionnant comme un AI Data Cloud qui associe stockage des données, traitement, analytique, gouvernance, collaboration et capacités d&#039;IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake fournit un environnement entièrement géré dans lequel les organisations peuvent rassembler des informations structurées, semi-structurées et non structurées. Son architecture sépare le stockage et le calcul, ce qui permet aux organisations d&#039;adapter leurs charges de travail analytiques à la demande.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La plateforme s&#039;est également étendue au-delà de l&#039;entrepôt de données cloud traditionnel. Ses capacités actuelles comprennent l&#039;analytique interactive, les charges de travail de type lakehouse, l&#039;IA conversationnelle, l&#039;apprentissage automatique, les applications de données, le partage de données et la prise en charge de formats de tables ouverts comme Apache Iceberg.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Qu&#039;est-ce que Snowflake ?</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake fonctionne comme « une plateforme de données basée sur le cloud, conçue pour offrir un environnement centralisé de stockage, de traitement, d&#039;analyse et de partage des données ».</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La plateforme prend en charge de multiples types de données et de charges de travail, notamment l&#039;analytique SQL traditionnelle, l&#039;ingénierie des données, la science des données, l&#039;apprentissage automatique, la business intelligence et les applications d&#039;IA. Snowflake fonctionne sur les principaux environnements cloud et est fourni sous forme de service géré, ce qui réduit la nécessité pour les organisations de maintenir elles-mêmes l&#039;infrastructure de base de données sous-jacente.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Plutôt que de fonctionner uniquement comme un entrepôt de données, Snowflake se positionne de plus en plus comme une plateforme plus large de données et d&#039;IA.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Principales fonctionnalités du Snowflake Data Cloud</h2>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Stockage et traitement des données dans le cloud</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake sépare le stockage des données des ressources de calcul. Les organisations peuvent stocker leurs informations de manière centralisée tout en créant des ressources de calcul indépendantes pour différentes charges de travail.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Cette architecture permet aux équipes d&#039;adapter le traitement aux besoins de chaque charge de travail. Par exemple, une organisation peut prendre en charge séparément des charges de travail d&#039;analytique, de reporting, d&#039;ingénierie des données et de science des données sans nécessairement obliger chaque processus à se disputer les mêmes ressources de calcul.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake gère également automatiquement de nombreuses tâches d&#039;infrastructure associées à une plateforme de données traditionnelle, notamment le provisionnement de l&#039;infrastructure, la maintenance logicielle et la mise à l&#039;échelle.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Données structurées, semi-structurées et non structurées</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake prend en charge les données structurées et semi-structurées, ainsi que des charges de travail plus récentes impliquant des informations non structurées.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les organisations peuvent travailler avec des formats comme JSON et d&#039;autres données semi-structurées tout en intégrant des documents, des images et d&#039;autres fichiers à leurs workflows d&#039;IA et d&#039;analyse.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Cette prise en charge élargie des données permet aux organisations d&#039;utiliser un environnement commun plutôt que de maintenir des systèmes entièrement distincts pour chaque type d&#039;information.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Calcul élastique</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake utilise des entrepôts virtuels et d&#039;autres services de calcul pour traiter les charges de travail.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Différentes tailles d&#039;entrepôts peuvent être utilisées selon les besoins des charges de travail, et les organisations peuvent suspendre le calcul lorsqu&#039;il n&#039;est pas nécessaire. Le modèle de consommation de Snowflake mesure le calcul en crédits, ce qui permet aux clients d&#039;ajuster l&#039;utilisation des ressources en fonction de la demande.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Ce modèle peut être utile aux organisations dont les charges de travail varient, mais un suivi attentif est important, car la consommation de calcul a une incidence directe sur les coûts.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Snowflake pour l&#039;analytique</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">L&#039;analytique est l&#039;une des charges de travail centrales de Snowflake.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La plateforme prend en charge l&#039;analyse fondée sur SQL, les requêtes interactives, les tableaux de bord, le reporting, l&#039;analytique avancée et l&#039;exploration des données. L&#039;offre analytique actuelle de Snowflake comprend également des capacités spécialement conçues pour les charges de travail à forte concurrence et à faible latence grâce aux Interactive Tables et aux Interactive Warehouses.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les organisations peuvent utiliser Snowflake comme socle analytique sous-jacent à leurs outils de business intelligence tout en conservant des données centralisées et gouvernées.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Business intelligence</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake peut servir de socle de données pour les plateformes de BI et les applications analytiques.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les organisations peuvent connecter des outils de visualisation et de reporting à Snowflake, ce qui permet aux analystes et aux utilisateurs métier de travailler avec des données centralisées. Snowflake fournit également des capacités natives comme les worksheets, les notebooks et d&#039;autres interfaces permettant d&#039;explorer les informations.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Cette architecture permet aux entreprises de séparer le socle de stockage et d&#039;analyse de la couche de visualisation lorsque cela convient à leur environnement technologique.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Snowflake Horizon et gouvernance des données</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La gouvernance prend de plus en plus d&#039;importance à mesure que les organisations regroupent davantage de données et de charges de travail d&#039;IA sur une plateforme unique.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake Horizon propose des contrôles d&#039;accès basés sur les rôles et une gestion de la conformité, notamment le balisage des objets, les politiques de masquage, le lignage et d&#039;autres contrôles permettant de gérer l&#039;accès aux données et la conformité.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake propose également un catalogue permettant de découvrir et de gouverner les informations dans l&#039;ensemble des environnements de données.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Ces capacités peuvent aider les organisations à établir des politiques cohérentes tout en permettant à différents services d&#039;utiliser des données partagées pour l&#039;analytique et l&#039;IA.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Snowflake et l&#039;IA</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake a considérablement étendu sa plateforme à l&#039;intelligence artificielle.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La plateforme comprend Cortex AI pour l&#039;analyse multimodale, qui offre des capacités d&#039;analyse de textes, d&#039;images et d&#039;autres informations multimodales et donne accès à de grands modèles de langage via SQL et des API. Les organisations peuvent également créer des applications et des agents d&#039;IA tout en conservant les données dans l&#039;environnement de sécurité de Snowflake.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake propose aussi des capacités orientées IA pour les utilisateurs métier. Sa plateforme actuelle comprend Snowflake Intelligence, conçu pour offrir des interactions conversationnelles et contextuelles avec les données de l&#039;entreprise, étendant ainsi les fonctionnalités aux utilisateurs métier au-delà du personnel technique.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Ces capacités font évoluer Snowflake d&#039;une plateforme utilisée principalement par les ingénieurs de données et les analystes vers un environnement plus large où les utilisateurs métier peuvent interagir avec les informations de l&#039;organisation grâce à l&#039;IA.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Apprentissage automatique et science des données avec Snowflake</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake prend en charge les workflows d&#039;apprentissage automatique grâce à Snowpark, Snowpark ML et aux capacités de science des données associées.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowpark permet aux développeurs et aux data scientists de travailler avec des langages comme Python tout en traitant les données au sein de Snowflake. Snowpark ML fournit des outils pour développer et déployer des modèles d&#039;apprentissage automatique tout en conservant les données dans le périmètre de gouvernance de la plateforme.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Ces capacités peuvent répondre à des cas d&#039;usage tels que la prévision, la classification, l&#039;analyse client, la détection d&#039;anomalies et d&#039;autres applications prédictives.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La stratégie actuelle d&#039;AI Data Cloud de Snowflake comprend également des capacités de science des données fondées sur des agents, conçues pour assister les utilisateurs techniques dans leurs workflows d&#039;analyse et d&#039;apprentissage automatique.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Snowflake et Apache Iceberg</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake prend de plus en plus en charge les architectures de données ouvertes grâce à Apache Iceberg.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les organisations peuvent utiliser Snowflake avec des tables Iceberg et d&#039;autres formats de tables ouverts, ce qui permet aux données de rester interopérables avec de multiples moteurs et environnements analytiques. Snowflake a également étendu sa prise en charge des moteurs externes et de l&#039;accès gouverné aux données Iceberg.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Cette approche peut être utile aux organisations qui souhaitent bénéficier des capacités d&#039;analytique gérée et de gouvernance de Snowflake tout en conservant une meilleure interopérabilité dans l&#039;ensemble de leur écosystème de données.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Partage de données et Marketplace</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake offre des capacités de partage de données entre organisations sans recourir aux transferts traditionnels de fichiers.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La Snowflake Marketplace permet aux clients de découvrir des produits et services de données tiers et d&#039;y accéder. Snowflake prend également en charge les Native Apps, qui peuvent exécuter du code applicatif dans l&#039;environnement Snowflake d&#039;un client tout en laissant les données du client en place.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Ces capacités peuvent favoriser l&#039;enrichissement des données externes, la collaboration entre organisations et les applications construites autour d&#039;informations métier partagées.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Snowflake pour les différentes fonctions de l&#039;entreprise</h2>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Finance :</span> les équipes financières peuvent utiliser Snowflake comme socle centralisé pour le reporting financier, les prévisions, l&#039;analyse de la performance et les jeux de données liés aux risques.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Marketing :</span> les équipes marketing peuvent combiner les données clients, de campagnes, publicitaires et comportementales pour la segmentation et l&#039;analyse des performances.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Ventes :</span> les équipes commerciales peuvent utiliser des informations centralisées sur les clients et le chiffre d&#039;affaires pour analyser les pipelines, les comptes, les territoires et les performances.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Opérations :</span> les équipes opérationnelles peuvent analyser de grands volumes de données opérationnelles, suivre les performances et créer des modèles prédictifs.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Science des données :</span> les data scientists peuvent utiliser Snowpark et les capacités d&#039;apprentissage automatique pour développer des modèles prédictifs sans déplacer les données vers un environnement distinct.</span></li></ul>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Tarifs de Snowflake</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake applique un modèle de tarification à la consommation plutôt qu&#039;un abonnement fixe unique à la plateforme. Les clients paient principalement le calcul, le stockage et les transferts de données applicables, l&#039;utilisation du calcul étant mesurée en crédits.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake propose actuellement plusieurs éditions, dont Standard, Enterprise, Business Critical et Virtual Private Snowflake. Les éditions supérieures ajoutent des capacités comme le calcul multi-cluster, une gouvernance plus fine, la connectivité privée et des fonctionnalités supplémentaires de sécurité ou d&#039;isolation.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Le stockage est facturé en fonction du volume de données compressées stockées, tandis que les coûts de calcul dépendent des ressources consommées par les charges de travail.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Comme la consommation varie considérablement selon les charges de travail, les organisations doivent évaluer les volumes de requêtes attendus, la taille des entrepôts, les besoins de stockage, les mouvements de données et l&#039;utilisation de l&#039;IA lors de l&#039;estimation du coût total.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Comment les entreprises évaluent Snowflake</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les organisations qui envisagent Snowflake peuvent examiner plusieurs domaines :</p>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Architecture des données :</span> déterminer quelles bases de données, applications, fichiers et sources externes doivent être regroupés.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Analytique :</span> évaluer les performances SQL, l&#039;intégration avec la BI, les charges de travail interactives et les besoins de reporting.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">IA et ML :</span> prendre en compte les besoins liés à Cortex, à Snowpark ML, aux agents d&#039;IA et à l&#039;analyse multimodale.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Gouvernance :</span> examiner les contrôles d&#039;accès, le masquage, le lignage, le catalogage et les exigences de conformité.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Données ouvertes :</span> déterminer si Apache Iceberg ou l&#039;interopérabilité multi-moteurs est importante.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Partage de données :</span> prendre en compte les besoins en produits de données externes, en collaboration et en Native Apps.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Maîtrise des coûts :</span> modéliser la consommation de calcul, de stockage, de transfert et de services serverless pour les charges de travail prévues.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Évolutivité :</span> évaluer les volumes de données, les utilisateurs, la concurrence et les charges de travail analytiques futurs.</span></li></ul>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Conclusion</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Snowflake est passé d&#039;un entrepôt de données cloud à un AI Data Cloud plus large qui prend en charge l&#039;analytique, l&#039;ingénierie des données, l&#039;apprentissage automatique, les applications, le partage de données et l&#039;intelligence artificielle.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La séparation du stockage et du calcul, l&#039;infrastructure gérée, les capacités de gouvernance et la prise en charge de multiples types de données constituent une base solide pour les grands environnements analytiques. Les capacités plus récentes liées à Cortex AI, à Snowflake Intelligence, à l&#039;analytique interactive et à Apache Iceberg étendent davantage la plateforme à l&#039;IA et aux architectures de données ouvertes.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Pour les organisations qui évaluent Snowflake, les critères les plus importants sont l&#039;architecture des données, les besoins analytiques, la gouvernance, les charges de travail d&#039;IA, l&#039;interopérabilité, l&#039;évolutivité et les coûts liés à la consommation.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Références</h2>
+<ul class="mt-2 space-y-1.5 text-sm text-zinc-500 dark:text-zinc-400"><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.snowflake.com/en/product/analytics/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">### Snowflake — Snowflake for Analytics</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.snowflake.com/en/product/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">### Snowflake — AI Data Cloud Capabilities</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.snowflake.com/en/data-cloud/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">### Snowflake — Snowflake Platform</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.snowflake.com/en/product/features/cortex/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">### Snowflake — Snowflake Cortex AI</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.snowflake.com/en/pricing/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">### Snowflake — Snowflake Pricing</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.snowflake.com/en/pricing/pricing-calculator/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">### Snowflake — Snowflake Pricing Calculator</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://docs.snowflake.com/en/user-guide/intro-key-concepts" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">### Snowflake Documentation — Key Snowflake Features</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://docs.snowflake.com/en/user-guide/cost-understanding-compute" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">### Snowflake Documentation — Understanding Compute Cost</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.snowflake.com/en/product/features/iceberg/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">### Snowflake — Snowflake and Apache Iceberg</a></li></ul>
+
+</div>
+
+                
+                <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="flex items-center gap-4">
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="/images/team/emily-carter.webp"
+                            alt="Emily Carter"
+                            class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                        />
+                        <div>
+                            <p class="font-medium text-zinc-900 dark:text-white">Rédigé par Emily Carter</p>
+                            <p class="text-sm text-zinc-500 dark:text-zinc-400">Consultante en investissement chez ThumbsUpTechCo</p>
+                        </div>
+                    </div>
+                    <a href="/fr/our-team" data-flux-button="data-flux-button" class="relative items-center font-medium justify-center whitespace-nowrap disabled:opacity-50 dark:disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none disabled:shadow-none justify-center h-10 text-sm rounded-lg gap-2 ps-4 pe-4 inline-flex  bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)] text-[var(--color-accent-foreground)] border border-black/10 dark:border-0 shadow-[inset_0px_1px_--theme(--color-white/.2)] [[data-flux-button-group]_&amp;]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-[1px] dark:[:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[1px]! [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[color-mix(in_srgb,var(--color-accent-foreground),transparent_85%)]    shrink-0" data-flux-group-target="data-flux-group-target" wire:navigate="">
+        Découvrez notre équipe éditoriale
+    </a>
+                </div>
+            </article>
+
+            
+                            <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+                        <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+                            Plus d’articles dans Intelligence des données
+                        </h2>
+                        <div class="mt-6 grid gap-6 sm:grid-cols-3">
+                                                                                            <a href="/fr/p/data-integration-bringing-business-information-together" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Intégration des données : réunir les informations de l&#039;entreprise
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Daniel Brooks &middot; 12 août 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/fr/p/data-analytics-software-what-businesses-should-know" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Logiciels d&#039;analyse de données : ce que les entreprises doivent savoir
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Daniel Brooks &middot; 8 août 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/fr/p/google-looker-business-intelligence-and-data-analytics-features" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Google Looker : fonctionnalités de business intelligence et d&#039;analyse de données
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Michael Anderson &middot; 14 juil. 2026
+                                    </p>
+                                </a>
+                                                    </div>
+                    </div>
+                </section>
+                    </main>
+
+        <footer class="bg-zinc-900">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+        <div class="flex flex-col items-center gap-6 border-b border-zinc-800 pb-8 sm:flex-row sm:justify-between">
+            <a href="/fr" wire:navigate class="flex items-center">
+                <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" loading="lazy" decoding="async" class="h-7 w-auto" />
+            </a>
+
+            <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">
+                <a href="/fr" wire:navigate class="hover:text-white">Accueil</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/fr/our-team" wire:navigate class="hover:text-white">Notre équipe éditoriale</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/fr/contact" wire:navigate class="hover:text-white">Contact</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/fr/privacy-policy" wire:navigate class="hover:text-white">Politique de confidentialité</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/fr/terms-of-use" wire:navigate class="hover:text-white">Conditions d’utilisation</a>
+            </nav>
+        </div>
+
+        <p class="mt-6 text-xs leading-relaxed text-zinc-500">
+            Les informations publiées par ThumbsUpTechCo sont fournies à titre informatif et éducatif uniquement et ne doivent pas être interprétées comme des conseils en investissement, fiscaux ou juridiques. Les décisions financières comportent des risques, et les performances passées ne préjugent pas des résultats futurs. Consultez toujours un professionnel certifié avant de prendre une décision financière.
+        </p>
+
+        <p class="mt-4 text-xs text-zinc-600">
+            &copy; 2026 ThumbsUpTechCo. Tous droits réservés.
+        </p>
+    </div>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-919b0faa/livewire.js?id=0ae8dee3"   data-csrf="Ma0n556PbP7YqY3JSvW3hUibHPFWXX78twbL7ML9" data-module-url="/livewire-919b0faa" data-update-uri="/livewire-919b0faa/update" data-navigate-once="true"></script>
+</body>
+</html>

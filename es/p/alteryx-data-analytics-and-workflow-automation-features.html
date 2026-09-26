@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    Alteryx: funciones de análisis de datos y automatización de flujos de trabajo — ThumbsUpTechCo
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-D1W7dsQl.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B9e8oLYv.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-DrM84IVF.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-DrM84IVF.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+        <meta name="description" content="Las organizaciones suelen dedicar mucho tiempo a recopilar, preparar, transformar y analizar información antes de poder tomar decisiones de negocio. Alteryx…" />
+<link rel="canonical" href="/es/p/alteryx-data-analytics-and-workflow-automation-features" />
+            <link rel="alternate" hreflang="en" href="/p/alteryx-data-analytics-and-workflow-automation-features" />
+            <link rel="alternate" hreflang="es" href="/es/p/alteryx-data-analytics-and-workflow-automation-features" />
+            <link rel="alternate" hreflang="fr" href="/fr/p/alteryx-data-analytics-and-workflow-automation-features" />
+        <link rel="alternate" hreflang="x-default" href="/p/alteryx-data-analytics-and-workflow-automation-features" />
+
+<meta property="og:site_name" content="ThumbsUpTechCo" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Alteryx: funciones de análisis de datos y automatización de flujos de trabajo" />
+<meta property="og:description" content="Las organizaciones suelen dedicar mucho tiempo a recopilar, preparar, transformar y analizar información antes de poder tomar decisiones de negocio. Alteryx…" />
+<meta property="og:url" content="/p/alteryx-data-analytics-and-workflow-automation-features?lang=es" />
+<meta property="og:image" content="/images/articles/alteryx-data-analytics-and-workflow-automation-features.webp" />
+<meta property="og:locale" content="es_ES" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Alteryx: funciones de análisis de datos y automatización de flujos de trabajo" />
+<meta name="twitter:description" content="Las organizaciones suelen dedicar mucho tiempo a recopilar, preparar, transformar y analizar información antes de poder tomar decisiones de negocio. Alteryx…" />
+<meta name="twitter:image" content="/images/articles/alteryx-data-analytics-and-workflow-automation-features.webp" />
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Alteryx: funciones de análisis de datos y automatización de flujos de trabajo","image":["/images/articles/alteryx-data-analytics-and-workflow-automation-features.webp"],"datePublished":"2025-12-11","inLanguage":"es","author":{"@type":"Person","name":"James Mitchell","url":"/our-team"},"publisher":{"@type":"Organization","name":"ThumbsUpTechCo","logo":{"@type":"ImageObject","url":"/images/branding/logo-full.webp"}},"articleSection":"Inteligencia de Datos","mainEntityOfPage":"/p/alteryx-data-analytics-and-workflow-automation-features"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"/"},{"@type":"ListItem","position":2,"name":"Inteligencia de Datos","item":"/c/data-intelligence"},{"@type":"ListItem","position":3,"name":"Alteryx: funciones de análisis de datos y automatización de flujos de trabajo"}]}</script>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
+    >
+        <header class="sticky top-0 z-40 bg-zinc-900">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
+        <a href="/es" wire:navigate class="flex shrink-0 items-center">
+            <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" class="h-8 w-auto" />
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
+            <a href="/es" wire:navigate class="transition hover:text-white">Inicio</a>
+            <a href="/es/articles" wire:navigate class="transition hover:text-white">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate class="transition hover:text-white">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate class="transition hover:text-white">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate class="transition hover:text-white">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate class="transition hover:text-white">Personas e Impacto</a>
+                    </nav>
+
+        <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1" role="group" aria-label="Idioma">
+            <a
+            href="/p/alteryx-data-analytics-and-workflow-automation-features"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/alteryx-data-analytics-and-workflow-automation-features"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-zinc-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/alteryx-data-analytics-and-workflow-automation-features"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+
+            <form action="/es/articles" method="get" class="relative hidden sm:block" role="search" aria-label="Búsqueda en el sitio">
+                <input
+                    type="search"
+                    name="q"
+                    value=""
+                    placeholder="Buscar"
+                    aria-label="Buscar artículos"
+                    class="w-40 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:w-56 focus:border-zinc-500 focus:ring-0 focus:outline-none transition-[width]"
+                />
+                <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <circle cx="9" cy="9" r="6" />
+                    <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+                </svg>
+            </form>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-9 items-center justify-center rounded-md text-white lg:hidden"
+                aria-label="Abrir menú"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 lg:hidden" style="display: none;">
+    <div class="fixed inset-0 bg-zinc-950/50" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-xs flex-col gap-6 bg-white px-6 py-6 dark:bg-zinc-950"
+    >
+        <div class="flex items-center justify-between">
+            <a href="/es" wire:navigate class="flex items-center gap-2.5 font-semibold text-zinc-900 dark:text-white">
+                <img src="/images/branding/logo-icon.webp" alt="" width="96" height="96" class="size-8 shrink-0" />
+                <span>ThumbsUpTechCo</span>
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-9 items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400" aria-label="Cerrar menú">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <form action="/es/articles" method="get" class="relative" role="search" aria-label="Búsqueda en el sitio">
+            <input
+                type="search"
+                name="q"
+                value=""
+                placeholder="Buscar"
+                aria-label="Buscar artículos"
+                class="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pr-3 pl-9 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-400 focus:ring-0 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-white"
+            />
+            <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="9" cy="9" r="6" />
+                <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+            </svg>
+        </form>
+
+        <nav class="flex flex-col gap-1 text-base font-medium text-zinc-700 dark:text-zinc-300">
+            <a href="/es" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inicio</a>
+            <a href="/es/articles" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Todos los artículos</a>
+                            <a href="/es/c/data-intelligence" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Inteligencia de Datos</a>
+                            <a href="/es/c/business-strategy" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Estrategia Empresarial</a>
+                            <a href="/es/c/digital-horizons" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Horizontes Digitales</a>
+                            <a href="/es/c/people-impact" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Personas e Impacto</a>
+                    </nav>
+    </div>
+</div>
+
+        <main>
+            
+            <div class="border-b border-zinc-200 dark:border-zinc-800">
+                <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
+                    <a href="/es" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Inicio</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <a href="/es/c/data-intelligence" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Inteligencia de Datos</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <span class="min-w-0 truncate text-zinc-400 dark:text-zinc-600">Alteryx: funciones de análisis de datos y automatización de flujos de trabajo</span>
+                </div>
+            </div>
+
+            
+            <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
+                <a href="/es/c/data-intelligence" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+                    Inteligencia de Datos
+                </a>
+
+                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
+                    Alteryx: funciones de análisis de datos y automatización de flujos de trabajo
+                </h1>
+
+                <div class="mt-6 flex items-center gap-3">
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/images/team/james-mitchell.webp"
+                        alt="James Mitchell"
+                        class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                    />
+                    <div class="text-sm">
+                        <a href="/es/our-team" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">
+                            James Mitchell
+                        </a>
+                        <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
+                            <span>Especialista Financiero</span>
+                            <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
+                            <time datetime="2025-12-11">11 de diciembre de 2025</time>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                                    <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                        <img
+                            fetchpriority="high"
+                            src="/images/articles/alteryx-data-analytics-and-workflow-automation-features.webp"
+                            alt="Alteryx: funciones de análisis de datos y automatización de flujos de trabajo"
+                            class="aspect-video w-full object-cover"
+                        />
+                    </div>
+                
+                
+                <div class="article-body">
+    <p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las organizaciones suelen dedicar mucho tiempo a recopilar, preparar, transformar y analizar información antes de poder tomar decisiones de negocio. Alteryx está diseñado para simplificar estos procesos al combinar la preparación de datos, la analítica, la automatización de flujos de trabajo, los informes y la obtención de insights asistida por IA en un entorno unificado.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La plataforma ha evolucionado desde sus herramientas tradicionales de analítica visual y flujos de trabajo hasta Alteryx One, una plataforma de analítica más amplia que incluye Designer, Designer Cloud, Auto Insights, Orchestrator, Agent Studio, App Builder y otras capacidades.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">&quot;Alteryx está diseñado tanto para usuarios técnicos como no técnicos&quot;. Su enfoque de flujos de trabajo basado en arrastrar y soltar permite crear procesos analíticos repetibles, mientras que los usuarios más avanzados pueden incorporar SQL, Python, API, aprendizaje automático y otras tecnologías en sus flujos de trabajo.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">¿Qué es Alteryx?</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx es una plataforma de análisis de datos y automatización que ayuda a las organizaciones a preparar datos, combinar información de distintas fuentes, realizar análisis, automatizar flujos de trabajo recurrentes y generar insights.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Su arquitectura de flujos de trabajo conecta herramientas individuales que realizan funciones como la entrada de datos, la transformación, la unión, la agregación, el análisis y la salida. Los flujos de trabajo pueden guardarse para reutilizarlos, compartirse, optimizarse y programarse para su ejecución automática.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Este enfoque permite a las organizaciones convertir tareas analíticas repetibles en flujos de trabajo estandarizados, en lugar de depender de hojas de cálculo actualizadas a mano o de procesos repetidos individualmente.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Preparación y combinación de datos en Alteryx</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La preparación de datos es una de las capacidades centrales de Alteryx.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los usuarios pueden conectar información procedente de archivos, bases de datos, aplicaciones en la nube y otras fuentes, y luego utilizar herramientas visuales para limpiar, transformar, unir, agregar y reestructurar conjuntos de datos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Designer Cloud lleva estas capacidades a un entorno en la nube y ofrece una interfaz visual para preparar y combinar información. Alteryx describe la plataforma como compatible con la preparación de datos sin código y con poco código, con funciones de perfilado capaces de identificar formatos de datos, esquemas, atributos y posibles problemas de calidad.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esto puede resultar útil cuando los analistas necesitan preparar información de varios sistemas antes de realizar un análisis.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Automatización visual de flujos de trabajo</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx utiliza un modelo visual de flujos de trabajo en el que los usuarios conectan herramientas para definir una secuencia de operaciones con datos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Un flujo de trabajo puede incluir fuentes de entrada, pasos de transformación, herramientas analíticas y destinos de salida. Una vez construido, el flujo puede reutilizarse con datos actualizados.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx Designer también admite la programación de flujos de trabajo, lo que permite que flujos, aplicaciones analíticas o paquetes se ejecuten automáticamente según un calendario definido.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esto sienta las bases para automatizar procesos recurrentes como la preparación de datos, la elaboración de informes, el análisis operativo y la actualización de conjuntos de datos.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Conectividad de datos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx admite conexiones con una amplia variedad de entornos de datos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las ediciones actuales Alteryx One Professional y Enterprise admiten conexiones con más de 100 fuentes de datos, incluidas plataformas de datos en la nube como Snowflake y Databricks. La plataforma también admite archivos, bases de datos, aplicaciones en la nube y otras fuentes de datos empresariales.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los usuarios pueden incorporar estas fuentes a los flujos de trabajo y combinar información sin consolidar manualmente archivos separados.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Para las organizaciones con entornos de datos complejos, la conectividad es especialmente importante, ya que la analítica suele depender de información distribuida entre sistemas operativos, aplicaciones en la nube, almacenes de datos y hojas de cálculo.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Alteryx Designer y Designer Cloud</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx Designer es el entorno de escritorio tradicional para crear flujos de trabajo analíticos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Ofrece una amplia colección de herramientas para la preparación de datos, la combinación, la analítica, el análisis espacial, los informes y otras tareas. Los usuarios más técnicos también pueden incorporar Python y otras capacidades avanzadas en los flujos de trabajo.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Designer Cloud ofrece un entorno de flujos de trabajo en la nube con capacidades visuales de preparación y combinación de datos. Los flujos de trabajo en la nube pueden guardarse y gestionarse a través de la plataforma Alteryx One.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esta combinación permite a las organizaciones dar soporte tanto a flujos de trabajo desarrollados en el escritorio como a procesos analíticos en la nube.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Insights automatizados y Alteryx Auto Insights</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx Auto Insights está diseñado para identificar automáticamente patrones, cambios y excepciones relevantes en los conjuntos de datos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">En lugar de obligar a los usuarios a examinar manualmente cada dimensión posible, Auto Insights evalúa los resultados analíticos y destaca los hallazgos más notables. Puede ofrecer explicaciones de los cambios y ayudar a los usuarios a comprender qué está ocurriendo en los datos del negocio.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Desde septiembre de 2026, Alteryx ha integrado aún más Auto Insights en los conjuntos de datos de Alteryx One. Los usuarios pueden seleccionar un conjunto de datos de Alteryx One y explorar sus Data Insights sin mantener un activo de datos independiente en Auto Insights.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esta integración vincula de forma más directa la generación automatizada de insights con el flujo de trabajo analítico general.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">IA y analítica en lenguaje natural</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx ha ampliado su plataforma con capacidades asistidas por IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Sus ediciones actuales de Alteryx One incluyen Ask Alteryx, herramientas de IA, Auto Insights y, en las ediciones Professional y Enterprise, Agent Studio para agentes de IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las capacidades de IA pueden ayudar a los usuarios a explorar datos, generar insights e interactuar con la analítica mediante interfaces más naturales.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx también presenta los insights automatizados como parte de un proceso de analítica operativa, en el que las explicaciones generadas por IA pueden entregarse junto con los datos preparados y los flujos de trabajo recurrentes.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Orquestación y automatización de flujos de trabajo</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Para las organizaciones de mayor tamaño, Alteryx ofrece herramientas para poner en producción los flujos de trabajo analíticos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Orchestrator y las capacidades de automatización relacionadas de la plataforma pueden programar, coordinar y supervisar procesos analíticos. Las implementaciones empresariales también pueden ejecutar en el entorno de Alteryx One flujos de trabajo creados en el escritorio, lo que permite llevar los flujos a producción manteniendo una gestión centralizada.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esto puede respaldar procesos en los que los datos deben prepararse, analizarse y entregarse de forma repetida sin intervención manual.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Así, la automatización puede ir más allá de flujos de trabajo individuales y abarcar secuencias más amplias de operaciones analíticas.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Informes y visualización de datos</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx incluye capacidades de informes y visualización a través de su plataforma y de Auto Insights.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Los usuarios pueden generar informes a partir de flujos de trabajo analíticos, mientras que Auto Insights ofrece funciones de informes predefinidos y personalizados. Las ediciones Professional y Enterprise incluyen capacidades de informes junto con insights automatizados y visualización de datos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La plataforma también puede enviar conjuntos de datos preparados a otros sistemas de visualización e inteligencia de negocio cuando las organizaciones utilizan una plataforma de BI independiente para la entrega de paneles.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Esto hace que Alteryx sea útil tanto como entorno analítico como capa de preparación de datos dentro de una arquitectura de BI más amplia.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Aprendizaje automático y analítica avanzada</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx admite cargas de trabajo analíticas más avanzadas mediante capacidades de aprendizaje automático e IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Su plataforma incluye herramientas de analítica predictiva y aprendizaje automático, y los usuarios más avanzados pueden trabajar con Python y otras tecnologías de desarrollo. Alteryx también ofrece capacidades de aprendizaje automático que abarcan el desarrollo, la implementación y la supervisión de modelos.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Estas capacidades permiten a las organizaciones llevar los flujos de trabajo más allá de los informes descriptivos, hacia la previsión, la clasificación, la detección de anomalías y otras aplicaciones predictivas.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Alteryx para distintas funciones del negocio</h2>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Finanzas:</span> los equipos financieros pueden automatizar la preparación de datos, el análisis financiero, los flujos de previsión y los informes recurrentes.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Marketing:</span> los equipos de marketing pueden combinar datos de campañas, clientes, publicidad y comportamiento para analizar el rendimiento.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Ventas:</span> las organizaciones de ventas pueden integrar información de clientes e ingresos, automatizar informes e identificar tendencias de rendimiento.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Operaciones:</span> los equipos de operaciones pueden automatizar tareas recurrentes de procesamiento de datos, supervisar cambios y crear flujos de trabajo analíticos en torno a la información operativa.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Analítica de datos:</span> los analistas pueden crear flujos de trabajo repetibles que combinen preparación, transformación, análisis estadístico, visualización e informes automatizados.</span></li></ul>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Precios de Alteryx</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Actualmente, Alteryx ofrece tres ediciones principales de Alteryx One: Starter, Professional y Enterprise.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La página pública de precios indica que Starter cuesta 250 dólares por usuario al mes con facturación anual. Los precios de Professional y Enterprise se obtienen a través del equipo de ventas. Starter se centra en la analítica básica y la conectividad con archivos planos, mientras que Professional añade preparación avanzada, conectividad más amplia, automatización, asistencia de IA e implementación en la nube e híbrida. Enterprise suma capacidades como la programación avanzada de flujos de trabajo, la gobernanza, las aplicaciones analíticas y la automatización a mayor escala.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Por lo tanto, los costos reales pueden depender de los roles de los usuarios, las ejecuciones de automatización, las fuentes de datos, los requisitos de implementación y las capacidades adicionales de la plataforma.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Cómo evalúan las empresas Alteryx</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Las organizaciones que evalúan Alteryx pueden tener en cuenta varios aspectos:</p>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Preparación de datos:</span> determinar cuánta limpieza, combinación y transformación de datos se necesita.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Automatización de flujos de trabajo:</span> identificar los procesos analíticos recurrentes que podrían programarse o automatizarse.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Conectividad:</span> revisar las bases de datos, plataformas en la nube, aplicaciones y archivos que deben conectarse.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Analítica de autoservicio:</span> considerar qué tareas deberían poder realizar los usuarios de negocio sin programar.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Capacidades de IA:</span> evaluar los insights automatizados, Ask Alteryx, las herramientas de IA y Agent Studio.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Analítica avanzada:</span> revisar los requisitos de aprendizaje automático, Python y analítica predictiva.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Gobernanza:</span> examinar los controles de acceso, la gestión de flujos de trabajo, la supervisión y la gobernanza empresarial.</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Costo:</span> modelar usuarios, ejecuciones de automatización, infraestructura, implementación y administración continua.</span></li></ul>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Reflexiones finales</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Alteryx combina preparación de datos, analítica visual, automatización de flujos de trabajo, informes, insights asistidos por IA y analítica avanzada dentro de la plataforma Alteryx One. Su enfoque visual permite a los usuarios convertir procesos analíticos complejos en secuencias repetibles que pueden compartirse y automatizarse.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La integración de Auto Insights, las capacidades de IA, la orquestación y los flujos de trabajo en la nube ha llevado a Alteryx más allá de la preparación de datos tradicional en el escritorio. Para las organizaciones que evalúan la plataforma, entre las consideraciones importantes figuran la conectividad de datos, la complejidad de los flujos de trabajo, los requisitos de automatización, los casos de uso de IA, la gobernanza, las opciones de implementación y el costo total.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Referencias</h2>
+<ul class="mt-2 space-y-1.5 text-sm text-zinc-500 dark:text-zinc-400"><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.alteryx.com/products/alteryx-one" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Alteryx — Alteryx One Platform and Pricing</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.alteryx.com/products/designer-cloud" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Alteryx — Designer Cloud</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.alteryx.com/current/en/designer/workflows.html" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Alteryx Help — Workflows</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.alteryx.com/current/en/designer/tools.html" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Alteryx Help — Designer Tools</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.alteryx.com/current/en/alteryx-one/overview/editions-and-capabilities.html" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Alteryx Help — Alteryx One Editions and Capabilities</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.alteryx.com/products/auto-insights" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Alteryx — Automated Insights</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.alteryx.com/current/en/auto-insights.html" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Alteryx Help — Auto Insights</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.alteryx.com/current/en/release-notes/auto-insights.html" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Alteryx Help — Auto Insights Release Notes</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.alteryx.com/platform" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Alteryx — AI Platform for Enterprise Analytics</a></li></ul>
+
+</div>
+
+                
+                <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="flex items-center gap-4">
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="/images/team/james-mitchell.webp"
+                            alt="James Mitchell"
+                            class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                        />
+                        <div>
+                            <p class="font-medium text-zinc-900 dark:text-white">Escrito por James Mitchell</p>
+                            <p class="text-sm text-zinc-500 dark:text-zinc-400">Especialista Financiero en ThumbsUpTechCo</p>
+                        </div>
+                    </div>
+                    <a href="/es/our-team" data-flux-button="data-flux-button" class="relative items-center font-medium justify-center whitespace-nowrap disabled:opacity-50 dark:disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none disabled:shadow-none justify-center h-10 text-sm rounded-lg gap-2 ps-4 pe-4 inline-flex  bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)] text-[var(--color-accent-foreground)] border border-black/10 dark:border-0 shadow-[inset_0px_1px_--theme(--color-white/.2)] [[data-flux-button-group]_&amp;]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-[1px] dark:[:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[1px]! [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[color-mix(in_srgb,var(--color-accent-foreground),transparent_85%)]    shrink-0" data-flux-group-target="data-flux-group-target" wire:navigate="">
+        Conozca a nuestro equipo editorial
+    </a>
+                </div>
+            </article>
+
+            
+                            <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+                        <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+                            Más en Inteligencia de Datos
+                        </h2>
+                        <div class="mt-6 grid gap-6 sm:grid-cols-3">
+                                                                                            <a href="/es/p/data-integration-bringing-business-information-together" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Integración de datos: cómo reunir la información empresarial
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Daniel Brooks &middot; 12 ago. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/data-analytics-software-what-businesses-should-know" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Software de analítica de datos: lo que las empresas deben saber
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Daniel Brooks &middot; 8 ago. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/es/p/google-looker-business-intelligence-and-data-analytics-features" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Google Looker: funciones de inteligencia de negocio y analítica de datos
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Michael Anderson &middot; 14 jul. 2026
+                                    </p>
+                                </a>
+                                                    </div>
+                    </div>
+                </section>
+                    </main>
+
+        <footer class="bg-zinc-900">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+        <div class="flex flex-col items-center gap-6 border-b border-zinc-800 pb-8 sm:flex-row sm:justify-between">
+            <a href="/es" wire:navigate class="flex items-center">
+                <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" loading="lazy" decoding="async" class="h-7 w-auto" />
+            </a>
+
+            <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">
+                <a href="/es" wire:navigate class="hover:text-white">Inicio</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/our-team" wire:navigate class="hover:text-white">Nuestro equipo editorial</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/contact" wire:navigate class="hover:text-white">Contacto</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/privacy-policy" wire:navigate class="hover:text-white">Política de privacidad</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/es/terms-of-use" wire:navigate class="hover:text-white">Términos de uso</a>
+            </nav>
+        </div>
+
+        <p class="mt-6 text-xs leading-relaxed text-zinc-500">
+            La información compartida por ThumbsUpTechCo tiene fines exclusivamente informativos y educativos y no debe interpretarse como asesoramiento de inversión, fiscal ni legal. Las decisiones financieras conllevan riesgos y los resultados pasados no garantizan resultados futuros. Consulte siempre a un profesional certificado antes de tomar decisiones financieras.
+        </p>
+
+        <p class="mt-4 text-xs text-zinc-600">
+            &copy; 2026 ThumbsUpTechCo. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-919b0faa/livewire.js?id=0ae8dee3"   data-csrf="lh43ThYE52yL6d05uAv5wmz5FSORYnij0aefEtGi" data-module-url="/livewire-919b0faa" data-update-uri="/livewire-919b0faa/update" data-navigate-once="true"></script>
+</body>
+</html>

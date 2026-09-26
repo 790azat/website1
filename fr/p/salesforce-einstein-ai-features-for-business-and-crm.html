@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+    Salesforce Einstein : fonctionnalités d&#039;IA pour l&#039;entreprise et le CRM — ThumbsUpTechCo
+</title>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-D1W7dsQl.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B9e8oLYv.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+</style>
+<link rel="preload" as="style" href="/build/assets/app-DrM84IVF.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-DrM84IVF.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BvRk9kiK.js" data-navigate-track="reload"></script><style>
+    :root.dark {
+        color-scheme: dark;
+    }
+</style>
+<script>
+    window.Flux = {
+        applyAppearance (appearance) {
+            let applyDark = () => document.documentElement.classList.add('dark')
+            let applyLight = () => document.documentElement.classList.remove('dark')
+
+            if (appearance === 'system') {
+                let media = window.matchMedia('(prefers-color-scheme: dark)')
+
+                window.localStorage.removeItem('flux.appearance')
+
+                media.matches ? applyDark() : applyLight()
+            } else if (appearance === 'dark') {
+                window.localStorage.setItem('flux.appearance', 'dark')
+
+                applyDark()
+            } else if (appearance === 'light') {
+                window.localStorage.setItem('flux.appearance', 'light')
+
+                applyLight()
+            }
+        }
+    }
+
+    window.Flux.applyAppearance(window.localStorage.getItem('flux.appearance') || 'system')
+</script>
+        <meta name="description" content="Salesforce Einstein désigne l&#039;ensemble des capacités d&#039;intelligence artificielle de Salesforce intégrées à son CRM et à ses applications métier. Il associe…" />
+<link rel="canonical" href="/fr/p/salesforce-einstein-ai-features-for-business-and-crm" />
+            <link rel="alternate" hreflang="en" href="/p/salesforce-einstein-ai-features-for-business-and-crm" />
+            <link rel="alternate" hreflang="es" href="/es/p/salesforce-einstein-ai-features-for-business-and-crm" />
+            <link rel="alternate" hreflang="fr" href="/fr/p/salesforce-einstein-ai-features-for-business-and-crm" />
+        <link rel="alternate" hreflang="x-default" href="/p/salesforce-einstein-ai-features-for-business-and-crm" />
+
+<meta property="og:site_name" content="ThumbsUpTechCo" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Salesforce Einstein : fonctionnalités d&#039;IA pour l&#039;entreprise et le CRM" />
+<meta property="og:description" content="Salesforce Einstein désigne l&#039;ensemble des capacités d&#039;intelligence artificielle de Salesforce intégrées à son CRM et à ses applications métier. Il associe…" />
+<meta property="og:url" content="/p/salesforce-einstein-ai-features-for-business-and-crm?lang=fr" />
+<meta property="og:image" content="/images/articles/salesforce-einstein-ai-features-for-business-and-crm.webp" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Salesforce Einstein : fonctionnalités d&#039;IA pour l&#039;entreprise et le CRM" />
+<meta name="twitter:description" content="Salesforce Einstein désigne l&#039;ensemble des capacités d&#039;intelligence artificielle de Salesforce intégrées à son CRM et à ses applications métier. Il associe…" />
+<meta name="twitter:image" content="/images/articles/salesforce-einstein-ai-features-for-business-and-crm.webp" />
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Salesforce Einstein : fonctionnalités d'IA pour l'entreprise et le CRM","image":["/images/articles/salesforce-einstein-ai-features-for-business-and-crm.webp"],"datePublished":"2024-12-14","inLanguage":"fr","author":{"@type":"Person","name":"James Mitchell","url":"/our-team"},"publisher":{"@type":"Organization","name":"ThumbsUpTechCo","logo":{"@type":"ImageObject","url":"/images/branding/logo-full.webp"}},"articleSection":"Horizons numériques","mainEntityOfPage":"/p/salesforce-einstein-ai-features-for-business-and-crm"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"/"},{"@type":"ListItem","position":2,"name":"Horizons numériques","item":"/c/digital-horizons"},{"@type":"ListItem","position":3,"name":"Salesforce Einstein : fonctionnalités d'IA pour l'entreprise et le CRM"}]}</script>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak="x-cloak"],[x-cloak=""] {display: none !important;}[wire\:cloak="wire:cloak"],[wire\:cloak=""] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+    <body
+        x-data="{ mobileOpen: false }"
+        class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white dark:bg-zinc-950 dark:text-zinc-100 dark:selection:bg-white dark:selection:text-zinc-900"
+    >
+        <header class="sticky top-0 z-40 bg-zinc-900">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
+        <a href="/fr" wire:navigate class="flex shrink-0 items-center">
+            <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" class="h-8 w-auto" />
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
+            <a href="/fr" wire:navigate class="transition hover:text-white">Accueil</a>
+            <a href="/fr/articles" wire:navigate class="transition hover:text-white">Tous les articles</a>
+                            <a href="/fr/c/data-intelligence" wire:navigate class="transition hover:text-white">Intelligence des données</a>
+                            <a href="/fr/c/business-strategy" wire:navigate class="transition hover:text-white">Stratégie d’entreprise</a>
+                            <a href="/fr/c/digital-horizons" wire:navigate class="transition hover:text-white">Horizons numériques</a>
+                            <a href="/fr/c/people-impact" wire:navigate class="transition hover:text-white">Humain et impact</a>
+                    </nav>
+
+        <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1" role="group" aria-label="Langue">
+            <a
+            href="/p/salesforce-einstein-ai-features-for-business-and-crm"
+            hreflang="en"
+            lang="en"
+            title="English"
+            aria-label="English"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 60 30" aria-hidden="true">
+                    <rect width="60" height="30" fill="#012169" />
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                    <path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                </svg>
+                    </a>
+            <a
+            href="/es/p/salesforce-einstein-ai-features-for-business-and-crm"
+            hreflang="es"
+            lang="es"
+            title="Español"
+            aria-label="Español"
+                        class="flex items-center justify-center rounded-md p-1.5 transition opacity-60 hover:bg-zinc-800 hover:opacity-100"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#AA151B" />
+                    <rect y="5" width="30" height="10" fill="#F1BF00" />
+                </svg>
+                    </a>
+            <a
+            href="/fr/p/salesforce-einstein-ai-features-for-business-and-crm"
+            hreflang="fr"
+            lang="fr"
+            title="Français"
+            aria-label="Français"
+             aria-current="true"             class="flex items-center justify-center rounded-md p-1.5 transition bg-zinc-700"
+        >
+                            <svg class="h-3.5 w-5 overflow-hidden rounded-[2px] ring-1 ring-white/20" viewBox="0 0 30 20" aria-hidden="true">
+                    <rect width="30" height="20" fill="#FFFFFF" />
+                    <rect width="10" height="20" fill="#002654" />
+                    <rect x="20" width="10" height="20" fill="#CE1126" />
+                </svg>
+                    </a>
+    </div>
+
+            <form action="/fr/articles" method="get" class="relative hidden sm:block" role="search" aria-label="Recherche sur le site">
+                <input
+                    type="search"
+                    name="q"
+                    value=""
+                    placeholder="Rechercher"
+                    aria-label="Rechercher des articles"
+                    class="w-40 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:w-56 focus:border-zinc-500 focus:ring-0 focus:outline-none transition-[width]"
+                />
+                <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <circle cx="9" cy="9" r="6" />
+                    <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+                </svg>
+            </form>
+
+            <button
+                type="button"
+                @click="mobileOpen = true"
+                class="flex size-9 items-center justify-center rounded-md text-white lg:hidden"
+                aria-label="Ouvrir le menu"
+            >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 lg:hidden" style="display: none;">
+    <div class="fixed inset-0 bg-zinc-950/50" @click="mobileOpen = false"></div>
+    <div
+        x-show="mobileOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-y-0 right-0 flex w-full max-w-xs flex-col gap-6 bg-white px-6 py-6 dark:bg-zinc-950"
+    >
+        <div class="flex items-center justify-between">
+            <a href="/fr" wire:navigate class="flex items-center gap-2.5 font-semibold text-zinc-900 dark:text-white">
+                <img src="/images/branding/logo-icon.webp" alt="" width="96" height="96" class="size-8 shrink-0" />
+                <span>ThumbsUpTechCo</span>
+            </a>
+            <button type="button" @click="mobileOpen = false" class="flex size-9 items-center justify-center rounded-md text-zinc-500 dark:text-zinc-400" aria-label="Fermer le menu">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <form action="/fr/articles" method="get" class="relative" role="search" aria-label="Recherche sur le site">
+            <input
+                type="search"
+                name="q"
+                value=""
+                placeholder="Rechercher"
+                aria-label="Rechercher des articles"
+                class="w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pr-3 pl-9 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-400 focus:ring-0 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-white"
+            />
+            <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="9" cy="9" r="6" />
+                <path d="m17 17-4.35-4.35" stroke-linecap="round" />
+            </svg>
+        </form>
+
+        <nav class="flex flex-col gap-1 text-base font-medium text-zinc-700 dark:text-zinc-300">
+            <a href="/fr" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Accueil</a>
+            <a href="/fr/articles" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Tous les articles</a>
+                            <a href="/fr/c/data-intelligence" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Intelligence des données</a>
+                            <a href="/fr/c/business-strategy" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Stratégie d’entreprise</a>
+                            <a href="/fr/c/digital-horizons" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Horizons numériques</a>
+                            <a href="/fr/c/people-impact" wire:navigate @click="mobileOpen = false" class="rounded-lg px-3 py-2.5 hover:bg-zinc-100 dark:hover:bg-zinc-900">Humain et impact</a>
+                    </nav>
+    </div>
+</div>
+
+        <main>
+            
+            <div class="border-b border-zinc-200 dark:border-zinc-800">
+                <div class="mx-auto flex max-w-3xl flex-wrap items-center gap-1.5 px-6 py-4 text-sm text-zinc-500 lg:px-8 dark:text-zinc-500">
+                    <a href="/fr" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Accueil</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <a href="/fr/c/digital-horizons" wire:navigate class="hover:text-zinc-900 dark:hover:text-white">Horizons numériques</a>
+                    <svg class="shrink-0 [:where(&amp;)]:size-6 size-3.5" data-flux-icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+</svg>
+
+                            <span class="min-w-0 truncate text-zinc-400 dark:text-zinc-600">Salesforce Einstein : fonctionnalités d&#039;IA pour l&#039;entreprise et le CRM</span>
+                </div>
+            </div>
+
+            
+            <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
+                <a href="/fr/c/digital-horizons" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+                    Horizons numériques
+                </a>
+
+                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
+                    Salesforce Einstein : fonctionnalités d&#039;IA pour l&#039;entreprise et le CRM
+                </h1>
+
+                <div class="mt-6 flex items-center gap-3">
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/images/team/james-mitchell.webp"
+                        alt="James Mitchell"
+                        class="size-11 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                    />
+                    <div class="text-sm">
+                        <a href="/fr/our-team" wire:navigate class="font-medium text-zinc-900 hover:underline dark:text-white">
+                            James Mitchell
+                        </a>
+                        <div class="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400">
+                            <span>Spécialiste financier</span>
+                            <span class="text-zinc-300 dark:text-zinc-700">&middot;</span>
+                            <time datetime="2024-12-14">14 décembre 2024</time>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                                    <div class="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                        <img
+                            fetchpriority="high"
+                            src="/images/articles/salesforce-einstein-ai-features-for-business-and-crm.webp"
+                            alt="Salesforce Einstein : fonctionnalités d&#039;IA pour l&#039;entreprise et le CRM"
+                            class="aspect-video w-full object-cover"
+                        />
+                    </div>
+                
+                
+                <div class="article-body">
+    <p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce Einstein désigne l&#039;ensemble des capacités d&#039;intelligence artificielle de Salesforce intégrées à son CRM et à ses applications métier. Il associe IA prédictive, IA générative, automatisation et capacités agentiques pour aider les organisations à analyser les informations du CRM, générer du contenu, identifier des tendances et automatiser certaines tâches métier.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les capacités d&#039;Einstein sont disponibles dans les workflows de vente, de service client, de marketing, d&#039;analytique et d&#039;autres domaines de Salesforce. Salesforce relie de plus en plus ces capacités à Agentforce, sa plateforme de création et de déploiement d&#039;agents d&#039;IA capables de travailler avec les données Salesforce et d&#039;effectuer des actions autorisées.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les fonctionnalités Einstein disponibles dépendent de l&#039;édition Salesforce, du produit, de la licence et de la configuration. Certaines fonctionnalités d&#039;IA sont incluses dans des éditions spécifiques, tandis que d&#039;autres nécessitent des licences supplémentaires ou une tarification à l&#039;usage.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Qu&#039;est-ce que Salesforce Einstein ?</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce Einstein n&#039;est pas une application autonome unique. Il s&#039;agit d&#039;un ensemble de technologies et de fonctionnalités d&#039;IA intégrées à l&#039;ensemble des produits Salesforce.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Ses capacités permettent d&#039;analyser les enregistrements du CRM, de prédire des résultats, de générer du texte, de résumer des informations, de recommander des actions et d&#039;automatiser les workflows pris en charge. Salesforce présente Sales Cloud Einstein comme une solution qui exploite les données de l&#039;organisation pour offrir des fonctionnalités telles que le scoring des leads, le scoring des opportunités, les prévisions et la création de contenu commercial personnalisé.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La plateforme a évolué d&#039;un apprentissage automatique principalement prédictif vers une combinaison plus large d&#039;IA prédictive, générative et agentique.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Einstein pour les ventes</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les équipes commerciales peuvent utiliser Einstein pour analyser les leads, les opportunités, l&#039;activité des clients et les informations commerciales.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Einstein Lead Scoring aide à identifier les leads les plus susceptibles de se convertir, tandis qu&#039;Einstein Opportunity Scoring évalue les opportunités et prédit leur probabilité d&#039;être remportées. Einstein Forecasting peut également fournir des prévisions fondées sur les informations commerciales.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Ces fonctionnalités peuvent apporter aux commerciaux et aux managers des informations supplémentaires pour déterminer quelles opportunités ou quels leads méritent leur attention.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La disponibilité de chaque fonctionnalité dépend de l&#039;édition Salesforce et des licences associées.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">E-mails commerciaux générés par l&#039;IA</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les capacités d&#039;IA générative d&#039;Einstein peuvent aider les commerciaux à rédiger leurs e-mails.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Einstein Sales Emails peut générer des messages personnalisés pour les leads et les contacts en utilisant comme contexte les informations Salesforce pertinentes. Salesforce décrit ce processus comme l&#039;ancrage du contenu généré dans les données du CRM.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Au lieu de partir d&#039;une page blanche pour chaque e-mail client, les commerciaux peuvent relire et modifier un brouillon généré par l&#039;IA avant de l&#039;envoyer.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">D&#039;autres capacités d&#039;IA peuvent aider à résumer les enregistrements et fournir des informations contextuelles au cours des workflows commerciaux.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Einstein Activity et données du CRM</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce utilise également l&#039;IA pour relier les interactions avec les clients aux informations du CRM.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Einstein Activity Capture peut associer automatiquement les e-mails et les événements de calendrier pris en charge aux enregistrements Salesforce. Cela peut réduire une partie de la saisie manuelle et offrir aux commerciaux une vision plus complète des interactions avec les clients.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La valeur de ces capacités dépend en partie de la qualité et de l&#039;exhaustivité des informations sous-jacentes du CRM. Des données exactes sur les comptes, les contacts, les opportunités et les activités fournissent un contexte plus utile aux workflows alimentés par l&#039;IA.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Einstein pour le service client</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les capacités d&#039;Einstein s&#039;étendent également au service et au support client.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce propose des fonctionnalités d&#039;IA qui peuvent aider les agents du service client à résumer des dossiers, générer des réponses, faire remonter les informations pertinentes et recevoir des recommandations lors des interactions avec les clients.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Einstein Conversation Insights peut analyser les conversations clients prises en charge et faire ressortir des informations telles que les sujets abordés, le sentiment et les opportunités de suivi.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">L&#039;assistance de l&#039;IA peut donc intervenir à différentes étapes du processus de service, de la compréhension d&#039;un dossier entrant jusqu&#039;à la préparation des réponses et au résumé des interactions.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Einstein pour le marketing</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce intègre l&#039;IA prédictive et générative à Marketing Cloud.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">L&#039;IA peut contribuer à la création de campagnes, à la génération de contenu, à la segmentation, à la personnalisation, à l&#039;analyse de l&#039;engagement et à l&#039;optimisation des campagnes. La documentation de Salesforce décrit des capacités permettant de créer des briefs et des composants de campagne, de suggérer des segments pertinents et de personnaliser l&#039;expérience client.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Einstein Send Time Optimization peut exploiter les données d&#039;engagement pour déterminer les moments d&#039;envoi appropriés pour les communications marketing prises en charge.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les équipes marketing peuvent ainsi utiliser Einstein à la fois pour la génération de contenu et pour des workflows de campagne fondés sur les données.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Einstein Analytics et analyses prédictives</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Einstein peut fournir des informations prédictives en complément des capacités analytiques plus larges de Salesforce.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les équipes commerciales peuvent utiliser le scoring prédictif des leads et des opportunités, les prévisions et d&#039;autres signaux commerciaux. Les équipes marketing peuvent s&#039;appuyer sur des prédictions liées à l&#039;engagement, tandis que les services clients peuvent utiliser des résumés et des recommandations générés par l&#039;IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">L&#039;objectif est de compléter le reporting historique par des prédictions et des informations contextuelles qui aident les collaborateurs à hiérarchiser leurs activités.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Agentforce et Einstein</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La stratégie actuelle de Salesforce en matière d&#039;IA relie de plus en plus les capacités d&#039;Einstein à Agentforce.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Agentforce permet aux organisations de créer des agents d&#039;IA capables d&#039;interagir avec les utilisateurs, de récupérer des informations, de raisonner sur le contexte métier pris en charge et d&#039;effectuer des actions autorisées. Salesforce présente Agentforce comme une solution qui fonctionne avec des données d&#039;entreprise fiables et des actions métier au sein de Salesforce.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Agentforce peut prendre en charge des cas d&#039;usage tels que la prospection commerciale, le nurturing de leads, le service client, la recherche et l&#039;automatisation des workflows.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce prend également en charge les agents d&#039;IA dans Marketing Cloud, où ils peuvent contribuer à la création de campagnes, à la segmentation et aux workflows d&#039;engagement des acheteurs.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Gouvernance de l&#039;IA et Einstein Trust Layer</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La gouvernance de l&#039;IA est essentielle lorsque des fonctionnalités génératives interagissent avec des informations clients et métier.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce utilise l&#039;Einstein Trust Layer dans le cadre de son approche visant à relier les capacités d&#039;IA aux données et aux contrôles de sécurité de l&#039;entreprise. Salesforce présente le Trust Layer comme un ensemble de mécanismes de sécurité et de gouvernance pour les workflows d&#039;IA générative.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les organisations doivent néanmoins examiner les sources de données, les autorisations, les configurations, les politiques de conservation et les conditions de licence propres aux fonctionnalités d&#039;IA qu&#039;elles activent.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Tarifs d&#039;Einstein et d&#039;Agentforce</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce applique plusieurs modèles de tarification pour ses capacités d&#039;IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Certaines fonctionnalités Einstein sont incluses dans des éditions Salesforce spécifiques, tandis que d&#039;autres sont vendues sous forme de modules complémentaires. Par exemple, Salesforce propose actuellement Agentforce for Sales à 125 $ par utilisateur et par mois, en tant que module complémentaire pour les éditions éligibles.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Agentforce prend également en charge une tarification à la consommation. Salesforce indique actuellement, dans ses informations tarifaires pour les États-Unis, des Flex Credits à 500 $ pour 100 000 crédits et un tarif de 2 $ par conversation pour le modèle Conversations.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce explique que la facturation de l&#039;IA peut reposer sur une tarification à la consommation, sur des licences par utilisateur ou sur une combinaison des deux, selon le produit et la fonctionnalité.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Contexte tarifaire de Salesforce CRM</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">L&#039;édition Salesforce sous-jacente détermine également les capacités d&#039;IA disponibles.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les tarifs commerciaux actuels aux États-Unis sont les suivants :</p>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Starter Suite :</span> 25 $/utilisateur/mois</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Pro Suite :</span> 100 $/utilisateur/mois</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Core :</span> 195 $/utilisateur/mois</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Advanced :</span> 395 $/utilisateur/mois</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed"><span class="font-medium text-zinc-900 dark:text-white">Max :</span> 550 $/utilisateur/mois</span></li></ul>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Ces prix sont facturés mensuellement ou annuellement selon l&#039;édition, les niveaux supérieurs offrant des capacités CRM, d&#039;IA, de sécurité et de plateforme de plus en plus étendues.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Comme les capacités d&#039;Einstein et d&#039;Agentforce peuvent faire l&#039;objet de coûts de licence ou de consommation distincts, les entreprises doivent calculer conjointement l&#039;abonnement CRM et les besoins en IA.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Usages professionnels de Salesforce Einstein</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les organisations peuvent appliquer les capacités d&#039;Einstein à des domaines tels que :</p>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Le scoring des leads et des opportunités</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les prévisions de ventes</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">La génération d&#039;e-mails personnalisés</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les résumés d&#039;enregistrements CRM</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">L&#039;assistance au service client</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">L&#039;analyse des conversations</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">La création de contenu marketing</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">La prédiction de l&#039;engagement client</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">L&#039;optimisation des campagnes</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">La capture automatisée des données</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">La recherche assistée par l&#039;IA</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">L&#039;automatisation des workflows</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Le déploiement d&#039;agents d&#039;IA</span></li></ul>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les fonctionnalités exactes disponibles dépendent des produits et des licences Salesforce déployés.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Comment les entreprises évaluent Einstein</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les organisations prennent généralement en compte :</p>
+<ul class="mt-5 space-y-2 text-zinc-700 dark:text-zinc-300"><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les éditions Salesforce existantes</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">La qualité des données du CRM</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les besoins en IA prédictive</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les cas d&#039;usage de l&#039;IA générative</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les besoins liés à Agentforce</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">La gouvernance des données</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les autorisations des utilisateurs</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les besoins d&#039;intégration</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">La consommation d&#039;IA prévue</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les exigences de sécurité</span></li><li class="flex gap-2"><span class="mt-2 size-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-600"></span><span class="leading-relaxed">Les coûts de licence et d&#039;utilisation</span></li></ul>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">La qualité des données mérite une attention particulière, car les modèles prédictifs et les workflows générés par l&#039;IA dépendent des informations disponibles dans Salesforce.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Conclusion</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Salesforce Einstein intègre l&#039;IA prédictive, l&#039;IA générative, l&#039;automatisation et des capacités agentiques aux workflows du CRM. Ses applications vont du scoring des leads et des opportunités aux e-mails commerciaux, en passant par l&#039;assistance au service client, l&#039;optimisation marketing et les processus métier alimentés par l&#039;IA.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">L&#039;essor d&#039;Agentforce fait évoluer l&#039;IA de Salesforce au-delà des recommandations et du contenu généré, vers des agents capables d&#039;interagir avec les utilisateurs et d&#039;effectuer des actions métier autorisées.</p>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Les entreprises qui évaluent Einstein doivent déterminer quelles fonctionnalités d&#039;IA sont incluses dans leur édition Salesforce, lesquelles nécessitent des licences supplémentaires, comment la consommation est facturée et si leurs données CRM et leurs processus de gouvernance sont prêts pour un usage élargi de l&#039;IA.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">À propos de l&#039;auteur</h2>
+<p class="mt-5 leading-relaxed text-zinc-700 dark:text-zinc-300">Daniel Brooks, 41 ans, est consultant en technologies d&#039;entreprise au sein d&#039;une publication de conseil aux entreprises, spécialisé dans la stratégie des données, l&#039;efficacité opérationnelle et la business intelligence. Il aide les organisations à améliorer la gestion de leurs informations et à exploiter les données pour éclairer leurs décisions stratégiques et opérationnelles.</p>
+<h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">Références</h2>
+<ul class="mt-2 space-y-1.5 text-sm text-zinc-500 dark:text-zinc-400"><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.salesforce.com/sales/ai/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Salesforce — AI for Sales</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.salesforce.com/s/articleView?id=sf.ai_sales.htm" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Salesforce Help — Einstein Features in Sales</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.salesforce.com/s/articleView?id=sales.einstein_sales_how_it_works.htm" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Salesforce Help — How Sales Cloud Einstein Works</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.salesforce.com/sales/pricing/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Salesforce — Sales Add-On Features and Pricing</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://www.salesforce.com/agentforce/pricing/" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Salesforce — Agentforce Pricing</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.salesforce.com/s/articleView?id=ai.copilot_usage.htm" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Salesforce Help — Agentforce and Generative AI Usage and Billing</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.salesforce.com/s/articleView?id=sf.service_ai.htm" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Salesforce Help — AI Solutions for Service</a></li><li class="pl-4 relative before:absolute before:left-0 before:content-['—']"><a href="https://help.salesforce.com/s/articleView?id=sf.mc_ai_features.htm" target="_blank" rel="noopener noreferrer nofollow" class="underline decoration-zinc-300 hover:decoration-zinc-500 dark:decoration-zinc-600 dark:hover:decoration-zinc-400">Salesforce Help — AI Features in Marketing Cloud Next</a></li></ul>
+
+</div>
+
+                
+                <div class="mt-14 flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="flex items-center gap-4">
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="/images/team/james-mitchell.webp"
+                            alt="James Mitchell"
+                            class="size-14 rounded-full object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                        />
+                        <div>
+                            <p class="font-medium text-zinc-900 dark:text-white">Rédigé par James Mitchell</p>
+                            <p class="text-sm text-zinc-500 dark:text-zinc-400">Spécialiste financier chez ThumbsUpTechCo</p>
+                        </div>
+                    </div>
+                    <a href="/fr/our-team" data-flux-button="data-flux-button" class="relative items-center font-medium justify-center whitespace-nowrap disabled:opacity-50 dark:disabled:opacity-50 disabled:cursor-default disabled:pointer-events-none disabled:shadow-none justify-center h-10 text-sm rounded-lg gap-2 ps-4 pe-4 inline-flex  bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)] text-[var(--color-accent-foreground)] border border-black/10 dark:border-0 shadow-[inset_0px_1px_--theme(--color-white/.2)] [[data-flux-button-group]_&amp;]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-[1px] dark:[:is([data-flux-button-group]&gt;&amp;:last-child,_[data-flux-button-group]_:last-child&gt;&amp;)]:border-e-0 [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[1px]! [:is([data-flux-button-group]&gt;&amp;:not(:first-child),_[data-flux-button-group]_:not(:first-child)&gt;&amp;)]:border-s-[color-mix(in_srgb,var(--color-accent-foreground),transparent_85%)]    shrink-0" data-flux-group-target="data-flux-group-target" wire:navigate="">
+        Découvrez notre équipe éditoriale
+    </a>
+                </div>
+            </article>
+
+            
+                            <section class="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
+                    <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+                        <h2 class="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">
+                            Plus d’articles dans Horizons numériques
+                        </h2>
+                        <div class="mt-6 grid gap-6 sm:grid-cols-3">
+                                                                                            <a href="/fr/p/real-time-analytics-making-faster-decisions-with-live-data" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        L&#039;analyse en temps réel : décider plus vite grâce aux données en direct
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Michael Anderson &middot; 2 sept. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/fr/p/soc-2-compliance-software-features-and-considerations" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Logiciels de conformité SOC 2 : fonctionnalités et points à considérer
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        James Mitchell &middot; 1 sept. 2026
+                                    </p>
+                                </a>
+                                                                                            <a href="/fr/p/okta-identity-and-access-management-features" wire:navigate class="group block rounded-xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700">
+                                    <p class="line-clamp-3 font-medium text-zinc-900 group-hover:underline dark:text-white">
+                                        Okta : fonctionnalités de gestion des identités et des accès
+                                    </p>
+                                    <p class="mt-3 text-xs text-zinc-500 dark:text-zinc-500">
+                                        Emily Carter &middot; 22 août 2026
+                                    </p>
+                                </a>
+                                                    </div>
+                    </div>
+                </section>
+                    </main>
+
+        <footer class="bg-zinc-900">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+        <div class="flex flex-col items-center gap-6 border-b border-zinc-800 pb-8 sm:flex-row sm:justify-between">
+            <a href="/fr" wire:navigate class="flex items-center">
+                <img src="/images/branding/logo-full.webp" alt="ThumbsUpTechCo" width="420" height="100" loading="lazy" decoding="async" class="h-7 w-auto" />
+            </a>
+
+            <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-zinc-400">
+                <a href="/fr" wire:navigate class="hover:text-white">Accueil</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/fr/our-team" wire:navigate class="hover:text-white">Notre équipe éditoriale</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/fr/contact" wire:navigate class="hover:text-white">Contact</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/fr/privacy-policy" wire:navigate class="hover:text-white">Politique de confidentialité</a>
+                <span class="text-zinc-700">/</span>
+                <a href="/fr/terms-of-use" wire:navigate class="hover:text-white">Conditions d’utilisation</a>
+            </nav>
+        </div>
+
+        <p class="mt-6 text-xs leading-relaxed text-zinc-500">
+            Les informations publiées par ThumbsUpTechCo sont fournies à titre informatif et éducatif uniquement et ne doivent pas être interprétées comme des conseils en investissement, fiscaux ou juridiques. Les décisions financières comportent des risques, et les performances passées ne préjugent pas des résultats futurs. Consultez toujours un professionnel certifié avant de prendre une décision financière.
+        </p>
+
+        <p class="mt-4 text-xs text-zinc-600">
+            &copy; 2026 ThumbsUpTechCo. Tous droits réservés.
+        </p>
+    </div>
+</footer>
+
+        <div x-persist="toast">
+            <ui-toast-group x-data x-on:toast-show.document="$el.showToast($event.detail)" popover="manual" position="bottom end"  wire:ignore>
+    <ui-toast x-data x-on:toast-show.document="! $el.closest('ui-toast-group') && $el.showToast($event.detail)" popover="manual" position="bottom end" wire:ignore>
+    <template>
+        <div class="group/toast max-w-sm in-[ui-toast-group]:max-w-auto in-[ui-toast-group]:w-xs sm:in-[ui-toast-group]:w-sm" data-variant=""  data-flux-toast-dialog>
+            <div class="p-2 flex rounded-xl shadow-lg bg-white border border-zinc-200 border-b-zinc-300/80 dark:bg-zinc-700 dark:border-zinc-600 group-data-invert/toast:bg-zinc-800 group-data-invert/toast:border-zinc-700 dark:group-data-invert/toast:bg-white dark:group-data-invert/toast:border-zinc-200 dark:group-data-invert/toast:border-b-zinc-300/80">
+                <div class="flex-1 flex items-start gap-4 has-data-flux-toast-action:gap-2 overflow-hidden">
+                    <div class="flex-1 py-1.5 ps-2.5 flex gap-2">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=success]_&]:block shrink-0 mt-0.5 size-4 text-lime-600 dark:text-lime-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=warning]_&]:block shrink-0 mt-0.5 size-4 text-amber-500 dark:text-amber-400">
+                            <path fill-rule="evenodd" d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 1 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=info]_&]:block shrink-0 mt-0.5 size-4 text-cyan-500 dark:text-cyan-400">
+                            <path fill-rule="evenodd" d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0ZM9 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6.75 8a.75.75 0 0 0 0 1.5h.75v1.75a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8.25 8h-1.5Z" clip-rule="evenodd" />
+                        </svg>
+
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="hidden [[data-flux-toast-dialog][data-variant=danger]_&]:block shrink-0 mt-0.5 size-4 text-rose-500 dark:text-rose-400">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14ZM8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                        </svg>
+
+                        <div>
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800 [&:not(:empty)+div]:font-normal [&:not(:empty)+div]:text-zinc-500 [&:not(:empty)+div]:dark:text-zinc-300 group-data-invert/toast:[&:not(:empty)+div]:text-zinc-300 dark:group-data-invert/toast:[&:not(:empty)+div]:text-zinc-500 [&:not(:empty)]:pb-2"><slot name="heading"></slot></div>
+
+                            
+                            <div class="font-medium text-sm text-zinc-800 dark:text-white group-data-invert/toast:text-white dark:group-data-invert/toast:text-zinc-800"><slot name="text"></slot></div>
+
+                            
+                            <template name="link">
+                                <a class="block mt-2 font-medium text-sm text-[var(--color-accent-content)] decoration-[color-mix(in_oklab,var(--color-accent-content),transparent_80%)] underline underline-offset-[6px] hover:decoration-current group-data-invert/toast:text-white group-data-invert/toast:decoration-white/20 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:decoration-zinc-800/20"><slot name="text"></slot></a>
+                            </template>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-1">
+                        
+                        <template name="action">
+                            <div class="flex items-center" data-flux-toast-action>
+                                <button type="button" data-flux-toast-action-button class="relative inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 data-loading:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10 [&[data-loading]_[data-flux-toast-action-label]]:opacity-0 [&[data-loading]_[data-flux-loading-indicator]]:opacity-100">
+                                    <span class="transition-opacity" data-flux-toast-action-label></span>
+                                    <span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity" data-flux-loading-indicator>
+                                        <svg class="size-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <a data-flux-toast-action-link class="inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800/5 px-3 text-sm font-medium text-zinc-800 hover:bg-zinc-800/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 group-data-invert/toast:bg-white/10 group-data-invert/toast:text-white group-data-invert/toast:hover:bg-white/20 dark:group-data-invert/toast:bg-zinc-800/5 dark:group-data-invert/toast:text-zinc-800 dark:group-data-invert/toast:hover:bg-zinc-800/10">
+                                    <span data-flux-toast-action-label></span>
+                                </a>
+                            </div>
+                        </template>
+
+                        
+                        <ui-close class="flex items-center">
+                            <button type="button" class="inline-flex items-center font-medium justify-center gap-2 truncate disabled:opacity-50 dark:disabled:opacity-75 disabled:cursor-default h-8 text-sm rounded-md w-8 bg-transparent hover:bg-zinc-800/5 dark:hover:bg-white/15 text-zinc-400 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white group-data-invert/toast:hover:bg-white/15 group-data-invert/toast:hover:text-white dark:group-data-invert/toast:hover:bg-zinc-800/5 dark:group-data-invert/toast:hover:text-zinc-800" as="button">
+                                <div>
+                                    <svg class="[:where(&)]:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </ui-close>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</ui-toast>
+</ui-toast-group>
+        </div>
+
+        <script src="/flux/flux.min.js?id=c60bf509" data-navigate-once></script>
+    <script src="/livewire-919b0faa/livewire.js?id=0ae8dee3"   data-csrf="YGfE9UjW4uszBmd8UcPU2do8GguS3QoYp7nXJCn0" data-module-url="/livewire-919b0faa" data-update-uri="/livewire-919b0faa/update" data-navigate-once="true"></script>
+</body>
+</html>
