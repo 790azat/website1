@@ -14,8 +14,10 @@
             <img src="{{ asset('images/branding/logo-full.webp') }}" alt="{{ $siteName }}" width="420" height="100" class="h-8 w-auto" />
         </a>
 
-        <nav class="hidden items-center gap-7 text-sm font-medium whitespace-nowrap text-zinc-300 lg:flex">
-            <a href="{{ route('home') }}" wire:navigate class="transition hover:text-white">{{ __('Home') }}</a>
+        {{-- Desktop menu only from xl up: the Spanish and French labels need
+             about 1260px (the logo links home, so there's no Home item here).
+             Narrower screens use the menu button. --}}
+        <nav class="hidden items-center gap-5 text-sm font-medium whitespace-nowrap text-zinc-300 xl:flex">
             <a href="{{ route('articles') }}" wire:navigate class="transition hover:text-white">{{ __('All Articles') }}</a>
             @foreach ($categories as $category)
                 <a href="{{ route('section', $category['id']) }}" wire:navigate class="transition hover:text-white">{{ $category['title'] }}</a>
@@ -30,7 +32,7 @@
             <button
                 type="button"
                 @click="mobileOpen = true"
-                class="flex size-9 items-center justify-center rounded-md text-white lg:hidden"
+                class="flex size-9 items-center justify-center rounded-md text-white xl:hidden"
                 aria-label="{{ __('Open menu') }}"
             >
                 <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
@@ -42,7 +44,7 @@
 </header>
 
 {{-- Mobile slide-over menu --}}
-<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 lg:hidden" style="display: none;">
+<div x-show="mobileOpen" x-cloak class="fixed inset-0 z-50 xl:hidden" style="display: none;">
     <div class="fixed inset-0 bg-zinc-950/50" @click="mobileOpen = false"></div>
     <div
         x-show="mobileOpen"
