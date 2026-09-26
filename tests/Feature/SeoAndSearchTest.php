@@ -68,9 +68,41 @@ test('the header search finds articles by title and body words', function () {
 });
 
 test('a search with no matches says so', function () {
-    $this->get(route('articles', ['q' => 'zzqxnomatchword']))
+    $emptyMessage = '/<p data-search-empty\s+(hidden\s+)?class=/';
+
+    preg_match($emptyMessage, $this->get(route('articles', ['q' => 'zzqxnomatchword']))->assertOk()->getContent(), $noMatches);
+    preg_match($emptyMessage, $this->get(route('articles'))->assertOk()->getContent(), $everything);
+
+    expect($noMatches[1] ?? null)->toBeEmpty()
+        ->and($everything[1] ?? null)->not->toBeEmpty();
+});
+
+test('search ignores Markdown link URLs', function () {
+    $article = ['title' => 'Plain title', 'body' => 'Read the [vendor docs](https://docs.example.com/zzqxurlonly) for **details**.'];
+
+    expect(SiteContent::searchText($article))
+        ->toContain('vendor docs')
+        ->toContain('details.')
+        ->not->toContain('zzqxurlonly')
+        ->not->toContain('**');
+});
+
+test('the search index lists every article with its search text for the static export', function () {
+    $articles = siteData()['articles'];
+
+    $this->get(route('articles'))
         ->assertOk()
-        ->assertSee('No articles match your search.');
+        ->assertSee('<link rel="x-search-index" href="'.route('articles.search-index').'" />', false);
+
+    $response = $this->get(route('articles.search-index'))
+        ->assertOk()
+        ->assertSee('<meta name="robots" content="noindex, nofollow" />', false);
+
+    expect(substr_count($response->getContent(), 'data-search-text="'))->toBe(count($articles));
+
+    $article = $articles[0];
+    $response->assertSee('data-search-section="'.$article['section'].'" data-search-text="'.e(SiteContent::searchText($article)).'"', false)
+        ->assertSee('href="'.route('article', $article['slug']).'"', false);
 });
 
 test('a malformed search parameter is ignored', function () {
