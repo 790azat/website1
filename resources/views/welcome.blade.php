@@ -246,18 +246,15 @@
                                     wire:navigate
                                     class="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition hover:shadow-md dark:border-zinc-800"
                                 >
-                                    <div class="relative flex h-32 items-center justify-center overflow-hidden {{ $program['hero_image'] ?? null ? '' : $program['hero_gradient'] }}">
+                                    <div class="relative flex items-center justify-center overflow-hidden {{ $program['hero_image'] ?? null ? 'aspect-[2/1]' : 'h-32 '.$program['hero_gradient'] }}">
                                         @if ($program['hero_image'] ?? null)
                                             <img
                                                 loading="lazy"
                                                 decoding="async"
                                                 src="{{ asset('images/'.$program['hero_image']) }}"
                                                 alt="{{ $program['title'] }}"
-                                                loading="lazy"
-                                                decoding="async"
                                                 class="absolute inset-0 size-full object-cover"
                                             />
-                                            <div class="absolute inset-0 bg-zinc-950/40"></div>
                                         @else
                                             <div class="absolute -top-8 -right-8 size-32 rounded-full bg-white/10"></div>
                                             <div class="absolute -bottom-10 -left-8 size-36 rounded-full bg-white/10"></div>

@@ -86,30 +86,30 @@
                 </a>
 
                 {{-- Hero panel --}}
-                <div class="relative mt-8 flex h-56 items-center justify-center overflow-hidden rounded-2xl {{ $program['hero_image'] ?? null ? '' : $program['hero_gradient'] }} sm:h-72">
-                    @if ($program['hero_image'] ?? null)
-                        <img
-                            fetchpriority="high"
-                            src="{{ asset('images/'.$program['hero_image']) }}"
-                            alt="{{ $program['hero_tagline'] }}"
-                            class="absolute inset-0 size-full object-cover"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/85 via-zinc-950/30 to-zinc-950/10"></div>
-                    @else
+                @if ($program['hero_image'] ?? null)
+                    {{-- Hero images are finished banners with their own title, so show them uncropped. --}}
+                    <img
+                        fetchpriority="high"
+                        src="{{ asset('images/'.$program['hero_image']) }}"
+                        alt="{{ $program['hero_tagline'] }}"
+                        class="mt-8 aspect-[2/1] w-full rounded-2xl object-cover"
+                    />
+                @else
+                    <div class="relative mt-8 flex h-56 items-center justify-center overflow-hidden rounded-2xl {{ $program['hero_gradient'] }} sm:h-72">
                         <div class="absolute -top-12 -right-12 size-48 rounded-full bg-white/10"></div>
                         <div class="absolute -bottom-16 -left-12 size-56 rounded-full bg-white/10"></div>
                         <div class="absolute top-1/4 right-1/5 size-20 rounded-full bg-white/10"></div>
                         <flux:icon name="{{ $program['hero_icon'] }}" class="absolute bottom-6 right-8 size-16 text-white/25 sm:size-24" />
-                    @endif
 
-                    <span class="absolute top-5 right-5 flex size-8 items-center justify-center rounded-md bg-white/95 text-zinc-900">
-                        <x-app-logo-icon class="size-4 fill-current" />
-                    </span>
+                        <span class="absolute top-5 right-5 flex size-8 items-center justify-center rounded-md bg-white/95 text-zinc-900">
+                            <x-app-logo-icon class="size-4 fill-current" />
+                        </span>
 
-                    <p class="relative max-w-md px-8 text-center text-xl font-semibold text-balance text-white drop-shadow-sm sm:text-2xl">
-                        {{ $program['hero_tagline'] }}
-                    </p>
-                </div>
+                        <p class="relative max-w-md px-8 text-center text-xl font-semibold text-balance text-white drop-shadow-sm sm:text-2xl">
+                            {{ $program['hero_tagline'] }}
+                        </p>
+                    </div>
+                @endif
 
                 {{-- Overview --}}
                 <h2 class="mt-10 mb-4 text-xl font-semibold tracking-tight text-zinc-900 dark:text-white">
