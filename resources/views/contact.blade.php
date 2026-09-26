@@ -57,8 +57,8 @@
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                             {{ __('Questions about our content, partnerships, or anything else.') }}
                         </p>
-                        <a href="mailto:hello@{{ $domainName }}" class="mt-3 inline-block text-sm font-medium text-zinc-900 hover:underline dark:text-white">
-                            hello@{{ $domainName }}
+                        <a href="mailto:{{ 'hello@'.$domainName }}" class="mt-3 inline-block text-sm font-medium text-zinc-900 hover:underline dark:text-white">
+                            {{ 'hello@'.$domainName }}
                         </a>
                     </div>
 
@@ -70,8 +70,8 @@
                         <p class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                             {{ __('Spotted something that needs a closer look? Let our editorial team know.') }}
                         </p>
-                        <a href="mailto:editorial@{{ $domainName }}" class="mt-3 inline-block text-sm font-medium text-zinc-900 hover:underline dark:text-white">
-                            editorial@{{ $domainName }}
+                        <a href="mailto:{{ 'editorial@'.$domainName }}" class="mt-3 inline-block text-sm font-medium text-zinc-900 hover:underline dark:text-white">
+                            {{ 'editorial@'.$domainName }}
                         </a>
                     </div>
                 </div>
