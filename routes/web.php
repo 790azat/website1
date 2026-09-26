@@ -10,6 +10,7 @@ Route::view('privacy-policy', 'privacy-policy')->name('privacy-policy');
 Route::view('terms-of-use', 'terms-of-use')->name('terms-of-use');
 
 Route::view('articles', 'all-articles')->name('articles');
+Route::view('articles/search-index', 'search-index')->name('articles.search-index');
 Route::view('c/{section}', 'section')->name('section');
 Route::view('p/{slug}', 'article')->name('article');
 Route::view('programs/{slug}', 'program')->name('program');

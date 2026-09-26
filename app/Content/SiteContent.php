@@ -313,15 +313,39 @@ class SiteContent
      */
     public static function excerpt(string $body, int $limit = 160): string
     {
-        $text = preg_replace('/\[([^\]]*)\]\([^)]*\)/', '$1', $body) ?? $body;
-        $text = preg_replace('/^\s{0,3}(#{1,6}\s+|[*+-]\s+|\d+[.)]\s+|>\s?)/m', '', $text) ?? $text;
-        $text = str_replace(['**', '__', '`'], '', $text);
-        $text = trim(preg_replace('/\s+/u', ' ', strip_tags($text)) ?? '');
+        $text = self::plainText($body);
 
         if (mb_strlen($text) <= $limit) {
             return $text;
         }
 
         return rtrim(Str::limit($text, $limit - 1, '', preserveWords: true), ' ,.;:-').'…';
+    }
+
+    /**
+     * The text site search matches against: the article's title and plain-text
+     * body (no Markdown syntax or link URLs), lowercased, with each word kept
+     * once. A search word matches when it is part of one of these words.
+     *
+     * @param  array<string, string>  $article
+     */
+    public static function searchText(array $article): string
+    {
+        $words = preg_split('/\s+/u', mb_strtolower($article['title'].' '.self::plainText($article['body'])), -1, PREG_SPLIT_NO_EMPTY) ?: [];
+
+        return implode(' ', array_unique($words));
+    }
+
+    /**
+     * Markdown headings, list markers, emphasis, HTML tags and link URLs
+     * removed, whitespace collapsed.
+     */
+    private static function plainText(string $body): string
+    {
+        $text = preg_replace('/\[([^\]]*)\]\([^)]*\)/', '$1', $body) ?? $body;
+        $text = preg_replace('/^\s{0,3}(#{1,6}\s+|[*+-]\s+|\d+[.)]\s+|>\s?)/m', '', $text) ?? $text;
+        $text = str_replace(['**', '__', '`'], '', $text);
+
+        return trim(preg_replace('/\s+/u', ' ', strip_tags($text)) ?? '');
     }
 }
