@@ -27,10 +27,10 @@
         </div>
     @endif
     <div class="flex flex-1 flex-col p-6">
-        <span class="inline-flex w-fit items-center gap-1.5 rounded-full {{ $badge }} px-2.5 py-1 text-xs font-medium text-white">
+        <span data-card-section class="inline-flex w-fit items-center gap-1.5 rounded-full {{ $badge }} px-2.5 py-1 text-xs font-medium text-white">
             {{ $sectionTitle }}
         </span>
-        <h2 class="mt-3 font-semibold text-zinc-900 group-hover:underline dark:text-white">
+        <h2 data-card-title class="mt-3 font-semibold text-zinc-900 group-hover:underline dark:text-white">
             {{ $article['title'] }}
         </h2>
         <div class="mt-4 flex items-center gap-2.5">
