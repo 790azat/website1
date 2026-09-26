@@ -71,7 +71,6 @@
     <head>
         @include('partials.head')
         @include('partials.seo')
-        <link rel="x-search-index" href="{{ route('articles.search-index') }}" />
     </head>
     <body
         x-data="{ mobileOpen: false }"

@@ -77,6 +77,25 @@ test('a search with no matches says so', function () {
         ->and($everything[1] ?? null)->not->toBeEmpty();
 });
 
+test('the header search shows live results from the search index', function () {
+    $article = siteData()['articles'][0];
+
+    $this->get(route('article', $article['slug']))
+        ->assertOk()
+        ->assertSee('<link rel="x-search-index" href="'.route('articles.search-index').'" />', false)
+        ->assertSee('x-data="liveSearch(', false)
+        ->assertSee('aria-controls="live-search-desktop"', false)
+        ->assertSee('aria-controls="live-search-mobile"', false);
+
+    $this->get(route('articles.search-index'))
+        ->assertSee('data-card-title', false)
+        ->assertSee('data-card-section', false);
+
+    $this->get(route('home', ['lang' => 'es']))
+        ->assertSee('Ver todos los resultados')
+        ->assertSee('No se encontraron artículos.');
+});
+
 test('search ignores Markdown link URLs', function () {
     $article = ['title' => 'Plain title', 'body' => 'Read the [vendor docs](https://docs.example.com/zzqxurlonly) for **details**.'];
 
