@@ -36,7 +36,7 @@
         aria-label="{{ __('Search articles') }}"
         @class([
             'w-full rounded-full border border-zinc-200 bg-zinc-50 py-2 pr-3 pl-9 text-sm text-zinc-900 placeholder-zinc-400 focus:border-zinc-400 focus:ring-0 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-white' => $mobile,
-            'w-40 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:w-56 focus:border-zinc-500 focus:ring-0 focus:outline-none transition-[width]' => ! $mobile,
+            'w-36 rounded-full border border-zinc-700 bg-zinc-800 py-1.5 pr-3 pl-9 text-sm text-white placeholder-zinc-400 focus:border-zinc-500 focus:ring-0 focus:outline-none' => ! $mobile,
         ])
     />
     <svg class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-zinc-400" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75">
