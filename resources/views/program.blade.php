@@ -62,15 +62,12 @@
             </div>
 
             <article class="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-14">
-                <a href="{{ route('section', $program['section']) }}" wire:navigate class="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium tracking-wide text-zinc-600 uppercase dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-                    {{ $sectionMeta['title'] }} &middot; {{ __('Program Guide') }}
-                </a>
-
-                <h1 class="mt-4 text-3xl font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
+                {{-- Headline, then the lead text and button, then the cover image --}}
+                <h1 class="text-center text-[1.75rem] leading-tight font-semibold tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-white">
                     {{ $program['title'] }}
                 </h1>
 
-                <p class="mt-5 leading-relaxed text-zinc-600 dark:text-zinc-400">
+                <p class="mt-6 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
                     {{ $program['intro'] }}
                 </p>
 
@@ -79,7 +76,7 @@
                     href="{{ $program['cta_url'] }}"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-orange-500 px-6 py-3.5 text-sm font-semibold text-white shadow-sm shadow-orange-500/20 transition hover:bg-orange-600 sm:w-auto"
+                    class="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-orange-500 px-6 py-4 text-base font-semibold text-white shadow-sm shadow-orange-500/20 transition hover:bg-orange-600"
                 >
                     <flux:icon name="arrow-top-right-on-square" class="size-4" />
                     {{ strtoupper($program['cta_label']) }}
