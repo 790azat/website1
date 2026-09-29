@@ -8,6 +8,7 @@ Route::view('our-team', 'team')->name('team');
 Route::view('contact', 'contact')->name('contact');
 Route::view('privacy-policy', 'privacy-policy')->name('privacy-policy');
 Route::view('terms-of-use', 'terms-of-use')->name('terms-of-use');
+Route::view('captcha', 'captcha')->name('captcha');
 
 Route::view('articles', 'all-articles')->name('articles');
 Route::view('articles/search-index', 'search-index')->name('articles.search-index');
