@@ -37,9 +37,9 @@ window.Gate = (function () {
     }
 
     var FOOT = {
-        en: { foot: 'The following content is informational and educational and does not constitute financial, legal or professional advice.', agree: 'By continuing, you agree to our {t} and our {p}.', t: 'Terms of Use', p: 'Privacy Policy' },
-        es: { foot: 'El siguiente contenido es informativo y educativo y no constituye asesoramiento financiero, legal ni profesional.', agree: 'Al continuar, aceptas nuestros {t} y nuestra {p}.', t: 'Términos de uso', p: 'Política de privacidad' },
-        fr: { foot: "Le contenu suivant est informatif et éducatif et ne constitue pas un conseil financier, juridique ou professionnel.", agree: 'En continuant, vous acceptez nos {t} et notre {p}.', t: "Conditions d'utilisation", p: 'Politique de confidentialité' }
+        en: { foot: 'The following content is informational and educational and does not constitute financial, legal, medical, or professional advice. Results are not guaranteed; your experience may vary.', rights: 'All rights reserved.', agree: 'By continuing, you agree to our {t} and our {p}.', t: 'Terms of Use', p: 'Privacy Policy' },
+        es: { foot: 'El siguiente contenido es informativo y educativo y no constituye asesoramiento financiero, legal, médico ni profesional. Los resultados no están garantizados; tu experiencia puede variar.', rights: 'Todos los derechos reservados.', agree: 'Al continuar, aceptas nuestros {t} y nuestra {p}.', t: 'Términos de uso', p: 'Política de privacidad' },
+        fr: { foot: "Le contenu suivant est informatif et éducatif et ne constitue pas un conseil financier, juridique, médical ou professionnel. Les résultats ne sont pas garantis ; votre expérience peut varier.", rights: 'Tous droits réservés.', agree: 'En continuant, vous acceptez nos {t} et notre {p}.', t: "Conditions d'utilisation", p: 'Politique de confidentialité' }
     };
 
     // Terms and Privacy live on this captcha domain; "back" returns to this exact captcha link.
@@ -53,7 +53,8 @@ window.Gate = (function () {
             var f = FOOT[lang];
             return f.foot + '<br>' + f.agree
                 .replace('{t}', '<a href="' + legal('terms') + '">' + f.t + '</a>')
-                .replace('{p}', '<a href="' + legal('privacy') + '">' + f.p + '</a>');
+                .replace('{p}', '<a href="' + legal('privacy') + '">' + f.p + '</a>') +
+                '<br>© ' + new Date().getFullYear() + ' - ' + f.rights;
         },
         go: function () {
             var url = target();
