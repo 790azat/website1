@@ -36,8 +36,25 @@ window.Gate = (function () {
         return c.site.replace(/\/+$/, '') + prefix + page;
     }
 
+    var FOOT = {
+        en: { foot: 'The following content is informational and educational and does not constitute financial, legal or professional advice.', agree: 'By continuing, you agree to our {t} and our {p}.', t: 'Terms of Use', p: 'Privacy Policy' },
+        es: { foot: 'El siguiente contenido es informativo y educativo y no constituye asesoramiento financiero, legal ni profesional.', agree: 'Al continuar, aceptas nuestros {t} y nuestra {p}.', t: 'Términos de uso', p: 'Política de privacidad' },
+        fr: { foot: "Le contenu suivant est informatif et éducatif et ne constitue pas un conseil financier, juridique ou professionnel.", agree: 'En continuant, vous acceptez nos {t} et notre {p}.', t: "Conditions d'utilisation", p: 'Politique de confidentialité' }
+    };
+
+    // Terms and Privacy live on this captcha domain; "back" returns to this exact captcha link.
+    function legal(page) {
+        return page + '?lang=' + lang + '&back=' + encodeURIComponent(location.pathname + location.search);
+    }
+
     return {
         lang: lang,
+        footer: function () {
+            var f = FOOT[lang];
+            return f.foot + '<br>' + f.agree
+                .replace('{t}', '<a href="' + legal('terms') + '">' + f.t + '</a>')
+                .replace('{p}', '<a href="' + legal('privacy') + '">' + f.p + '</a>');
+        },
         go: function () {
             var url = target();
             if (url) location.replace(url);

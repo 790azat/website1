@@ -68,6 +68,8 @@
     .cm-steps li.ok s { animation: none; border: 0; background: #22c55e url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center / 12px no-repeat; }
     @keyframes cm-rot { to { transform: rotate(360deg); } }
     .cm-wait { margin-top: 18px; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #7489ad; }
+    .cm-foot { max-width: 420px; margin-top: 20px; font-size: 12px; line-height: 1.55; text-align: center; color: #7489ad; }
+    .cm-foot a { color: #fda06c; text-decoration: underline; text-underline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) { #cm-gate *, .cm-card::after { animation: none !important; } }
 </style>
 <script src="config.js"></script>
@@ -100,7 +102,8 @@
                 '<p class="cm-sub">' + t.sub + '</p>' +
                 '<button type="button" class="cm-hold" aria-describedby="cm-q"><span class="cm-ring"></span><span class="cm-core">' + finger + '<span class="cm-lbl">' + t.hold + '</span></span></button>' +
                 '<p class="cm-hint" hidden>' + t.hint + '</p>' +
-            '</div>';
+            '</div>' +
+            '<p class="cm-foot">' + Gate.footer() + '</p>';
         document.body.appendChild(g);
 
         var card = g.querySelector('.cm-card'), btn = g.querySelector('.cm-hold'), ring = g.querySelector('.cm-ring'),

@@ -4,10 +4,12 @@ Upload everything into the ROOT of the captcha domain (e.g. kapcha.com).
 Залейте всё в КОРЕНЬ домена капчи (например kapcha.com).
 
 Variants / Варианты:
-  /variant-1  - 18+ age check (YES / NO)          / проверка 18+
+  /variant-1  - 18+ age check (YES only)           / проверка 18+ (только YES)
   /variant-2  - slide to verify                   / слайдер
   /variant-3  - press and hold                    / нажать и удерживать
   /           - opens variant-1                   / открывает variant-1
+  /terms, /privacy - Terms of Use and Privacy Policy of the captcha domain
+                     (linked from the captcha footer) / Terms и Privacy домена капчи
 
 Where the visitor goes after the captcha / Куда ведёт после капчи:
   1) ?to=<full URL> in the link:

@@ -63,6 +63,8 @@
     .ef-bar i { display: block; height: 100%; width: 0; border-radius: 99px; background: linear-gradient(90deg, #26975f, #a3d136); animation: ef-load 1.5s ease-in-out forwards; }
     @keyframes ef-load { to { width: 100%; } }
     .ef-wait { margin-top: 12px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #7a867f; }
+    .ef-foot { max-width: 420px; margin-top: 20px; font-size: 12px; line-height: 1.55; text-align: center; color: #6b7a71; }
+    .ef-foot a { color: #14623e; text-decoration: underline; text-underline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) { #ef-gate * { animation: none !important; } .ef-bar i { width: 100%; } }
 </style>
 <script src="config.js"></script>
@@ -98,7 +100,8 @@
                     '</button>' +
                 '</div>' +
                 '<p class="ef-hint">' + t.hint + '</p>' +
-            '</div>';
+            '</div>' +
+            '<p class="ef-foot">' + Gate.footer() + '</p>';
         document.body.appendChild(g);
 
         var card = g.querySelector('.ef-card'), track = g.querySelector('.ef-track'), knob = g.querySelector('.ef-knob'),
