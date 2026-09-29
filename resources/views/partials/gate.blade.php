@@ -1,7 +1,5 @@
 {{--
-    Entry gate (age check) shown over the site until the visitor confirms.
-    The pass is kept in localStorage for 24 hours; add ?gate=1 to any URL to
-    show it again. Legal pages stay open so the gate's own links work.
+    Entry gate (age check) shown over the site until the visitor confirms. It shows on every page load; nothing is remembered. Legal pages stay open so the gate's own links work.
     After passing, the visitor is sent to one of the main guides (random).
 --}}
 <script>window.__gateGuides = @json(collect(app(\App\Content\SiteContent::class)->localized()['programs'] ?? [])->pluck('slug')->values());</script>
@@ -30,10 +28,8 @@
         animation: tu-rise .5s cubic-bezier(.2, .8, .2, 1) both;
     }
     @keyframes tu-rise { from { opacity: 0; transform: translateY(14px) scale(.98); } }
-    .tu-brand { font-weight: 800; letter-spacing: -.02em; font-size: 15px; color: #a1a1aa; }
-    .tu-brand b { background: linear-gradient(90deg, #38bdf8, #a78bfa); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .tu-badge {
-        margin: 26px auto 18px; width: 84px; height: 84px; border-radius: 50%;
+        margin: 0 auto 18px; width: 84px; height: 84px; border-radius: 50%;
         display: grid; place-items: center; font-weight: 900; font-size: 30px; letter-spacing: -.04em;
         background: conic-gradient(from 210deg, #38bdf8, #8b5cf6, #f472b6, #38bdf8);
         box-shadow: 0 0 0 6px rgba(255, 255, 255, .04), 0 12px 40px -8px rgba(139, 92, 246, .7);
@@ -66,7 +62,7 @@
     .tu-no { color: #d4d4d8; background: transparent; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .18); }
     .tu-no:hover { background: rgba(255, 255, 255, .06); }
     .tu-deny { margin: 18px 0 0; padding: 12px 14px; border-radius: 14px; font-size: 14px; color: #fecaca; background: rgba(239, 68, 68, .12); border: 1px solid rgba(239, 68, 68, .3); }
-    .tu-spin { margin: 30px auto 22px; width: 72px; height: 72px; border-radius: 50%; position: relative; }
+    .tu-spin { margin: 4px auto 22px; width: 72px; height: 72px; border-radius: 50%; position: relative; }
     .tu-spin::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 5px solid rgba(255, 255, 255, .08); }
     .tu-spin::after {
         content: ""; position: absolute; inset: 0; border-radius: 50%; border: 5px solid transparent;
@@ -80,10 +76,11 @@
 </style>
 <script>
 (function () {
-    var KEY = 'tu_gate_pass', TTL = 864e5, root = document.documentElement;
-    try { if (/[?&]gate=1\b/.test(location.search)) localStorage.removeItem(KEY); } catch (e) {}
+    var KEY = 'tu_gate_pass', root = document.documentElement;
+    // No lasting pass: the gate shows on every page load. Passing it lets only
+    // the main guide it opens next through, once.
     var passed = false;
-    try { passed = Number(localStorage.getItem(KEY)) > Date.now() - TTL; } catch (e) {}
+    try { passed = sessionStorage.getItem(KEY) === '1'; sessionStorage.removeItem(KEY); } catch (e) {}
     if (passed || /\/(terms-of-use|privacy-policy)(\.html)?$/.test(location.pathname)) return;
     root.classList.add('gate-on');
 
@@ -94,7 +91,16 @@
     };
     var lang = (root.lang || 'en').slice(0, 2), t = T[lang] || T.en, pre = T[lang] && lang !== 'en' ? '/' + lang : '';
 
+    var TITLES = { en: 'Security check', es: 'Verificación de seguridad', fr: 'Vérification de sécurité' };
+    var pageTitle = '', blankIcon = document.createElement('link');
+    blankIcon.rel = 'icon';
+    blankIcon.href = 'data:,';
+
     function build() {
+        // Keep the site's name and icon out of the browser tab while the gate is up.
+        pageTitle = document.title;
+        document.title = TITLES[lang] || TITLES.en;
+        document.head.appendChild(blankIcon);
         var g = document.createElement('div');
         g.id = 'tu-gate';
         g.setAttribute('role', 'dialog');
@@ -103,7 +109,6 @@
         var agree = t.agree.replace('{t}', '<a href="' + pre + '/terms-of-use">' + t.t + '</a>').replace('{p}', '<a href="' + pre + '/privacy-policy">' + t.p + '</a>');
         g.innerHTML =
             '<div class="tu-card">' +
-                '<div class="tu-brand">ThumbsUp<b>TechCo</b></div>' +
                 '<div class="tu-badge"><span>18+</span></div>' +
                 '<h2 class="tu-title" id="tu-q">' + t.q + '</h2>' +
                 '<p class="tu-sub">' + t.sub + '</p>' +
@@ -127,12 +132,10 @@
             }
         });
         g.querySelector('.tu-yes').addEventListener('click', function () {
-            try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
             card.style.animation = 'none';
             card.offsetWidth;
             card.style.animation = '';
             card.innerHTML =
-                '<div class="tu-brand">ThumbsUp<b>TechCo</b></div>' +
                 '<div class="tu-spin" aria-hidden="true"></div>' +
                 '<h2 class="tu-title" role="status">' + t.v + '</h2>' +
                 '<p class="tu-sub" style="margin-bottom:0">' + t.vs + '</p>' +
@@ -140,9 +143,12 @@
             setTimeout(function () {
                 var guides = window.__gateGuides || [];
                 if (guides.length && !/\/programs\//.test(location.pathname)) {
+                    try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
                     location.replace(pre + '/programs/' + guides[Math.floor(Math.random() * guides.length)]);
                     return;
                 }
+                document.title = pageTitle;
+                blankIcon.remove();
                 g.classList.add('is-leaving');
                 root.classList.remove('gate-on');
                 setTimeout(function () { g.remove(); }, 460);
