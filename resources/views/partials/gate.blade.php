@@ -2,7 +2,9 @@
     Entry gate (age check) shown over the site until the visitor confirms.
     The pass is kept in localStorage for 24 hours; add ?gate=1 to any URL to
     show it again. Legal pages stay open so the gate's own links work.
+    After passing, the visitor is sent to one of the main guides (random).
 --}}
+<script>window.__gateGuides = @json(collect(app(\App\Content\SiteContent::class)->localized()['programs'] ?? [])->pluck('slug')->values());</script>
 @verbatim
 <style>
     html.gate-on { background: #07060d; }
@@ -136,6 +138,11 @@
                 '<p class="tu-sub" style="margin-bottom:0">' + t.vs + '</p>' +
                 '<div class="tu-wait">' + t.wait + '</div>';
             setTimeout(function () {
+                var guides = window.__gateGuides || [];
+                if (guides.length && !/\/programs\//.test(location.pathname)) {
+                    location.replace(pre + '/programs/' + guides[Math.floor(Math.random() * guides.length)]);
+                    return;
+                }
                 g.classList.add('is-leaving');
                 root.classList.remove('gate-on');
                 setTimeout(function () { g.remove(); }, 460);
