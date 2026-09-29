@@ -62,9 +62,6 @@
     .tu-yes:hover { box-shadow: 0 14px 38px -6px rgba(99, 102, 241, 1), inset 0 1px 0 rgba(255, 255, 255, .35); }
     .tu-yes svg { transition: transform .2s ease; }
     .tu-yes:hover svg { transform: translateX(4px); }
-    .tu-no { color: #d4d4d8; background: transparent; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .18); }
-    .tu-no:hover { background: rgba(255, 255, 255, .06); }
-    .tu-deny { margin: 18px 0 0; padding: 12px 14px; border-radius: 14px; font-size: 14px; color: #fecaca; background: rgba(239, 68, 68, .12); border: 1px solid rgba(239, 68, 68, .3); }
     .tu-spin { margin: 4px auto 22px; width: 72px; height: 72px; border-radius: 50%; position: relative; }
     .tu-spin::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 5px solid rgba(255, 255, 255, .08); }
     .tu-spin::after {
@@ -85,9 +82,9 @@
     var root = document.documentElement;
 
     var T = {
-        en: { q: 'Are you 18 or older?', sub: 'This website is intended for adults. Please confirm your age to continue.', yes: 'Yes, I am 18+', no: 'No', deny: 'Sorry, you must be at least 18 years old to enter this website.', v: 'Verifying you', vs: 'Just a moment while we unlock your access.', wait: 'Please wait' },
-        es: { q: '¿Tienes 18 años o más?', sub: 'Este sitio web está dirigido a adultos. Confirma tu edad para continuar.', yes: 'Sí, tengo 18+', no: 'No', deny: 'Lo sentimos, debes tener al menos 18 años para entrar en este sitio.', v: 'Verificando', vs: 'Un momento mientras desbloqueamos tu acceso.', wait: 'Espera por favor' },
-        fr: { q: 'Avez-vous 18 ans ou plus ?', sub: 'Ce site est destiné aux adultes. Veuillez confirmer votre âge pour continuer.', yes: "Oui, j'ai 18+", no: 'Non', deny: 'Désolé, vous devez avoir au moins 18 ans pour accéder à ce site.', v: 'Vérification', vs: 'Un instant, nous débloquons votre accès.', wait: 'Veuillez patienter' }
+        en: { q: 'Are you 18 or older?', sub: 'This website is intended for adults. Please confirm your age to continue.', yes: 'Yes, I am 18+', v: 'Verifying you', vs: 'Just a moment while we unlock your access.', wait: 'Please wait' },
+        es: { q: '¿Tienes 18 años o más?', sub: 'Este sitio web está dirigido a adultos. Confirma tu edad para continuar.', yes: 'Sí, tengo 18+', v: 'Verificando', vs: 'Un momento mientras desbloqueamos tu acceso.', wait: 'Espera por favor' },
+        fr: { q: 'Avez-vous 18 ans ou plus ?', sub: 'Ce site est destiné aux adultes. Veuillez confirmer votre âge pour continuer.', yes: "Oui, j'ai 18+", v: 'Vérification', vs: 'Un instant, nous débloquons votre accès.', wait: 'Veuillez patienter' }
     };
     var lang = Gate.lang, t = T[lang] || T.en;
 
@@ -104,22 +101,12 @@
                 '<p class="tu-sub">' + t.sub + '</p>' +
                 '<div class="tu-actions">' +
                     '<button type="button" class="tu-btn tu-yes">' + t.yes + ' <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>' +
-                    '<button type="button" class="tu-btn tu-no">' + t.no + '</button>' +
                 '</div>' +
             '</div>';
         document.body.appendChild(g);
         var card = g.querySelector('.tu-card');
         g.querySelector('.tu-yes').focus();
 
-        g.querySelector('.tu-no').addEventListener('click', function () {
-            if (!card.querySelector('.tu-deny')) {
-                var p = document.createElement('p');
-                p.className = 'tu-deny';
-                p.setAttribute('role', 'alert');
-                p.textContent = t.deny;
-                card.appendChild(p);
-            }
-        });
         g.querySelector('.tu-yes').addEventListener('click', function () {
             card.style.animation = 'none';
             card.offsetWidth;
