@@ -15,6 +15,10 @@ return [
 
     'name' => 'ThumbsUpTechCo',
 
+    // Public domain (e.g. "example.com") used for canonical, hreflang and
+    // sitemap URLs. Without it those use the host the site is served from.
+    'domain' => env('APP_DOMAIN'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

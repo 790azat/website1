@@ -5,9 +5,10 @@
       description  required
       image        path under public/images, for the share preview
       type         'website' (default) or 'article'
-      canonical    the English URL; defaults to the current URL without its
-                   query string. Translated pages add "lang=es" or
-                   "lang=fr" to it.
+      canonical    URL of the page (any language); defaults to the current
+                   page without its query string. Canonical and hreflang
+                   URLs are built from its path for each language
+                   ("/p/x", "/es/p/x", "/fr/p/x"); see App\Support\Seo.
       alternates   which translations the page has: true (the default)
                    for every language in SiteContent::TRANSLATION_LOCALES,
                    false for none (hreflang links are then left out), or a
@@ -18,22 +19,23 @@
 @php
     $siteName = config('app.name', 'Laravel');
     $seoTitle = filled($title ?? null) ? $title : $siteName;
-    $seoEnglishUrl = $seo['canonical'] ?? url()->current();
-    $seoTranslations = ($seo['noindex'] ?? false) ? false : ($seo['alternates'] ?? true);
-    $seoTranslations = match ($seoTranslations) {
-        true => \App\Content\SiteContent::TRANSLATION_LOCALES,
-        false => [],
-        default => $seoTranslations,
+    $seoLocale = app()->getLocale();
+    $seoLanguages = match ($seo['alternates'] ?? true) {
+        true => \App\Http\Middleware\SetLocale::SUPPORTED,
+        false => ['en'],
+        default => ['en', ...$seo['alternates']],
     };
-    $seoVersions = ['en' => $seoEnglishUrl];
-
-    foreach ($seoTranslations as $seoTranslation) {
-        $seoVersions[$seoTranslation] = $seoEnglishUrl.(str_contains($seoEnglishUrl, '?') ? '&' : '?').'lang='.$seoTranslation;
-    }
-
-    $seoCanonical = $seoVersions[app()->getLocale()] ?? $seoEnglishUrl;
-    $seoImage = asset('images/'.($seo['image'] ?? 'branding/logo-full.webp'));
-    $seoLocale = ['es' => 'es_ES', 'fr' => 'fr_FR'][app()->getLocale()] ?? 'en_US';
+    $seoPath = \App\Support\Seo::unlocalizePath(isset($seo['canonical'])
+        ? (string) (parse_url($seo['canonical'], PHP_URL_PATH) ?: '/')
+        : \App\Support\Seo::currentPath());
+    // Keeps a canonical query string such as "?page=2" on every version.
+    $seoQuery = isset($seo['canonical']) && filled($seoRawQuery = parse_url($seo['canonical'], PHP_URL_QUERY)) ? '?'.$seoRawQuery : '';
+    $seoCanonical = \App\Support\Seo::url($seoPath, in_array($seoLocale, $seoLanguages, true) ? $seoLocale : 'en').$seoQuery;
+    $seoAlternates = ($seo['noindex'] ?? false) ? [] : array_map(
+        fn (string $url) => $url.$seoQuery,
+        \App\Support\Seo::alternates($seoLanguages, $seoPath),
+    );
+    $seoImage = \App\Support\Seo::origin().'/images/'.($seo['image'] ?? 'branding/logo-full.webp');
 
     // Built here rather than in the markup below, where Blade would read
     // "@context" as one of its own directives.
@@ -43,16 +45,11 @@
     );
 @endphp
 <meta name="description" content="{{ $seo['description'] }}" />
-@if ($seo['noindex'] ?? false)
-    <meta name="robots" content="noindex, follow" />
-@endif
+<meta name="robots" content="{{ ($seo['noindex'] ?? false) ? 'noindex, follow' : 'index, follow, max-image-preview:large' }}" />
 <link rel="canonical" href="{{ $seoCanonical }}" />
-@if (count($seoVersions) > 1)
-    @foreach ($seoVersions as $seoHreflang => $seoUrl)
-        <link rel="alternate" hreflang="{{ $seoHreflang }}" href="{{ $seoUrl }}" />
-    @endforeach
-    <link rel="alternate" hreflang="x-default" href="{{ $seoEnglishUrl }}" />
-@endif
+@foreach ($seoAlternates as $seoHreflang => $seoUrl)
+    <link rel="alternate" hreflang="{{ $seoHreflang }}" href="{{ $seoUrl }}" />
+@endforeach
 
 <meta property="og:site_name" content="{{ $siteName }}" />
 <meta property="og:type" content="{{ $seo['type'] ?? 'website' }}" />
@@ -60,7 +57,12 @@
 <meta property="og:description" content="{{ $seo['description'] }}" />
 <meta property="og:url" content="{{ $seoCanonical }}" />
 <meta property="og:image" content="{{ $seoImage }}" />
-<meta property="og:locale" content="{{ $seoLocale }}" />
+<meta property="og:locale" content="{{ \App\Support\Seo::ogLocale($seoLocale) }}" />
+@foreach (array_keys($seoAlternates) as $seoHreflang)
+    @if ($seoHreflang !== 'x-default' && $seoHreflang !== $seoLocale)
+        <meta property="og:locale:alternate" content="{{ \App\Support\Seo::ogLocale($seoHreflang) }}" />
+    @endif
+@endforeach
 <meta name="twitter:card" content="{{ isset($seo['image']) ? 'summary_large_image' : 'summary' }}" />
 <meta name="twitter:title" content="{{ $seoTitle }}" />
 <meta name="twitter:description" content="{{ $seo['description'] }}" />

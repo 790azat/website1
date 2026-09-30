@@ -11,40 +11,44 @@ test('pages are in English by default with all language flags', function () {
         ->assertOk()
         ->assertSee('<html lang="en">', false)
         ->assertSee('Latest Articles')
-        ->assertSee('lang=es', false)
-        ->assertSee('lang=fr', false)
-        ->assertSee('lang=en', false);
+        ->assertSee('href="'.localized(route('home'), 'es').'"', false)
+        ->assertSee('href="'.localized(route('home'), 'fr').'"', false)
+        ->assertSee('href="'.route('home').'"', false);
 });
 
-test('the lang parameter switches to Spanish and is remembered in the session', function () {
-    $this->get(route('home', ['lang' => 'es']))
+test('the /es prefix shows the site in Spanish and links stay in Spanish', function () {
+    $this->get(localized(route('home'), 'es'))
         ->assertOk()
-        ->assertSessionHas('locale', 'es')
+        ->assertSee('href="'.localized(route('team'), 'es').'"', false)
         ->assertSee('<html lang="es">', false)
         ->assertSee('Últimos artículos')
         ->assertSee('Inteligencia de Datos');
 
-    $this->get(route('team'))
+    $this->get(localized(route('team'), 'es'))
         ->assertOk()
         ->assertSee('Nuestro equipo editorial');
 
-    $this->get(route('home', ['lang' => 'en']))
+    $this->get(route('home'))
         ->assertOk()
-        ->assertSessionHas('locale', 'en')
         ->assertSee('Latest Articles');
 });
 
-test('the lang parameter switches to French and is remembered in the session', function () {
-    $this->get(route('home', ['lang' => 'fr']))
+test('the /fr prefix shows the site in French', function () {
+    $this->get(localized(route('home'), 'fr'))
         ->assertOk()
-        ->assertSessionHas('locale', 'fr')
         ->assertSee('<html lang="fr">', false)
         ->assertSee('Derniers articles')
         ->assertSee('Intelligence des données');
 
-    $this->get(route('team'))
+    $this->get(localized(route('team'), 'fr'))
         ->assertOk()
         ->assertSee('Notre équipe éditoriale');
+});
+
+test('old lang links redirect permanently to the prefixed address', function () {
+    $this->get(route('team', ['lang' => 'es']))->assertStatus(301)->assertRedirect(localized(route('team'), 'es'));
+    $this->get(route('home', ['lang' => 'fr']))->assertStatus(301)->assertRedirect(localized(route('home'), 'fr'));
+    $this->get(localized(route('team'), 'es').'?lang=en')->assertStatus(301)->assertRedirect(route('team'));
 });
 
 test('an unsupported language is ignored', function () {
@@ -63,13 +67,13 @@ test('articles without a Spanish translation say they are available in English o
     file_put_contents($articles.'/'.$article['slug'].'.md', SiteContent::renderArticle($article));
     app()->instance(SiteContent::class, new SiteContent(resource_path('data/site.php'), $articles, ''));
 
-    $this->get(route('article', ['slug' => $article['slug'], 'lang' => 'es']))
+    $this->get(localized(route('article', $article['slug']), 'es'))
         ->assertOk()
         ->assertSee($article['title'])
         ->assertSee('Por ahora, este artículo solo está disponible en inglés.')
         ->assertDontSee('hreflang="es" href', false);
 
-    $this->get(route('article', ['slug' => $article['slug'], 'lang' => 'en']))
+    $this->get(route('article', $article['slug']))
         ->assertOk()
         ->assertDontSee('available in English only');
 

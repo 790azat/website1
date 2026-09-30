@@ -25,7 +25,7 @@ test('article pages have a plain-text description, canonical, Open Graph and JSO
     $article = siteData()['articles'][0];
     $url = route('article', $article['slug']);
 
-    $response = $this->get($url.'?lang=en')->assertOk();
+    $response = $this->get($url)->assertOk();
 
     $response->assertSee('<link rel="canonical" href="'.$url.'" />', false)
         ->assertSee('<meta property="og:type" content="article" />', false)
@@ -91,7 +91,7 @@ test('the header search shows live results from the search index', function () {
         ->assertSee('data-card-title', false)
         ->assertSee('data-card-section', false);
 
-    $this->get(route('home', ['lang' => 'es']))
+    $this->get(localized(route('home'), 'es'))
         ->assertSee('Ver todos los resultados')
         ->assertSee('No se encontraron artículos.');
 });
@@ -138,7 +138,7 @@ test('the sitemap lists every article, section and program', function () {
     $xml = simplexml_load_string($response->getContent());
     expect($xml)->not->toBeFalse();
 
-    $response->assertSee('<loc>'.route('home').'</loc>', false);
+    $response->assertSee('<loc>'.route('home').'/</loc>', false);
 
     foreach ($data['articles'] as $article) {
         $response->assertSee('<loc>'.route('article', $article['slug']).'</loc><lastmod>'.$article['date'].'</lastmod>', false);
@@ -156,3 +156,11 @@ test('the sitemap lists every article, section and program', function () {
 test('account pages from the starter kit are gone', function (string $path) {
     $this->get($path)->assertNotFound();
 })->with(['/login', '/register', '/dashboard', '/settings', '/settings/profile', '/forgot-password']);
+
+test('robots.txt points to the sitemap and keeps the captcha out', function () {
+    $this->get('/robots.txt')
+        ->assertOk()
+        ->assertSee('Sitemap: '.url('/sitemap.xml'))
+        ->assertSee('Disallow: /captcha')
+        ->assertSee('Disallow: /es/captcha');
+});

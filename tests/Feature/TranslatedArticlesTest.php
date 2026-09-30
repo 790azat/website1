@@ -25,8 +25,8 @@ function linkUrls(string $body): array
 function sitemapAlternates(string $url): string
 {
     return '<xhtml:link rel="alternate" hreflang="en" href="'.$url.'"/>'
-        .'<xhtml:link rel="alternate" hreflang="es" href="'.$url.'?lang=es"/>'
-        .'<xhtml:link rel="alternate" hreflang="fr" href="'.$url.'?lang=fr"/>'
+        .'<xhtml:link rel="alternate" hreflang="es" href="'.localized($url, 'es').'"/>'
+        .'<xhtml:link rel="alternate" hreflang="fr" href="'.localized($url, 'fr').'"/>'
         .'<xhtml:link rel="alternate" hreflang="x-default" href="'.$url.'"/>';
 }
 
@@ -73,14 +73,14 @@ test('articles are shown translated on the translated site', function (string $l
     $translation = siteData()['translations'][$locale][$article['slug']];
     $url = route('article', $article['slug']);
 
-    $response = $this->get($url.'?lang='.$locale)->assertOk();
+    $response = $this->get(localized($url, $locale))->assertOk();
 
     $response->assertSee($translation['title'])
         ->assertDontSee(trans('This article is currently available in English only.', [], $locale))
-        ->assertSee('<link rel="canonical" href="'.$url.'?lang='.$locale.'" />', false)
+        ->assertSee('<link rel="canonical" href="'.localized($url, $locale).'" />', false)
         ->assertSee('<link rel="alternate" hreflang="en" href="'.$url.'" />', false)
-        ->assertSee('<link rel="alternate" hreflang="es" href="'.$url.'?lang=es" />', false)
-        ->assertSee('<link rel="alternate" hreflang="fr" href="'.$url.'?lang=fr" />', false)
+        ->assertSee('<link rel="alternate" hreflang="es" href="'.localized($url, 'es').'" />', false)
+        ->assertSee('<link rel="alternate" hreflang="fr" href="'.localized($url, 'fr').'" />', false)
         ->assertSee('<link rel="alternate" hreflang="x-default" href="'.$url.'" />', false)
         ->assertSee('"inLanguage":"'.$locale.'"', false);
 
@@ -88,18 +88,18 @@ test('articles are shown translated on the translated site', function (string $l
 
     expect(html_entity_decode($description[1]))->toBe(SiteContent::excerpt($translation['body']));
 
-    $this->get($url.'?lang=en')
+    $this->get($url)
         ->assertOk()
         ->assertSee($article['title'])
         ->assertSee('<link rel="canonical" href="'.$url.'" />', false)
-        ->assertSee('<link rel="alternate" hreflang="'.$locale.'" href="'.$url.'?lang='.$locale.'" />', false);
+        ->assertSee('<link rel="alternate" hreflang="'.$locale.'" href="'.localized($url, $locale).'" />', false);
 })->with('translation locales');
 
 test('translated reference lists render as links', function (string $locale, string $references) {
     $article = siteData()['articles'][0];
     $urls = linkUrls(siteData()['translations'][$locale][$article['slug']]['body']);
 
-    $response = $this->get(route('article', ['slug' => $article['slug'], 'lang' => $locale]))
+    $response = $this->get(localized(route('article', $article['slug']), $locale))
         ->assertOk()
         ->assertSee($references);
 
@@ -112,19 +112,19 @@ test('listings and search use the translated titles on the translated site', fun
     $article = siteData()['articles'][0];
     $translation = siteData()['translations'][$locale][$article['slug']];
 
-    $this->get(route('articles', ['lang' => $locale]))
+    $this->get(localized(route('articles'), $locale))
         ->assertOk()
         ->assertSee($translation['title']);
 
-    $this->get(route('articles', ['q' => $translation['title'], 'lang' => $locale]))
+    $this->get(localized(route('articles', ['q' => $translation['title']]), $locale))
         ->assertOk()
-        ->assertSee('href="'.route('article', $article['slug']).'"', false);
+        ->assertSee('href="'.localized(route('article', $article['slug']), $locale).'"', false);
 })->with('translation locales');
 
 test('program pages, which are English only, have no translated alternates', function (string $locale) {
     $program = siteData()['programs'][0];
 
-    $this->get(route('program', ['slug' => $program['slug'], 'lang' => $locale]))
+    $this->get(localized(route('program', $program['slug']), $locale))
         ->assertOk()
         ->assertSee('<link rel="canonical" href="'.route('program', $program['slug']).'" />', false)
         ->assertDontSee('hreflang="'.$locale.'" href', false);
@@ -140,11 +140,11 @@ test('the sitemap lists translated pages with hreflang alternates', function () 
     expect(simplexml_load_string($response->getContent()))->not->toBeFalse();
 
     $response->assertSee('<loc>'.$url.'</loc><lastmod>'.$article['date'].'</lastmod>'.$alternates, false)
-        ->assertSee('<loc>'.$url.'?lang=es</loc><lastmod>'.$article['date'].'</lastmod>'.$alternates, false)
-        ->assertSee('<loc>'.$url.'?lang=fr</loc><lastmod>'.$article['date'].'</lastmod>'.$alternates, false)
-        ->assertSee('<loc>'.route('home').'?lang=es</loc>', false)
-        ->assertSee('<loc>'.route('home').'?lang=fr</loc>', false)
-        ->assertDontSee(route('program', siteData()['programs'][0]['slug']).'?lang=', false);
+        ->assertSee('<loc>'.localized($url, 'es').'</loc><lastmod>'.$article['date'].'</lastmod>'.$alternates, false)
+        ->assertSee('<loc>'.localized($url, 'fr').'</loc><lastmod>'.$article['date'].'</lastmod>'.$alternates, false)
+        ->assertSee('<loc>'.localized(route('home'), 'es').'</loc>', false)
+        ->assertSee('<loc>'.localized(route('home'), 'fr').'</loc>', false)
+        ->assertDontSee(localized(route('program', siteData()['programs'][0]['slug']), 'es'), false);
 });
 
 test('an article translated into only some languages lists only those as alternates', function () {
@@ -159,11 +159,11 @@ test('an article translated into only some languages lists only those as alterna
 
     $url = route('article', $article['slug']);
 
-    $this->get($url.'?lang=fr')
+    $this->get(localized($url, 'fr'))
         ->assertOk()
         ->assertSee('Pour l’instant, cet article n’est disponible qu’en anglais.')
         ->assertSee('<link rel="canonical" href="'.$url.'" />', false)
-        ->assertSee('<link rel="alternate" hreflang="es" href="'.$url.'?lang=es" />', false)
+        ->assertSee('<link rel="alternate" hreflang="es" href="'.localized($url, 'es').'" />', false)
         ->assertDontSee('hreflang="fr" href', false);
 
     unlink($articles.'/es/'.$article['slug'].'.md');

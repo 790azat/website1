@@ -53,3 +53,18 @@ function siteData(): array
 {
     return require dirname(__DIR__).'/resources/data/articles.php';
 }
+
+/**
+ * A URL on this site in another language: "http://host/p/x" -> "http://host/es/p/x".
+ */
+function localized(string $url, string $locale): string
+{
+    $root = rtrim((string) config('app.url'), '/');
+    $path = substr($url, strlen($root));
+
+    if ($locale === 'en') {
+        return $root.$path;
+    }
+
+    return $root.'/'.$locale.($path === '/' ? '' : $path);
+}
