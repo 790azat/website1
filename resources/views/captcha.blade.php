@@ -72,6 +72,16 @@
     }
     @keyframes tu-rot { to { transform: rotate(360deg); } }
     .tu-wait { margin-top: 22px; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #71717a; }
+    .tu-lang { display: flex; gap: 4px; margin-bottom: 18px; padding: 4px; border-radius: 999px; background: rgba(255, 255, 255, .05); border: 1px solid rgba(255, 255, 255, .09); }
+    .tu-lang a {
+        display: inline-flex; align-items: center; gap: 7px; padding: 6px 11px; border-radius: 999px;
+        color: #a1a1aa; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: .08em;
+        transition: background-color .2s ease, color .2s ease;
+    }
+    .tu-lang a:hover { background: rgba(255, 255, 255, .06); color: #f4f4f5; }
+    .tu-lang a[aria-current] { background: rgba(255, 255, 255, .12); color: #fff; }
+    .tu-lang a:focus-visible { outline: 2px solid #7dd3fc; outline-offset: 2px; }
+    .tu-lang svg { display: block; width: 20px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255, 255, 255, .2); }
     .tu-foot { max-width: 440px; margin-top: 22px; text-align: center; font-size: 12px; line-height: 1.55; color: #71717a; }
     .tu-foot a { color: #a1a1aa; text-decoration: underline; text-underline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) { #tu-gate *, #tu-gate *::after { animation: none !important; } }
@@ -100,8 +110,31 @@ window.Gate = (function () {
         fr: { foot: "Le contenu suivant est informatif et éducatif et ne constitue pas un conseil financier, juridique, médical ou professionnel. Les résultats ne sont pas garantis ; votre expérience peut varier.", rights: 'Tous droits réservés.', agree: 'En continuant, vous acceptez nos {t} et notre {p}.', t: "Conditions d'utilisation", p: 'Politique de confidentialité' }
     };
 
+    var FLAGS = {
+        en: '<svg viewBox="0 0 60 30" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L30,15 M60,0 L30,15 M60,30 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>',
+        es: '<svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></svg>',
+        fr: '<svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#FFFFFF"/><rect width="10" height="20" fill="#002654"/><rect x="20" width="10" height="20" fill="#CE1126"/></svg>'
+    };
+    var NAMES = { en: 'English', es: 'Español', fr: 'Français' };
+
+    // The page they asked for, in language l: "?lang=" links keep that form, others get the /es or /fr prefix.
+    function nextIn(l) {
+        var cut = next.search(/#/), hash = cut < 0 ? '' : next.slice(cut), url = cut < 0 ? next : next.slice(0, cut);
+        if (/[?&]lang=(?:en|es|fr)\b/.test(url)) return url.replace(/([?&]lang=)(?:en|es|fr)\b/, '$1' + l) + hash;
+        url = url.replace(/^\/(?:es|fr)(?=[\/?#]|$)/, '');
+        if (url === '' || url.charAt(0) === '?') url = '/' + url;
+        if (l !== 'en') url = '/' + l + (url.charAt(1) === '?' || url === '/' ? url.slice(1) : url);
+        return url + hash;
+    }
+
     return {
         lang: lang,
+        switcher: function (cls) {
+            return '<nav class="' + cls + '" aria-label="Language">' + ['en', 'es', 'fr'].map(function (l) {
+                return '<a href="' + location.pathname + '?next=' + encodeURIComponent(nextIn(l)) + '" hreflang="' + l + '" lang="' + l + '" title="' + NAMES[l] + '"' +
+                    (l === lang ? ' aria-current="true"' : '') + '>' + FLAGS[l] + l.toUpperCase() + '</a>';
+            }).join('') + '</nav>';
+        },
         footer: function () {
             var f = FOOT[lang];
             return f.foot + '<br>' + f.agree
@@ -137,6 +170,7 @@ window.Gate = (function () {
         g.setAttribute('aria-modal', 'true');
         g.setAttribute('aria-labelledby', 'tu-q');
         g.innerHTML =
+            Gate.switcher('tu-lang') +
             '<div class="tu-card">' +
                 '<div class="tu-badge"><span>18+</span></div>' +
                 '<h2 class="tu-title" id="tu-q">' + t.q + '</h2>' +
