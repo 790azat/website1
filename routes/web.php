@@ -17,3 +17,4 @@ Route::view('p/{slug}', 'article')->name('article');
 Route::view('programs/{slug}', 'program')->name('program');
 
 Route::get('sitemap.xml', SitemapController::class)->name('sitemap');
+Route::get('robots.txt', [SitemapController::class, 'robots'])->name('robots');

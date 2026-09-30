@@ -67,15 +67,14 @@ jobs:
       - name: Build frontend assets
         run: npm run build
 
-      # Upload to the server (SFTP/rsync) is temporarily disabled; every
-      # other step still runs on each push. To re-enable, remove the
-      # `if: false` lines on this step and the next one.
+      # The upload runs only when the repository variable DEPLOY_ENABLED is
+      # "true" (see DEPLOY.md); every other step runs on each push.
       - name: Install rsync tools
-        if: false
+        if: vars.DEPLOY_ENABLED == 'true'
         run: sudo apt-get update && sudo apt-get install -y sshpass rsync
 
       - name: Deploy via rsync over SSH
-        if: false
+        if: vars.DEPLOY_ENABLED == 'true'
         env:
           SSHPASS: ${{ secrets.SSH_PASSWORD }}
         run: |
