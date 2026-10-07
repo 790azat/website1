@@ -143,10 +143,6 @@ Okta provides an identity-focused platform covering authentication, SSO, MFA, di
 
 As organizations adopt more cloud applications and automated systems, identity management increasingly involves devices, APIs, service accounts, and AI agents as well as employees. Okta's broader platform addresses these areas through a combination of authentication, governance, security, and identity automation tools.
 
-## About the Author
-
-Emily Carter, 34, is an investment consultant at a business advisory publication, specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.
-
 ## References
 
 * [Okta — Workforce Identity](https://www.okta.com/products/workforce-identity/)

@@ -118,10 +118,6 @@ For 2026 terms beginning before October, WGU lists undergraduate business tuitio
 
 Admissions requirements vary by degree level, and international eligibility is an important consideration because WGU currently limits applications primarily to people living in the United States. Prospective students should review the latest program, tuition, transfer, and admissions information before applying.
 
-## About the Author
-
-Michael Anderson is a 39-year-old technology and analytics specialist at [website name], specializing in data analysis, business intelligence, and digital reporting. He focuses on helping organizations understand complex information and use analytical tools to support everyday business decisions.
-
 ## References
 
 * [WGU — Online Business Degrees](https://www.wgu.edu/online-business-degrees.html)

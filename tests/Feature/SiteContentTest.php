@@ -23,6 +23,12 @@ test('every article has a unique publication date that is not in the future', fu
         ->and(max($dates) <= now()->toDateString())->toBeTrue();
 });
 
+test('no article body repeats the byline or author bio shown by the article page', function () {
+    foreach (app(SiteContent::class)->build()['articles'] as $article) {
+        expect($article['body'])->not->toMatch('/^##\s+(By\s|About the Author|.*\d{4}\s*[•·]\s)/mu', $article['slug']);
+    }
+});
+
 test('every program links to an existing article', function () {
     $content = app(SiteContent::class)->build();
     $slugs = array_column($content['articles'], 'slug');

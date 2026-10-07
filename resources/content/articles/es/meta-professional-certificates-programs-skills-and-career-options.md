@@ -6,8 +6,6 @@ date: 2026-07-18
 image: articles/meta-professional-certificates-programs-skills-and-career-options.webp
 ---
 
-## 25 de septiembre de 2026 • Michael Anderson
-
 Los Meta Professional Certificates son programas de formación profesional en línea diseñados para ayudar a los estudiantes a desarrollar habilidades prácticas para carreras en tecnología, marketing, datos y otros ámbitos digitales. Los programas se ofrecen a través de Coursera y combinan cursos estructurados con proyectos prácticos, herramientas del sector y credenciales profesionales.
 
 La cartera de certificados incluye programas de desarrollo front-end y back-end, desarrollo móvil, ingeniería de bases de datos, marketing en redes sociales y analítica de marketing. La mayoría de los programas están pensados para principiantes y no exigen un título previo ni experiencia profesional en la materia.
@@ -162,10 +160,6 @@ Los Meta Professional Certificates ofrecen formación en línea estructurada en 
 Los proyectos prácticos son una parte importante del modelo de aprendizaje y permiten a los estudiantes crear muestras de trabajo en paralelo a los cursos. Los programas de marketing también ofrecen un contacto práctico con herramientas como Meta Ads Manager y plataformas de analítica.
 
 Para quienes cambian de carrera y para los profesionales que desarrollan habilidades digitales, un Meta Professional Certificate puede ser un punto de partida estructurado. Combinar la credencial con proyectos prácticos, un portafolio y experiencia relevante para el puesto objetivo puede ofrecer una base más amplia para el desarrollo profesional.
-
-## Sobre el autor
-
-Michael Anderson, de 39 años, es especialista en tecnología y analítica en [website name], especializado en análisis de datos, inteligencia de negocio e informes digitales. Su trabajo se centra en ayudar a las organizaciones a comprender información compleja y a utilizar herramientas analíticas para respaldar las decisiones empresariales cotidianas.
 
 ## Referencias
 

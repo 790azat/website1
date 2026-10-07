@@ -145,10 +145,6 @@ Para 2026–2027, la matrícula figura en 923 dólares por crédito, lo que supo
 
 El programa ofrece dos vías de admisión, entre ellas una basada en el rendimiento que permite demostrar la preparación mediante dos cursos de posgrado. La Standard Application exige una licenciatura, un GPA de 3,0, una declaración personal, currículum, cartas de recomendación y expedientes académicos, mientras que las puntuaciones del GMAT y del GRE son opcionales. (northeastern.edu)
 
-## Sobre el autor
-
-Daniel Brooks es un consultor de tecnología empresarial de 41 años en [website name], especializado en estrategia de datos, eficiencia operativa e inteligencia de negocio. Ayuda a las organizaciones a mejorar la gestión de la información y el uso de los datos para respaldar decisiones estratégicas y operativas.
-
 ## Referencias
 
 * [Northeastern University — Online MBA](https://catalog.northeastern.edu/graduate/business/master-business-administration/mba-online/)

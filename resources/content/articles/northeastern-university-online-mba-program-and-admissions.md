@@ -145,10 +145,6 @@ For 2026–2027, tuition is listed at $923 per credit, resulting in an estimated
 
 The program offers two admissions routes, including a performance-based pathway that allows students to demonstrate readiness through two graduate courses. The Standard Application requires a bachelor's degree, 3.0 GPA, personal statement, resume, recommendations, and transcripts, while GMAT and GRE scores are optional. (northeastern.edu)
 
-## About the Author
-
-Daniel Brooks is a 41-year-old business technology consultant at [website name], specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
-
 ## References
 
 * [Northeastern University — Online MBA](https://catalog.northeastern.edu/graduate/business/master-business-administration/mba-online/)

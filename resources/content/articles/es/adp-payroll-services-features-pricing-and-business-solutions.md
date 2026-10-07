@@ -6,8 +6,6 @@ date: 2025-02-05
 image: articles/adp-payroll-services-features-pricing-and-business-solutions.webp
 ---
 
-## 24 de septiembre de 2026 • Daniel Brooks
-
 Los servicios de nómina de ADP ofrecen a las empresas herramientas en la nube para procesar el pago a los empleados, calcular y presentar los impuestos sobre la nómina, gestionar la información de la plantilla y dar soporte a las actividades de recursos humanos. ADP presta servicio a empresas de todos los tamaños, desde microempresas hasta organizaciones con miles de empleados, con productos diseñados en función del tamaño de la plantilla y de las necesidades operativas.
 
 Para las pequeñas empresas, RUN Powered by ADP ofrece nómina, presentación de impuestos, autoservicio para empleados, incorporación de personal y servicios de RR. HH. opcionales. Las organizaciones más grandes pueden utilizar soluciones más amplias de ADP para la gestión de la plantilla y del capital humano, con capacidades más completas de nómina, RR. HH., beneficios, control horario y análisis.
@@ -129,10 +127,6 @@ Los servicios de nómina de ADP combinan el procesamiento de la nómina, la pres
 Las capacidades de la plataforma van más allá de la nómina básica gracias al autoservicio para empleados, el control horario, los beneficios, los servicios de RR. HH., la nómina multiestatal y la administración asistida por IA.
 
 Para las empresas que evalúan ADP, las consideraciones más importantes son el tamaño de la plantilla, las funciones de nómina y RR. HH. necesarias, las jurisdicciones en las que operan, los servicios adicionales, las integraciones y el coste personalizado de la solución elegida.
-
-## Sobre el autor
-
-Daniel Brooks, de 41 años, es consultor de tecnología empresarial en [website name] y está especializado en estrategia de datos, eficiencia operativa e inteligencia de negocio. Ayuda a las organizaciones a mejorar la gestión de la información y a utilizar los datos para respaldar sus decisiones estratégicas y operativas.
 
 ## Referencias
 

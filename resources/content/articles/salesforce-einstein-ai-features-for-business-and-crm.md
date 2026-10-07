@@ -163,10 +163,6 @@ The expansion of Agentforce moves Salesforce AI beyond recommendations and gener
 
 Businesses evaluating Einstein should examine which AI features are included in their Salesforce edition, which require additional licenses, how consumption is billed, and whether their CRM data and governance processes are prepared for expanded AI use.
 
-## About the Author
-
-Daniel Brooks, 41, is a business technology consultant at a business advisory publication, specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
-
 ## References
 
 * [Salesforce — AI for Sales](https://www.salesforce.com/sales/ai/)

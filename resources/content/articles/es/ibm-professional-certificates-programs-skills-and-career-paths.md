@@ -6,8 +6,6 @@ date: 2026-04-21
 image: articles/ibm-professional-certificates-programs-skills-and-career-paths.webp
 ---
 
-## 25 de septiembre de 2026 • James Mitchell
-
 Los IBM Professional Certificates son programas en línea orientados a la carrera profesional, diseñados para ayudar a los estudiantes a desarrollar habilidades prácticas en tecnología, datos, ciberseguridad, desarrollo de software, análisis de negocio, gestión de proyectos y otros ámbitos profesionales. Muchos de estos programas se imparten a través de Coursera y combinan cursos estructurados con laboratorios prácticos, proyectos y preparación para el empleo.
 
 Por lo general, los programas están pensados para principiantes o profesionales al inicio de su carrera y pueden completarse sin un título tradicional en informática o tecnología. IBM ha desarrollado certificados en torno a habilidades ocupacionales concretas, lo que permite elegir un programa en función del tipo de trabajo al que se aspira.
@@ -145,10 +143,6 @@ Los IBM Professional Certificates ofrecen itinerarios en línea estructurados ha
 Por lo general, los certificados son accesibles para principiantes y pueden completarse al ritmo de cada persona a través de Coursera. Los costes dependen principalmente del periodo de suscripción y del programa concreto.
 
 Para quienes cambian de carrera o desarrollan un conjunto de habilidades centrado en la tecnología, un IBM Professional Certificate puede ofrecer un punto de partida estructurado. Combinar el certificado con proyectos de portafolio, experiencia práctica y habilidades alineadas con los requisitos de puestos concretos puede crear una base más amplia para el desarrollo profesional.
-
-## Sobre el autor
-
-James Mitchell es un especialista financiero de 36 años en [website name], centrado en afrontar mercados volátiles y desarrollar estrategias de inversión resilientes. Ayuda a profesionales a construir carteras diversificadas diseñadas para resistir las fluctuaciones del mercado y favorecer un crecimiento sostenible.
 
 ## Referencias
 

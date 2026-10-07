@@ -145,10 +145,6 @@ Para el año académico 2026–2027, la matrícula de grado en línea es de 354 
 
 Los créditos transferidos, las ayudas económicas, las becas y los beneficios para militares pueden influir en el costo final. Los estudiantes deberían comparar el plan de estudios concreto, la evaluación de créditos transferibles, la matrícula y sus objetivos profesionales antes de elegir un programa.
 
-## Sobre el autor
-
-Daniel Brooks, de 41 años, es consultor de tecnología empresarial en [website name] y está especializado en estrategia de datos, eficiencia operativa e inteligencia de negocio. Ayuda a las organizaciones a mejorar la gestión de la información y el uso de los datos para respaldar sus decisiones estratégicas y operativas.
-
 ## Referencias
 
 * [Southern New Hampshire University — Online Business School](https://www.snhu.edu/online-degrees/business)

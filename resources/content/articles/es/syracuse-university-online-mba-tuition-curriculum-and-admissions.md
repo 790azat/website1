@@ -144,10 +144,6 @@ Para 2026–2027, Whitman fija la matrícula de sus másteres en línea en $2,08
 
 La admisión suele exigir un título de grado, unos 18 meses de experiencia profesional, expedientes académicos, un ensayo, dos cartas de recomendación y un currículum. El GMAT y el GRE son opcionales.
 
-## Sobre el autor
-
-Michael Anderson, de 39 años, es especialista en tecnología y analítica en [website name], con especialización en análisis de datos, inteligencia de negocio e informes digitales. Su trabajo se centra en ayudar a las organizaciones a comprender información compleja y a utilizar herramientas analíticas para respaldar las decisiones empresariales cotidianas.
-
 ## Referencias
 
 * [Syracuse University Whitman School of Management — Online MBA](https://whitman.syracuse.edu/online-masters-programs-programs/mba-online)

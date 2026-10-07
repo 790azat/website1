@@ -140,10 +140,6 @@ For the 2026–2027 academic year, tuition is listed at $379 per credit hour, pr
 
 Admission generally requires a bachelor's degree, recommended 3.0 GPA, and at least three years of full-time work experience, although Gies states that applications are reviewed holistically. The GMAT and GRE are not required.
 
-## About the Author
-
-Emily Carter is a 34-year-old investment consultant at [website name], specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.
-
 ## References
 
 * [University of Illinois Gies College of Business — Online MBA](https://giesbusiness.illinois.edu/graduate-hub/online-programs/imba)

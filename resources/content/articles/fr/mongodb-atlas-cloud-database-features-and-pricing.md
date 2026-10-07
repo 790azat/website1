@@ -150,10 +150,6 @@ L'offre Free peut servir à l'apprentissage et à l'expérimentation, Flex est c
 
 Comme la tarification d'Atlas dépend fortement de la consommation de ressources et de l'architecture de déploiement, les entreprises doivent évaluer les charges de travail attendues, les régions, le stockage, les sauvegardes, le transfert de données et les services supplémentaires pour estimer le coût total de leur base de données.
 
-## À propos de l'auteur
-
-Daniel Brooks, 41 ans, est consultant en technologies d'entreprise pour une publication de conseil aux entreprises, spécialisé dans la stratégie data, l'efficacité opérationnelle et la business intelligence. Il aide les organisations à améliorer la gestion de leurs informations et à utiliser les données pour éclairer leurs décisions stratégiques et opérationnelles.
-
 ## Références
 
 * [MongoDB — Atlas Pricing](https://www.mongodb.com/pricing)

@@ -6,8 +6,6 @@ date: 2025-05-26
 image: articles/microsoft-certifications-programs-exams-and-career-paths.webp
 ---
 
-## Por Emily Carter
-
 Microsoft ofrece credenciales profesionales que acreditan conocimientos en computación en la nube, IA, ciberseguridad, datos, aplicaciones empresariales, software de productividad y administración de TI. Estas certificaciones se organizan en torno a puestos de trabajo y áreas tecnológicas, lo que permite a los estudiantes elegir en función de sus responsabilidades actuales o de sus aspiraciones profesionales.
 
 ## Estructura de las credenciales

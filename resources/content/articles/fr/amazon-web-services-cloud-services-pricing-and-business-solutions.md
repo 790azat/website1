@@ -6,8 +6,6 @@ date: 2026-04-27
 image: articles/amazon-web-services-cloud-services-pricing-and-business-solutions.webp
 ---
 
-## 24 septembre 2026 • Daniel Brooks
-
 Amazon Web Services (AWS) est une plateforme de cloud computing qui fournit des services d'infrastructure, de développement d'applications, de stockage de données, de bases de données, de réseau, de sécurité, d'analyse, d'intelligence artificielle et d'autres services technologiques. Les organisations peuvent utiliser des services AWS individuellement ou les combiner au sein d'architectures cloud plus vastes selon leurs besoins techniques et métier.
 
 AWS exploite un large portefeuille de services cloud plutôt que de vendre un logiciel standardisé unique. AWS propose actuellement plus de 240 services répartis dans des catégories telles que le calcul, le stockage, les bases de données, le réseau, l'analyse, l'apprentissage automatique, la sécurité, la migration, les outils de développement et les applications métier.
@@ -147,10 +145,6 @@ Amazon Web Services offre une plateforme cloud étendue couvrant le calcul, le s
 Son architecture fondée sur les services permet aux entreprises de sélectionner des composants individuels et de les combiner en environnements cloud personnalisés. Le modèle de paiement à l'usage offre de la flexibilité, tandis que les Savings Plans et les autres options tarifaires conviennent aux charges de travail plus prévisibles.
 
 Pour les entreprises qui évaluent AWS, les principaux critères sont l'architecture, la sécurité, les exigences des charges de travail, les ressources techniques, les besoins géographiques et les coûts cloud récurrents. L'ampleur du portefeuille de services d'AWS fait de la planification détaillée et du suivi des coûts des éléments essentiels de l'exploitation de la plateforme.
-
-## À propos de l'auteur
-
-Daniel Brooks, 41 ans, est consultant en technologies pour les entreprises chez [website name], spécialisé dans la stratégie de données, l'efficacité opérationnelle et la business intelligence. Il aide les organisations à améliorer la gestion de leurs informations et à utiliser les données pour éclairer leurs décisions stratégiques et opérationnelles.
 
 ## Références
 

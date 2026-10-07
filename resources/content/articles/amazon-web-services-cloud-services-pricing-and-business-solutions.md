@@ -6,8 +6,6 @@ date: 2026-04-27
 image: articles/amazon-web-services-cloud-services-pricing-and-business-solutions.webp
 ---
 
-## September 24, 2026 • Daniel Brooks
-
 Amazon Web Services (AWS) is a cloud computing platform that provides infrastructure, application development, data storage, databases, networking, security, analytics, artificial intelligence, and other technology services. Organizations can use individual AWS services or combine them into larger cloud architectures according to their technical and business requirements.
 
 AWS operates a broad portfolio of cloud services rather than selling one standardized software package. AWS currently provides more than 240 services across categories including compute, storage, databases, networking, analytics, machine learning, security, migration, developer tools, and business applications.
@@ -147,10 +145,6 @@ Amazon Web Services provides a broad cloud platform covering compute, storage, d
 Its service-based architecture allows businesses to select individual components and combine them into customized cloud environments. The pay-as-you-go model provides flexibility, while Savings Plans and other pricing options can support more predictable workloads.
 
 For businesses evaluating AWS, the main considerations are architecture, security, workload requirements, technical resources, geographic needs, and ongoing cloud costs. AWS's large service portfolio makes detailed planning and cost monitoring important parts of operating the platform.
-
-## About the Author
-
-Daniel Brooks, 41, is a business technology consultant at [website name], specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
 
 ## References
 

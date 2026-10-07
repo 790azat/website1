@@ -123,10 +123,6 @@ For 2026–27, ASU lists general graduate online tuition at $605 per credit for 
 
 Admission requires a bachelor's or master's degree, a 3.00 GPA standard based on recent undergraduate coursework or an applicable master's degree, transcripts, an essay, resume, and two professional recommendations. The GMAT is not required.
 
-## About the Author
-
-Daniel Brooks is a 41-year-old business technology consultant at [website name], specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
-
 ## References
 
 * [Arizona State University — Online Master of Business Administration](https://asuonline.asu.edu/online-degree-programs/graduate/master-business-administration/)

@@ -6,8 +6,6 @@ date: 2025-02-05
 image: articles/adp-payroll-services-features-pricing-and-business-solutions.webp
 ---
 
-## 24 septembre 2026 • Daniel Brooks
-
 Les services de paie d'ADP fournissent aux entreprises des outils dans le cloud pour traiter la rémunération des salariés, calculer et déclarer les charges sociales et fiscales liées à la paie, gérer les informations sur le personnel et soutenir les activités de ressources humaines. ADP accompagne des entreprises de toutes tailles, des très petites structures aux organisations de plusieurs milliers de salariés, avec différents produits conçus en fonction de l'effectif et des besoins opérationnels.
 
 Pour les petites entreprises, RUN Powered by ADP propose la paie, les déclarations fiscales, le libre-service pour les salariés, l'intégration des nouveaux collaborateurs et des services RH en option. Les organisations plus grandes peuvent utiliser les solutions plus larges d'ADP pour la gestion des effectifs et du capital humain, avec des capacités plus étendues en matière de paie, de RH, d'avantages sociaux, de gestion des temps et d'analyse.
@@ -129,10 +127,6 @@ Les services de paie d'ADP réunissent le traitement de la paie, les déclaratio
 Les capacités de la plateforme vont au-delà de la paie de base grâce au libre-service pour les salariés, au suivi des temps, aux avantages sociaux, aux services RH, à la paie multi-États et à l'administration assistée par l'IA.
 
 Pour les entreprises qui évaluent ADP, les critères les plus importants sont la taille de l'effectif, les fonctionnalités de paie et de RH nécessaires, les juridictions concernées, les services supplémentaires, les intégrations et le coût personnalisé de la solution retenue.
-
-## À propos de l'auteur
-
-Daniel Brooks, 41 ans, est consultant en technologies pour les entreprises chez [website name], spécialisé dans la stratégie de données, l'efficacité opérationnelle et la business intelligence. Il aide les organisations à améliorer la gestion de leurs informations et à utiliser les données pour éclairer leurs décisions stratégiques et opérationnelles.
 
 ## Références
 

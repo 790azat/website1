@@ -138,10 +138,6 @@ Pour les étudiants qui commencent à l'automne 2026, les frais de scolarité to
 
 Le programme est entièrement en ligne et peut être achevé en deux ans environ lorsque les étudiants suivent les modules sans interruption. L'admission requiert un formulaire de candidature, un CV, un essai, des relevés de notes, une recommandation et, le cas échéant, une attestation de maîtrise de l'anglais, tandis que les scores au GMAT et au GRE sont facultatifs. (bu.edu)
 
-## À propos de l'auteur
-
-James Mitchell, 36 ans, est spécialiste de la finance chez [website name] ; il s'intéresse à la navigation sur les marchés volatils et à l'élaboration de stratégies d'investissement résilientes. Il aide les professionnels à constituer des portefeuilles diversifiés conçus pour résister aux fluctuations du marché et soutenir une croissance durable.
-
 ## Références
 
 * [Boston University Questrom School of Business — Online MBA](https://www.bu.edu/questrom/graduate-programs/mba-programs/online-mba/)

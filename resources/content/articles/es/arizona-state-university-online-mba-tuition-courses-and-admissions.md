@@ -123,10 +123,6 @@ Para el curso 2026-27, ASU fija la matrícula general de posgrado en línea en 6
 
 La admisión exige un título de grado o de máster, un GPA de referencia de 3,00 basado en las asignaturas de grado más recientes o en un máster pertinente, expedientes académicos, un ensayo, un currículum y dos recomendaciones profesionales. No se exige el GMAT.
 
-## Sobre el autor
-
-Daniel Brooks es un consultor de tecnología empresarial de 41 años en [website name], especializado en estrategia de datos, eficiencia operativa e inteligencia de negocio. Ayuda a las organizaciones a mejorar la forma en que gestionan la información y utilizan los datos para respaldar las decisiones estratégicas y operativas.
-
 ## Referencias
 
 * [Arizona State University — Online Master of Business Administration](https://asuonline.asu.edu/online-degree-programs/graduate/master-business-administration/)

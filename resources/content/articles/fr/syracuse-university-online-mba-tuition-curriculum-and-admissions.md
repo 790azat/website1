@@ -144,10 +144,6 @@ Pour 2026-2027, Whitman indique des frais de scolarité de 2 086 $ par crédit p
 
 L'admission requiert généralement un bachelor, environ 18 mois d'expérience professionnelle, des relevés de notes, un essai, deux recommandations et un CV. Le GMAT et le GRE sont facultatifs.
 
-## À propos de l'auteur
-
-Michael Anderson, 39 ans, est spécialiste en technologie et en analyse de données chez [website name], spécialisé dans l'analyse de données, l'informatique décisionnelle et le reporting numérique. Il s'attache à aider les organisations à comprendre des informations complexes et à utiliser des outils analytiques pour appuyer leurs décisions quotidiennes.
-
 ## Références
 
 * [Syracuse University Whitman School of Management — Online MBA](https://whitman.syracuse.edu/online-masters-programs-programs/mba-online)

@@ -140,10 +140,6 @@ Para el curso académico 2026–2027, la matrícula se fija en 379 dólares por 
 
 La admisión suele exigir una licenciatura, un GPA recomendado de 3,0 y al menos tres años de experiencia laboral a tiempo completo, aunque Gies afirma que las solicitudes se revisan de forma integral. No se exigen el GMAT ni el GRE.
 
-## Sobre la autora
-
-Emily Carter, de 34 años, es consultora de inversiones en [website name] y está especializada en mercados emergentes y gestión de riesgos. Ofrece a los emprendedores estrategias prácticas para maximizar la rentabilidad, gestionar la incertidumbre y proteger su patrimonio a largo plazo.
-
 ## Referencias
 
 * [University of Illinois Gies College of Business — Online MBA](https://giesbusiness.illinois.edu/graduate-hub/online-programs/imba)

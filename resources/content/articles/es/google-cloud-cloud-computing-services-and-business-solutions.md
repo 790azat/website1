@@ -6,8 +6,6 @@ date: 2025-07-19
 image: articles/google-cloud-cloud-computing-services-and-business-solutions.webp
 ---
 
-## 24 de septiembre de 2026 • James Mitchell
-
 Google Cloud es una plataforma de computación en la nube que ofrece infraestructura, almacenamiento, bases de datos, análisis de datos, inteligencia artificial, redes, seguridad, desarrollo de aplicaciones y otros servicios tecnológicos. Las organizaciones pueden aprovechar ofertas individuales o combinar varias soluciones para construir entornos que respalden aplicaciones, plataformas de datos, sitios web y operaciones empresariales.
 
 Actualmente, la plataforma ofrece más de 150 productos en categorías como IA y aprendizaje automático, infraestructura, bases de datos y análisis, herramientas para desarrolladores, desarrollo de aplicaciones, seguridad, identidad y alojamiento web. Los precios siguen principalmente un modelo basado en el consumo, que permite a los clientes pagar solo por los servicios y recursos que utilizan. Entre las opciones de precios complementarias se incluyen niveles de uso gratuito, planes de compromiso con descuento y herramientas de cálculo para proyectar el gasto.
@@ -137,10 +135,6 @@ Google Cloud ofrece un amplio conjunto de servicios de computación en la nube q
 Su combinación de servicios de análisis de datos e IA con infraestructura en la nube de uso general permite a las organizaciones construir distintos tipos de entornos tecnológicos en una sola plataforma.
 
 Para las empresas que evalúan Google Cloud, las principales consideraciones son los requisitos de las cargas de trabajo, la arquitectura de datos, las capacidades de IA, la seguridad, las necesidades geográficas, los recursos técnicos, las integraciones y los costes continuos de la nube.
-
-## Sobre el autor
-
-James Mitchell, de 36 años, es especialista financiero en [website name], centrado en afrontar mercados volátiles y en desarrollar estrategias de inversión resilientes. Ayuda a profesionales a construir carteras diversificadas diseñadas para resistir las fluctuaciones del mercado y favorecer un crecimiento sostenible.
 
 ## Referencias
 

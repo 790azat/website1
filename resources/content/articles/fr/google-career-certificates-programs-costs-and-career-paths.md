@@ -6,8 +6,6 @@ date: 2026-09-13
 image: articles/google-career-certificates-programs-costs-and-career-paths.webp
 ---
 
-## 25 septembre 2026 • Emily Carter
-
 Les Google Career Certificates sont des programmes de formation professionnelle en ligne conçus pour aider les apprenants à acquérir des compétences directement opérationnelles, sans diplôme universitaire ni expérience préalable dans le domaine. Les programmes sont élaborés par des experts de Google et dispensés via Coursera ; ils associent cours en vidéo, exercices pratiques et projets concrets.
 
 Les certificats couvrent plusieurs domaines professionnels, dont l'analyse de données, la cybersécurité, le marketing numérique et le commerce en ligne, le support informatique, la gestion de projet et le design UX. Google a également enrichi son catalogue de programmes avancés dans des domaines tels que l'analyse de données, la business intelligence et l'automatisation informatique avec Python.
@@ -133,10 +131,6 @@ Les Google Career Certificates offrent une formation en ligne structurée pour p
 Les programmes se suivent à son rythme, n'exigent ni diplôme ni expérience préalable et s'étendent généralement sur plusieurs mois. Le prix dépend du pays de l'apprenant ; l'abonnement pour les États-Unis et le Canada est actuellement affiché à 49 $ par mois.
 
 Pour les personnes en reconversion ou qui souhaitent acquérir des compétences de base, ces certificats peuvent constituer un point de départ structuré. Leur valeur pratique dépend en définitive de la manière dont la formation est complétée par des projets, un portfolio, de l'expérience et la prise en compte des exigences du marché de l'emploi visé.
-
-## À propos de l'auteure
-
-Emily Carter, 34 ans, est consultante en investissement chez [website name], spécialisée dans les marchés émergents et la gestion des risques. Elle propose aux entrepreneurs des stratégies concrètes pour maximiser leurs rendements, gérer l'incertitude et protéger leur patrimoine sur le long terme.
 
 ## Références
 

@@ -140,10 +140,6 @@ Pour l'année universitaire 2026-2027, les frais de scolarité s'élèvent à 37
 
 L'admission requiert généralement un bachelor, une moyenne recommandée de 3,0 et au moins trois ans d'expérience professionnelle à temps plein, même si Gies indique que les candidatures sont examinées de manière globale. Le GMAT et le GRE ne sont pas exigés.
 
-## À propos de l'auteur
-
-Emily Carter, 34 ans, est consultante en investissement chez [website name], spécialisée dans les marchés émergents et la gestion des risques. Elle propose aux entrepreneurs des stratégies concrètes pour maximiser leurs rendements, gérer l'incertitude et protéger leur patrimoine à long terme.
-
 ## Références
 
 * [University of Illinois Gies College of Business — Online MBA](https://giesbusiness.illinois.edu/graduate-hub/online-programs/imba)
