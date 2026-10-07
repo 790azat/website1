@@ -123,10 +123,6 @@ Pour 2026-2027, ASU affiche des frais de scolarité généraux de 605 $ par cré
 
 L'admission exige une licence ou un master, une moyenne standard de 3,00 calculée sur les derniers cours de premier cycle ou sur un master applicable, des relevés de notes, un essai, un CV et deux recommandations professionnelles. Le GMAT n'est pas exigé.
 
-## À propos de l'auteur
-
-Daniel Brooks, 41 ans, est consultant en technologies pour les entreprises chez [website name], spécialisé dans la stratégie de données, l'efficacité opérationnelle et la business intelligence. Il aide les organisations à améliorer la gestion de leurs informations et à utiliser les données pour éclairer leurs décisions stratégiques et opérationnelles.
-
 ## Références
 
 * [Arizona State University — Online Master of Business Administration](https://asuonline.asu.edu/online-degree-programs/graduate/master-business-administration/)

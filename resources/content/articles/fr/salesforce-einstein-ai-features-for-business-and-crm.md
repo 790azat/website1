@@ -163,10 +163,6 @@ L'essor d'Agentforce fait évoluer l'IA de Salesforce au-delà des recommandatio
 
 Les entreprises qui évaluent Einstein doivent déterminer quelles fonctionnalités d'IA sont incluses dans leur édition Salesforce, lesquelles nécessitent des licences supplémentaires, comment la consommation est facturée et si leurs données CRM et leurs processus de gouvernance sont prêts pour un usage élargi de l'IA.
 
-## À propos de l'auteur
-
-Daniel Brooks, 41 ans, est consultant en technologies d'entreprise au sein d'une publication de conseil aux entreprises, spécialisé dans la stratégie des données, l'efficacité opérationnelle et la business intelligence. Il aide les organisations à améliorer la gestion de leurs informations et à exploiter les données pour éclairer leurs décisions stratégiques et opérationnelles.
-
 ## Références
 
 * [Salesforce — AI for Sales](https://www.salesforce.com/sales/ai/)

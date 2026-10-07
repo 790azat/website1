@@ -6,8 +6,6 @@ date: 2026-04-27
 image: articles/amazon-web-services-cloud-services-pricing-and-business-solutions.webp
 ---
 
-## 24 de septiembre de 2026 • Daniel Brooks
-
 Amazon Web Services (AWS) es una plataforma de computación en la nube que ofrece infraestructura, desarrollo de aplicaciones, almacenamiento de datos, bases de datos, redes, seguridad, análisis, inteligencia artificial y otros servicios tecnológicos. Las organizaciones pueden utilizar servicios de AWS de forma individual o combinarlos en arquitecturas de nube más amplias según sus requisitos técnicos y de negocio.
 
 AWS gestiona una amplia cartera de servicios en la nube en lugar de vender un único paquete de software estandarizado. Actualmente, AWS ofrece más de 240 servicios en categorías como computación, almacenamiento, bases de datos, redes, análisis, aprendizaje automático, seguridad, migración, herramientas para desarrolladores y aplicaciones empresariales.
@@ -147,10 +145,6 @@ Amazon Web Services ofrece una amplia plataforma en la nube que abarca cómputo,
 Su arquitectura basada en servicios permite a las empresas seleccionar componentes individuales y combinarlos en entornos de nube personalizados. El modelo de pago por uso aporta flexibilidad, mientras que los Savings Plans y otras opciones de precios pueden adaptarse a cargas de trabajo más predecibles.
 
 Para las empresas que evalúan AWS, las principales consideraciones son la arquitectura, la seguridad, los requisitos de las cargas de trabajo, los recursos técnicos, las necesidades geográficas y los costes continuos de la nube. La amplia cartera de servicios de AWS hace que la planificación detallada y la supervisión de costes sean aspectos fundamentales de la operación de la plataforma.
-
-## Sobre el autor
-
-Daniel Brooks, de 41 años, es consultor de tecnología empresarial en [website name] y está especializado en estrategia de datos, eficiencia operativa e inteligencia de negocio. Ayuda a las organizaciones a mejorar la gestión de la información y a utilizar los datos para respaldar sus decisiones estratégicas y operativas.
 
 ## Referencias
 

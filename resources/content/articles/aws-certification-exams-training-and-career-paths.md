@@ -89,10 +89,6 @@ Structured preparation combines:
 * Practicing with official questions
 * Taking official practice exams
 
-## About the Author
-
-James Mitchell is a 36-year-old financial specialist focused on navigating volatile markets and developing resilient investment strategies.
-
 ## References
 
 * [AWS — AWS Certification](https://aws.amazon.com/certification/)

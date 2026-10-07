@@ -140,10 +140,6 @@ Atlassian Cloud reúne gestión de proyectos, documentación, operaciones de ser
 
 Las organizaciones pueden empezar con aplicaciones individuales y ampliarlas a medida que crecen sus necesidades. Los planes Standard, Premium y Enterprise añaden progresivamente más almacenamiento, automatización, soporte, seguridad, gobernanza y capacidades de administración.
 
-## Sobre la autora
-
-Emily Carter, de 34 años, es consultora de inversiones en una publicación de asesoramiento empresarial y está especializada en mercados emergentes y gestión de riesgos. Ofrece a los emprendedores estrategias prácticas para maximizar la rentabilidad, gestionar la incertidumbre y proteger el patrimonio a largo plazo.
-
 ## Referencias
 
 * [Atlassian — Jira Cloud Pricing](https://www.atlassian.com/software/jira/pricing)

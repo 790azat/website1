@@ -89,10 +89,6 @@ Una preparación estructurada combina:
 * Practicar con preguntas oficiales
 * Realizar exámenes de práctica oficiales
 
-## Sobre el autor
-
-James Mitchell, de 36 años, es especialista financiero y se dedica a orientarse en mercados volátiles y a desarrollar estrategias de inversión resilientes.
-
 ## Referencias
 
 * [AWS — AWS Certification](https://aws.amazon.com/certification/)

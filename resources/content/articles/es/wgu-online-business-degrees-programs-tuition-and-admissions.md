@@ -118,10 +118,6 @@ Para los periodos de 2026 que comiencen antes de octubre, WGU indica una matríc
 
 Los requisitos de admisión varían según el nivel del título, y la elegibilidad internacional es un aspecto importante, ya que WGU limita actualmente las solicitudes principalmente a personas que residen en Estados Unidos. Los futuros estudiantes deberían revisar la información más reciente sobre programas, matrícula, convalidaciones y admisiones antes de presentar su solicitud.
 
-## Sobre el autor
-
-Michael Anderson, de 39 años, es especialista en tecnología y analítica en [website name], con especialización en análisis de datos, inteligencia de negocio e informes digitales. Su trabajo se centra en ayudar a las organizaciones a comprender información compleja y a utilizar herramientas analíticas para respaldar las decisiones empresariales del día a día.
-
 ## Referencias
 
 * [WGU — Online Business Degrees](https://www.wgu.edu/online-business-degrees.html)

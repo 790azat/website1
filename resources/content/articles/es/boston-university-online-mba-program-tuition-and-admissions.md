@@ -138,10 +138,6 @@ Para quienes comiencen en otoño de 2026, la matrícula total es de 25.000 dóla
 
 El programa se imparte íntegramente en línea y puede completarse en unos dos años si los módulos se cursan de forma consecutiva. La admisión exige una solicitud, un currículum, un ensayo, expedientes académicos, una recomendación y, cuando corresponda, la acreditación del dominio del inglés, mientras que las puntuaciones del GMAT y del GRE son opcionales. (bu.edu)
 
-## Sobre el autor
-
-James Mitchell, de 36 años, es especialista financiero en [website name] y se centra en cómo desenvolverse en mercados volátiles y desarrollar estrategias de inversión resilientes. Ayuda a profesionales a construir carteras diversificadas diseñadas para resistir las fluctuaciones del mercado y favorecer un crecimiento sostenible.
-
 ## Referencias
 
 * [Boston University Questrom School of Business — Online MBA](https://www.bu.edu/questrom/graduate-programs/mba-programs/online-mba/)

@@ -6,8 +6,6 @@ date: 2025-05-26
 image: articles/microsoft-certifications-programs-exams-and-career-paths.webp
 ---
 
-## Par Emily Carter
-
 Microsoft propose des certifications professionnelles qui valident une expertise dans le cloud computing, l'IA, la cybersécurité, les données, les applications métier, les logiciels de productivité et l'administration informatique. Ces certifications sont organisées par métier et par domaine technologique, ce qui permet aux apprenants de les choisir en fonction de leurs responsabilités actuelles ou de leurs ambitions professionnelles.
 
 ## Structure des certifications

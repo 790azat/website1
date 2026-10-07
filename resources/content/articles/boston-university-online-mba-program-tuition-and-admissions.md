@@ -138,10 +138,6 @@ For students starting in Fall 2026, total tuition is listed at $25,000, billed a
 
 The program is entirely online and can be completed in approximately two years when students take modules consecutively. Admission requires an application, resume, essay, transcripts, recommendation, and applicable English-proficiency documentation, while GMAT and GRE scores are optional. (bu.edu)
 
-## About the Author
-
-James Mitchell is a 36-year-old financial specialist at [website name], focused on navigating volatile markets and developing resilient investment strategies. He helps professionals build diversified portfolios designed to withstand market fluctuations and support sustainable growth.
-
 ## References
 
 * [Boston University Questrom School of Business — Online MBA](https://www.bu.edu/questrom/graduate-programs/mba-programs/online-mba/)

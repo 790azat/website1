@@ -150,10 +150,6 @@ The Free tier can support learning and experimentation, Flex is designed around 
 
 Because Atlas pricing depends heavily on resource consumption and deployment architecture, businesses should evaluate expected workloads, regions, storage, backups, data transfer, and additional services when estimating total database costs.
 
-## About the Author
-
-Daniel Brooks, 41, is a business technology consultant at a business advisory publication, specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
-
 ## References
 
 * [MongoDB — Atlas Pricing](https://www.mongodb.com/pricing)

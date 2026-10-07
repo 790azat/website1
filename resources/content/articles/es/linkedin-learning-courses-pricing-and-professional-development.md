@@ -6,8 +6,6 @@ date: 2026-07-27
 image: articles/linkedin-learning-courses-pricing-and-professional-development.webp
 ---
 
-## 25 de septiembre de 2026 • Emily Carter
-
 LinkedIn Learning es una plataforma de formación profesional en línea que ofrece cursos sobre negocios, tecnología, competencias creativas, liderazgo, datos, inteligencia artificial y otras materias del ámbito laboral. La plataforma combina la enseñanza impartida por expertos con recomendaciones personalizadas, itinerarios de aprendizaje, desarrollo de competencias y credenciales profesionales.
 
 El servicio está vinculado al ecosistema profesional más amplio de LinkedIn, de modo que la actividad formativa puede contribuir al desarrollo profesional y a la identificación de competencias. Los usuarios individuales pueden acceder a los cursos a través de las suscripciones LinkedIn Premium que lo incluyen, mientras que las empresas pueden contratar LinkedIn Learning for Teams o Enterprise y ofrecer acceso a toda su plantilla.
@@ -139,10 +137,6 @@ LinkedIn Learning combina cursos profesionales con aprendizaje personalizado, ej
 El acceso individual está vinculado a LinkedIn Premium, mientras que Teams ofrece una opción de autoservicio para organizaciones más pequeñas y Enterprise da soporte a programas formativos para plantillas más amplias.
 
 Para las empresas, la plataforma puede formar parte de una estrategia de desarrollo profesional más amplia, sobre todo cuando los contenidos formativos se combinan con Learning Paths estructurados, análisis de competencias, objetivos de los empleados y oportunidades profesionales internas.
-
-## Sobre la autora
-
-Emily Carter es una consultora de inversiones de 34 años en [website name], especializada en mercados emergentes y gestión de riesgos. Ofrece a los emprendedores estrategias prácticas para maximizar la rentabilidad, gestionar la incertidumbre y proteger el patrimonio a largo plazo.
 
 ## Referencias
 

@@ -154,10 +154,6 @@ Strata se concentre sur la protection du réseau et la connectivité sécurisée
 
 Pour les entreprises qui évaluent Palo Alto Networks, les principaux critères comprennent l'infrastructure existante, l'architecture cloud, les capacités de l'équipe de sécurité, les besoins en matière d'identités, les obligations de conformité et le nombre de fonctions de sécurité à intégrer.
 
-## À propos de l'auteur
-
-Michael Anderson, 39 ans, est spécialiste des technologies et de l'analyse de données au sein d'une publication de conseil aux entreprises, spécialisé dans l'analyse de données, l'informatique décisionnelle et le reporting numérique. Il s'attache à aider les organisations à comprendre des informations complexes et à utiliser des outils analytiques pour soutenir leurs décisions quotidiennes.
-
 ## Références
 
 * [Palo Alto Networks — Products A–Z](https://www.paloaltonetworks.com/products)

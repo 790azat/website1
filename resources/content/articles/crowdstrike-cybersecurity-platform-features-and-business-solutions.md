@@ -140,10 +140,6 @@ Its offerings range from endpoint-focused Falcon packages to managed detection a
 
 For businesses evaluating CrowdStrike, the main considerations include the number of protected devices, existing security capabilities, cloud and identity requirements, data-protection needs, AI adoption, and whether internal teams require additional managed security support.
 
-## About the Author
-
-Daniel Brooks, 41, is a business technology consultant at a business advisory publication, specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
-
 ## References
 
 * [CrowdStrike — Falcon Platform](https://www.crowdstrike.com/en-us/platform/)

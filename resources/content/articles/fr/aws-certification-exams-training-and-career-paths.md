@@ -89,10 +89,6 @@ Une préparation structurée associe :
 * L'entraînement avec les questions officielles
 * Le passage d'examens blancs officiels
 
-## À propos de l'auteur
-
-James Mitchell, 36 ans, est un spécialiste de la finance qui s'intéresse à la navigation sur les marchés volatils et à l'élaboration de stratégies d'investissement résilientes.
-
 ## Références
 
 * [AWS — AWS Certification](https://aws.amazon.com/certification/)

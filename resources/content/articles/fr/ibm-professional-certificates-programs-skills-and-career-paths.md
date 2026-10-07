@@ -6,8 +6,6 @@ date: 2026-04-21
 image: articles/ibm-professional-certificates-programs-skills-and-career-paths.webp
 ---
 
-## 25 septembre 2026 • James Mitchell
-
 Les IBM Professional Certificates sont des programmes en ligne axés sur la carrière, conçus pour aider les apprenants à développer des compétences pratiques dans les domaines de la technologie, des données, de la cybersécurité, du développement logiciel, de l'analyse métier, de la gestion de projet et d'autres domaines professionnels. Nombre de ces programmes sont proposés via Coursera et associent des cours structurés à des travaux pratiques, des projets et une préparation à l'emploi.
 
 Ces programmes s'adressent généralement aux débutants ou aux professionnels en début de carrière et peuvent être suivis sans diplôme traditionnel en informatique ou en technologie. IBM a conçu ses certificats autour de compétences propres à des métiers précis, ce qui permet aux apprenants de choisir un programme en fonction du type de travail qu'ils souhaitent exercer.
@@ -145,10 +143,6 @@ Les IBM Professional Certificates offrent des parcours en ligne structurés vers
 Les certificats sont généralement accessibles aux débutants et peuvent être suivis à son propre rythme via Coursera. Les coûts dépendent principalement de la durée de l'abonnement et du programme choisi.
 
 Pour les apprenants en reconversion ou souhaitant acquérir des compétences technologiques, un IBM Professional Certificate peut constituer un point de départ structuré. Associer le certificat à des projets de portfolio, à une expérience pratique et à des compétences alignées sur les exigences de postes spécifiques permet de bâtir une base plus large pour le développement professionnel.
-
-## À propos de l'auteur
-
-James Mitchell, 36 ans, est spécialiste financier chez [website name]. Il s'intéresse particulièrement à la navigation sur des marchés volatils et à l'élaboration de stratégies d'investissement résilientes. Il aide les professionnels à constituer des portefeuilles diversifiés conçus pour résister aux fluctuations du marché et favoriser une croissance durable.
 
 ## Références
 

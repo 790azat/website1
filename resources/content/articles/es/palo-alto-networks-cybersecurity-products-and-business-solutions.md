@@ -154,10 +154,6 @@ Strata se centra en la protección de la red y la conectividad segura, Prisma ab
 
 Para las empresas que evalúan Palo Alto Networks, los principales aspectos a considerar son la infraestructura existente, la arquitectura en la nube, las capacidades del equipo de seguridad, los requisitos de identidad, las obligaciones de cumplimiento normativo y el número de funciones de seguridad que es necesario integrar.
 
-## Sobre el autor
-
-Michael Anderson, de 39 años, es especialista en tecnología y analítica en una publicación de asesoramiento empresarial, especializado en análisis de datos, inteligencia de negocio e informes digitales. Su trabajo se centra en ayudar a las organizaciones a comprender información compleja y a utilizar herramientas analíticas para respaldar las decisiones empresariales cotidianas.
-
 ## Referencias
 
 * [Palo Alto Networks — Products A–Z](https://www.paloaltonetworks.com/products)

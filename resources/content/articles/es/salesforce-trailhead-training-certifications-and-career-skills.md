@@ -6,8 +6,6 @@ date: 2026-02-14
 image: articles/salesforce-trailhead-training-certifications-and-career-skills.webp
 ---
 
-## 25 de septiembre de 2026 • Emily Carter
-
 Salesforce Trailhead es la plataforma de aprendizaje en línea de Salesforce para desarrollar habilidades en los productos de Salesforce, inteligencia artificial, CRM, datos, automatización y otras tecnologías empresariales relacionadas. La plataforma combina lecciones guiadas con ejercicios prácticos, retos interactivos, proyectos y credenciales. Salesforce describe Trailhead como "una plataforma de aprendizaje gratuita diseñada para ayudar a las personas a adquirir habilidades prácticas para el trabajo relacionado con Salesforce y la IA".
 
 Trailhead está pensada para distintos niveles de experiencia. Los principiantes pueden empezar por los fundamentos de Salesforce, mientras que los profesionales con experiencia pueden seguir itinerarios especializados de administración, desarrollo, datos, marketing, ventas, arquitectura e IA. Los alumnos también pueden crear recorridos de aprendizaje personalizados según sus objetivos.
@@ -151,10 +149,6 @@ Salesforce Trailhead ofrece una vía estructurada y, en gran medida, gratuita pa
 La plataforma también vincula el aprendizaje con el ecosistema de certificaciones de Salesforce. Los profesionales pueden utilizar Trailhead para prepararse para credenciales en administración, desarrollo, consultoría, datos, marketing, arquitectura y funciones relacionadas con la IA.
 
 Para quienes se plantean una carrera en Salesforce, Trailhead puede ser un punto de partida para adquirir conocimientos básicos y experiencia práctica. Combinar ese aprendizaje con proyectos prácticos y certificaciones pertinentes puede proporcionar una base más amplia para aprovechar oportunidades dentro del ecosistema de Salesforce.
-
-## Sobre la autora
-
-Emily Carter es una consultora de inversiones de 34 años en [website name], especializada en mercados emergentes y gestión de riesgos. Ofrece a los emprendedores estrategias prácticas para maximizar la rentabilidad, gestionar la incertidumbre y proteger el patrimonio a largo plazo.
 
 ## Referencias
 

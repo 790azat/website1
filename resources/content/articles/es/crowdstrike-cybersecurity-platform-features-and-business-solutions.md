@@ -140,10 +140,6 @@ Su oferta abarca desde paquetes de Falcon centrados en endpoints hasta la detecc
 
 Para las empresas que evalúan CrowdStrike, las principales consideraciones incluyen el número de dispositivos protegidos, las capacidades de seguridad existentes, los requisitos de nube e identidad, las necesidades de protección de datos, la adopción de IA y si los equipos internos necesitan apoyo adicional de seguridad gestionada.
 
-## Sobre el autor
-
-Daniel Brooks, de 41 años, es consultor de tecnología empresarial en una publicación de asesoramiento empresarial, especializado en estrategia de datos, eficiencia operativa e inteligencia de negocio. Ayuda a las organizaciones a mejorar la forma en que gestionan la información y utilizan los datos para respaldar decisiones estratégicas y operativas.
-
 ## Referencias
 
 * [CrowdStrike — Falcon Platform](https://www.crowdstrike.com/en-us/platform/)

@@ -145,10 +145,6 @@ Pour 2026–2027, les frais de scolarité s'élèvent à 923 $ par crédit, soit
 
 Le programme propose deux voies d'admission, dont un parcours fondé sur la performance qui permet aux étudiants de démontrer leur aptitude au moyen de deux cours de niveau master. La Standard Application exige une licence, une moyenne de 3,0, une lettre de motivation, un CV, des recommandations et des relevés de notes, tandis que les scores GMAT et GRE sont facultatifs. (northeastern.edu)
 
-## À propos de l'auteur
-
-Daniel Brooks, 41 ans, est consultant en technologies d'entreprise chez [website name], spécialisé dans la stratégie data, l'efficacité opérationnelle et la business intelligence. Il aide les organisations à améliorer la gestion de leurs informations et à utiliser les données pour éclairer leurs décisions stratégiques et opérationnelles.
-
 ## Références
 
 * [Northeastern University — Online MBA](https://catalog.northeastern.edu/graduate/business/master-business-administration/mba-online/)

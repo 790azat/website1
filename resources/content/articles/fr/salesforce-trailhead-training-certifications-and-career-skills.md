@@ -6,8 +6,6 @@ date: 2026-02-14
 image: articles/salesforce-trailhead-training-certifications-and-career-skills.webp
 ---
 
-## 25 septembre 2026 • Emily Carter
-
 Salesforce Trailhead est la plateforme d'apprentissage en ligne de Salesforce permettant de développer des compétences sur les produits Salesforce, l'intelligence artificielle, le CRM, les données, l'automatisation et d'autres technologies métier connexes. La plateforme associe des leçons guidées à des exercices pratiques, des défis interactifs, des projets et des certifications. Salesforce décrit Trailhead comme « une plateforme d'apprentissage gratuite conçue pour aider chacun à acquérir des compétences pratiques pour les métiers liés à Salesforce et à l'IA ».
 
 Trailhead s'adresse à différents niveaux d'expérience. Les débutants peuvent commencer par les fondamentaux de Salesforce, tandis que les professionnels expérimentés peuvent suivre des parcours spécialisés couvrant l'administration, le développement, les données, le marketing, les ventes, l'architecture et l'IA. Les apprenants peuvent également créer des parcours d'apprentissage personnalisés en fonction de leurs objectifs.
@@ -151,10 +149,6 @@ Salesforce Trailhead offre un moyen structuré et en grande partie gratuit d'app
 La plateforme relie également l'apprentissage à l'écosystème de certification de Salesforce. Les professionnels peuvent utiliser Trailhead pour se préparer à des certifications dans l'administration, le développement, le conseil, les données, le marketing, l'architecture et les métiers liés à l'IA.
 
 Pour les personnes qui envisagent une carrière Salesforce, Trailhead peut servir de point de départ pour acquérir des connaissances fondamentales et une expérience pratique. Associer cet apprentissage à des projets concrets et à des certifications pertinentes peut offrir une base plus solide pour saisir des opportunités au sein de l'écosystème Salesforce.
-
-## À propos de l'auteur
-
-Emily Carter, 34 ans, est consultante en investissement chez [website name], spécialisée dans les marchés émergents et la gestion des risques. Elle propose aux entrepreneurs des stratégies pratiques pour maximiser leurs rendements, gérer l'incertitude et protéger leur patrimoine à long terme.
 
 ## Références
 

@@ -6,8 +6,6 @@ date: 2025-05-26
 image: articles/microsoft-certifications-programs-exams-and-career-paths.webp
 ---
 
-## By Emily Carter
-
 Microsoft offers professional credentials validating expertise across cloud computing, AI, cybersecurity, data, business applications, productivity software, and IT administration. These certifications organize around job roles and technology areas, enabling learners to select based on current responsibilities or career aspirations.
 
 ## Credential Structure

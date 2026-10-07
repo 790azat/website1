@@ -143,10 +143,6 @@ Okta ofrece una plataforma centrada en la identidad que abarca autenticación, S
 
 A medida que las organizaciones adoptan más aplicaciones en la nube y sistemas automatizados, la gestión de identidades abarca cada vez más dispositivos, API, cuentas de servicio y agentes de IA, además de empleados. La plataforma ampliada de Okta aborda estas áreas mediante una combinación de herramientas de autenticación, gobernanza, seguridad y automatización de identidades.
 
-## Sobre la autora
-
-Emily Carter, de 34 años, es consultora de inversiones en una publicación de asesoramiento empresarial y está especializada en mercados emergentes y gestión de riesgos. Ofrece a los emprendedores estrategias prácticas para maximizar la rentabilidad, gestionar la incertidumbre y proteger el patrimonio a largo plazo.
-
 ## Referencias
 
 * [Okta — Workforce Identity](https://www.okta.com/products/workforce-identity/)

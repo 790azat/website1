@@ -155,10 +155,6 @@ Su integración con Red Hat OpenShift la hace relevante para las organizaciones 
 
 Las empresas que evalúan IBM Cloud pueden valorar la plataforma en función de su infraestructura existente, sus planes de modernización de aplicaciones, sus requisitos nativos de la nube, su estrategia de IA, sus obligaciones de seguridad y el consumo de recursos previsto.
 
-## Sobre el autor
-
-James Mitchell, de 36 años, es especialista financiero en una publicación de asesoramiento empresarial y se centra en cómo desenvolverse en mercados volátiles y en el desarrollo de estrategias de inversión resilientes. Ayuda a los profesionales a construir carteras diversificadas diseñadas para resistir las fluctuaciones del mercado y favorecer un crecimiento sostenible.
-
 ## Referencias
 
 * [IBM — IBM Cloud](https://www.ibm.com/cloud)

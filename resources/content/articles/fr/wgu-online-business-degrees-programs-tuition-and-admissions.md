@@ -118,10 +118,6 @@ Pour les périodes de 2026 débutant avant octobre, WGU indique des frais de sco
 
 Les conditions d'admission varient selon le niveau du diplôme, et l'éligibilité internationale est un point important, car WGU limite actuellement les candidatures principalement aux personnes résidant aux États-Unis. Les futurs étudiants doivent consulter les informations les plus récentes sur les programmes, les frais de scolarité, les transferts et l'admission avant de postuler.
 
-## À propos de l'auteur
-
-Michael Anderson, 39 ans, est spécialiste en technologie et en analyse de données chez [website name], spécialisé dans l'analyse de données, l'informatique décisionnelle et le reporting numérique. Il s'attache à aider les organisations à comprendre des informations complexes et à utiliser des outils analytiques pour appuyer leurs décisions quotidiennes.
-
 ## Références
 
 * [WGU — Online Business Degrees](https://www.wgu.edu/online-business-degrees.html)

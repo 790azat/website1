@@ -150,10 +150,6 @@ El nivel Free puede servir para el aprendizaje y la experimentación, Flex está
 
 Dado que los precios de Atlas dependen en gran medida del consumo de recursos y de la arquitectura de despliegue, las empresas deberían evaluar las cargas de trabajo previstas, las regiones, el almacenamiento, las copias de seguridad, la transferencia de datos y los servicios adicionales al estimar el coste total de la base de datos.
 
-## Sobre el autor
-
-Daniel Brooks, de 41 años, es consultor de tecnología empresarial en una publicación de asesoramiento empresarial, especializado en estrategia de datos, eficiencia operativa e inteligencia de negocio. Ayuda a las organizaciones a mejorar la gestión de su información y a utilizar los datos para respaldar decisiones estratégicas y operativas.
-
 ## Referencias
 
 * [MongoDB — Atlas Pricing](https://www.mongodb.com/pricing)

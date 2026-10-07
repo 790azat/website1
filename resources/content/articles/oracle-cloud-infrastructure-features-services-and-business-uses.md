@@ -169,10 +169,6 @@ Oracle Cloud Infrastructure provides a broad cloud platform covering compute, st
 
 The platform also provides Always Free resources, trial credits, consumption-based pricing, hybrid deployment options, and multicloud services. Businesses evaluating OCI can compare these capabilities with their existing infrastructure, application requirements, security policies, and expected cloud consumption.
 
-## About the Author
-
-Emily Carter, 34, is an investment consultant at a business advisory publication, specializing in emerging markets and risk management. She provides entrepreneurs with practical strategies to maximize returns, manage uncertainty, and protect long-term wealth.
-
 ## References
 
 * [Oracle — Oracle Cloud Infrastructure](https://www.oracle.com/cloud/)

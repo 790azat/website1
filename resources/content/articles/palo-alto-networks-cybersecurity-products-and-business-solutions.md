@@ -154,10 +154,6 @@ Strata focuses on network protection and secure connectivity, Prisma addresses c
 
 For businesses evaluating Palo Alto Networks, the main considerations include existing infrastructure, cloud architecture, security-team capabilities, identity requirements, compliance obligations, and the number of security functions that need to be integrated.
 
-## About the Author
-
-Michael Anderson, 39, is a technology and analytics specialist at a business advisory publication, specializing in data analysis, business intelligence, and digital reporting. He focuses on helping organizations understand complex information and use analytical tools to support everyday business decisions.
-
 ## References
 
 * [Palo Alto Networks — Products A–Z](https://www.paloaltonetworks.com/products)

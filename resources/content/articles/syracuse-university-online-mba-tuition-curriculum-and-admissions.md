@@ -144,10 +144,6 @@ For 2026–2027, Whitman lists online master's tuition at $2,086 per credit, put
 
 Admission generally requires a bachelor's degree, approximately 18 months of professional experience, transcripts, an essay, two recommendations, and a resume. The GMAT and GRE are optional.
 
-## About the Author
-
-Michael Anderson is a 39-year-old technology and analytics specialist at [website name], specializing in data analysis, business intelligence, and digital reporting. He focuses on helping organizations understand complex information and use analytical tools to support everyday business decisions.
-
 ## References
 
 * [Syracuse University Whitman School of Management — Online MBA](https://whitman.syracuse.edu/online-masters-programs-programs/mba-online)

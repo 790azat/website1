@@ -145,10 +145,6 @@ Pour l'année universitaire 2026-2027, les frais de scolarité en ligne s'élèv
 
 Les crédits transférés, les aides financières, les bourses et les avantages militaires peuvent influer sur le coût final. Les étudiants doivent comparer précisément le cursus, l'évaluation des transferts, les frais de scolarité et leurs objectifs professionnels avant de choisir un programme.
 
-## À propos de l'auteur
-
-Daniel Brooks, 41 ans, est consultant en technologies d'entreprise chez [website name], spécialisé dans la stratégie de données, l'efficacité opérationnelle et l'informatique décisionnelle. Il aide les organisations à améliorer la gestion de leurs informations et l'utilisation des données pour étayer leurs décisions stratégiques et opérationnelles.
-
 ## Références
 
 * [Southern New Hampshire University — Online Business School](https://www.snhu.edu/online-degrees/business)

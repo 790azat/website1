@@ -145,10 +145,6 @@ For the 2026–2027 academic year, online undergraduate tuition is $354 per cred
 
 Transfer credits, financial aid, scholarships, and military benefits can affect the final cost. Students should compare the exact curriculum, transfer evaluation, tuition, and career objectives before selecting a program.
 
-## About the Author
-
-Daniel Brooks is a 41-year-old business technology consultant at [website name], specializing in data strategy, operational efficiency, and business intelligence. He helps organizations improve how they manage information and use data to support strategic and operational decisions.
-
 ## References
 
 * [Southern New Hampshire University — Online Business School](https://www.snhu.edu/online-degrees/business)
